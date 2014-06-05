@@ -4,8 +4,58 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "733424440580919082cab99725086652",
+    "hash": "8bd57023df730ff4f6d83d89fa7170a5",
     "packages": [
+        {
+            "name": "contao-community-alliance/composer-plugin",
+            "version": "2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contao-community-alliance/composer-plugin.git",
+                "reference": "2117c535f53f00f7250f8d926274fe7c31f2c7b5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contao-community-alliance/composer-plugin/zipball/2117c535f53f00f7250f8d926274fe7c31f2c7b5",
+                "reference": "2117c535f53f00f7250f8d926274fe7c31f2c7b5",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "1.0.0"
+            },
+            "conflict": {
+                "contao-community-alliance/composer": "<0.9-dev",
+                "contao/core": "3.0.*"
+            },
+            "replace": {
+                "contao-community-alliance/composer-installer": "1.7.1"
+            },
+            "require-dev": {
+                "bit3/php-coding-standard": "*",
+                "composer/composer": "dev-master",
+                "pdepend/pdepend": "1.1.*",
+                "phpunit/phpunit": ">=3.7.10,<4-dev"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "ContaoCommunityAlliance\\Composer\\Plugin\\Plugin",
+                "branch-alias": {
+                    "dev-develop": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "ContaoCommunityAlliance\\Composer\\Plugin": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "description": "Composer plugin that provide contao integration and installer.",
+            "homepage": "http://c-c-a.org/",
+            "time": "2014-06-01 10:58:28"
+        },
         {
             "name": "contao/idna",
             "version": "dev-master",
@@ -39,6 +89,348 @@
             ],
             "description": "A library for encoding and decoding internationalized domain names.",
             "time": "2014-05-17 19:04:55"
+        },
+        {
+            "name": "contao/module-calendar",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contao/module-calendar.git",
+                "reference": "108644d32ddeb3650775e7fa2f7e94ee6ec6ac9b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contao/module-calendar/zipball/108644d32ddeb3650775e7fa2f7e94ee6ec6ac9b",
+                "reference": "108644d32ddeb3650775e7fa2f7e94ee6ec6ac9b",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "~2.0"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "sources": {
+                        "src": "system/modules/calendar"
+                    }
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Leo Feyer",
+                    "homepage": "https://github.com/leofeyer"
+                }
+            ],
+            "description": "Contao 4 calendar module",
+            "time": "2014-06-05 10:53:16"
+        },
+        {
+            "name": "contao/module-comments",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contao/module-comments.git",
+                "reference": "accff9884ae2b7704d129f377e9cb8273689d269"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contao/module-comments/zipball/accff9884ae2b7704d129f377e9cb8273689d269",
+                "reference": "accff9884ae2b7704d129f377e9cb8273689d269",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "~2.0"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "sources": {
+                        "src": "system/modules/comments"
+                    }
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Leo Feyer",
+                    "homepage": "https://github.com/leofeyer"
+                }
+            ],
+            "description": "Contao 4 comments module",
+            "time": "2014-06-05 10:53:35"
+        },
+        {
+            "name": "contao/module-core",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contao/module-core.git",
+                "reference": "4d024be3c8cb6f1966e80b0a04c084dd7be5f107"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contao/module-core/zipball/4d024be3c8cb6f1966e80b0a04c084dd7be5f107",
+                "reference": "4d024be3c8cb6f1966e80b0a04c084dd7be5f107",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "~2.0"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "sources": {
+                        "src": "system/modules/core"
+                    }
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Leo Feyer",
+                    "homepage": "https://github.com/leofeyer"
+                }
+            ],
+            "description": "Contao 4 core module",
+            "time": "2014-06-05 10:53:55"
+        },
+        {
+            "name": "contao/module-devtools",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contao/module-devtools.git",
+                "reference": "543f1e53c76925168d3cb8dfba752fe59144e2fa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contao/module-devtools/zipball/543f1e53c76925168d3cb8dfba752fe59144e2fa",
+                "reference": "543f1e53c76925168d3cb8dfba752fe59144e2fa",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "~2.0"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "sources": {
+                        "src": "system/modules/devtools"
+                    }
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Leo Feyer",
+                    "homepage": "https://github.com/leofeyer"
+                }
+            ],
+            "description": "Contao 4 devtools module",
+            "time": "2014-06-05 10:54:13"
+        },
+        {
+            "name": "contao/module-faq",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contao/module-faq.git",
+                "reference": "eea7690f3037a385c1eaf9134f20d46c8f8e5d1e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contao/module-faq/zipball/eea7690f3037a385c1eaf9134f20d46c8f8e5d1e",
+                "reference": "eea7690f3037a385c1eaf9134f20d46c8f8e5d1e",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "~2.0"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "sources": {
+                        "src": "system/modules/faq"
+                    }
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Leo Feyer",
+                    "homepage": "https://github.com/leofeyer"
+                }
+            ],
+            "description": "Contao 4 FAQ module",
+            "time": "2014-06-05 10:54:37"
+        },
+        {
+            "name": "contao/module-listing",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contao/module-listing.git",
+                "reference": "a39726bc0f644b07152bfff6ba8836da3fb72dfe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contao/module-listing/zipball/a39726bc0f644b07152bfff6ba8836da3fb72dfe",
+                "reference": "a39726bc0f644b07152bfff6ba8836da3fb72dfe",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "~2.0"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "sources": {
+                        "src": "system/modules/listing"
+                    }
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Leo Feyer",
+                    "homepage": "https://github.com/leofeyer"
+                }
+            ],
+            "description": "Contao 4 listing module",
+            "time": "2014-06-05 10:54:53"
+        },
+        {
+            "name": "contao/module-news",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contao/module-news.git",
+                "reference": "4685395d58947758feaabc572afd70bfe8eae1aa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contao/module-news/zipball/4685395d58947758feaabc572afd70bfe8eae1aa",
+                "reference": "4685395d58947758feaabc572afd70bfe8eae1aa",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "~2.0"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "sources": {
+                        "src": "system/modules/news"
+                    }
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Leo Feyer",
+                    "homepage": "https://github.com/leofeyer"
+                }
+            ],
+            "description": "Contao 4 news module",
+            "time": "2014-06-05 10:55:12"
+        },
+        {
+            "name": "contao/module-newsletter",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contao/module-newsletter.git",
+                "reference": "106a7ad902d1f53063305de99228f0ccc2681b42"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contao/module-newsletter/zipball/106a7ad902d1f53063305de99228f0ccc2681b42",
+                "reference": "106a7ad902d1f53063305de99228f0ccc2681b42",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "~2.0"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "sources": {
+                        "src": "system/modules/newsletter"
+                    }
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Leo Feyer",
+                    "homepage": "https://github.com/leofeyer"
+                }
+            ],
+            "description": "Contao 4 newsletter module",
+            "time": "2014-06-05 10:55:33"
+        },
+        {
+            "name": "contao/module-repository",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contao/module-repository.git",
+                "reference": "a5a8c229247c92da648d6f214d3bccc764ab0b45"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contao/module-repository/zipball/a5a8c229247c92da648d6f214d3bccc764ab0b45",
+                "reference": "a5a8c229247c92da648d6f214d3bccc764ab0b45",
+                "shasum": ""
+            },
+            "require": {
+                "contao-community-alliance/composer-plugin": "~2.0"
+            },
+            "type": "contao-module",
+            "extra": {
+                "contao": {
+                    "sources": {
+                        "src": "system/modules/repository"
+                    }
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Leo Feyer",
+                    "homepage": "https://github.com/leofeyer"
+                }
+            ],
+            "description": "Contao 4 repository module",
+            "time": "2014-06-05 10:55:51"
         },
         {
             "name": "contao/php-diff",
@@ -411,6 +803,15 @@
         "contao/idna": 20,
         "contao/php-diff": 20,
         "contao/tcpdf": 20,
+        "contao/module-calendar": 20,
+        "contao/module-comments": 20,
+        "contao/module-core": 20,
+        "contao/module-devtools": 20,
+        "contao/module-faq": 20,
+        "contao/module-listing": 20,
+        "contao/module-news": 20,
+        "contao/module-newsletter": 20,
+        "contao/module-repository": 20,
         "leafo/scssphp": 20,
         "leafo/scssphp-compass": 20
     },
