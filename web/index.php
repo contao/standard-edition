@@ -11,12 +11,12 @@
  */
 
 // Set the script name
-define('TL_SCRIPT', 'contao/preview.php');
+define('TL_SCRIPT', 'index.php');
 
 // Initialize the system
-define('TL_MODE', 'BE');
+define('TL_MODE', 'FE');
 require dirname(__DIR__) . '/system/initialize.php';
 
 // Run the controller
-$controller = new BackendPreview;
+$controller = new FrontendIndex;
 $controller->run();

@@ -9,8 +9,8 @@ for more information.
 System requirements
 -------------------
 
- * Web server
- * PHP 5.3.2+ with GDlib, DOM, Phar and SOAP
+ * Web server with symlink support
+ * PHP 5.4+ with GDlib, DOM, Phar, openssl and SOAP
  * MySQL 5.0.3+
 
 
@@ -53,8 +53,8 @@ We are using [Composer][9] to manage third-party scripts, so after you have
 cloned the repository, make sure to install the vendor libraries:
 
 ```
-git clone https://github.com/contao/core.git
-cd core
+git clone https://github.com/contao/contao.git
+cd contao
 php composer.phar install --prefer-dist
 ```
 

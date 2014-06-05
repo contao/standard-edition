@@ -11,12 +11,12 @@
  */
 
 // Set the script name
-define('TL_SCRIPT', 'contao/file.php');
+define('TL_SCRIPT', 'contao/switch.php');
 
 // Initialize the system
-define('TL_MODE', 'BE');
-require dirname(__DIR__) . '/system/initialize.php';
+define('TL_MODE', 'FE');
+require dirname(dirname(__DIR__)) . '/system/initialize.php';
 
 // Run the controller
-$controller = new BackendFile;
+$controller = new BackendSwitch;
 $controller->run();
