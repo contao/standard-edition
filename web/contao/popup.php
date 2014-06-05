@@ -11,12 +11,12 @@
  */
 
 // Set the script name
-define('TL_SCRIPT', 'contao/confirm.php');
+define('TL_SCRIPT', 'contao/popup.php');
 
 // Initialize the system
 define('TL_MODE', 'BE');
-require dirname(__DIR__) . '/system/initialize.php';
+require dirname(dirname(__DIR__)) . '/system/initialize.php';
 
 // Run the controller
-$controller = new BackendConfirm;
+$controller = new BackendPopup;
 $controller->run();

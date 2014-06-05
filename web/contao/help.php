@@ -11,12 +11,12 @@
  */
 
 // Set the script name
-define('TL_SCRIPT', 'contao/index.php');
+define('TL_SCRIPT', 'contao/help.php');
 
 // Initialize the system
 define('TL_MODE', 'BE');
-require dirname(__DIR__) . '/system/initialize.php';
+require dirname(dirname(__DIR__)) . '/system/initialize.php';
 
 // Run the controller
-$controller = new BackendIndex;
+$controller = new BackendHelp;
 $controller->run();

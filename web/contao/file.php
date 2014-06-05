@@ -11,12 +11,12 @@
  */
 
 // Set the script name
-define('TL_SCRIPT', 'contao/password.php');
+define('TL_SCRIPT', 'contao/file.php');
 
 // Initialize the system
 define('TL_MODE', 'BE');
-require dirname(__DIR__) . '/system/initialize.php';
+require dirname(dirname(__DIR__)) . '/system/initialize.php';
 
 // Run the controller
-$controller = new BackendPassword;
+$controller = new BackendFile;
 $controller->run();
