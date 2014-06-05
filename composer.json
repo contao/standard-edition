@@ -1,5 +1,5 @@
 {
-	"name": "contao/core",
+	"name": "contao/contao",
 	"type": "project",
 	"description": "Contao Open Source CMS",
 	"license": "LGPL-3.0+",
@@ -14,11 +14,23 @@
 		"contao/idna": "dev-master",
 		"contao/php-diff": "dev-master",
 		"contao/tcpdf": "dev-master",
+        "contao/module-calendar": "dev-master",
+        "contao/module-comments": "dev-master",
+        "contao/module-core": "dev-master",
+        "contao/module-devtools": "dev-master",
+        "contao/module-faq": "dev-master",
+        "contao/module-listing": "dev-master",
+        "contao/module-news": "dev-master",
+        "contao/module-newsletter": "dev-master",
+        "contao/module-repository": "dev-master",
 		"simplepie/simplepie": "~1.3.0",
 		"swiftmailer/swiftmailer": "~4.3.0",
 		"michelf/php-markdown": "~1.4.0",
 		"leafo/scssphp": "dev-master",
 		"leafo/scssphp-compass": "dev-master",
 		"leafo/lessphp": "~0.4.0"
+	},
+	"replace": {
+		"contao/core": "self.version"
 	}
 }
