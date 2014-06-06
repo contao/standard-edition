@@ -51,7 +51,7 @@ define('SLIMBOX', '1.8');
  * to provide an accessible alternative for common operations.
  *
  * Usage example:
- *   <a href="index.html"<?php echo LINK_NEW_WINDOW_BLUR; ?>>Home</a>
+ *   <a href="index.html"<?= LINK_NEW_WINDOW_BLUR ?>>Home</a>
  */
 define('LINK_BLUR', ' onclick="this.blur()"');
 define('LINK_NEW_WINDOW', ' onclick="return !window.open(this.href)"');

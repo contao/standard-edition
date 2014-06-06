@@ -18,24 +18,24 @@
 if ($GLOBALS['TL_CONFIG']['useCE']):
 
 ?>
-<script>window.ace || document.write('<script src="<?php echo TL_ASSETS_URL; ?>assets/ace/<?php echo $GLOBALS['TL_ASSETS']['ACE']; ?>/ace.js" charset="utf-8">\x3C/script>')</script>
+<script>window.ace || document.write('<script src="<?= TL_ASSETS_URL ?>assets/ace/<?= $GLOBALS['TL_ASSETS']['ACE'] ?>/ace.js" charset="utf-8">\x3C/script>')</script>
 <script>
 window.ace && window.addEvent('domready', function() {
-  var ta = $('<?php echo $selector; ?>');
+  var ta = $('<?= $selector ?>');
 
   var div = new Element('div', {
-    'id':'<?php echo $selector; ?>_div',
+    'id':'<?= $selector ?>_div',
     'class':ta.get('class')
   }).inject(ta, 'after');
 
   ta.setStyle('display', 'none');
 
-  var editor = ace.edit('<?php echo $selector; ?>_div');
+  var editor = ace.edit('<?= $selector ?>_div');
   editor.setTheme("ace/theme/clouds");
   editor.renderer.setScrollMargin(3, 3, 0, 0);
   editor.renderer.scrollBy(0, -6);
   editor.getSession().setValue(ta.value);
-  editor.getSession().setMode("ace/mode/<?php echo Backend::getAceType($type); ?>");
+  editor.getSession().setMode("ace/mode/<?= Backend::getAceType($type) ?>");
   editor.getSession().setUseSoftTabs(false);
 
   editor.commands.addCommand({
