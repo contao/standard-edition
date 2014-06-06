@@ -146,27 +146,6 @@ $GLOBALS['TL_CONFIG']['dbSqlMode']   = '';
 
 /**
  * -------------------------------------------------------------------------
- * FTP SETTINGS
- * -------------------------------------------------------------------------
- *
- * Here you can enable FTP for managing files and folders ("Safe Mode Hack").
- *
- *   ftpHost = host name (e.g. example.com or example.com:21)
- *   ftpPath = path to installation (e.g. html/)
- *   ftpUser = FTP username
- *   ftpPass = FTP password
- */
-$GLOBALS['TL_CONFIG']['useFTP']  = false;
-$GLOBALS['TL_CONFIG']['ftpHost'] = '';
-$GLOBALS['TL_CONFIG']['ftpPath'] = '';
-$GLOBALS['TL_CONFIG']['ftpUser'] = '';
-$GLOBALS['TL_CONFIG']['ftpPass'] = '';
-$GLOBALS['TL_CONFIG']['ftpSSL']  = false;
-$GLOBALS['TL_CONFIG']['ftpPort'] = 21;
-
-
-/**
- * -------------------------------------------------------------------------
  * ENCRYPTION SETTINGS
  * -------------------------------------------------------------------------
  *

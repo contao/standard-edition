@@ -116,12 +116,7 @@ require_once TL_ROOT . '/vendor/autoload.php';
 Swift::init(function()
 {
 	$preferences = Swift_Preferences::getInstance();
-
-	if (!Config::get('useFTP'))
-	{
-		$preferences->setTempDir(TL_ROOT . '/system/tmp')->setCacheType('disk');
-	}
-
+	$preferences->setTempDir(TL_ROOT . '/system/tmp')->setCacheType('disk');
 	$preferences->setCharset(Config::get('characterSet'));
 });
 

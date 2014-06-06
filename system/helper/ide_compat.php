@@ -59,6 +59,21 @@ namespace  {
 	class StyleSheets extends \Contao\StyleSheets {}
 	class Theme extends \Contao\Theme {}
 	class Versions extends \Contao\Versions {}
+	class BackendChangelog extends \Contao\BackendChangelog {}
+	class BackendConfirm extends \Contao\BackendConfirm {}
+	class BackendFile extends \Contao\BackendFile {}
+	class BackendHelp extends \Contao\BackendHelp {}
+	class BackendIndex extends \Contao\BackendIndex {}
+	class BackendInstall extends \Contao\BackendInstall {}
+	class BackendMain extends \Contao\BackendMain {}
+	class BackendPage extends \Contao\BackendPage {}
+	class BackendPassword extends \Contao\BackendPassword {}
+	class BackendPopup extends \Contao\BackendPopup {}
+	class BackendPreview extends \Contao\BackendPreview {}
+	class BackendSwitch extends \Contao\BackendSwitch {}
+	class FrontendCron extends \Contao\FrontendCron {}
+	class FrontendIndex extends \Contao\FrontendIndex {}
+	class FrontendShare extends \Contao\FrontendShare {}
 	class DC_File extends \Contao\DC_File {}
 	class DC_Folder extends \Contao\DC_Folder {}
 	class DC_Table extends \Contao\DC_Table {}
@@ -120,7 +135,7 @@ namespace  {
 	class Feed extends \Contao\Feed {}
 	class FeedItem extends \Contao\FeedItem {}
 	class File extends \Contao\File {}
-	abstract class Files extends \Contao\Files {}
+	class Files extends \Contao\Files {}
 	class Folder extends \Contao\Folder {}
 	class Idna extends \Contao\Idna {}
 	class Image extends \Contao\Image {}
@@ -233,10 +248,6 @@ namespace Database\Mysqli {
 }
 namespace Dbafs {
 	class Filter extends \Contao\Dbafs\Filter {}
-}
-namespace Files {
-	class Ftp extends \Contao\Files\Ftp {}
-	class Php extends \Contao\Files\Php {}
 }
 namespace Model {
 	class Collection extends \Contao\Model\Collection {}
