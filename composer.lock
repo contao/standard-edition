@@ -174,12 +174,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-core.git",
-                "reference": "4f9c603317420cdf2c65eae3004583cc8fcfc0d2"
+                "reference": "17873cd175f34eae63eaba1cdcda8d4e7efeb388"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-core/zipball/4f9c603317420cdf2c65eae3004583cc8fcfc0d2",
-                "reference": "4f9c603317420cdf2c65eae3004583cc8fcfc0d2",
+                "url": "https://api.github.com/repos/contao/module-core/zipball/17873cd175f34eae63eaba1cdcda8d4e7efeb388",
+                "reference": "17873cd175f34eae63eaba1cdcda8d4e7efeb388",
                 "shasum": ""
             },
             "require": {
@@ -205,7 +205,7 @@
                 }
             ],
             "description": "Contao 4 core module",
-            "time": "2014-06-06 20:46:41"
+            "time": "2014-06-07 18:17:05"
         },
         {
             "name": "contao/module-devtools",
@@ -213,12 +213,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-devtools.git",
-                "reference": "32fcd75289b5a67bbde74a83689c94757401fa29"
+                "reference": "9c1f6c2cb5876569be30c5234b01ab23d7bb9bda"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-devtools/zipball/32fcd75289b5a67bbde74a83689c94757401fa29",
-                "reference": "32fcd75289b5a67bbde74a83689c94757401fa29",
+                "url": "https://api.github.com/repos/contao/module-devtools/zipball/9c1f6c2cb5876569be30c5234b01ab23d7bb9bda",
+                "reference": "9c1f6c2cb5876569be30c5234b01ab23d7bb9bda",
                 "shasum": ""
             },
             "require": {
@@ -244,7 +244,7 @@
                 }
             ],
             "description": "Contao 4 devtools module",
-            "time": "2014-06-06 20:38:57"
+            "time": "2014-06-07 18:15:25"
         },
         {
             "name": "contao/module-faq",
@@ -369,12 +369,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-newsletter.git",
-                "reference": "d2aaf23fe75ac3c4766893d68529296dcdf83c2a"
+                "reference": "11cb0ba29a8f0931df5776db0169e83ca26d1286"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-newsletter/zipball/d2aaf23fe75ac3c4766893d68529296dcdf83c2a",
-                "reference": "d2aaf23fe75ac3c4766893d68529296dcdf83c2a",
+                "url": "https://api.github.com/repos/contao/module-newsletter/zipball/11cb0ba29a8f0931df5776db0169e83ca26d1286",
+                "reference": "11cb0ba29a8f0931df5776db0169e83ca26d1286",
                 "shasum": ""
             },
             "require": {
@@ -400,7 +400,7 @@
                 }
             ],
             "description": "Contao 4 newsletter module",
-            "time": "2014-06-06 20:39:04"
+            "time": "2014-06-07 18:14:59"
         },
         {
             "name": "contao/module-repository",
@@ -408,12 +408,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-repository.git",
-                "reference": "ffba5bdc2851bba42839b4925b26286454b67123"
+                "reference": "197c8fccf7247f8ef9fd9b2005e58a2c01a4bb69"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-repository/zipball/ffba5bdc2851bba42839b4925b26286454b67123",
-                "reference": "ffba5bdc2851bba42839b4925b26286454b67123",
+                "url": "https://api.github.com/repos/contao/module-repository/zipball/197c8fccf7247f8ef9fd9b2005e58a2c01a4bb69",
+                "reference": "197c8fccf7247f8ef9fd9b2005e58a2c01a4bb69",
                 "shasum": ""
             },
             "require": {
@@ -439,7 +439,7 @@
                 }
             ],
             "description": "Contao 4 repository module",
-            "time": "2014-06-06 18:11:59"
+            "time": "2014-06-07 18:14:41"
         },
         {
             "name": "contao/php-diff",
