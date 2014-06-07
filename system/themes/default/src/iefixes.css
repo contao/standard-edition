@@ -8,23 +8,6 @@
  * @license http://www.gnu.org/licenses/lgpl-3.0.html LGPL
  */
 
-/* IE6 warning */
-#ie6warning {
-	background:#ffc;
-	padding:18px;
-	border-bottom:1px solid #e4790f;
-	text-align:center;
-	color:#000;
-	font-size:14px;
-}
-#ie6warning a {
-	color:#e4790f;
-	font-size:14px;
-}
-#ie6warning a:hover {
-	text-decoration:underline;
-}
-
 /* Filter */
 #tl_ajaxOverlay {
 	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
