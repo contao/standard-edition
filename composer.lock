@@ -174,12 +174,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-core.git",
-                "reference": "17873cd175f34eae63eaba1cdcda8d4e7efeb388"
+                "reference": "118dbd955fe332bde34be9b624b01ecd4fa0afac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-core/zipball/17873cd175f34eae63eaba1cdcda8d4e7efeb388",
-                "reference": "17873cd175f34eae63eaba1cdcda8d4e7efeb388",
+                "url": "https://api.github.com/repos/contao/module-core/zipball/118dbd955fe332bde34be9b624b01ecd4fa0afac",
+                "reference": "118dbd955fe332bde34be9b624b01ecd4fa0afac",
                 "shasum": ""
             },
             "require": {
@@ -205,7 +205,7 @@
                 }
             ],
             "description": "Contao 4 core module",
-            "time": "2014-06-07 18:17:05"
+            "time": "2014-06-07 18:35:12"
         },
         {
             "name": "contao/module-devtools",

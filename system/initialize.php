@@ -158,6 +158,15 @@ Config::set('websitePath', TL_PATH);
 
 
 /**
+ * Show the "insecure document root" message
+ */
+if (TL_PATH != '' && substr(TL_PATH, -4) == '/web' && PHP_SAPI != 'cli' && !Config::get('ignoreInsecureRoot'))
+{
+	die_nicely('be_insecure', 'Your installation is not secure. Please set the document root to the <code>/web</code> subfolder.');
+}
+
+
+/**
  * Initialize the Input and RequestToken class
  */
 Input::initialize();
