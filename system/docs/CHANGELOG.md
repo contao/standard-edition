@@ -1,8 +1,8 @@
 Contao Open Source CMS changelog
 ================================
 
-Version 4.0.0-beta1 (2015-05-XX)
---------------------------------
+Version 4.0.0-alpha1 (2014-06-10)
+---------------------------------
 
 ### Changed
 Adjust the logic of the `File` class (see #5341).
