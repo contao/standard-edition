@@ -160,7 +160,7 @@ Config::set('websitePath', TL_PATH);
 /**
  * Show the "insecure document root" message
  */
-if (TL_PATH != '' && substr(TL_PATH, -4) == '/web' && PHP_SAPI != 'cli' && !Config::get('ignoreInsecureRoot'))
+if (PHP_SAPI != 'cli' && TL_PATH != '' && substr(TL_PATH, -4) == '/web' && !Config::get('ignoreInsecureRoot'))
 {
 	die_nicely('be_insecure', 'Your installation is not secure. Please set the document root to the <code>/web</code> subfolder.');
 }
@@ -200,7 +200,7 @@ $GLOBALS['TL_LANGUAGE'] = $_SESSION['TL_LANGUAGE'];
 /**
  * Show the "incomplete installation" message
  */
-if (!$objConfig->isComplete() && TL_SCRIPT != 'contao/install.php')
+if (PHP_SAPI != 'cli' && !$objConfig->isComplete() && TL_SCRIPT != 'contao/install.php')
 {
 	die_nicely('be_incomplete', 'The installation has not been completed. Open the Contao install tool to continue.');
 }
