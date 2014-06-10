@@ -76,16 +76,16 @@ require TL_ROOT . '/system/helper/exception.php';
 /**
  * Include some classes required for further processing
  */
-require TL_ROOT . '/system/modules/core/library/Contao/Config.php';
+require TL_ROOT . '/vendor/contao/contao-library/src/Contao/Config.php';
 class_alias('Contao\\Config', 'Config');
 
-require TL_ROOT . '/system/modules/core/library/Contao/ClassLoader.php';
+require TL_ROOT . '/vendor/contao/contao-library/src/Contao/ClassLoader.php';
 class_alias('Contao\\ClassLoader', 'ClassLoader');
 
-require TL_ROOT . '/system/modules/core/library/Contao/TemplateLoader.php';
+require TL_ROOT . '/vendor/contao/contao-library/src/Contao/TemplateLoader.php';
 class_alias('Contao\\TemplateLoader', 'TemplateLoader');
 
-require TL_ROOT . '/system/modules/core/library/Contao/ModuleLoader.php';
+require TL_ROOT . '/vendor/contao/contao-library/src/Contao/ModuleLoader.php';
 class_alias('Contao\\ModuleLoader', 'ModuleLoader');
 
 Config::preload(); // see #5872

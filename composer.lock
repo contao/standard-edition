@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "da266200d16a4261e0559696b40a5dff",
+    "hash": "fc5aa3daa3fcbaa48d0cd9a759aff589",
     "packages": [
         {
             "name": "contao-community-alliance/composer-plugin",
@@ -55,6 +55,34 @@
             "description": "Composer plugin that provide contao integration and installer.",
             "homepage": "http://c-c-a.org/",
             "time": "2014-06-01 10:58:28"
+        },
+        {
+            "name": "contao/contao-library",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contao/contao-library.git",
+                "reference": "5bb960b56b2ca09abfe834500d2095e2c5e1c0f9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contao/contao-library/zipball/5bb960b56b2ca09abfe834500d2095e2c5e1c0f9",
+                "reference": "5bb960b56b2ca09abfe834500d2095e2c5e1c0f9",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Leo Feyer",
+                    "homepage": "https://github.com/leofeyer"
+                }
+            ],
+            "description": "Contao 4 library",
+            "time": "2014-06-10 17:56:32"
         },
         {
             "name": "contao/idna",
@@ -174,12 +202,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-core.git",
-                "reference": "2bc8985cf99f39c2fd5cc61de4efd0bc8bbafbc2"
+                "reference": "74fad742cd7ec02619867ea2dba046cf27c22a5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-core/zipball/2bc8985cf99f39c2fd5cc61de4efd0bc8bbafbc2",
-                "reference": "2bc8985cf99f39c2fd5cc61de4efd0bc8bbafbc2",
+                "url": "https://api.github.com/repos/contao/module-core/zipball/74fad742cd7ec02619867ea2dba046cf27c22a5e",
+                "reference": "74fad742cd7ec02619867ea2dba046cf27c22a5e",
                 "shasum": ""
             },
             "require": {
@@ -812,6 +840,7 @@
         "contao/idna": 20,
         "contao/php-diff": 20,
         "contao/tcpdf": 20,
+        "contao/contao-library": 20,
         "contao/module-calendar": 20,
         "contao/module-comments": 20,
         "contao/module-core": 20,
