@@ -33,6 +33,9 @@
 	"replace": {
 		"contao/core": "self.version"
 	},
+	"config": {
+		"preferred-install": "dist"
+	},
 	"scripts": {
 		"post-install-cmd": "system/bin/automator generateSymlinks",
 		"post-update-cmd": "system/bin/automator generateSymlinks"
