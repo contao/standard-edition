@@ -41,24 +41,9 @@ namespace  {
 // core
 namespace  {
 	class Ajax extends \Contao\Ajax {}
-	abstract class Backend extends \Contao\Backend {}
 	abstract class BackendModule extends \Contao\BackendModule {}
-	class BackendTemplate extends \Contao\BackendTemplate {}
-	class BackendUser extends \Contao\BackendUser {}
 	class DataContainer extends \Contao\DataContainer {}
-	class DropZone extends \Contao\DropZone {}
-	class FileUpload extends \Contao\FileUpload {}
-	abstract class Frontend extends \Contao\Frontend {}
-	class FrontendTemplate extends \Contao\FrontendTemplate {}
-	class FrontendUser extends \Contao\FrontendUser {}
-	abstract class Hybrid extends \Contao\Hybrid {}
-	class LiveUpdate extends \Contao\LiveUpdate {}
 	class Messages extends \Contao\Messages {}
-	class PurgeData extends \Contao\PurgeData {}
-	class RebuildIndex extends \Contao\RebuildIndex {}
-	class StyleSheets extends \Contao\StyleSheets {}
-	class Theme extends \Contao\Theme {}
-	class Versions extends \Contao\Versions {}
 	class BackendChangelog extends \Contao\BackendChangelog {}
 	class BackendConfirm extends \Contao\BackendConfirm {}
 	class BackendFile extends \Contao\BackendFile {}
@@ -102,7 +87,6 @@ namespace  {
 	class ContentText extends \Contao\ContentText {}
 	class ContentToplink extends \Contao\ContentToplink {}
 	class ContentYouTube extends \Contao\ContentYouTube {}
-	class Form extends \Contao\Form {}
 	class FormCaptcha extends \Contao\FormCaptcha {}
 	class FormCheckBox extends \Contao\FormCheckBox {}
 	class FormExplanation extends \Contao\FormExplanation {}
@@ -117,47 +101,11 @@ namespace  {
 	class FormSubmit extends \Contao\FormSubmit {}
 	class FormTextArea extends \Contao\FormTextArea {}
 	class FormTextField extends \Contao\FormTextField {}
-	class Automator extends \Contao\Automator {}
-	abstract class BaseTemplate extends \Contao\BaseTemplate {}
-	class Cache extends \Contao\Cache {}
-	class ClassLoader extends \Contao\ClassLoader {}
-	class Combiner extends \Contao\Combiner {}
-	class Config extends \Contao\Config {}
-	abstract class Controller extends \Contao\Controller {}
-	abstract class Database extends \Contao\Database {}
-	class Date extends \Contao\Date {}
-	class Dbafs extends \Contao\Dbafs {}
-	class DcaExtractor extends \Contao\DcaExtractor {}
-	class DcaLoader extends \Contao\DcaLoader {}
-	class Email extends \Contao\Email {}
-	class Encryption extends \Contao\Encryption {}
-	class Environment extends \Contao\Environment {}
-	class Feed extends \Contao\Feed {}
-	class FeedItem extends \Contao\FeedItem {}
-	class File extends \Contao\File {}
-	class Files extends \Contao\Files {}
-	class Folder extends \Contao\Folder {}
-	class Idna extends \Contao\Idna {}
-	class Image extends \Contao\Image {}
-	class Input extends \Contao\Input {}
-	class Message extends \Contao\Message {}
-	abstract class Model extends \Contao\Model {}
-	class ModuleLoader extends \Contao\ModuleLoader {}
-	class Pagination extends \Contao\Pagination {}
-	class Request extends \Contao\Request {}
-	class RequestToken extends \Contao\RequestToken {}
-	class Search extends \Contao\Search {}
-	class Session extends \Contao\Session {}
-	class SortedIterator extends \Contao\SortedIterator {}
-	class String extends \Contao\String {}
-	abstract class System extends \Contao\System {}
-	abstract class Template extends \Contao\Template {}
-	class TemplateLoader extends \Contao\TemplateLoader {}
-	abstract class User extends \Contao\User {}
-	class Validator extends \Contao\Validator {}
-	abstract class Widget extends \Contao\Widget {}
-	class ZipReader extends \Contao\ZipReader {}
-	class ZipWriter extends \Contao\ZipWriter {}
+	class Form extends \Contao\Form {}
+	abstract class Hybrid extends \Contao\Hybrid {}
+	class LiveUpdate extends \Contao\LiveUpdate {}
+	class PurgeData extends \Contao\PurgeData {}
+	class RebuildIndex extends \Contao\RebuildIndex {}
 	class ArticleModel extends \Contao\ArticleModel {}
 	class ContentModel extends \Contao\ContentModel {}
 	class FilesModel extends \Contao\FilesModel {}
@@ -204,6 +152,8 @@ namespace  {
 	class PageRedirect extends \Contao\PageRedirect {}
 	class PageRegular extends \Contao\PageRegular {}
 	class PageRoot extends \Contao\PageRoot {}
+	class DropZone extends \Contao\DropZone {}
+	class FileUpload extends \Contao\FileUpload {}
 	class CheckBox extends \Contao\CheckBox {}
 	class CheckBoxWizard extends \Contao\CheckBoxWizard {}
 	class ChmodTable extends \Contao\ChmodTable {}
@@ -229,30 +179,6 @@ namespace  {
 	class TimePeriod extends \Contao\TimePeriod {}
 	class TrblField extends \Contao\TrblField {}
 	class Upload extends \Contao\Upload {}
-}
-namespace Database {
-	class Installer extends \Contao\Database\Installer {}
-	class Mysql extends \Contao\Database\Mysql {}
-	class Mysqli extends \Contao\Database\Mysqli {}
-	abstract class Result extends \Contao\Database\Result {}
-	abstract class Statement extends \Contao\Database\Statement {}
-	class Updater extends \Contao\Database\Updater {}
-}
-namespace Database\Mysql {
-	class Result extends \Contao\Database\Mysql\Result {}
-	class Statement extends \Contao\Database\Mysql\Statement {}
-}
-namespace Database\Mysqli {
-	class Result extends \Contao\Database\Mysqli\Result {}
-	class Statement extends \Contao\Database\Mysqli\Statement {}
-}
-namespace Dbafs {
-	class Filter extends \Contao\Dbafs\Filter {}
-}
-namespace Model {
-	class Collection extends \Contao\Model\Collection {}
-	class QueryBuilder extends \Contao\Model\QueryBuilder {}
-	class Registry extends \Contao\Model\Registry {}
 }
 
 // devtools
