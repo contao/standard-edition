@@ -1,8 +1,8 @@
-# OS
+# Hidden OS files
 .DS_Store
 Thumbs.db
 
-# IDEs
+# Common IDE files
 .buildpath
 .project
 .settings/
@@ -10,20 +10,46 @@ Thumbs.db
 .idea/
 nbproject/
 
-# Contao
-/.htaccess
-/files/*
+# Generated assets
 /assets/css/*
 /assets/images/*
 /assets/js/*
+
+# User files
+/files/*
+
+# Internal cache
 /system/cache/*
+
+# Configuration files
 /system/config/dcaconfig.php
 /system/config/initconfig.php
 /system/config/langconfig.php
 /system/config/localconfig.php
 /system/config/pathconfig.php
+
+# Logs and temporary files
 /system/logs/*
 /system/tmp/*
+
+# Customized templates
 /templates/*
+
+# Vendor libraries
 /vendor/
-/web/*
+
+# Symlinked resources
+/web/assets
+/web/files
+/web/system/modules/*
+/web/system/themes
+
+# Generated feeds
+/web/share/*.xml
+
+# Cron timeout
+/web/system/cron/cron.txt
+
+# Document root files
+/web/.htaccess
+/web/robots.txt
