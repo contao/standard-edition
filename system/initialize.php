@@ -74,21 +74,23 @@ require TL_ROOT . '/system/helper/exception.php';
 
 
 /**
- * Include some classes required for further processing
+ * Include the Composer autoloader
  */
-require TL_ROOT . '/vendor/contao/contao-library/src/Contao/Config.php';
+require_once TL_ROOT . '/vendor/autoload.php';
+
+
+/**
+ * Alias classes (backwards compatibility)
+ */
 class_alias('Contao\\Config', 'Config');
-
-require TL_ROOT . '/vendor/contao/contao-library/src/Contao/ClassLoader.php';
 class_alias('Contao\\ClassLoader', 'ClassLoader');
-
-require TL_ROOT . '/vendor/contao/contao-library/src/Contao/TemplateLoader.php';
 class_alias('Contao\\TemplateLoader', 'TemplateLoader');
 
-require TL_ROOT . '/vendor/contao/contao-library/src/Contao/ModuleLoader.php';
-class_alias('Contao\\ModuleLoader', 'ModuleLoader');
 
-Config::preload(); // see #5872
+/**
+ * Preload the configuration (see #5872)
+ */
+Config::preload();
 
 
 /**
@@ -102,12 +104,6 @@ catch (UnresolvableDependenciesException $e)
 {
 	die($e->getMessage()); // see #6343
 }
-
-
-/**
- * Include the Composer autoloader
- */
-require_once TL_ROOT . '/vendor/autoload.php';
 
 
 /**

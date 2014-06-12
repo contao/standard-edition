@@ -62,15 +62,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/contao-library.git",
-                "reference": "5bb960b56b2ca09abfe834500d2095e2c5e1c0f9"
+                "reference": "ae18b05500cdd0f1033d3779c1cc47b0f2d89b49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/contao-library/zipball/5bb960b56b2ca09abfe834500d2095e2c5e1c0f9",
-                "reference": "5bb960b56b2ca09abfe834500d2095e2c5e1c0f9",
+                "url": "https://api.github.com/repos/contao/contao-library/zipball/ae18b05500cdd0f1033d3779c1cc47b0f2d89b49",
+                "reference": "ae18b05500cdd0f1033d3779c1cc47b0f2d89b49",
                 "shasum": ""
             },
             "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Contao\\": "src/"
+                }
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "LGPL-3.0+"
@@ -82,7 +87,7 @@
                 }
             ],
             "description": "Contao 4 library",
-            "time": "2014-06-10 17:56:32"
+            "time": "2014-06-12 09:26:55"
         },
         {
             "name": "contao/idna",
@@ -202,12 +207,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-core.git",
-                "reference": "74fad742cd7ec02619867ea2dba046cf27c22a5e"
+                "reference": "9318b0c4adbb0a3132c784737cbb6cfd8d4df79a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-core/zipball/74fad742cd7ec02619867ea2dba046cf27c22a5e",
-                "reference": "74fad742cd7ec02619867ea2dba046cf27c22a5e",
+                "url": "https://api.github.com/repos/contao/module-core/zipball/9318b0c4adbb0a3132c784737cbb6cfd8d4df79a",
+                "reference": "9318b0c4adbb0a3132c784737cbb6cfd8d4df79a",
                 "shasum": ""
             },
             "require": {
@@ -233,7 +238,7 @@
                 }
             ],
             "description": "Contao 4 core module",
-            "time": "2014-06-10 14:05:02"
+            "time": "2014-06-11 14:21:33"
         },
         {
             "name": "contao/module-devtools",
