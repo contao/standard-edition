@@ -1,11 +1,18 @@
 Contao Open Source CMS changelog
 ================================
 
-Version 4.0.0-alpha1 (2014-06-10)
+Version 4.0.0-alpha2 (2014-XX-XX)
 ---------------------------------
+
+### Fixed
+Correctly set the folder protection status when loading subfolders (see #4).
 
 ### Changed
 Load the Contao library via the Composer PSR-4 autoloader.
+
+
+Version 4.0.0-alpha1 (2014-06-10)
+---------------------------------
 
 ### Changed
 Adjust the logic of the `File` class (see #5341).
