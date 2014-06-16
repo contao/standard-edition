@@ -14,8 +14,8 @@
 /**
  * Countries
  */
-$countries = array
-(
+$countries =
+[
 	'ad' => 'Andorra',
 	'ae' => 'United Arab Emirates',
 	'af' => 'Afghanistan',
@@ -263,4 +263,4 @@ $countries = array
 	'za' => 'South Africa',
 	'zm' => 'Zambia',
 	'zw' => 'Zimbabwe'
-);
+];

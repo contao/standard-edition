@@ -15,7 +15,7 @@
 define('TL_ROOT', dirname(dirname(__DIR__)));
 include TL_ROOT . '/system/helper/functions.php';
 
-$arrCompat = array();
+$arrCompat = [];
 
 // Scan all modules
 $arrModules = array_filter(scan(TL_ROOT . '/system/modules'), function($e) {
@@ -23,14 +23,14 @@ $arrModules = array_filter(scan(TL_ROOT . '/system/modules'), function($e) {
 });
 
 foreach ($arrModules as $strModule) {
-	$arrFiles = array();
+	$arrFiles = [];
 
 	// Default configuration
-	$arrDefaultConfig = array(
+	$arrDefaultConfig = [
 		'register_namespaces' => true,
 		'register_classes'    => true,
 		'register_templates'  => true,
-	);
+	];
 
 	// Create the autoload.ini file if it does not yet exist
 	if (!file_exists(TL_ROOT . '/system/modules/' . $strModule . '/config/autoload.ini')) {
@@ -78,7 +78,7 @@ foreach ($arrModules as $strModule) {
 		}
 
 		$strBuffer = '';
-		$arrMatches = array();
+		$arrMatches = [];
 
 		// Open the file for reading
 		$fh = fopen(TL_ROOT . '/system/modules/' . $strModule . '/' . $strFile, 'rb');
@@ -111,12 +111,12 @@ foreach ($arrModules as $strModule) {
 		}
 
 		// Add the ide_compat information
-		$arrCompat[$strModule][$strRest][] = array(
+		$arrCompat[$strModule][$strRest][] = [
 			'namespace' => $strFirst,
 			'class'     => basename($strFile, '.php'),
 			'abstract'  => preg_match('/^.*abstract ' . preg_quote($strType, '/') . ' [^;]+.*$/s', $strBuffer),
 			'type'      => $strType
-		);
+		];
 
 		unset($strBuffer);
 	}

@@ -207,7 +207,7 @@ function utf8_hexchr_callback($matches)
 function utf8_detect_encoding($str)
 {
 	if (USE_MBSTRING)
-		return mb_detect_encoding($str, array('ASCII', 'ISO-2022-JP', 'UTF-8', 'EUC-JP', 'ISO-8859-1'));
+		return mb_detect_encoding($str, ['ASCII', 'ISO-2022-JP', 'UTF-8', 'EUC-JP', 'ISO-8859-1']);
 
 	if (!preg_match("/[\x80-\xFF]/", $str))
 	{
@@ -524,7 +524,7 @@ function utf8_substr($str, $start, $length=null)
 		}
 	}
 
-	$match = array();
+	$match = [];
 
 	if (!preg_match('#'.$start_pattern.$length_pattern.'#us', $str, $match))
 		return '';
@@ -555,7 +555,7 @@ function utf8_ucfirst($str)
  */
 function utf8_str_split($str)
 {
-	$array = array();
+	$array = [];
 
 	for ($i=0; $i<strlen($str);)
 	{

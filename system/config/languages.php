@@ -14,8 +14,8 @@
 /**
  * Languages (thanks to Leo Unglaub)
  */
-$languages = array
-(
+$languages =
+[
 	'aa'    => 'Afar',
 	'ab'    => 'Abkhazian',
 	'af'    => 'Afrikaans',
@@ -273,14 +273,14 @@ $languages = array
 	'zh_TW' => 'Chinese (Taiwan)',
 	'zu'    => 'Zulu',
 	'zu_ZA' => 'Zulu (South Africa)'
-);
+];
 
 
 /**
  * Native language names
  */
-$langsNative = array
-(
+$langsNative =
+[
 	'ar'    => 'العربية',
 	'az'    => 'Azərbaycan dili',
 	'az_ZA' => 'Azərbaycan dili (Azərbaycan)',
@@ -421,4 +421,4 @@ $langsNative = array
 	'zh_CN' => '中文(简体) (中国)',
 	'zh_HK' => '中文(简体) (香港)',
 	'zh_TW' => '中文(简体) (臺灣)'
-);
+];

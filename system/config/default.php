@@ -110,7 +110,7 @@ $GLOBALS['TL_CONFIG']['allowedTags']
 	. '<wbr>';
 $GLOBALS['TL_CONFIG']['disableRefererCheck']   = false;
 $GLOBALS['TL_CONFIG']['disableIpCheck']        = false;
-$GLOBALS['TL_CONFIG']['requestTokenWhitelist'] = array();
+$GLOBALS['TL_CONFIG']['requestTokenWhitelist'] = [];
 
 
 /**
@@ -279,7 +279,7 @@ $GLOBALS['TL_CONFIG']['maxResultsPerPage']    = 500;
 $GLOBALS['TL_CONFIG']['maxImageWidth']        = '';
 $GLOBALS['TL_CONFIG']['defaultUser']          = 0;
 $GLOBALS['TL_CONFIG']['defaultGroup']         = 0;
-$GLOBALS['TL_CONFIG']['defaultChmod']         = array('u1', 'u2', 'u3', 'u4', 'u5', 'u6', 'g4', 'g5', 'g6');
+$GLOBALS['TL_CONFIG']['defaultChmod']         = ['u1', 'u2', 'u3', 'u4', 'u5', 'u6', 'g4', 'g5', 'g6'];
 $GLOBALS['TL_CONFIG']['validImageTypes']      = 'jpg,jpeg,gif,png,tif,tiff,bmp';
 $GLOBALS['TL_CONFIG']['editableFiles']        = 'htm,html,css,scss,less,js,txt,log,xml';
 $GLOBALS['TL_CONFIG']['templateFiles']        = 'tpl,html5,xhtml';
@@ -298,7 +298,7 @@ $GLOBALS['TL_CONFIG']['backendTheme']         = 'flexible';
 $GLOBALS['TL_CONFIG']['inactiveModules']      = '';
 $GLOBALS['TL_CONFIG']['liveUpdateId']         = '';
 $GLOBALS['TL_CONFIG']['disableInsertTags']    = false;
-$GLOBALS['TL_CONFIG']['rootFiles']            = array();
+$GLOBALS['TL_CONFIG']['rootFiles']            = [];
 $GLOBALS['TL_CONFIG']['fileSyncExclude']      = '';
 $GLOBALS['TL_CONFIG']['doNotCollapse']        = false;
 $GLOBALS['TL_CONFIG']['urlSuffix']            = '.html';

@@ -30,7 +30,7 @@ if (count($argv) == 1) {
 define('TL_MODE', 'BE');
 require dirname(__DIR__) . '/initialize.php';
 
-$commands = array();
+$commands = [];
 
 // Find all public methods
 $class   = new ReflectionClass('Automator');
@@ -61,7 +61,7 @@ if (!in_array($argv[1], $commands)) {
 }
 
 // Run
-$automator = new Automator();
+$automator = new Automator;
 $automator->$argv[1]();
 
 // Release the lock

@@ -23,8 +23,8 @@
  */
 function __error($intType, $strMessage, $strFile, $intLine)
 {
-	$arrErrors = array
-	(
+	$arrErrors =
+	[
 		E_ERROR             => 'Fatal error',
 		E_WARNING           => 'Warning',
 		E_PARSE             => 'Parsing error',
@@ -40,7 +40,7 @@ function __error($intType, $strMessage, $strFile, $intLine)
 		E_RECOVERABLE_ERROR => 'Recoverable error',
 		E_DEPRECATED        => 'Deprecated notice',
 		E_USER_DEPRECATED   => 'Deprecated notice'
-	);
+	];
 
 	// Ignore functions with an error control operator (@function_name)
 	if (ini_get('error_reporting') > 0)
@@ -72,7 +72,7 @@ function __error($intType, $strMessage, $strFile, $intLine)
 		}
 
 		// Exit on severe errors
-		if (in_array($intType, array(E_ERROR, E_CORE_ERROR, E_COMPILE_ERROR, E_USER_ERROR)))
+		if (in_array($intType, [E_ERROR, E_CORE_ERROR, E_COMPILE_ERROR, E_USER_ERROR]))
 		{
 			show_help_message();
 			exit;
@@ -188,7 +188,7 @@ function scan($strFolder, $blnUncached=false)
 		return $arrScanCache[$strFolder];
 	}
 
-	$arrReturn = array();
+	$arrReturn = [];
 
 	// Scan directory
 	foreach (scandir($strFolder) as $strFile)
@@ -238,8 +238,8 @@ function specialchars($strString, $blnStripInsertTags=false)
  */
 function standardize($strString, $blnPreserveUppercase=false)
 {
-	$arrSearch = array('/[^a-zA-Z0-9 \.\&\/_-]+/', '/[ \.\&\/-]+/');
-	$arrReplace = array('', '-');
+	$arrSearch = ['/[^a-zA-Z0-9 \.\&\/_-]+/', '/[ \.\&\/-]+/'];
+	$arrReplace = ['', '-'];
 
 	$strString = html_entity_decode($strString, ENT_QUOTES, $GLOBALS['TL_CONFIG']['characterSet']);
 	$strString = strip_insert_tags($strString);
@@ -288,26 +288,26 @@ function deserialize($varValue, $blnForceArray=false)
 	// Null
 	if ($varValue === null)
 	{
-		return $blnForceArray ? array() : null;
+		return $blnForceArray ? [] : null;
 	}
 
 	// Not a string
 	if (!is_string($varValue))
 	{
-		return $blnForceArray ? array($varValue) : $varValue;
+		return $blnForceArray ? [$varValue] : $varValue;
 	}
 
 	// Empty string
 	if (trim($varValue) == '')
 	{
-		return $blnForceArray ? array() : '';
+		return $blnForceArray ? [] : '';
 	}
 
 	// Potentially including an object (see #6724)
 	if (preg_match('/[OoC]:\+?[0-9]+:"/', $varValue))
 	{
 		trigger_error('The deserialize() function does not allow serialized objects', E_USER_WARNING);
-		return $blnForceArray ? array($varValue) : $varValue;
+		return $blnForceArray ? [$varValue] : $varValue;
 	}
 
 	$varUnserialized = @unserialize($varValue);
@@ -318,7 +318,7 @@ function deserialize($varValue, $blnForceArray=false)
 	}
 	elseif ($blnForceArray)
 	{
-		$varValue = array($varValue);
+		$varValue = [$varValue];
 	}
 
 	return $varValue;
@@ -355,7 +355,7 @@ function trimsplit($strPattern, $strString)
 	// Empty array
 	if (count($arrFragments) < 2 && !strlen($arrFragments[0]))
 	{
-		$arrFragments = array();
+		$arrFragments = [];
 	}
 
 	$arrSplitCache[$strKey] = $arrFragments;
@@ -413,12 +413,12 @@ function nl2br_pre($str, $xhtml=false)
 		return $str;
 	}
 
-	$chunks = array();
+	$chunks = [];
 	preg_match_all('/<pre[^>]*>.*<\/pre>/Uis', $str, $chunks);
 
 	foreach ($chunks as $chunk)
 	{
-		$str = str_replace($chunk, str_ireplace(array('<br>', '<br />'), '', $chunk), $str);
+		$str = str_replace($chunk, str_ireplace(['<br>', '<br />'], '', $chunk), $str);
 	}
 
 	return $str;
@@ -545,7 +545,7 @@ function array_insert(&$arrCurrent, $intIndex, $arrNew)
 function array_duplicate($arrStack, $intIndex)
 {
 	$arrBuffer = $arrStack;
-	$arrStack = array();
+	$arrStack = [];
 
 	for ($i=0; $i<=$intIndex; $i++)
 	{
