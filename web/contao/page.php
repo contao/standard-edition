@@ -10,6 +10,8 @@
  * @license http://www.gnu.org/licenses/lgpl-3.0.html LGPL
  */
 
+use Contao\BackendPage;
+
 // Set the script name
 define('TL_SCRIPT', 'contao/page.php');
 

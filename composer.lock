@@ -62,12 +62,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/contao-library.git",
-                "reference": "1063bcb3709eabf12e8b9af0eed90a0d7c85b358"
+                "reference": "62012a4f6dcdf3f1aa18159f73f97b34fd243dbc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/contao-library/zipball/1063bcb3709eabf12e8b9af0eed90a0d7c85b358",
-                "reference": "1063bcb3709eabf12e8b9af0eed90a0d7c85b358",
+                "url": "https://api.github.com/repos/contao/contao-library/zipball/62012a4f6dcdf3f1aa18159f73f97b34fd243dbc",
+                "reference": "62012a4f6dcdf3f1aa18159f73f97b34fd243dbc",
                 "shasum": ""
             },
             "type": "library",
@@ -87,7 +87,7 @@
                 }
             ],
             "description": "Contao 4 library",
-            "time": "2014-06-12 19:18:10"
+            "time": "2014-06-14 17:53:56"
         },
         {
             "name": "contao/idna",
@@ -129,12 +129,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-calendar.git",
-                "reference": "aad66e434abd95143d3d46ca4640a61e80b093ee"
+                "reference": "6e4daad14c64094f25dbb587e4e1c65f38ac3e37"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-calendar/zipball/aad66e434abd95143d3d46ca4640a61e80b093ee",
-                "reference": "aad66e434abd95143d3d46ca4640a61e80b093ee",
+                "url": "https://api.github.com/repos/contao/module-calendar/zipball/6e4daad14c64094f25dbb587e4e1c65f38ac3e37",
+                "reference": "6e4daad14c64094f25dbb587e4e1c65f38ac3e37",
                 "shasum": ""
             },
             "require": {
@@ -149,6 +149,13 @@
                     }
                 }
             },
+            "autoload": {
+                "classmap": [
+                    "src/classes/",
+                    "src/models/",
+                    "src/modules/"
+                ]
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "LGPL-3.0+"
@@ -160,7 +167,7 @@
                 }
             ],
             "description": "Contao 4 calendar module",
-            "time": "2014-06-06 20:38:51"
+            "time": "2014-06-14 17:28:12"
         },
         {
             "name": "contao/module-comments",
@@ -168,12 +175,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-comments.git",
-                "reference": "07cae07223a3ab58e5cf05221499800f50bc95ce"
+                "reference": "50fea9bebb07e8c8c1b1d06ee28f1e0bcb636a27"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-comments/zipball/07cae07223a3ab58e5cf05221499800f50bc95ce",
-                "reference": "07cae07223a3ab58e5cf05221499800f50bc95ce",
+                "url": "https://api.github.com/repos/contao/module-comments/zipball/50fea9bebb07e8c8c1b1d06ee28f1e0bcb636a27",
+                "reference": "50fea9bebb07e8c8c1b1d06ee28f1e0bcb636a27",
                 "shasum": ""
             },
             "require": {
@@ -188,6 +195,14 @@
                     }
                 }
             },
+            "autoload": {
+                "classmap": [
+                    "src/classes/",
+                    "src/elements/",
+                    "src/models/",
+                    "src/modules/"
+                ]
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "LGPL-3.0+"
@@ -199,7 +214,7 @@
                 }
             ],
             "description": "Contao 4 comments module",
-            "time": "2014-06-06 20:38:53"
+            "time": "2014-06-14 17:36:21"
         },
         {
             "name": "contao/module-core",
@@ -207,12 +222,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-core.git",
-                "reference": "80e06c0cc7f47c73306008da3c2e74b5a7f9d031"
+                "reference": "97c3a97da4905788e089e8768eac2d082d66f67a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-core/zipball/80e06c0cc7f47c73306008da3c2e74b5a7f9d031",
-                "reference": "80e06c0cc7f47c73306008da3c2e74b5a7f9d031",
+                "url": "https://api.github.com/repos/contao/module-core/zipball/97c3a97da4905788e089e8768eac2d082d66f67a",
+                "reference": "97c3a97da4905788e089e8768eac2d082d66f67a",
                 "shasum": ""
             },
             "require": {
@@ -227,6 +242,22 @@
                     }
                 }
             },
+            "autoload": {
+                "classmap": [
+                    "src/classes/",
+                    "src/controllers/",
+                    "src/drivers/",
+                    "src/elements/",
+                    "src/forms/",
+                    "src/hybrids/",
+                    "src/maintenance/",
+                    "src/models/",
+                    "src/modules/",
+                    "src/pages/",
+                    "src/uploader/",
+                    "src/widgets/"
+                ]
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "LGPL-3.0+"
@@ -238,7 +269,7 @@
                 }
             ],
             "description": "Contao 4 core module",
-            "time": "2014-06-13 08:29:58"
+            "time": "2014-06-16 10:13:06"
         },
         {
             "name": "contao/module-devtools",
@@ -246,12 +277,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-devtools.git",
-                "reference": "9c1f6c2cb5876569be30c5234b01ab23d7bb9bda"
+                "reference": "422fd2825162659ab0a0759971b1a8e9a33eeee6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-devtools/zipball/9c1f6c2cb5876569be30c5234b01ab23d7bb9bda",
-                "reference": "9c1f6c2cb5876569be30c5234b01ab23d7bb9bda",
+                "url": "https://api.github.com/repos/contao/module-devtools/zipball/422fd2825162659ab0a0759971b1a8e9a33eeee6",
+                "reference": "422fd2825162659ab0a0759971b1a8e9a33eeee6",
                 "shasum": ""
             },
             "require": {
@@ -266,6 +297,11 @@
                     }
                 }
             },
+            "autoload": {
+                "classmap": [
+                    "src/modules/"
+                ]
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "LGPL-3.0+"
@@ -277,7 +313,7 @@
                 }
             ],
             "description": "Contao 4 devtools module",
-            "time": "2014-06-07 18:15:25"
+            "time": "2014-06-15 18:08:35"
         },
         {
             "name": "contao/module-faq",
@@ -285,12 +321,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-faq.git",
-                "reference": "f58c781b72895642dbc87fe975e37dae58c80ce9"
+                "reference": "da94ac41416019240ea256e5cbf1fc42fdf8eb96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-faq/zipball/f58c781b72895642dbc87fe975e37dae58c80ce9",
-                "reference": "f58c781b72895642dbc87fe975e37dae58c80ce9",
+                "url": "https://api.github.com/repos/contao/module-faq/zipball/da94ac41416019240ea256e5cbf1fc42fdf8eb96",
+                "reference": "da94ac41416019240ea256e5cbf1fc42fdf8eb96",
                 "shasum": ""
             },
             "require": {
@@ -305,6 +341,12 @@
                     }
                 }
             },
+            "autoload": {
+                "classmap": [
+                    "src/models/",
+                    "src/modules/"
+                ]
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "LGPL-3.0+"
@@ -316,7 +358,7 @@
                 }
             ],
             "description": "Contao 4 FAQ module",
-            "time": "2014-06-06 20:38:59"
+            "time": "2014-06-15 18:09:56"
         },
         {
             "name": "contao/module-listing",
@@ -324,12 +366,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-listing.git",
-                "reference": "529d5b296631bcb3d03050b8307cce32b390789c"
+                "reference": "89f357c196645a8ef1ed37ab2416cbae633e9535"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-listing/zipball/529d5b296631bcb3d03050b8307cce32b390789c",
-                "reference": "529d5b296631bcb3d03050b8307cce32b390789c",
+                "url": "https://api.github.com/repos/contao/module-listing/zipball/89f357c196645a8ef1ed37ab2416cbae633e9535",
+                "reference": "89f357c196645a8ef1ed37ab2416cbae633e9535",
                 "shasum": ""
             },
             "require": {
@@ -355,7 +397,7 @@
                 }
             ],
             "description": "Contao 4 listing module",
-            "time": "2014-06-06 20:39:00"
+            "time": "2014-06-15 18:10:49"
         },
         {
             "name": "contao/module-news",
@@ -363,12 +405,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-news.git",
-                "reference": "5604d8ca2ec67fba016d3e2c2e35f141f2db5dcb"
+                "reference": "2a364dbb201f079b0470c5f543ac4d98024b02ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-news/zipball/5604d8ca2ec67fba016d3e2c2e35f141f2db5dcb",
-                "reference": "5604d8ca2ec67fba016d3e2c2e35f141f2db5dcb",
+                "url": "https://api.github.com/repos/contao/module-news/zipball/2a364dbb201f079b0470c5f543ac4d98024b02ca",
+                "reference": "2a364dbb201f079b0470c5f543ac4d98024b02ca",
                 "shasum": ""
             },
             "require": {
@@ -383,6 +425,13 @@
                     }
                 }
             },
+            "autoload": {
+                "classmap": [
+                    "src/classes/",
+                    "src/models/",
+                    "src/modules/"
+                ]
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "LGPL-3.0+"
@@ -394,7 +443,7 @@
                 }
             ],
             "description": "Contao 4 news module",
-            "time": "2014-06-06 20:46:21"
+            "time": "2014-06-15 18:12:20"
         },
         {
             "name": "contao/module-newsletter",
@@ -402,12 +451,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-newsletter.git",
-                "reference": "11cb0ba29a8f0931df5776db0169e83ca26d1286"
+                "reference": "ea7ec3a3275b8f6e80fee608517dbc5ca773439c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-newsletter/zipball/11cb0ba29a8f0931df5776db0169e83ca26d1286",
-                "reference": "11cb0ba29a8f0931df5776db0169e83ca26d1286",
+                "url": "https://api.github.com/repos/contao/module-newsletter/zipball/ea7ec3a3275b8f6e80fee608517dbc5ca773439c",
+                "reference": "ea7ec3a3275b8f6e80fee608517dbc5ca773439c",
                 "shasum": ""
             },
             "require": {
@@ -422,6 +471,13 @@
                     }
                 }
             },
+            "autoload": {
+                "classmap": [
+                    "src/classes/",
+                    "src/models/",
+                    "src/modules/"
+                ]
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "LGPL-3.0+"
@@ -433,7 +489,7 @@
                 }
             ],
             "description": "Contao 4 newsletter module",
-            "time": "2014-06-07 18:14:59"
+            "time": "2014-06-15 18:13:47"
         },
         {
             "name": "contao/module-repository",
@@ -441,12 +497,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-repository.git",
-                "reference": "197c8fccf7247f8ef9fd9b2005e58a2c01a4bb69"
+                "reference": "a6580369214d35ab64a767c0364f9f8f0692417c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-repository/zipball/197c8fccf7247f8ef9fd9b2005e58a2c01a4bb69",
-                "reference": "197c8fccf7247f8ef9fd9b2005e58a2c01a4bb69",
+                "url": "https://api.github.com/repos/contao/module-repository/zipball/a6580369214d35ab64a767c0364f9f8f0692417c",
+                "reference": "a6580369214d35ab64a767c0364f9f8f0692417c",
                 "shasum": ""
             },
             "require": {
@@ -472,7 +528,7 @@
                 }
             ],
             "description": "Contao 4 repository module",
-            "time": "2014-06-07 18:14:41"
+            "time": "2014-06-15 17:04:36"
         },
         {
             "name": "contao/php-diff",
@@ -513,12 +569,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/tcpdf.git",
-                "reference": "2c7ed9ab1fc3cf4eab4db77a78abd628e0952e37"
+                "reference": "d0a2b268fe5b4d826ac09ff58b329547fda61198"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/tcpdf/zipball/2c7ed9ab1fc3cf4eab4db77a78abd628e0952e37",
-                "reference": "2c7ed9ab1fc3cf4eab4db77a78abd628e0952e37",
+                "url": "https://api.github.com/repos/contao/tcpdf/zipball/d0a2b268fe5b4d826ac09ff58b329547fda61198",
+                "reference": "d0a2b268fe5b4d826ac09ff58b329547fda61198",
                 "shasum": ""
             },
             "require": {
@@ -527,9 +583,9 @@
             "type": "library",
             "autoload": {
                 "classmap": [
-                    "fonts",
-                    "config",
-                    "include",
+                    "fonts/",
+                    "config/",
+                    "include/",
                     "tcpdf.php",
                     "tcpdf_parser.php",
                     "tcpdf_import.php",
@@ -557,7 +613,7 @@
                 }
             ],
             "description": "TCPDF is a PHP class for generating PDF documents.",
-            "time": "2014-05-17 19:04:30"
+            "time": "2014-06-14 17:40:58"
         },
         {
             "name": "leafo/lessphp",

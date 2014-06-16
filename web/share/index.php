@@ -10,6 +10,8 @@
  * @license http://www.gnu.org/licenses/lgpl-3.0.html LGPL
  */
 
+use Contao\FrontendShare;
+
 // Set the script name
 define('TL_SCRIPT', 'share/index.php');
 
