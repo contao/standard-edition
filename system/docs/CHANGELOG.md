@@ -5,6 +5,9 @@ Version 4.0.0-alpha2 (2014-XX-XX)
 ---------------------------------
 
 ### Changed
+Use a `<strong>` tag instead of a `<span>` tag for active menu items.
+
+### Changed
 Use the CSS class `active` instead of `current` in the pagination menu.
 
 ### Changed

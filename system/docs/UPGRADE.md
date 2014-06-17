@@ -10,6 +10,9 @@ The book navigation module now uses the CSS class `previous` instead of `prev`
 for the link to the previous page. The pagination menu now uses the CSS class
 `active` instead of `current` for the active menu item.
 
+Also, the navigation menus are now using a `<strong>` tag instead of a `<span>`
+tag for the active menu item.
+
 
 ### `new File()`
 
