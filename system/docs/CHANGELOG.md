@@ -5,6 +5,9 @@ Version 4.0.0-alpha2 (2014-XX-XX)
 ---------------------------------
 
 ### Changed
+Use `<fieldset>` and `<legend>` in the newsletter channel selection menu.
+
+### Changed
 Always pass the DC object as first argument in the ondelete_callback.
 
 ### Changed

@@ -12,8 +12,9 @@ argument just like the `ondelete_callback` of the `DC_Table` driver does.
 
 ### Markup changes
 
-The navigation menus and the search module are now using a `<strong>` tag
-instead of a `<span>` tag to highlight the active menu item or keyword.
+The navigation menus and the search module are now using `<strong>` instead of
+`<span>` to highlight the active menu item or keyword. The newsletter channel
+menu is now using `<fieldset>` and `<legend>` instead of `<label>` and `<div>`.
 
 
 ### CSS class changes
