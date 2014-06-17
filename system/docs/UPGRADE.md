@@ -7,7 +7,8 @@ Version 3.* to 4.0
 ### CSS classes
 
 The book navigation module now uses the CSS class `previous` instead of `prev`
-for the link to the previous page.
+for the link to the previous page. The pagination menu now uses the CSS class
+`active` instead of `current` for the active menu item.
 
 
 ### `new File()`
