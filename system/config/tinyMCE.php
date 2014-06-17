@@ -41,7 +41,7 @@ window.tinymce && tinymce.init({
   tabfocus_elements: ":prev,:next",
   importcss_append: true,
   importcss_groups: [{title: "<?= Config::get('uploadPath') ?>/tinymce.css"}],
-  content_css: "<?= TL_PATH ?>/system/themes/tinymce.css,<?= TL_PATH . '/' . Config::get('uploadPath') ?>/tinymce.css",
+  content_css: "<?= Environment::get('path') ?>/system/themes/tinymce.css,<?= Environment::get('path') . '/' . Config::get('uploadPath') ?>/tinymce.css",
   extended_valid_elements: "q[cite|class|title],article,section,hgroup,figure,figcaption",
   menubar: "file edit insert view format table",
   toolbar: "link image | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | undo redo | code"

@@ -5,6 +5,9 @@ Version 4.0.0-alpha2 (2014-XX-XX)
 ---------------------------------
 
 ### Changed
+Do not use a constant for the website path (see contao/core#5347).
+
+### Changed
 Support scopes in the `Message` class (see contao/core#6558).
 
 ### Changed

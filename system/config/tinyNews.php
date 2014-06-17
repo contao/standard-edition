@@ -40,7 +40,7 @@ window.tinymce && tinymce.init({
   plugins: "autosave charmap code fullscreen image link paste searchreplace tabfocus table template visualblocks",
   browser_spellcheck: true,
   tabfocus_elements: ":prev,:next",
-  content_css: "<?= TL_PATH ?>/system/themes/tinymce.css",
+  content_css: "<?= Environment::get('path') ?>/system/themes/tinymce.css",
   extended_valid_elements: "b/strong,i/em",
   menubar: "file edit insert view format table",
   toolbar: "link image | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | undo redo | code"

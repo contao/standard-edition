@@ -26,7 +26,6 @@ nbproject/
 /system/config/initconfig.php
 /system/config/langconfig.php
 /system/config/localconfig.php
-/system/config/pathconfig.php
 
 # Logs and temporary files
 /system/logs/*
