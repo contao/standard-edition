@@ -4,6 +4,9 @@ Contao Open Source CMS changelog
 Version 4.0.0-alpha2 (2014-XX-XX)
 ---------------------------------
 
+### Fixed
+Correctly assign the CSS classes "odd" and "even" to the table element.
+
 ### Changed
 Use a `<strong>` tag to highlight keywords in search results.
 

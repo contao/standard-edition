@@ -4,14 +4,19 @@ Contao Open Source CMS API changes
 Version 3.* to 4.0
 ------------------
 
-### CSS classes
+### Markup changes
+
+The navigation menus and the search module are now using a `<strong>` tag
+instead of a `<span>` tag to highlight the active menu item or keyword.
+
+
+### CSS class changes
 
 The book navigation module now uses the CSS class `previous` instead of `prev`
 for the link to the previous page. The pagination menu now uses the CSS class
 `active` instead of `current` for the active menu item.
 
-Also, the navigation menus and the search module are now using a `<strong>` tag
-instead of a `<span>` tag to highlight the active menu item or keyword.
+The classes "odd" and "even" are now correctly assigned to the table element.
 
 
 ### `new File()`

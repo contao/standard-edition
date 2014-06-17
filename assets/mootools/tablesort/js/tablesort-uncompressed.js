@@ -186,7 +186,7 @@ var TableSort = new Class(
 			}
 
 			// Odd/even
-			cls += (i%2 == 0) ? ' even' : ' odd';
+			cls += (i%2 == 0) ? ' odd' : ' even';
 
 			// Apply the tr class
 			tbody[i].className = cls.trim();
