@@ -5,6 +5,9 @@ Version 4.0.0-alpha2 (2014-XX-XX)
 ---------------------------------
 
 ### Changed
+Use the CSS class `previous` instead of `prev` in the book navigation module.
+
+### Changed
 Load the PHP classes of the Contao modules via the Composer autoloader.
 
 ### Fixed

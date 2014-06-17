@@ -4,6 +4,12 @@ Contao Open Source CMS API changes
 Version 3.* to 4.0
 ------------------
 
+### CSS classes
+
+The book navigation module now uses the CSS class `previous` instead of `prev`
+for the link to the previous page.
+
+
 ### `new File()`
 
 In Contao 3, `new File('tmp.txt')` automatically created the file if it did not
