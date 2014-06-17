@@ -4,6 +4,12 @@ Contao Open Source CMS API changes
 Version 3.* to 4.0
 ------------------
 
+### `ondelete_callback`
+
+The `ondelete_callback` of the `DC_Folder` driver now passes `$this` as first
+argument just like the `ondelete_callback` of the `DC_Table` driver does.
+
+
 ### Markup changes
 
 The navigation menus and the search module are now using a `<strong>` tag

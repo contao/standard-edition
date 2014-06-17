@@ -4,6 +4,12 @@ Contao Open Source CMS changelog
 Version 4.0.0-alpha2 (2014-XX-XX)
 ---------------------------------
 
+### Changed
+Always pass the DC object as first argument in the ondelete_callback.
+
+### Changed
+Do not auto-generate article IDs from their alias names (see contao/core#4837).
+
 ### Fixed
 Correctly assign the CSS classes "odd" and "even" to the table element.
 
