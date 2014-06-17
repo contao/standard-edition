@@ -4,6 +4,24 @@ Contao Open Source CMS API changes
 Version 3.* to 4.0
 ------------------
 
+### `Message::generate()`
+
+The `Message` class now supports scopes, which can optionally be passed as
+second argument:
+
+```php
+// Add an error message to "my-scope"
+Message::addError('An error ocurred', 'my-scope');
+
+// Generate all messages in "my-scope"
+Message::generate('my-scope');
+```
+
+The scope defaults to `TL_MODE`. The previous arguments of the `generate()`
+method have been removed. If you want to output the messages without the
+wrapping element, use `Message::generateUnwrapped()` instead.
+
+
 ### `ondelete_callback`
 
 The `ondelete_callback` of the `DC_Folder` driver now passes `$this` as first

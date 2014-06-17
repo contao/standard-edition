@@ -5,6 +5,9 @@ Version 4.0.0-alpha2 (2014-XX-XX)
 ---------------------------------
 
 ### Changed
+Support scopes in the `Message` class (see contao/core#6558).
+
+### Changed
 Use `<fieldset>` and `<legend>` in the newsletter channel selection menu.
 
 ### Changed
