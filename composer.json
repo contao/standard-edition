@@ -24,12 +24,12 @@
         "contao/module-news": "dev-develop",
         "contao/module-newsletter": "dev-develop",
         "contao/module-repository": "dev-develop",
-		"simplepie/simplepie": "~1.3.0",
-		"swiftmailer/swiftmailer": "~4.3.0",
-		"michelf/php-markdown": "~1.4.0",
+		"simplepie/simplepie": "~1.3",
+		"swiftmailer/swiftmailer": "~5.2",
+		"michelf/php-markdown": "~1.4",
 		"leafo/scssphp": "dev-master",
 		"leafo/scssphp-compass": "dev-master",
-		"leafo/lessphp": "~0.4.0"
+		"leafo/lessphp": "~0.4"
 	},
 	"replace": {
 		"contao/core": "self.version"

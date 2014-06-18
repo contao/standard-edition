@@ -4,20 +4,20 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "fc5aa3daa3fcbaa48d0cd9a759aff589",
+    "hash": "a90d0a9fa8f7259313d80c9fdd57b226",
     "packages": [
         {
             "name": "contao-community-alliance/composer-plugin",
-            "version": "2.1",
+            "version": "2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-community-alliance/composer-plugin.git",
-                "reference": "2117c535f53f00f7250f8d926274fe7c31f2c7b5"
+                "reference": "6ef2881fc49687ef67a8a0531da67a18be9414af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-community-alliance/composer-plugin/zipball/2117c535f53f00f7250f8d926274fe7c31f2c7b5",
-                "reference": "2117c535f53f00f7250f8d926274fe7c31f2c7b5",
+                "url": "https://api.github.com/repos/contao-community-alliance/composer-plugin/zipball/6ef2881fc49687ef67a8a0531da67a18be9414af",
+                "reference": "6ef2881fc49687ef67a8a0531da67a18be9414af",
                 "shasum": ""
             },
             "require": {
@@ -40,7 +40,8 @@
             "extra": {
                 "class": "ContaoCommunityAlliance\\Composer\\Plugin\\Plugin",
                 "branch-alias": {
-                    "dev-develop": "2.0.x-dev"
+                    "dev-master": "2.1.x-dev",
+                    "dev-develop": "2.2.x-dev"
                 }
             },
             "autoload": {
@@ -54,7 +55,7 @@
             ],
             "description": "Composer plugin that provide contao integration and installer.",
             "homepage": "http://c-c-a.org/",
-            "time": "2014-06-01 10:58:28"
+            "time": "2014-06-18 12:10:19"
         },
         {
             "name": "contao/contao-library",
@@ -854,25 +855,28 @@
         },
         {
             "name": "swiftmailer/swiftmailer",
-            "version": "v4.3.1",
+            "version": "v5.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "ae540bed1079c07aa12e9e62d9d8d4fc49bbdff2"
+                "reference": "2b9af56cc676c338d52fca4c657e5bdff73bb7af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/ae540bed1079c07aa12e9e62d9d8d4fc49bbdff2",
-                "reference": "ae540bed1079c07aa12e9e62d9d8d4fc49bbdff2",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/2b9af56cc676c338d52fca4c657e5bdff73bb7af",
+                "reference": "2b9af56cc676c338d52fca4c657e5bdff73bb7af",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.2.4"
             },
+            "require-dev": {
+                "mockery/mockery": "~0.9.1"
+            },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.3-dev"
+                    "dev-master": "5.2-dev"
                 }
             },
             "autoload": {
@@ -882,7 +886,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "LGPL"
+                "MIT"
             ],
             "authors": [
                 {
@@ -901,7 +905,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2013-04-11 10:22:09"
+            "time": "2014-06-13 11:44:54"
         }
     ],
     "packages-dev": [],
