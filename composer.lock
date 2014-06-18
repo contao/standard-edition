@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "02e356417cb93b3f8128361957e55261",
+    "hash": "fc5aa3daa3fcbaa48d0cd9a759aff589",
     "packages": [
         {
             "name": "contao-community-alliance/composer-plugin",
@@ -58,7 +58,7 @@
         },
         {
             "name": "contao/contao-library",
-            "version": "4.0.0-alpha2",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/contao-library.git",
@@ -125,7 +125,7 @@
         },
         {
             "name": "contao/module-calendar",
-            "version": "4.0.0-alpha2",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-calendar.git",
@@ -171,7 +171,7 @@
         },
         {
             "name": "contao/module-comments",
-            "version": "4.0.0-alpha2",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-comments.git",
@@ -218,7 +218,7 @@
         },
         {
             "name": "contao/module-core",
-            "version": "4.0.0-alpha2",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-core.git",
@@ -273,7 +273,7 @@
         },
         {
             "name": "contao/module-devtools",
-            "version": "4.0.0-alpha2",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-devtools.git",
@@ -317,7 +317,7 @@
         },
         {
             "name": "contao/module-faq",
-            "version": "4.0.0-alpha2",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-faq.git",
@@ -362,7 +362,7 @@
         },
         {
             "name": "contao/module-listing",
-            "version": "4.0.0-alpha2",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-listing.git",
@@ -406,7 +406,7 @@
         },
         {
             "name": "contao/module-news",
-            "version": "4.0.0-alpha2",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-news.git",
@@ -452,7 +452,7 @@
         },
         {
             "name": "contao/module-newsletter",
-            "version": "4.0.0-alpha2",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-newsletter.git",
@@ -498,7 +498,7 @@
         },
         {
             "name": "contao/module-repository",
-            "version": "4.0.0-alpha2",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-repository.git",
@@ -911,16 +911,16 @@
         "contao/idna": 20,
         "contao/php-diff": 20,
         "contao/tcpdf": 20,
-        "contao/contao-library": 15,
-        "contao/module-calendar": 15,
-        "contao/module-comments": 15,
-        "contao/module-core": 15,
-        "contao/module-devtools": 15,
-        "contao/module-faq": 15,
-        "contao/module-listing": 15,
-        "contao/module-news": 15,
-        "contao/module-newsletter": 15,
-        "contao/module-repository": 15,
+        "contao/contao-library": 20,
+        "contao/module-calendar": 20,
+        "contao/module-comments": 20,
+        "contao/module-core": 20,
+        "contao/module-devtools": 20,
+        "contao/module-faq": 20,
+        "contao/module-listing": 20,
+        "contao/module-news": 20,
+        "contao/module-newsletter": 20,
+        "contao/module-repository": 20,
         "leafo/scssphp": 20,
         "leafo/scssphp-compass": 20
     },
