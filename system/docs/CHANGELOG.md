@@ -1,7 +1,7 @@
 Contao Open Source CMS changelog
 ================================
 
-Version 4.0.0-alpha2 (2014-XX-XX)
+Version 4.0.0-alpha2 (2014-06-18)
 ---------------------------------
 
 ### Changed
