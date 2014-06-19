@@ -1,20 +1,21 @@
 {
-	"name": "contao/contao",
-	"type": "project",
-	"description": "Contao Open Source CMS",
-	"license": "LGPL-3.0+",
-	"authors": [
-		{
-			"name": "Leo Feyer",
-			"homepage": "https://github.com/leofeyer"
-		}
-	],
-	"require": {
-		"php": ">=5.4.0",
-		"contao/idna": "dev-master",
-		"contao/php-diff": "dev-master",
-		"contao/tcpdf": "dev-master",
-		"contao/contao-library": "dev-develop",
+    "name": "contao/contao",
+    "type": "project",
+    "description": "Contao Open Source CMS",
+    "license": "LGPL-3.0+",
+    "authors": [
+        {
+            "name": "Leo Feyer",
+            "homepage": "https://github.com/leofeyer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "contao/idna": "dev-master",
+        "contao/php-diff": "dev-master",
+        "contao/tcpdf": "dev-master",
+        "contao/contao-bundle": "dev-develop",
+        "contao/contao-library": "dev-develop",
         "contao/module-calendar": "dev-develop",
         "contao/module-comments": "dev-develop",
         "contao/module-core": "dev-develop",
@@ -24,21 +25,36 @@
         "contao/module-news": "dev-develop",
         "contao/module-newsletter": "dev-develop",
         "contao/module-repository": "dev-develop",
-		"simplepie/simplepie": "~1.3",
-		"swiftmailer/swiftmailer": "~5.2",
-		"michelf/php-markdown": "~1.4",
-		"leafo/scssphp": "dev-master",
-		"leafo/scssphp-compass": "dev-master",
-		"leafo/lessphp": "~0.4"
-	},
-	"replace": {
-		"contao/core": "self.version"
-	},
-	"config": {
-		"preferred-install": "dist"
-	},
-	"scripts": {
-		"post-install-cmd": "system/bin/automator generateSymlinks",
-		"post-update-cmd": "system/bin/automator generateSymlinks"
-	}
+        "simplepie/simplepie": "~1.3",
+        "swiftmailer/swiftmailer": "~5.2",
+        "michelf/php-markdown": "~1.4",
+        "leafo/scssphp": "dev-master",
+        "leafo/scssphp-compass": "dev-master",
+        "leafo/lessphp": "~0.4",
+        "symfony/console": "~2.5",
+        "symfony/class-loader": "~2.5",
+		"symfony/finder": "~2.5",
+        "symfony/framework-bundle": "~2.5",
+        "symfony/yaml": "~2.5",
+        "sensio/distribution-bundle": "~3.0"
+    },
+    "replace": {
+        "contao/core": "self.version"
+    },
+    "config": {
+        "preferred-install": "dist",
+        "component-dir": "../assets/components"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "system/bin/automator generateSymlinks",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache"
+        ],
+        "post-update-cmd": [
+            "system/bin/automator generateSymlinks",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache"
+        ]
+    }
 }

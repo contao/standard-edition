@@ -12,6 +12,7 @@
 
 namespace Contao;
 
+use AppKernel;
 use Swift;
 use UnresolvableDependenciesException;
 
@@ -61,6 +62,12 @@ Swift::init(function()
 	$preferences->setTempDir(TL_ROOT . '/system/tmp')->setCacheType('disk');
 	$preferences->setCharset(Config::get('characterSet'));
 });
+
+// Boot the Symfony kernel
+require_once TL_ROOT . '/app/bootstrap.php.cache';
+require_once TL_ROOT . '/app/AppKernel.php';
+$kernel = new AppKernel('prod', false);
+$kernel->boot();
 
 // Alias the class and template loader (backwards compatibility)
 class_alias('Contao\\ClassLoader', 'ClassLoader');

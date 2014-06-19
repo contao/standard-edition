@@ -10,7 +10,7 @@
  * @license http://www.gnu.org/licenses/lgpl-3.0.html LGPL
  */
 
-namespace Contao;
+use Symfony\Component\HttpFoundation\Request;
 
 // Set the script name
 define('TL_SCRIPT', 'index.php');
@@ -19,6 +19,8 @@ define('TL_SCRIPT', 'index.php');
 define('TL_MODE', 'FE');
 require dirname(__DIR__) . '/system/initialize.php';
 
-// Run the controller
-$controller = new FrontendIndex;
-$controller->run();
+// Handle the request
+$request = Request::createFromGlobals();
+$response = $kernel->handle($request);
+$response->send();
+$kernel->terminate($request, $response);

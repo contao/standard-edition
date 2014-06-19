@@ -4,6 +4,9 @@ Contao Open Source CMS changelog
 Version 4.0.0-alpha3 (2014-XX-XX)
 ---------------------------------
 
+### New
+Add the Symfony resources.
+
 ### Fixed
 Update the vendor libraries (fixes various issues).
 

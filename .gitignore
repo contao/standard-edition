@@ -10,6 +10,12 @@ Thumbs.db
 .idea/
 nbproject/
 
+# Symfony
+/app/bootstrap.php.cache
+/app/config/parameters.yml
+/app/cache/*
+/app/logs/*
+
 # Generated assets
 /assets/css/*
 /assets/images/*
