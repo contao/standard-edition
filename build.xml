@@ -34,16 +34,6 @@
   <target name="purge">
     <delete dir="contao-${version}/.tx" />
     <delete dir="contao-${version}/.git" />
-    <delete dir="contao-${version}/vendor/contao/module-calendar" />
-    <delete dir="contao-${version}/vendor/contao/module-comments" />
-    <delete dir="contao-${version}/vendor/contao/module-core" />
-    <delete dir="contao-${version}/vendor/contao/module-devtools" />
-    <delete dir="contao-${version}/vendor/contao/module-faq" />
-    <delete dir="contao-${version}/vendor/contao/module-listing" />
-    <delete dir="contao-${version}/vendor/contao/module-news" />
-    <delete dir="contao-${version}/vendor/contao/module-newsletter" />
-    <delete dir="contao-${version}/vendor/contao/module-repository" />
-    <delete dir="contao-${version}/vendor/contao-community-alliance/composer-plugin/tests" />
     <delete dir="contao-${version}/vendor/leafo/lessphp/site" />
     <delete dir="contao-${version}/vendor/leafo/scssphp/tests" />
     <delete dir="contao-${version}/vendor/leafo/scssphp/site" />
