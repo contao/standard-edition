@@ -11,9 +11,8 @@ Thumbs.db
 nbproject/
 
 # Symfony
-/app/bootstrap.php.cache
-/app/config/parameters.yml
 /app/cache/*
+/app/config/parameters.yml
 /app/logs/*
 
 # Generated assets

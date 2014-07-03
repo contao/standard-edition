@@ -50,7 +50,7 @@ require TL_ROOT . '/system/helper/exception.php';
 @ini_set('error_log', TL_ROOT . '/system/logs/error.log');
 
 // Include the Composer autoloader
-require_once TL_ROOT . '/vendor/autoload.php';
+require_once TL_ROOT . '/app/autoload.php';
 
 // Preload the configuration (see #5872)
 Config::preload();

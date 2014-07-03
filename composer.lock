@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1a6e8c56316f9d83cc6f1efe6aa0fa42",
+    "hash": "6125c3019ac98de7f1b6c83cd27e1694",
     "packages": [
         {
             "name": "contao-community-alliance/composer-plugin",
@@ -63,12 +63,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/contao-bundle.git",
-                "reference": "8b8943ac831f16201c1d688ccf76a8a81b47f251"
+                "reference": "1dfae162dddd21cbc82279bb610aca1e6812bd10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/contao-bundle/zipball/8b8943ac831f16201c1d688ccf76a8a81b47f251",
-                "reference": "8b8943ac831f16201c1d688ccf76a8a81b47f251",
+                "url": "https://api.github.com/repos/contao/contao-bundle/zipball/1dfae162dddd21cbc82279bb610aca1e6812bd10",
+                "reference": "1dfae162dddd21cbc82279bb610aca1e6812bd10",
                 "shasum": ""
             },
             "type": "library",
@@ -88,7 +88,7 @@
                 }
             ],
             "description": "Contao 4 Symfony bundle",
-            "time": "2014-06-19 13:37:57"
+            "time": "2014-07-02 19:09:10"
         },
         {
             "name": "contao/contao-library",
@@ -96,12 +96,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/contao-library.git",
-                "reference": "a9b91cc554afe0cf88e1b9d5f7d13a3d6c8d98d3"
+                "reference": "4fa42b2a526cc3eb20b5002ad10553127fcfbe5c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/contao-library/zipball/a9b91cc554afe0cf88e1b9d5f7d13a3d6c8d98d3",
-                "reference": "a9b91cc554afe0cf88e1b9d5f7d13a3d6c8d98d3",
+                "url": "https://api.github.com/repos/contao/contao-library/zipball/4fa42b2a526cc3eb20b5002ad10553127fcfbe5c",
+                "reference": "4fa42b2a526cc3eb20b5002ad10553127fcfbe5c",
                 "shasum": ""
             },
             "type": "library",
@@ -121,7 +121,7 @@
                 }
             ],
             "description": "Contao 4 library",
-            "time": "2014-06-18 08:10:49"
+            "time": "2014-06-22 19:10:20"
         },
         {
             "name": "contao/idna",
@@ -256,12 +256,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-core.git",
-                "reference": "e1b54fbddd990fab110b8df4cd207315ac76ef5d"
+                "reference": "13321ea1c569cc1bacd3fe2822a85aa61db5a3c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-core/zipball/e1b54fbddd990fab110b8df4cd207315ac76ef5d",
-                "reference": "e1b54fbddd990fab110b8df4cd207315ac76ef5d",
+                "url": "https://api.github.com/repos/contao/module-core/zipball/13321ea1c569cc1bacd3fe2822a85aa61db5a3c8",
+                "reference": "13321ea1c569cc1bacd3fe2822a85aa61db5a3c8",
                 "shasum": ""
             },
             "require": {
@@ -303,7 +303,7 @@
                 }
             ],
             "description": "Contao 4 core module",
-            "time": "2014-06-18 09:01:46"
+            "time": "2014-07-02 19:09:38"
         },
         {
             "name": "contao/module-devtools",
