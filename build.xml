@@ -1,6 +1,8 @@
 <?xml version="1.0"?>
 <project name="Contao Open Source CMS" default="build" basedir=".">
-  <exec executable="system/bin/version" outputProperty="version" />
+  <exec executable="app/console" outputProperty="version">
+    <arg value="contao:version" />
+  </exec>
 
   <target name="build" depends="clone, update, purge, archive, cleanup">
     <echo message="Contao ${version} build complete" />

@@ -63,12 +63,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/contao-bundle.git",
-                "reference": "1dfae162dddd21cbc82279bb610aca1e6812bd10"
+                "reference": "2651af5263108d5bc76650d62253b0cc5877fb3a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/contao-bundle/zipball/1dfae162dddd21cbc82279bb610aca1e6812bd10",
-                "reference": "1dfae162dddd21cbc82279bb610aca1e6812bd10",
+                "url": "https://api.github.com/repos/contao/contao-bundle/zipball/2651af5263108d5bc76650d62253b0cc5877fb3a",
+                "reference": "2651af5263108d5bc76650d62253b0cc5877fb3a",
                 "shasum": ""
             },
             "type": "library",
