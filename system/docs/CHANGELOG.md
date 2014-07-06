@@ -4,6 +4,9 @@ Contao Open Source CMS changelog
 Version 4.0.0-alpha3 (2014-XX-XX)
 ---------------------------------
 
+### Fixed
+Correctly symlink the upload folder.
+
 ### New
 Add the Symfony resources.
 
