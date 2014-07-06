@@ -88,7 +88,7 @@
                 }
             ],
             "description": "Contao 4 Symfony bundle",
-            "time": "2014-07-02 19:09:10"
+            "time": "2014-07-04 18:09:06"
         },
         {
             "name": "contao/contao-library",
@@ -96,12 +96,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/contao-library.git",
-                "reference": "9e7372a81c01739a59b42f0e3cbb27791281dc21"
+                "reference": "ca3f742e7224b53e86002c0cc80aae8463bd2af9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/contao-library/zipball/9e7372a81c01739a59b42f0e3cbb27791281dc21",
-                "reference": "9e7372a81c01739a59b42f0e3cbb27791281dc21",
+                "url": "https://api.github.com/repos/contao/contao-library/zipball/ca3f742e7224b53e86002c0cc80aae8463bd2af9",
+                "reference": "ca3f742e7224b53e86002c0cc80aae8463bd2af9",
                 "shasum": ""
             },
             "type": "library",
@@ -121,7 +121,7 @@
                 }
             ],
             "description": "Contao 4 library",
-            "time": "2014-06-22 19:10:20"
+            "time": "2014-07-06 18:31:25"
         },
         {
             "name": "contao/idna",
@@ -163,12 +163,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-calendar.git",
-                "reference": "d954119ac2c25ce9cc88b3426c65833f48697bf7"
+                "reference": "6414cdb268e250ac8c44d8ba5f7368fffe5cd808"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-calendar/zipball/d954119ac2c25ce9cc88b3426c65833f48697bf7",
-                "reference": "d954119ac2c25ce9cc88b3426c65833f48697bf7",
+                "url": "https://api.github.com/repos/contao/module-calendar/zipball/6414cdb268e250ac8c44d8ba5f7368fffe5cd808",
+                "reference": "6414cdb268e250ac8c44d8ba5f7368fffe5cd808",
                 "shasum": ""
             },
             "require": {
@@ -209,12 +209,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-comments.git",
-                "reference": "665c3f7705ba53b89faf5dc8c5231e9822b6247b"
+                "reference": "38235949968470b2c3ff4878666ad782f1127f1e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-comments/zipball/665c3f7705ba53b89faf5dc8c5231e9822b6247b",
-                "reference": "665c3f7705ba53b89faf5dc8c5231e9822b6247b",
+                "url": "https://api.github.com/repos/contao/module-comments/zipball/38235949968470b2c3ff4878666ad782f1127f1e",
+                "reference": "38235949968470b2c3ff4878666ad782f1127f1e",
                 "shasum": ""
             },
             "require": {
@@ -303,7 +303,7 @@
                 }
             ],
             "description": "Contao 4 core module",
-            "time": "2014-07-02 19:09:38"
+            "time": "2014-07-06 18:13:33"
         },
         {
             "name": "contao/module-devtools",
@@ -311,12 +311,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-devtools.git",
-                "reference": "8b6b6e965d5b477c6cb666abce53e552de714d6b"
+                "reference": "8190b5debdb51fc1ed45d81caea7b7be5a20eefb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-devtools/zipball/8b6b6e965d5b477c6cb666abce53e552de714d6b",
-                "reference": "8b6b6e965d5b477c6cb666abce53e552de714d6b",
+                "url": "https://api.github.com/repos/contao/module-devtools/zipball/8190b5debdb51fc1ed45d81caea7b7be5a20eefb",
+                "reference": "8190b5debdb51fc1ed45d81caea7b7be5a20eefb",
                 "shasum": ""
             },
             "require": {
@@ -355,12 +355,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-faq.git",
-                "reference": "e0a95a0ec3e20baac1031e6d8354758c917218b7"
+                "reference": "8d760cb2941799c8b8f718ec7aff4745c0a91d99"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-faq/zipball/e0a95a0ec3e20baac1031e6d8354758c917218b7",
-                "reference": "e0a95a0ec3e20baac1031e6d8354758c917218b7",
+                "url": "https://api.github.com/repos/contao/module-faq/zipball/8d760cb2941799c8b8f718ec7aff4745c0a91d99",
+                "reference": "8d760cb2941799c8b8f718ec7aff4745c0a91d99",
                 "shasum": ""
             },
             "require": {
@@ -444,12 +444,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-news.git",
-                "reference": "3d76d94a9b9368692a84c1615c271506a30f63f0"
+                "reference": "cf5b159874221a438b84461f1865158083dc71fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-news/zipball/3d76d94a9b9368692a84c1615c271506a30f63f0",
-                "reference": "3d76d94a9b9368692a84c1615c271506a30f63f0",
+                "url": "https://api.github.com/repos/contao/module-news/zipball/cf5b159874221a438b84461f1865158083dc71fa",
+                "reference": "cf5b159874221a438b84461f1865158083dc71fa",
                 "shasum": ""
             },
             "require": {
@@ -490,12 +490,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-newsletter.git",
-                "reference": "8f692f7d0f784a864fa544dbac98139cc549cf29"
+                "reference": "c5ae030e68dd8db6d17b4096b91f265df1580060"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-newsletter/zipball/8f692f7d0f784a864fa544dbac98139cc549cf29",
-                "reference": "8f692f7d0f784a864fa544dbac98139cc549cf29",
+                "url": "https://api.github.com/repos/contao/module-newsletter/zipball/c5ae030e68dd8db6d17b4096b91f265df1580060",
+                "reference": "c5ae030e68dd8db6d17b4096b91f265df1580060",
                 "shasum": ""
             },
             "require": {
@@ -536,12 +536,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-repository.git",
-                "reference": "c586c2b8f98bdac172b68455dc5e4b32c5737b11"
+                "reference": "516af54dfa2a33090949d2d5f87b98750e2f697c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-repository/zipball/c586c2b8f98bdac172b68455dc5e4b32c5737b11",
-                "reference": "c586c2b8f98bdac172b68455dc5e4b32c5737b11",
+                "url": "https://api.github.com/repos/contao/module-repository/zipball/516af54dfa2a33090949d2d5f87b98750e2f697c",
+                "reference": "516af54dfa2a33090949d2d5f87b98750e2f697c",
                 "shasum": ""
             },
             "require": {
@@ -661,16 +661,16 @@
         },
         {
             "name": "doctrine/annotations",
-            "version": "v1.1.2",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "40db0c96985aab2822edbc4848b3bd2429e02670"
+                "reference": "d9b1a37e9351ddde1f19f09a02e3d6ee92e82efd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/40db0c96985aab2822edbc4848b3bd2429e02670",
-                "reference": "40db0c96985aab2822edbc4848b3bd2429e02670",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/d9b1a37e9351ddde1f19f09a02e3d6ee92e82efd",
+                "reference": "d9b1a37e9351ddde1f19f09a02e3d6ee92e82efd",
                 "shasum": ""
             },
             "require": {
@@ -678,12 +678,13 @@
                 "php": ">=5.3.2"
             },
             "require-dev": {
-                "doctrine/cache": "1.*"
+                "doctrine/cache": "1.*",
+                "phpunit/phpunit": "4.*"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.3.x-dev"
                 }
             },
             "autoload": {
@@ -697,7 +698,7 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan H. Wage",
+                    "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
                     "homepage": "http://www.jwage.com/",
                     "role": "Creator"
@@ -729,7 +730,7 @@
                 "docblock",
                 "parser"
             ],
-            "time": "2013-06-16 21:33:03"
+            "time": "2014-07-06 15:52:21"
         },
         {
             "name": "doctrine/lexer",
@@ -830,12 +831,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/leafo/scssphp.git",
-                "reference": "8c4374574fbe39615754f6eed7ebb93882282d62"
+                "reference": "2e22c4909fe67731f8ac6279e29ffb5d5233dc75"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/leafo/scssphp/zipball/8c4374574fbe39615754f6eed7ebb93882282d62",
-                "reference": "8c4374574fbe39615754f6eed7ebb93882282d62",
+                "url": "https://api.github.com/repos/leafo/scssphp/zipball/2e22c4909fe67731f8ac6279e29ffb5d5233dc75",
+                "reference": "2e22c4909fe67731f8ac6279e29ffb5d5233dc75",
                 "shasum": ""
             },
             "require": {
@@ -868,7 +869,7 @@
             ],
             "description": "scssphp is a compiler for SCSS written in PHP.",
             "homepage": "http://leafo.net/scssphp/",
-            "time": "2014-05-09 00:07:45"
+            "time": "2014-07-06 12:36:10"
         },
         {
             "name": "leafo/scssphp-compass",

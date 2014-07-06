@@ -4,6 +4,9 @@ Contao Open Source CMS changelog
 Version 4.0.0-alpha3 (2014-XX-XX)
 ---------------------------------
 
+### Changed
+Make the public extension folders configurable (see #8).
+
 ### Fixed
 Correctly symlink the upload folder.
 
