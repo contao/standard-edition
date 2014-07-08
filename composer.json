@@ -33,7 +33,7 @@
         "leafo/lessphp": "~0.4",
         "symfony/console": "~2.5",
         "symfony/class-loader": "~2.5",
-		"symfony/finder": "~2.5",
+        "symfony/finder": "~2.5",
         "symfony/framework-bundle": "~2.5",
         "symfony/yaml": "~2.5",
         "sensio/distribution-bundle": "~3.0"
