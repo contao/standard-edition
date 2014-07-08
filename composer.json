@@ -47,12 +47,12 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "system/bin/automator generateSymlinks",
+            "Contao\\ContaoBundle\\Composer\\ScriptHandler::setupParameters",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache"
         ],
         "post-update-cmd": [
-            "system/bin/automator generateSymlinks",
+            "Contao\\ContaoBundle\\Composer\\ScriptHandler::setupParameters",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache"
         ]

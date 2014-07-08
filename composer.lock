@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5d8bdd4f28d7e9933efd412cbdb2c165",
+    "hash": "930a6c6288bc50522086b6c2cd62043d",
     "packages": [
         {
             "name": "contao-community-alliance/composer-plugin",
@@ -63,12 +63,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/contao-bundle.git",
-                "reference": "2651af5263108d5bc76650d62253b0cc5877fb3a"
+                "reference": "be80d2780de39a0c9d2882682d0a4ae29d8a7bd0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/contao-bundle/zipball/2651af5263108d5bc76650d62253b0cc5877fb3a",
-                "reference": "2651af5263108d5bc76650d62253b0cc5877fb3a",
+                "url": "https://api.github.com/repos/contao/contao-bundle/zipball/be80d2780de39a0c9d2882682d0a4ae29d8a7bd0",
+                "reference": "be80d2780de39a0c9d2882682d0a4ae29d8a7bd0",
                 "shasum": ""
             },
             "type": "library",
