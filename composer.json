@@ -47,12 +47,10 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "Contao\\ContaoBundle\\Composer\\ScriptHandler::setupParameters",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache"
         ],
         "post-update-cmd": [
-            "Contao\\ContaoBundle\\Composer\\ScriptHandler::setupParameters",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache"
         ]
