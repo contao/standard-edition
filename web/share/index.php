@@ -17,7 +17,7 @@ define('TL_SCRIPT', 'share/index.php');
 
 // Initialize the system
 define('TL_MODE', 'FE');
-require dirname(dirname(__DIR__)) . '/system/initialize.php';
+require __DIR__ . '/../../system/initialize.php';
 
 // Run the controller
 $controller = new FrontendShare;

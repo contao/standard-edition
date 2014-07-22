@@ -63,12 +63,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/contao-bundle.git",
-                "reference": "dd5f52651fd4bf59f0b11378c09f2a03d1bd123c"
+                "reference": "b877c561e1712c8456ebecb39f5a0971fc1a6a46"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/contao-bundle/zipball/dd5f52651fd4bf59f0b11378c09f2a03d1bd123c",
-                "reference": "dd5f52651fd4bf59f0b11378c09f2a03d1bd123c",
+                "url": "https://api.github.com/repos/contao/contao-bundle/zipball/b877c561e1712c8456ebecb39f5a0971fc1a6a46",
+                "reference": "b877c561e1712c8456ebecb39f5a0971fc1a6a46",
                 "shasum": ""
             },
             "type": "library",
@@ -88,7 +88,7 @@
                 }
             ],
             "description": "Contao 4 Symfony bundle",
-            "time": "2014-07-18 15:06:51"
+            "time": "2014-07-20 18:51:50"
         },
         {
             "name": "contao/contao-library",
@@ -303,7 +303,7 @@
                 }
             ],
             "description": "Contao 4 core module",
-            "time": "2014-07-18 15:08:49"
+            "time": "2014-07-18 18:25:36"
         },
         {
             "name": "contao/module-devtools",

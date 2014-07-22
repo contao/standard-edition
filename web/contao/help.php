@@ -17,7 +17,7 @@ define('TL_SCRIPT', 'contao/help.php');
 
 // Initialize the system
 define('TL_MODE', 'BE');
-require dirname(dirname(__DIR__)) . '/system/initialize.php';
+require __DIR__ . '/../../system/initialize.php';
 
 // Run the controller
 $controller = new BackendHelp;
