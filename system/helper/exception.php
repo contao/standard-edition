@@ -17,7 +17,7 @@
  * @author     Leo Feyer <https://contao.org>
  * @package    Core
  */
-class UnusedArgumentsException extends Exception {}
+class UnusedArgumentsException extends RuntimeException {}
 
 
 /**
@@ -26,4 +26,4 @@ class UnusedArgumentsException extends Exception {}
  * @author     Leo Feyer <https://contao.org>
  * @package    Core
  */
-class UnresolvableDependenciesException extends Exception {}
+class UnresolvableDependenciesException extends RuntimeException {}
