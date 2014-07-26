@@ -48,6 +48,10 @@ nbproject/
 /web/system/modules/*
 /web/system/themes
 
+# Composer package manager
+/composer
+/system/modules/!composer
+
 # Generated feeds
 /web/share/*.xml
 
