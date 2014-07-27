@@ -10,6 +10,8 @@
  * @license http://www.gnu.org/licenses/lgpl-3.0.html LGPL
  */
 
+namespace Contao;
+
 
 /**
  * This is the tinyMCE (rich text editor) configuration file. Please visit

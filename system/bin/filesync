@@ -11,6 +11,8 @@
  * @license http://www.gnu.org/licenses/lgpl-3.0.html LGPL
  */
 
+namespace Contao;
+
 $file = fopen(__FILE__, 'r');
 
 // Lock the file
