@@ -4,6 +4,20 @@ Contao Open Source CMS API changes
 Version 3.* to 4.0
 ------------------
 
+### "postFlushData" hook
+
+The "postFlushData" hook now passes a `PostResponseEvent` object instead of
+the response content and the template class:
+
+```php
+// Contao 4
+public function myPostFlushData(PostResponseEvent $event) {}
+
+// Contao 3
+public function myPostFlushData($strResponse, Template $objTemplate) {}
+```
+
+
 ### `Message::generate()`
 
 The `Message` class now supports scopes, which can optionally be passed as
