@@ -55,7 +55,7 @@ if (USE_MBSTRING)
  *
  * Unicode version of chr() that handles UTF-8 characters. It is basically
  * used as callback function for utf8_decode_entities().
- * @param integer
+ * @param int
  * @return string
  */
 function utf8_chr($dec)
@@ -82,7 +82,7 @@ function utf8_chr($dec)
  * Unicode version of ord() that handles UTF-8 characters. The function has
  * been published by R. Rajesh Jeba Anbiah on php.net.
  * @param string
- * @return integer
+ * @return int
  */
 function utf8_ord($str)
 {
@@ -253,7 +253,7 @@ function utf8_romanize($str)
  * determine the string length. Otherwise decode the string (will convert
  * non ISO-8859-1 characters to '?') and use strlen().
  * @param string
- * @return integer
+ * @return int
  */
 function utf8_strlen($str)
 {
@@ -271,8 +271,8 @@ function utf8_strlen($str)
  * to detect the numeric position of the first occurrence.
  * @param string
  * @param string
- * @param integer
- * @return integer
+ * @param int
+ * @return int
  */
 function utf8_strpos($haystack, $needle, $offset=0)
 {
@@ -425,8 +425,8 @@ function utf8_strtoupper($str)
  * Thanks to Andreas Gohr <andi@splitbrain.org> for this wonderful algorithm
  * which is the fastes workaround I could find on the internet.
  * @param string
- * @param integer
- * @param integer
+ * @param int
+ * @param int
  * @return string
  */
 function utf8_substr($str, $start, $length=null)

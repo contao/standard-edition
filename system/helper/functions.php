@@ -16,10 +16,10 @@
  *
  * Handle errors like PHP does it natively but additionaly log them to the
  * application error log file.
- * @param integer
+ * @param int
  * @param string
  * @param string
- * @param integer
+ * @param int
  */
 function __error($intType, $strMessage, $strFile, $intLine)
 {
@@ -169,7 +169,7 @@ function log_message($strMessage, $strLog='error.log')
 /**
  * Scan a directory and return its files and folders as array
  * @param string
- * @param boolean
+ * @param bool
  * @return array
  */
 function scan($strFolder, $blnUncached=false)
@@ -215,7 +215,7 @@ function scan($strFolder, $blnUncached=false)
  * Convert special characters to HTML entities and make sure that
  * entities are never double converted.
  * @param string
- * @param boolean
+ * @param bool
  * @return string
  */
 function specialchars($strString, $blnStripInsertTags=false)
@@ -233,7 +233,7 @@ function specialchars($strString, $blnStripInsertTags=false)
 /**
  * Standardize a parameter (strip special characters and convert spaces)
  * @param string
- * @param boolean
+ * @param bool
  * @return string
  */
 function standardize($strString, $blnPreserveUppercase=false)
@@ -274,7 +274,7 @@ function strip_insert_tags($strString)
 /**
  * Return an unserialized array or the argument
  * @param mixed
- * @param boolean
+ * @param bool
  * @return mixed
  */
 function deserialize($varValue, $blnForceArray=false)
@@ -366,7 +366,7 @@ function trimsplit($strPattern, $strString)
 /**
  * Convert all ampersands into their HTML entity (default) or unencoded value
  * @param string
- * @param boolean
+ * @param bool
  * @return string
  */
 function ampersand($strString, $blnEncode=true)
@@ -378,7 +378,7 @@ function ampersand($strString, $blnEncode=true)
 /**
  * Replace line breaks with HTML5-style <br> tags
  * @param string
- * @param boolean
+ * @param bool
  * @return string
  */
 function nl2br_html5($str, $xhtml=false)
@@ -401,7 +401,7 @@ function nl2br_xhtml($str)
 /**
  * Replace line breaks with <br> tags preserving preformatted text
  * @param string
- * @param boolean
+ * @param bool
  * @return string
  */
 function nl2br_pre($str, $xhtml=false)
@@ -452,7 +452,7 @@ function dump()
  * Compare two file names using a case insensitive "natural order" algorithm
  * @param string
  * @param string
- * @return integer
+ * @return int
  */
 function basename_natcasecmp($a, $b)
 {
@@ -464,7 +464,7 @@ function basename_natcasecmp($a, $b)
  * Compare two file names using a case insensitive, reverse "natural order" algorithm
  * @param string
  * @param string
- * @return integer
+ * @return int
  */
 function basename_natcasercmp($a, $b)
 {
@@ -489,9 +489,9 @@ function natcaseksort($arrArray)
 
 /**
  * Compare two values based on their length (ascending)
- * @param integer
- * @param integer
- * @return integer
+ * @param int
+ * @param int
+ * @return int
  */
 function length_sort_asc($a, $b)
 {
@@ -501,9 +501,9 @@ function length_sort_asc($a, $b)
 
 /**
  * Compare two values based on their length (descending)
- * @param integer
- * @param integer
- * @return integer
+ * @param int
+ * @param int
+ * @return int
  */
 function length_sort_desc($a, $b)
 {
@@ -514,7 +514,7 @@ function length_sort_desc($a, $b)
 /**
  * Insert a parameter or array into an existing array at a particular index
  * @param array
- * @param integer
+ * @param int
  * @param mixed
  */
 function array_insert(&$arrCurrent, $intIndex, $arrNew)
@@ -539,7 +539,7 @@ function array_insert(&$arrCurrent, $intIndex, $arrNew)
 /**
  * Duplicate a particular element of an array
  * @param array
- * @param integer
+ * @param int
  * @return array
  */
 function array_duplicate($arrStack, $intIndex)
@@ -564,7 +564,7 @@ function array_duplicate($arrStack, $intIndex)
 /**
  * Move an array element one position up
  * @param array
- * @param integer
+ * @param int
  * @return array
  */
 function array_move_up($arrStack, $intIndex)
@@ -588,7 +588,7 @@ function array_move_up($arrStack, $intIndex)
 /**
  * Move an array element one position down
  * @param array
- * @param integer
+ * @param int
  * @return array
  */
 function array_move_down($arrStack, $intIndex)
@@ -612,7 +612,7 @@ function array_move_down($arrStack, $intIndex)
 /**
  * Delete a particular element of an array
  * @param array
- * @param integer
+ * @param int
  * @return array
  */
 function array_delete($arrStack, $intIndex)
@@ -625,7 +625,7 @@ function array_delete($arrStack, $intIndex)
 /**
  * Return true if an array is associative
  * @param array
- * @return boolean
+ * @return bool
  */
 function array_is_assoc($arrArray)
 {
@@ -673,8 +673,8 @@ if (!USE_MBSTRING)
 	 * Find the last occurrence of a character in a string (case-insensitive)
 	 * @param string
 	 * @param string
-	 * @param integer
-	 * @return integer
+	 * @param int
+	 * @return int
 	 */
 	function mb_stripos($haystack, $needle, $offset=null)
 	{
@@ -688,8 +688,8 @@ if (!USE_MBSTRING)
 	 * Find the first occurrence of a character in a string (case-insensitive)
 	 * @param string
 	 * @param string
-	 * @param integer
-	 * @return integer
+	 * @param int
+	 * @return int
 	 */
 	function mb_stristr($haystack, $needle)
 	{
@@ -699,7 +699,7 @@ if (!USE_MBSTRING)
 	/**
 	 * Determine the number of characters of a string
 	 * @param string
-	 * @return integer
+	 * @return int
 	 */
 	function mb_strlen($str)
 	{
@@ -710,8 +710,8 @@ if (!USE_MBSTRING)
 	 * Find the first occurrence of a character in a string
 	 * @param string
 	 * @param string
-	 * @param integer
-	 * @return integer
+	 * @param int
+	 * @return int
 	 */
 	function mb_strpos($haystack, $needle, $offset=0)
 	{
@@ -777,8 +777,8 @@ if (!USE_MBSTRING)
 	/**
 	 * Return a substring of a string
 	 * @param string
-	 * @param integer
-	 * @param integer
+	 * @param int
+	 * @param int
 	 * @return string
 	 */
 	function mb_substr($str, $start, $length=null)
@@ -793,8 +793,8 @@ if (!USE_MBSTRING)
 	 * Count the number of substring occurrences
 	 * @param string
 	 * @param string
-	 * @param integer
-	 * @return integer
+	 * @param int
+	 * @return int
 	 */
 	function mb_substr_count($haystack, $needle, $offset=null)
 	{
