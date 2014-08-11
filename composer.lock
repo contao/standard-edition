@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "856bcf1c3538d6c9f69245b054e80b62",
+    "hash": "2b5560115e9412374b8af69e28f1d395",
     "packages": [
         {
             "name": "contao-community-alliance/composer-plugin",
@@ -99,12 +99,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/contao-library.git",
-                "reference": "d600649f6b539044ad9906571dd9cb9d06f234c3"
+                "reference": "0b246f5194c062db51a65c82292c0222114bc41a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/contao-library/zipball/d600649f6b539044ad9906571dd9cb9d06f234c3",
-                "reference": "d600649f6b539044ad9906571dd9cb9d06f234c3",
+                "url": "https://api.github.com/repos/contao/contao-library/zipball/0b246f5194c062db51a65c82292c0222114bc41a",
+                "reference": "0b246f5194c062db51a65c82292c0222114bc41a",
                 "shasum": ""
             },
             "type": "library",
@@ -125,40 +125,6 @@
             ],
             "description": "Contao 4 library",
             "time": "2014-08-01 19:05:54"
-        },
-        {
-            "name": "contao/idna",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/contao/idna.git",
-                "reference": "176e7549aeac534f3be8dfbf8a543fd9c54b431c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/contao/idna/zipball/176e7549aeac534f3be8dfbf8a543fd9c54b431c",
-                "reference": "176e7549aeac534f3be8dfbf8a543fd9c54b431c",
-                "shasum": ""
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "idna_convert.class.php",
-                    "uctc.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "LGPL-2.1+"
-            ],
-            "authors": [
-                {
-                    "name": "Leo Feyer",
-                    "homepage": "https://github.com/leofeyer"
-                }
-            ],
-            "description": "A library for encoding and decoding internationalized domain names.",
-            "time": "2014-05-17 19:04:55"
         },
         {
             "name": "contao/module-calendar",
@@ -879,6 +845,52 @@
             "description": "Compass for scssphp",
             "homepage": "http://leafo.net/scssphp/",
             "time": "2012-08-02 02:04:32"
+        },
+        {
+            "name": "mabrahamde/idna-converter",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mabrahamde/php-idna-converter.git",
+                "reference": "8bc7b0516564e40ec137f3b6c7b5f1b69a4fce64"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mabrahamde/php-idna-converter/zipball/8bc7b0516564e40ec137f3b6c7b5f1b69a4fce64",
+                "reference": "8bc7b0516564e40ec137f3b6c7b5f1b69a4fce64",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/phlylabs/idna_convert.class.php",
+                    "src/phlylabs/uctc.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL"
+            ],
+            "authors": [
+                {
+                    "name": "Martin Abraham",
+                    "email": "dev@mabraham.de",
+                    "homepage": "http://mabraham.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Converts domain names between UTF-8 and ASCII (punycode) notation. This is a fork of phlyLabs' pure PHP IDNA Converter",
+            "keywords": [
+                "domain",
+                "encode",
+                "idn",
+                "idna",
+                "lib"
+            ],
+            "time": "2013-12-05 18:00:20"
         },
         {
             "name": "michelf/php-markdown",
@@ -2657,7 +2669,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "contao/idna": 20,
         "contao/php-diff": 20,
         "contao/contao-bundle": 20,
         "contao/contao-library": 20,
@@ -2671,7 +2682,8 @@
         "contao/module-newsletter": 20,
         "contao/module-repository": 20,
         "leafo/scssphp": 20,
-        "leafo/scssphp-compass": 20
+        "leafo/scssphp-compass": 20,
+        "mabrahamde/idna-converter": 20
     },
     "prefer-stable": false,
     "platform": {
