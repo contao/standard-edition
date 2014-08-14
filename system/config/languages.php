@@ -10,10 +10,6 @@
  * @license http://www.gnu.org/licenses/lgpl-3.0.html LGPL
  */
 
-
-/**
- * Languages (thanks to Leo Unglaub)
- */
 $languages =
 [
 	'aa'    => 'Afar',
@@ -275,10 +271,6 @@ $languages =
 	'zu_ZA' => 'Zulu (South Africa)'
 ];
 
-
-/**
- * Native language names
- */
 $langsNative =
 [
 	'ar'    => 'العربية',

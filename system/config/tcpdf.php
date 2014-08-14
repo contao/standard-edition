@@ -12,11 +12,6 @@
 
 namespace Contao;
 
-
-/**
- * This is the TCPDF (PDF generator) configuration file. See
- * system/vendor/tcpdf for more information.
- */
 define('K_TCPDF_EXTERNAL_CONFIG', true);
 define('K_PATH_MAIN', TL_ROOT . '/vendor/contao/tcpdf/');
 define('K_PATH_URL', Environment::get('base') . 'vendor/contao/tcpdf/');

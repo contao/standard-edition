@@ -12,7 +12,8 @@
 
 
 /**
- * Interface listable
+ * Interface for listable data containers
+ *
  * @copyright  Leo Feyer 2005-2014
  * @author     Leo Feyer <https://contao.org>
  * @package    Core
@@ -27,7 +28,8 @@ interface listable
 
 
 /**
- * Interface editable
+ * Interface for editable data containers
+ *
  * @copyright  Leo Feyer 2005-2014
  * @author     Leo Feyer <https://contao.org>
  * @package    Core
@@ -43,7 +45,8 @@ interface editable
 
 
 /**
- * Interface executable
+ * Interface for executable maintenance jobs
+ *
  * @copyright  Leo Feyer 2005-2014
  * @author     Leo Feyer <https://contao.org>
  * @package    Core
@@ -56,7 +59,8 @@ interface executable
 
 
 /**
- * Interface uploadable
+ * Interface for widgets that can upload files
+ *
  * @copyright  Leo Feyer 2005-2014
  * @author     Leo Feyer <https://contao.org>
  * @package    Core

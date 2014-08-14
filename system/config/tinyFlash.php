@@ -12,11 +12,6 @@
 
 namespace Contao;
 
-
-/**
- * This is the tinyMCE (rich text editor) configuration file for flash content.
- * Please visit http://tinymce.moxiecode.com for more information.
- */
 if ($GLOBALS['TL_CONFIG']['useRTE']):
 
 ?>

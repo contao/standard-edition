@@ -12,11 +12,6 @@
 
 namespace Contao;
 
-
-/**
- * This is the ACE (code editor) configuration file. Please visit
- * http://ace.ajax.org for more information.
- */
 if ($GLOBALS['TL_CONFIG']['useCE']):
 
 ?>

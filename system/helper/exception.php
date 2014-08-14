@@ -12,7 +12,8 @@
 
 
 /**
- * Class UnusedArgumentsException
+ * Exception if not all GET parameters have been used
+ *
  * @copyright  Leo Feyer 2005-2014
  * @author     Leo Feyer <https://contao.org>
  * @package    Core
@@ -21,7 +22,8 @@ class UnusedArgumentsException extends RuntimeException {}
 
 
 /**
- * Class UnresolvableDependenciesException
+ * Exception if the dependencies cannot be resolved
+ *
  * @copyright  Leo Feyer 2005-2014
  * @author     Leo Feyer <https://contao.org>
  * @package    Core

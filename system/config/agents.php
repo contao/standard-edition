@@ -10,10 +10,7 @@
  * @license http://www.gnu.org/licenses/lgpl-3.0.html LGPL
  */
 
-
-/**
- * Operating systems (check Windows CE before Windows and Android before Linux!)
- */
+// Operating systems (check Windows CE before Windows and Android before Linux!)
 $GLOBALS['TL_CONFIG']['os'] =
 [
 	'Macintosh'     => ['os'=>'mac',        'mobile'=>false],
@@ -34,10 +31,7 @@ $GLOBALS['TL_CONFIG']['os'] =
 	'NetBSD'        => ['os'=>'unix',       'mobile'=>false],
 ];
 
-
-/**
- * Browsers (check OmniWeb and Silk before Safari and Opera Mini/Mobi before Opera!)
- */
+// Browsers (check OmniWeb and Silk before Safari and Opera Mini/Mobi before Opera!)
 $GLOBALS['TL_CONFIG']['browser'] =
 [
 	'MSIE'       => ['browser'=>'ie',           'shorty'=>'ie', 'engine'=>'trident', 'version'=>'/^.*MSIE (\d+(\.\d+)*).*$/'],

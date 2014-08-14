@@ -10,10 +10,6 @@
  * @license http://www.gnu.org/licenses/lgpl-3.0.html LGPL
  */
 
-
-/**
- * Time zones
- */
 $timezones =
 [
 	'General' =>
@@ -28,7 +24,6 @@ $timezones =
 		'MST7MDT',
 		'PST8PDT'
 	],
-
 	'Africa' =>
 	[
 		'Africa/Abidjan',
@@ -83,7 +78,6 @@ $timezones =
 		'Africa/Tunis',
 		'Africa/Windhoek'
 	],
-
 	'America' =>
 	[
 		'America/Adak',
@@ -227,7 +221,6 @@ $timezones =
 		'America/Yakutat',
 		'America/Yellowknife'
 	],
-
 	'Antarctica' =>
 	[
 		'Antarctica/Casey',
@@ -241,7 +234,6 @@ $timezones =
 		'Antarctica/Syowa',
 		'Antarctica/Vostok'
 	],
-
 	'Asia' =>
 	[
 		'Asia/Aden',
@@ -328,7 +320,6 @@ $timezones =
 		'Asia/Yekaterinburg',
 		'Asia/Yerevan'
 	],
-
 	'Atlantic' =>
 	[
 		'Atlantic/Azores',
@@ -343,7 +334,6 @@ $timezones =
 		'Atlantic/St_Helena',
 		'Atlantic/Stanley'
 	],
-
 	'Australia' =>
 	[
 		'Australia/ACT',
@@ -369,7 +359,6 @@ $timezones =
 		'Australia/West',
 		'Australia/Yancowinna'
 	],
-
 	'Brazil' =>
 	[
 		'Brazil/Acre',
@@ -377,7 +366,6 @@ $timezones =
 		'Brazil/East',
 		'Brazil/West'
 	],
-
 	'Canada' =>
 	[
 		'Canada/Atlantic',
@@ -390,13 +378,11 @@ $timezones =
 		'Canada/Saskatchewan',
 		'Canada/Yukon'
 	],
-
 	'Chile' =>
 	[
 		'Chile/Continental',
 		'Chile/EasterIsland'
 	],
-
 	'Europe' =>
 	[
 		'Europe/Amsterdam',
@@ -453,7 +439,6 @@ $timezones =
 		'Europe/Zaporozhye',
 		'Europe/Zurich'
 	],
-
 	'Indian' =>
 	[
 		'Indian/Antananarivo',
@@ -468,14 +453,12 @@ $timezones =
 		'Indian/Mayotte',
 		'Indian/Reunion'
 	],
-
 	'Mexico' =>
 	[
 		'Mexico/BajaNorte',
 		'Mexico/BajaSur',
 		'Mexico/General'
 	],
-
 	'Pacific' =>
 	[
 		'Pacific/Apia',
@@ -519,7 +502,6 @@ $timezones =
 		'Pacific/Wallis',
 		'Pacific/Yap'
 	],
-
 	'United States' =>
 	[
 		'US/Alaska',

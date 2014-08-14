@@ -10,10 +10,6 @@
  * @license http://www.gnu.org/licenses/lgpl-3.0.html LGPL
  */
 
-
-/**
- * Countries
- */
 $countries =
 [
 	'ad' => 'Andorra',
