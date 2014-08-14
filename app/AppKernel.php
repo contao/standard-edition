@@ -18,11 +18,12 @@ class AppKernel extends Kernel
     public function registerBundles()
     {
         $bundles = array(
-            new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
             new Contao\ContaoBundle\ContaoBundle(),
+            new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
+            $bundles[] = new Contao\DevtoolsBundle\DevtoolsBundle();
             $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
         }
 

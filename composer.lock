@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2b5560115e9412374b8af69e28f1d395",
+    "hash": "7f311aaf4a29604716210d6cbe30b115",
     "packages": [
         {
             "name": "contao-community-alliance/composer-plugin",
@@ -63,12 +63,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/contao-bundle.git",
-                "reference": "619f1bf3cb8c45a67ec22500a00686a69709d099"
+                "reference": "c279c5cef9ee2e0e90c5408710ac5dc2efbd77e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/contao-bundle/zipball/619f1bf3cb8c45a67ec22500a00686a69709d099",
-                "reference": "619f1bf3cb8c45a67ec22500a00686a69709d099",
+                "url": "https://api.github.com/repos/contao/contao-bundle/zipball/c279c5cef9ee2e0e90c5408710ac5dc2efbd77e0",
+                "reference": "c279c5cef9ee2e0e90c5408710ac5dc2efbd77e0",
                 "shasum": ""
             },
             "require": {
@@ -91,7 +91,7 @@
                 }
             ],
             "description": "Contao 4 Symfony bundle",
-            "time": "2014-08-01 19:05:29"
+            "time": "2014-08-14 08:19:14"
         },
         {
             "name": "contao/contao-library",
@@ -124,7 +124,7 @@
                 }
             ],
             "description": "Contao 4 library",
-            "time": "2014-08-01 19:05:54"
+            "time": "2014-08-11 13:57:11"
         },
         {
             "name": "contao/module-calendar",
@@ -278,52 +278,6 @@
             ],
             "description": "Contao 4 core module",
             "time": "2014-07-28 15:46:56"
-        },
-        {
-            "name": "contao/module-devtools",
-            "version": "dev-develop",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/contao/module-devtools.git",
-                "reference": "d93ef70e7c379fa3288ed3b11b114c114b14f47b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-devtools/zipball/d93ef70e7c379fa3288ed3b11b114c114b14f47b",
-                "reference": "d93ef70e7c379fa3288ed3b11b114c114b14f47b",
-                "shasum": ""
-            },
-            "require": {
-                "contao-community-alliance/composer-plugin": "~2.0",
-                "contao/contao-library": "dev-develop",
-                "contao/module-core": "dev-develop",
-                "php": ">=5.4.0"
-            },
-            "type": "contao-module",
-            "extra": {
-                "contao": {
-                    "sources": {
-                        "src": "system/modules/devtools"
-                    }
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "src/modules/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "LGPL-3.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Leo Feyer",
-                    "homepage": "https://github.com/leofeyer"
-                }
-            ],
-            "description": "Contao 4 devtools module",
-            "time": "2014-07-27 18:32:00"
         },
         {
             "name": "contao/module-faq",
@@ -765,12 +719,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/leafo/scssphp.git",
-                "reference": "10cda4bd3ab76623d18bfbb9731992670df9b00b"
+                "reference": "8c08da585537e97efd528c7d278463d2b9396371"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/leafo/scssphp/zipball/10cda4bd3ab76623d18bfbb9731992670df9b00b",
-                "reference": "10cda4bd3ab76623d18bfbb9731992670df9b00b",
+                "url": "https://api.github.com/repos/leafo/scssphp/zipball/8c08da585537e97efd528c7d278463d2b9396371",
+                "reference": "8c08da585537e97efd528c7d278463d2b9396371",
                 "shasum": ""
             },
             "require": {
@@ -784,6 +738,9 @@
             ],
             "type": "library",
             "autoload": {
+                "classmap": [
+                    "classmap.php"
+                ],
                 "psr-4": {
                     "Leafo\\ScssPhp\\": "src/"
                 }
@@ -809,7 +766,7 @@
                 "scss",
                 "stylesheet"
             ],
-            "time": "2014-08-10 03:44:06"
+            "time": "2014-08-12 22:41:53"
         },
         {
             "name": "leafo/scssphp-compass",
@@ -2603,16 +2560,16 @@
         },
         {
             "name": "tecnick.com/tcpdf",
-            "version": "6.0.090",
+            "version": "6.0.091",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tecnickcom/TCPDF.git",
-                "reference": "e89673a4493e5cac837c59540e452f356529c1e3"
+                "reference": "5252fd2e968ef17854ec0915ab3c600272c00f8a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/e89673a4493e5cac837c59540e452f356529c1e3",
-                "reference": "e89673a4493e5cac837c59540e452f356529c1e3",
+                "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/5252fd2e968ef17854ec0915ab3c600272c00f8a",
+                "reference": "5252fd2e968ef17854ec0915ab3c600272c00f8a",
                 "shasum": ""
             },
             "require": {
@@ -2662,10 +2619,47 @@
                 "pdf417",
                 "qrcode"
             ],
-            "time": "2014-08-08 11:41:02"
+            "time": "2014-08-13 16:57:25"
         }
     ],
-    "packages-dev": [],
+    "packages-dev": [
+        {
+            "name": "contao/contao-devtools",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contao/contao-devtools.git",
+                "reference": "a293fcce368f746509b73c4ff18ec3fab6516a35"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contao/contao-devtools/zipball/a293fcce368f746509b73c4ff18ec3fab6516a35",
+                "reference": "a293fcce368f746509b73c4ff18ec3fab6516a35",
+                "shasum": ""
+            },
+            "require": {
+                "contao/contao-library": "dev-develop"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Contao\\DevtoolsBundle\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Leo Feyer",
+                    "homepage": "https://github.com/leofeyer"
+                }
+            ],
+            "description": "Contao 4 developers bundle",
+            "time": "2014-08-14 08:29:16"
+        }
+    ],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
@@ -2675,7 +2669,6 @@
         "contao/module-calendar": 20,
         "contao/module-comments": 20,
         "contao/module-core": 20,
-        "contao/module-devtools": 20,
         "contao/module-faq": 20,
         "contao/module-listing": 20,
         "contao/module-news": 20,
@@ -2683,7 +2676,8 @@
         "contao/module-repository": 20,
         "leafo/scssphp": 20,
         "leafo/scssphp-compass": 20,
-        "mabrahamde/idna-converter": 20
+        "mabrahamde/idna-converter": 20,
+        "contao/contao-devtools": 20
     },
     "prefer-stable": false,
     "platform": {

@@ -1,6 +1,13 @@
 Contao Open Source CMS changelog
 ================================
 
+Version 4.0.0-alpha4 (2014-XX-XX)
+---------------------------------
+
+### Changed
+The devtools are now available as Symfony commands (see `app/console`).
+
+
 Version 4.0.0-alpha3 (2014-XX-XX)
 ---------------------------------
 

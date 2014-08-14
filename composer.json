@@ -17,7 +17,6 @@
         "contao/module-calendar": "dev-develop",
         "contao/module-comments": "dev-develop",
         "contao/module-core": "dev-develop",
-        "contao/module-devtools": "dev-develop",
         "contao/module-faq": "dev-develop",
         "contao/module-listing": "dev-develop",
         "contao/module-news": "dev-develop",
@@ -37,6 +36,9 @@
         "symfony/framework-bundle": "~2.5",
         "symfony/yaml": "~2.5",
         "sensio/distribution-bundle": "~3.0"
+    },
+    "require-dev": {
+        "contao/contao-devtools": "dev-develop"
     },
     "replace": {
         "contao/core": "self.version"
