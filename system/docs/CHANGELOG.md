@@ -5,6 +5,9 @@ Version 4.0.0-alpha4 (2014-XX-XX)
 ---------------------------------
 
 ### Changed
+`Controller::replaceInsertTags()` is now public static.
+
+### Changed
 The devtools are now available as Symfony commands (see `app/console`).
 
 
