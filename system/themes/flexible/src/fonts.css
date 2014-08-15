@@ -13,7 +13,7 @@
 	font-family:"Architects Daughter";
 	font-style:normal;
 	font-weight:400;
-	src:local("Architects Daughter"), url("../../../assets/fonts/ArchitectsDaughter.woff") format("woff");
+	src:local("Architects Daughter"), url("fonts/ArchitectsDaughter.woff") format("woff");
 }
 
 /* Paste */
