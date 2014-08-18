@@ -4,6 +4,9 @@ Contao Open Source CMS changelog
 Version 4.0.0-alpha4 (2014-XX-XX)
 ---------------------------------
 
+### Removed
+Removed the CSS3PIE plugin.
+
 ### Changed
 `Controller::replaceInsertTags()` is now public static.
 
