@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "80e09205173dc1311c037afcb1596079",
+    "hash": "b6def6565e448d81c9611515714f4190",
     "packages": [
         {
             "name": "contao-community-alliance/composer-plugin",
@@ -58,17 +58,64 @@
             "time": "2014-07-22 21:27:29"
         },
         {
+            "name": "contao-components/swipe",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contao-components/swipe.git",
+                "reference": "54b60fa2202f85411967e6581fc30ae6ddd94c95"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contao-components/swipe/zipball/54b60fa2202f85411967e6581fc30ae6ddd94c95",
+                "reference": "54b60fa2202f85411967e6581fc30ae6ddd94c95",
+                "shasum": ""
+            },
+            "require": {
+                "robloach/component-installer": "~0.0"
+            },
+            "type": "component",
+            "extra": {
+                "component": {
+                    "scripts": [
+                        "js/swipe.min.js"
+                    ],
+                    "styles": [
+                        "css/swipe.min.css"
+                    ],
+                    "files": [
+                        "js/swipe.js",
+                        "js/swipe.min.js",
+                        "css/swipe.css",
+                        "css/swipe.min.css"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Leo Feyer",
+                    "homepage": "https://github.com/leofeyer"
+                }
+            ],
+            "description": "A JavaScript touch slider with dot menu",
+            "time": "2014-08-20 19:08:24"
+        },
+        {
             "name": "contao-components/tinymce4",
             "version": "4.0.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/tinymce4.git",
-                "reference": "a98a691395b7fa0b3150a2b5838bddf22390f84e"
+                "reference": "d2cc1115d924ba3a85fec3384957dd2d009cab11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/tinymce4/zipball/a98a691395b7fa0b3150a2b5838bddf22390f84e",
-                "reference": "a98a691395b7fa0b3150a2b5838bddf22390f84e",
+                "url": "https://api.github.com/repos/contao-components/tinymce4/zipball/d2cc1115d924ba3a85fec3384957dd2d009cab11",
+                "reference": "d2cc1115d924ba3a85fec3384957dd2d009cab11",
                 "shasum": ""
             },
             "require": {
@@ -78,10 +125,10 @@
             "extra": {
                 "component": {
                     "files": [
-                        "langs/**",
-                        "plugins/**",
-                        "skins/**",
-                        "themes/**",
+                        "langs/*",
+                        "plugins/*",
+                        "skins/*",
+                        "themes/*",
                         "tinymce.*"
                     ]
                 }
@@ -166,7 +213,7 @@
                 }
             ],
             "description": "Contao 4 library",
-            "time": "2014-08-20 17:12:56"
+            "time": "2014-08-20 18:59:25"
         },
         {
             "name": "contao/module-calendar",
@@ -915,53 +962,6 @@
             "description": "Compass for scssphp",
             "homepage": "http://leafo.net/scssphp/",
             "time": "2012-08-02 02:04:32"
-        },
-        {
-            "name": "leofeyer/swipe",
-            "version": "2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/leofeyer/swipe.git",
-                "reference": "3f6f5b964ec9c7180d93b789de64c7e76120ff20"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/leofeyer/swipe/zipball/3f6f5b964ec9c7180d93b789de64c7e76120ff20",
-                "reference": "3f6f5b964ec9c7180d93b789de64c7e76120ff20",
-                "shasum": ""
-            },
-            "require": {
-                "robloach/component-installer": "~0.0"
-            },
-            "type": "component",
-            "extra": {
-                "component": {
-                    "scripts": [
-                        "js/swipe.min.js"
-                    ],
-                    "styles": [
-                        "css/swipe.min.css"
-                    ],
-                    "files": [
-                        "js/swipe.js",
-                        "js/swipe.min.js",
-                        "css/swipe.css",
-                        "css/swipe.min.css"
-                    ]
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Leo Feyer",
-                    "homepage": "https://github.com/leofeyer"
-                }
-            ],
-            "description": "A JavaScript touch slider with dot menu",
-            "time": "2014-08-20 15:35:10"
         },
         {
             "name": "mabrahamde/idna-converter",
