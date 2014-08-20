@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6b1216b7dbade1aa50880bd3dd7f21ee",
+    "hash": "80e09205173dc1311c037afcb1596079",
     "packages": [
         {
             "name": "contao-community-alliance/composer-plugin",
@@ -58,6 +58,48 @@
             "time": "2014-07-22 21:27:29"
         },
         {
+            "name": "contao-components/tinymce4",
+            "version": "4.0.26",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contao-components/tinymce4.git",
+                "reference": "a98a691395b7fa0b3150a2b5838bddf22390f84e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contao-components/tinymce4/zipball/a98a691395b7fa0b3150a2b5838bddf22390f84e",
+                "reference": "a98a691395b7fa0b3150a2b5838bddf22390f84e",
+                "shasum": ""
+            },
+            "require": {
+                "robloach/component-installer": "~0.0"
+            },
+            "type": "component",
+            "extra": {
+                "component": {
+                    "files": [
+                        "langs/**",
+                        "plugins/**",
+                        "skins/**",
+                        "themes/**",
+                        "tinymce.*"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1+"
+            ],
+            "authors": [
+                {
+                    "name": "Leo Feyer",
+                    "homepage": "https://github.com/leofeyer"
+                }
+            ],
+            "description": "TinyMCE 4 integration for Contao Open Source CMS",
+            "time": "2014-08-20 18:40:04"
+        },
+        {
             "name": "contao/contao-bundle",
             "version": "dev-develop",
             "source": {
@@ -99,12 +141,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/contao-library.git",
-                "reference": "40834a511e050e6502b9e7ced9255c78e23e5987"
+                "reference": "a35a2dd4d14363d7a3a12f2d5a1da8656deefb47"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/contao-library/zipball/40834a511e050e6502b9e7ced9255c78e23e5987",
-                "reference": "40834a511e050e6502b9e7ced9255c78e23e5987",
+                "url": "https://api.github.com/repos/contao/contao-library/zipball/a35a2dd4d14363d7a3a12f2d5a1da8656deefb47",
+                "reference": "a35a2dd4d14363d7a3a12f2d5a1da8656deefb47",
                 "shasum": ""
             },
             "type": "library",
