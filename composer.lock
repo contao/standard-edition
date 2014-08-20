@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7f311aaf4a29604716210d6cbe30b115",
+    "hash": "6b1216b7dbade1aa50880bd3dd7f21ee",
     "packages": [
         {
             "name": "contao-community-alliance/composer-plugin",
@@ -91,7 +91,7 @@
                 }
             ],
             "description": "Contao 4 Symfony bundle",
-            "time": "2014-08-15 09:23:14"
+            "time": "2014-08-19 17:03:42"
         },
         {
             "name": "contao/contao-library",
@@ -99,12 +99,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/contao-library.git",
-                "reference": "cbe54ab5fb36a35e286994ce90a1d083085224ba"
+                "reference": "40834a511e050e6502b9e7ced9255c78e23e5987"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/contao-library/zipball/cbe54ab5fb36a35e286994ce90a1d083085224ba",
-                "reference": "cbe54ab5fb36a35e286994ce90a1d083085224ba",
+                "url": "https://api.github.com/repos/contao/contao-library/zipball/40834a511e050e6502b9e7ced9255c78e23e5987",
+                "reference": "40834a511e050e6502b9e7ced9255c78e23e5987",
                 "shasum": ""
             },
             "type": "library",
@@ -124,7 +124,7 @@
                 }
             ],
             "description": "Contao 4 library",
-            "time": "2014-08-11 13:57:11"
+            "time": "2014-08-20 17:12:56"
         },
         {
             "name": "contao/module-calendar",
@@ -172,7 +172,7 @@
                 }
             ],
             "description": "Contao 4 calendar module",
-            "time": "2014-07-28 15:49:01"
+            "time": "2014-08-18 14:59:52"
         },
         {
             "name": "contao/module-comments",
@@ -221,7 +221,7 @@
                 }
             ],
             "description": "Contao 4 comments module",
-            "time": "2014-07-28 15:47:31"
+            "time": "2014-08-18 14:59:37"
         },
         {
             "name": "contao/module-core",
@@ -229,12 +229,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-core.git",
-                "reference": "8a4da6501d658ec9adf287c3c2bbc32f10516118"
+                "reference": "dd66f4fd1ef1cf9b741f1848facee74e886d8727"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-core/zipball/8a4da6501d658ec9adf287c3c2bbc32f10516118",
-                "reference": "8a4da6501d658ec9adf287c3c2bbc32f10516118",
+                "url": "https://api.github.com/repos/contao/module-core/zipball/dd66f4fd1ef1cf9b741f1848facee74e886d8727",
+                "reference": "dd66f4fd1ef1cf9b741f1848facee74e886d8727",
                 "shasum": ""
             },
             "require": {
@@ -277,7 +277,7 @@
                 }
             ],
             "description": "Contao 4 core module",
-            "time": "2014-07-28 15:46:56"
+            "time": "2014-08-20 15:26:51"
         },
         {
             "name": "contao/module-faq",
@@ -324,7 +324,7 @@
                 }
             ],
             "description": "Contao 4 FAQ module",
-            "time": "2014-07-29 09:10:29"
+            "time": "2014-08-18 14:57:33"
         },
         {
             "name": "contao/module-listing",
@@ -418,7 +418,7 @@
                 }
             ],
             "description": "Contao 4 news module",
-            "time": "2014-07-28 15:42:40"
+            "time": "2014-08-18 14:57:18"
         },
         {
             "name": "contao/module-newsletter",
@@ -466,7 +466,7 @@
                 }
             ],
             "description": "Contao 4 newsletter module",
-            "time": "2014-07-28 15:41:57"
+            "time": "2014-08-18 14:57:06"
         },
         {
             "name": "contao/module-repository",
@@ -673,6 +673,77 @@
             "time": "2013-01-12 18:59:04"
         },
         {
+            "name": "kriswallsmith/assetic",
+            "version": "v1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kriswallsmith/assetic.git",
+                "reference": "735cffd3982c6e8cdebe292d5db39d077f65890f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/735cffd3982c6e8cdebe292d5db39d077f65890f",
+                "reference": "735cffd3982c6e8cdebe292d5db39d077f65890f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.1",
+                "symfony/process": "~2.1"
+            },
+            "require-dev": {
+                "cssmin/cssmin": "*",
+                "joliclic/javascript-packer": "*",
+                "kamicane/packager": "*",
+                "leafo/lessphp": "*",
+                "leafo/scssphp": "*",
+                "leafo/scssphp-compass": "*",
+                "mrclay/minify": "*",
+                "phpunit/phpunit": "~3.7",
+                "ptachoire/cssembed": "*",
+                "twig/twig": "~1.6"
+            },
+            "suggest": {
+                "leafo/lessphp": "Assetic provides the integration with the lessphp LESS compiler",
+                "leafo/scssphp": "Assetic provides the integration with the scssphp SCSS compiler",
+                "leafo/scssphp-compass": "Assetic provides the integration with the SCSS compass plugin",
+                "ptachoire/cssembed": "Assetic provides the integration with phpcssembed to embed data uris",
+                "twig/twig": "Assetic provides the integration with the Twig templating engine"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Assetic": "src/"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kris Wallsmith",
+                    "email": "kris.wallsmith@gmail.com",
+                    "homepage": "http://kriswallsmith.net/"
+                }
+            ],
+            "description": "Asset Management for PHP",
+            "homepage": "https://github.com/kriswallsmith/assetic",
+            "keywords": [
+                "assets",
+                "compression",
+                "minification"
+            ],
+            "time": "2013-07-19 00:03:27"
+        },
+        {
             "name": "leafo/lessphp",
             "version": "v0.4.0",
             "source": {
@@ -802,6 +873,53 @@
             "description": "Compass for scssphp",
             "homepage": "http://leafo.net/scssphp/",
             "time": "2012-08-02 02:04:32"
+        },
+        {
+            "name": "leofeyer/swipe",
+            "version": "2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/leofeyer/swipe.git",
+                "reference": "3f6f5b964ec9c7180d93b789de64c7e76120ff20"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/leofeyer/swipe/zipball/3f6f5b964ec9c7180d93b789de64c7e76120ff20",
+                "reference": "3f6f5b964ec9c7180d93b789de64c7e76120ff20",
+                "shasum": ""
+            },
+            "require": {
+                "robloach/component-installer": "~0.0"
+            },
+            "type": "component",
+            "extra": {
+                "component": {
+                    "scripts": [
+                        "js/swipe.min.js"
+                    ],
+                    "styles": [
+                        "css/swipe.min.css"
+                    ],
+                    "files": [
+                        "js/swipe.js",
+                        "js/swipe.min.js",
+                        "css/swipe.css",
+                        "css/swipe.min.css"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Leo Feyer",
+                    "homepage": "https://github.com/leofeyer"
+                }
+            ],
+            "description": "A JavaScript touch slider with dot menu",
+            "time": "2014-08-20 15:35:10"
         },
         {
             "name": "mabrahamde/idna-converter",
@@ -937,6 +1055,50 @@
                 "psr-3"
             ],
             "time": "2012-12-21 11:40:51"
+        },
+        {
+            "name": "robloach/component-installer",
+            "version": "0.0.12",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/RobLoach/component-installer.git",
+                "reference": "1864f25db21fc173e02a359f646acd596c1b0460"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/RobLoach/component-installer/zipball/1864f25db21fc173e02a359f646acd596c1b0460",
+                "reference": "1864f25db21fc173e02a359f646acd596c1b0460",
+                "shasum": ""
+            },
+            "require": {
+                "kriswallsmith/assetic": "1.*",
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "composer/composer": "1.*"
+            },
+            "type": "composer-installer",
+            "extra": {
+                "class": "ComponentInstaller\\Installer"
+            },
+            "autoload": {
+                "psr-0": {
+                    "ComponentInstaller": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rob Loach",
+                    "email": "robloach@gmail.com",
+                    "homepage": "http://robloach.net"
+                }
+            ],
+            "description": "Allows installation of Components via Composer.",
+            "time": "2013-08-31 23:46:48"
         },
         {
             "name": "sensio/distribution-bundle",
@@ -2657,7 +2819,7 @@
                 }
             ],
             "description": "Contao 4 developers bundle",
-            "time": "2014-08-15 13:03:32"
+            "time": "2014-08-18 15:12:29"
         }
     ],
     "aliases": [],

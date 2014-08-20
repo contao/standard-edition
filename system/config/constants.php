@@ -20,7 +20,6 @@ define('ACE', '1.1.3');
 define('DROPZONE', '3.8.5');
 define('HIGHLIGHTER', '3.0.83');
 define('HTML5SHIV', '3.7.0');
-define('SWIPE', '2.0');
 define('JQUERY', '1.11.0');
 define('JQUERY_UI', '1.10.4');
 define('COLORBOX', '1.5.8');

@@ -19,6 +19,9 @@ nbproject/
 /assets/images/*
 /assets/js/*
 
+# Components
+/components/
+
 # User files
 /files/*
 
@@ -43,6 +46,7 @@ nbproject/
 
 # Symlinked resources
 /web/assets
+/web/components
 /web/files
 /web/system/modules/*
 /web/system/themes
