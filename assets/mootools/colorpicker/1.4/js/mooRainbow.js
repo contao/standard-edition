@@ -1,2 +1,578 @@
-/* MooRainbow 1.3 by Djamil Legato (w00fz) and Christopher Beloch, MIT-style license */
-var MooRainbow=new Class({options:{id:"mooRainbow",prefix:"moor-",imgPath:"images/",startColor:[255,0,0],wheel:!1,onComplete:Class.empty,onChange:Class.empty},initialize:function(e,t){this.element=document.id(e);if(!this.element)return;this.setOptions(t),this.sliderPos=0,this.pickerPos={x:0,y:0},this.backupColor=this.options.startColor,this.currentColor=this.options.startColor,this.sets={rgb:[],hsb:[],hex:[]},this.pickerClick=this.sliderClick=!1,this.layout||this.doLayout(),this.OverlayEvents(),this.sliderEvents(),this.backupEvent(),this.options.wheel&&this.wheelEvents(),this.element.addEvent("click",function(e){this.toggle(e)}.bind(this)),this.layout.overlay.setStyle("background-color",this.options.startColor.rgbToHex()),this.layout.backup.setStyle("background-color",this.backupColor.rgbToHex()),this.pickerPos.x=this.snippet("curPos").l+this.snippet("curSize","int").w,this.pickerPos.y=this.snippet("curPos").t+this.snippet("curSize","int").h,this.manualSet(this.options.startColor),this.pickerPos.x=this.snippet("curPos").l+this.snippet("curSize","int").w,this.pickerPos.y=this.snippet("curPos").t+this.snippet("curSize","int").h,this.sliderPos=this.snippet("arrPos")-this.snippet("arrSize","int"),window.khtml&&this.hide()},toggle:function(){this[this.visible?"hide":"show"]()},show:function(){this.rePosition(),this.layout.setStyle("display","block"),this.layout.set("aria-hidden","false"),this.visible=!0},hide:function(){this.layout.setStyles({display:"none"}),this.layout.set("aria-hidden","true"),this.visible=!1},manualSet:function(e,t){if(!t||t!="hsb"&&t!="hex")t="rgb";var n,r,i;t=="rgb"?(n=e,r=e.rgbToHsb(),i=e.rgbToHex()):t=="hsb"?(r=e,n=e.hsbToRgb(),i=n.rgbToHex()):(i=e,n=e.hexToRgb(!0),r=n.rgbToHsb()),this.setMooRainbow(n),this.autoSet(r)},autoSet:function(e){var t=this.snippet("curSize","int").h,n=this.snippet("curSize","int").w,r=this.layout.overlay.height,i=this.layout.overlay.width,s=this.layout.slider.height,o=this.snippet("arrSize","int"),u,a=Math.round(i*e[1]/100-n),f=Math.round(-(r*e[2]/100)+r-t),l=Math.round(s*e[0]/360);l=l==360?0:l;var c=s-l+this.snippet("slider")-o;u=[this.sets.hsb[0],100,100].hsbToRgb().rgbToHex(),this.layout.cursor.setStyles({top:f,left:a}),this.layout.arrows.setStyle("top",c),this.layout.overlay.setStyle("background-color",u),this.sliderPos=this.snippet("arrPos")-o,this.pickerPos.x=this.snippet("curPos").l+n,this.pickerPos.y=this.snippet("curPos").t+t},setMooRainbow:function(e,t){if(!t||t!="hsb"&&t!="hex")t="rgb";var n,r,i;t=="rgb"?(n=e,r=e.rgbToHsb(),i=e.rgbToHex()):t=="hsb"?(r=e,n=e.hsbToRgb(),i=n.rgbToHex()):(i=e,n=e.hexToRgb(),r=n.rgbToHsb()),this.sets={rgb:n,hsb:r,hex:i},this.pickerPos.x||this.autoSet(r),this.RedInput.value=n[0],this.GreenInput.value=n[1],this.BlueInput.value=n[2],this.HueInput.value=r[0],this.SatuInput.value=r[1],this.BrighInput.value=r[2],this.hexInput.value=i,this.currentColor=n,this.chooseColor.setStyle("background-color",n.rgbToHex()),this.fireEvent("onChange",[this.sets,this])},parseColors:function(e,t,n){var r=Math.round(e*100/this.layout.overlay.width),i=100-Math.round(t*100/this.layout.overlay.height),s=360-Math.round(n*360/this.layout.slider.height)+this.snippet("slider")-this.snippet("arrSize","int");return s-=this.snippet("arrSize","int"),s=s>=360?0:s<0?0:s,r=r>100?100:r<0?0:r,i=i>100?100:i<0?0:i,[s,r,i]},OverlayEvents:function(){var e,t,n,r;t=this.snippet("curSize","int").h,n=this.snippet("curSize","int").w,r=this.arrRGB.concat(this.arrHSB,this.hexInput),document.addEvent("click",function(){this.visible&&this.hide(this.layout)}.bind(this)),r.each(function(e){e.addEvent("keydown",this.eventKeydown.bind(this,e)),e.addEvent("keyup",this.eventKeyup.bind(this,e))},this),[this.element,this.layout].each(function(e){e.addEvents({click:function(e){e.stop()},keyup:function(e){e.key=="esc"&&this.visible&&this.hide(this.layout)}.bind(this)},this)},this),e={x:[0-n,this.layout.overlay.width-n],y:[0-t,this.layout.overlay.height-t]},this.layout.drag=new Drag(this.layout.cursor,{onStart:this.overlayDrag.bind(this),onDrag:this.overlayDrag.bind(this),snap:0}),this.layout.overlay2.addEvent("mousedown",function(e){this.layout.cursor.setStyles({top:e.page.y-this.layout.overlay.getTop()-t,left:e.page.x-this.layout.overlay.getLeft()-n}),this.overlayDrag.call(this),this.layout.drag.start(e)}.bind(this)),this.okButton.addEvent("click",function(){this.currentColor==this.options.startColor?(this.hide(),this.fireEvent("onComplete",[this.sets,this])):(this.backupColor=this.currentColor,this.layout.backup.setStyle("background-color",this.backupColor.rgbToHex()),this.hide(),this.fireEvent("onComplete",[this.sets,this]))}.bind(this))},overlayDrag:function(){var e=this.snippet("curSize","int").h,t=this.snippet("curSize","int").w;this.pickerPos.x=this.snippet("curPos").l+t,this.pickerPos.y=this.snippet("curPos").t+e,this.setMooRainbow(this.parseColors(this.pickerPos.x,this.pickerPos.y,this.sliderPos),"hsb"),this.fireEvent("onChange",[this.sets,this])},sliderEvents:function(){var e=this.snippet("arrSize","int"),t;t=[0+this.snippet("slider")-e,this.layout.slider.height-e+this.snippet("slider")],this.layout.sliderDrag=new Drag(this.layout.arrows,{limit:{y:t},modifiers:{x:!1},onStart:this.sliderDrag.bind(this),onDrag:this.sliderDrag.bind(this),snap:0}),this.layout.slider.addEvent("mousedown",function(t){this.layout.arrows.setStyle("top",t.page.y-this.layout.slider.getTop()+this.snippet("slider")-e),this.sliderDrag.call(this),this.layout.sliderDrag.start(t)}.bind(this))},sliderDrag:function(){var e=this.snippet("arrSize","int"),t;this.sliderPos=this.snippet("arrPos")-e,this.setMooRainbow(this.parseColors(this.pickerPos.x,this.pickerPos.y,this.sliderPos),"hsb"),t=[this.sets.hsb[0],100,100].hsbToRgb().rgbToHex(),this.layout.overlay.setStyle("background-color",t),this.fireEvent("onChange",[this.sets,this])},backupEvent:function(){this.layout.backup.addEvent("click",function(){this.manualSet(this.backupColor),this.fireEvent("onChange",[this.sets,this])}.bind(this))},wheelEvents:function(){var e=this.arrRGB.copy().extend(this.arrHSB);e.each(function(e){e.addEvents({mousewheel:function(t){this.eventKeys(t,e)}.bind(this),keydown:function(t){this.eventKeys(t,e)}.bind(this)})},this),[this.layout.arrows,this.layout.slider].each(function(e){e.addEvents({mousewheel:function(e){this.eventKeys(e,this.arrHSB[0],"slider")}.bind(this),keydown:function(e){this.eventKeys(e,this.arrHSB[0],"slider")}.bind(this)})},this)},eventKeys:function(e,t,n){var r,i;n=n?this.arrHSB[0]:t.id;if(e.type=="keydown")if(e.key=="up")r=1;else{if(e.key!="down")return;r=-1}else e.type==Element.Events.mousewheel.type&&(r=e.wheel>0?1:-1);this.arrRGB.test(t)?i="rgb":this.arrHSB.test(t)?i="hsb":i="hsb";if(i=="rgb"){var s=this.sets.rgb,o=this.sets.hsb,u=this.options.prefix,a,f=t.value.toInt()+r;f=f>255?255:f<0?0:f;switch(t.className){case u+"rInput":a=[f,s[1],s[2]];break;case u+"gInput":a=[s[0],f,s[2]];break;case u+"bInput":a=[s[0],s[1],f];break;default:a=s}this.manualSet(a),this.fireEvent("onChange",[this.sets,this])}else{var s=this.sets.rgb,o=this.sets.hsb,u=this.options.prefix,a,f=t.value.toInt()+r;t.className.test(/(HueInput)/)?f=f>359?0:f<0?0:f:f=f>100?100:f<0?0:f;switch(t.className){case u+"HueInput":a=[f,o[1],o[2]];break;case u+"SatuInput":a=[o[0],f,o[2]];break;case u+"BrighInput":a=[o[0],o[1],f];break;default:a=o}this.manualSet(a,"hsb"),this.fireEvent("onChange",[this.sets,this])}e.stop()},eventKeydown:function(e,t){var n=t.code,r=t.key;!e.className.test(/hexInput/)&&!(n>=48&&n<=57)&&r!="backspace"&&r!="tab"&&r!="delete"&&r!="left"&&r!="right"&&t.stop()},eventKeyup:function(e,t){var n=t.code,r=t.key,i,s,o=e.value.charAt(0);if(!e.value&&e.value!==0)return;if(e.className.test(/hexInput/)){if(o!="#"&&e.value.length!=6)return;if(o=="#"&&e.value.length!=7)return}else if(!(n>=48&&n<=57)&&!["backspace","tab","delete","left","right"].test(r)&&e.value.length>3)return;s=this.options.prefix;if(e.className.test(/(rInput|gInput|bInput)/)){if(e.value<0||e.value>255)return;switch(e.className){case s+"rInput":i=[e.value,this.sets.rgb[1],this.sets.rgb[2]];break;case s+"gInput":i=[this.sets.rgb[0],e.value,this.sets.rgb[2]];break;case s+"bInput":i=[this.sets.rgb[0],this.sets.rgb[1],e.value];break;default:i=this.sets.rgb}this.manualSet(i),this.fireEvent("onChange",[this.sets,this])}else if(!e.className.test(/hexInput/)){if(e.className.test(/HueInput/)&&e.value<0||e.value>360)return;if(e.className.test(/HueInput/)&&e.value==360)e.value=0;else if(e.className.test(/(SatuInput|BrighInput)/)&&e.value<0||e.value>100)return;switch(e.className){case s+"HueInput":i=[e.value,this.sets.hsb[1],this.sets.hsb[2]];break;case s+"SatuInput":i=[this.sets.hsb[0],e.value,this.sets.hsb[2]];break;case s+"BrighInput":i=[this.sets.hsb[0],this.sets.hsb[1],e.value];break;default:i=this.sets.hsb}this.manualSet(i,"hsb"),this.fireEvent("onChange",[this.sets,this])}else{i=e.value.hexToRgb(!0);if(isNaN(i[0])||isNaN(i[1])||isNaN(i[2]))return;if(i||i===0)this.manualSet(i),this.fireEvent("onChange",[this.sets,this])}},doLayout:function(){var e=this.options.id,t=this.options.prefix,n=e+" ."+t;this.layout=(new Element("div",{styles:{display:"block",position:"absolute"},id:e})).inject(document.body);var r=(new Element("div",{styles:{position:"relative"},"class":t+"box"})).inject(this.layout),i=(new Element("div",{styles:{position:"absolute",overflow:"hidden"},"class":t+"overlayBox"})).inject(r),s=(new Element("div",{styles:{position:"absolute",zIndex:1},"class":t+"arrows"})).inject(r);s.width=s.getStyle("width").toInt(),s.height=s.getStyle("height").toInt();var o=(new Element("img",{styles:{"background-color":"#fff",position:"relative",zIndex:2},src:this.options.imgPath+"moor_woverlay.png","class":t+"overlay"})).inject(i),u=(new Element("img",{styles:{position:"absolute",top:0,left:0,zIndex:2},src:this.options.imgPath+"moor_boverlay.png","class":t+"overlay"})).inject(i);if(window.ie6){i.setStyle("overflow","");var a=o.src;o.src=this.options.imgPath+"blank.gif",o.style.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+a+"', sizingMethod='scale')",a=u.src,u.src=this.options.imgPath+"blank.gif",u.style.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+a+"', sizingMethod='scale')"}o.width=u.width=i.getStyle("width").toInt(),o.height=u.height=i.getStyle("height").toInt();var f=(new Element("div",{styles:{overflow:"hidden",position:"absolute",zIndex:2},"class":t+"cursor"})).inject(i);f.width=f.getStyle("width").toInt(),f.height=f.getStyle("height").toInt();var l=(new Element("img",{styles:{position:"absolute","z-index":2},src:this.options.imgPath+"moor_slider.png","class":t+"slider"})).inject(r);this.layout.slider=Slick.find(document,"#"+n+"slider"),l.width=l.getStyle("width").toInt(),l.height=l.getStyle("height").toInt(),(new Element("div",{styles:{position:"absolute"},"class":t+"colorBox"})).inject(r),(new Element("div",{styles:{zIndex:2,position:"absolute"},"class":t+"chooseColor"})).inject(r),this.layout.backup=(new Element("div",{styles:{zIndex:2,position:"absolute",cursor:"pointer"},"class":t+"currentColor"})).inject(r);var c=(new Element("label")).inject(r).setStyle("position","absolute"),h=c.clone().inject(r).addClass(t+"gLabel").appendText("G: "),p=c.clone().inject(r).addClass(t+"bLabel").appendText("B: ");c.appendText("R: ").addClass(t+"rLabel");var d=(new Element("input")).set("disabled",!0),v=d.clone().inject(h).addClass(t+"gInput"),m=d.clone().inject(p).addClass(t+"bInput");d.inject(c).addClass(t+"rInput");var g=(new Element("label")).inject(r).setStyle("position","absolute"),y=g.clone().inject(r).addClass(t+"SatuLabel").appendText("S: "),b=g.clone().inject(r).addClass(t+"BrighLabel").appendText("B: ");g.appendText("H: ").addClass(t+"HueLabel");var w=(new Element("input")).set("disabled",!0),E=w.clone().inject(y).addClass(t+"SatuInput"),S=w.clone().inject(b).addClass(t+"BrighInput");w.inject(g).addClass(t+"HueInput"),y.appendText(" %"),b.appendText(" %"),(new Element("span",{styles:{position:"absolute"},"class":t+"ballino"})).set("html"," &deg;").inject(g,"after");var x=(new Element("label")).inject(r).setStyle("position","absolute").addClass(t+"hexLabel").appendText("#hex: ").adopt((new Element("input")).addClass(t+"hexInput")),T=(new Element("input",{styles:{position:"absolute"},type:"button",value:"Select","class":t+"okButton"})).inject(r);this.rePosition();var N=$$("#"+n+"overlay");this.layout.overlay=N[0],this.layout.overlay2=N[1],this.layout.cursor=Slick.find(document,"#"+n+"cursor"),this.layout.arrows=Slick.find(document,"#"+n+"arrows"),this.chooseColor=Slick.find(document,"#"+n+"chooseColor"),this.layout.backup=Slick.find(document,"#"+n+"currentColor"),this.RedInput=Slick.find(document,"#"+n+"rInput"),this.GreenInput=Slick.find(document,"#"+n+"gInput"),this.BlueInput=Slick.find(document,"#"+n+"bInput"),this.HueInput=Slick.find(document,"#"+n+"HueInput"),this.SatuInput=Slick.find(document,"#"+n+"SatuInput"),this.BrighInput=Slick.find(document,"#"+n+"BrighInput"),this.hexInput=Slick.find(document,"#"+n+"hexInput"),this.arrRGB=[this.RedInput,this.GreenInput,this.BlueInput],this.arrHSB=[this.HueInput,this.SatuInput,this.BrighInput],this.okButton=Slick.find(document,"#"+n+"okButton"),this.layout.cursor.setStyle("background-image","url("+this.options.imgPath+"moor_cursor.gif)"),window.khtml||this.hide()},rePosition:function(){var e=this.element.getCoordinates();this.layout.setStyles({left:e.left-325,top:e.top+e.height+8})},snippet:function(e,t){var n;t=t?t:"none";switch(e){case"arrPos":var r=this.layout.arrows.getStyle("top").toInt();n=r;break;case"arrSize":var i=this.layout.arrows.height;i=t=="int"?(i/2).toInt():i,n=i;break;case"curPos":var s=this.layout.cursor.getStyle("left").toInt(),r=this.layout.cursor.getStyle("top").toInt();n={l:s,t:r};break;case"slider":var r=this.layout.slider.getStyle("marginTop").toInt();n=r;break;default:var i=this.layout.cursor.height,o=this.layout.cursor.width;i=t=="int"?(i/2).toInt():i,o=t=="int"?(o/2).toInt():o,n={w:o,h:i}}return n}});MooRainbow.implement(new Options),MooRainbow.implement(new Events);
+/*
+---
+
+script: mooRainbow.js
+version: 1.3
+description: MooRainbow is a ColorPicker for MooTools 1.3 and higher
+license: MIT-Style
+authors:
+  - Djamil Legato (w00fz)
+  - Christopher Beloch
+
+requires:
+  core:1.3: [*]
+  more:1.3: [Slider, Drag, Color]
+
+provides: [mooRainbow]
+
+...
+*/
+ 
+var MooRainbow = new Class({
+	options: {
+		id: 'mooRainbow',
+		prefix: 'moor-',
+		imgPath: 'images/',
+		startColor: [255, 0, 0],
+		wheel: false,
+		onComplete: Class.empty,
+		onChange: Class.empty
+	},
+	
+	initialize: function(el, options) {
+		this.element = document.id(el); if (!this.element) return;
+		this.setOptions(options);
+		
+		this.sliderPos = 0;
+		this.pickerPos = {x: 0, y: 0};
+		this.backupColor = this.options.startColor;
+		this.currentColor = this.options.startColor;
+		this.sets = {
+			rgb: [],
+			hsb: [],
+			hex: []	
+		};
+		this.pickerClick = this.sliderClick  = false;
+		if (!this.layout) this.doLayout();
+		this.OverlayEvents();
+		this.sliderEvents();
+		this.backupEvent();
+		if (this.options.wheel) this.wheelEvents();
+		this.element.addEvent('click', function(e) { this.toggle(e); }.bind(this));
+				
+		this.layout.overlay.setStyle('background-color', this.options.startColor.rgbToHex());
+		this.layout.backup.setStyle('background-color', this.backupColor.rgbToHex());
+
+		this.pickerPos.x = this.snippet('curPos').l + this.snippet('curSize', 'int').w;
+		this.pickerPos.y = this.snippet('curPos').t + this.snippet('curSize', 'int').h;
+		
+		this.manualSet(this.options.startColor);
+		
+		this.pickerPos.x = this.snippet('curPos').l + this.snippet('curSize', 'int').w;
+		this.pickerPos.y = this.snippet('curPos').t + this.snippet('curSize', 'int').h;
+		this.sliderPos = this.snippet('arrPos') - this.snippet('arrSize', 'int');
+
+		if (window.khtml) this.hide();
+	},
+	
+	toggle: function() {
+		this[this.visible ? 'hide' : 'show']()
+	},
+	
+	show: function() {
+		this.rePosition();
+		this.layout.setStyle('display', 'block');
+		this.layout.set('aria-hidden', 'false');
+		this.visible = true;
+	},
+	
+	hide: function() {
+		this.layout.setStyles({'display': 'none'});
+		this.layout.set('aria-hidden', 'true');
+		this.visible = false;
+	},
+	
+	manualSet: function(color, type) {
+		if (!type || (type != 'hsb' && type != 'hex')) type = 'rgb';
+		var rgb, hsb, hex;
+
+		if (type == 'rgb') { rgb = color; hsb = color.rgbToHsb(); hex = color.rgbToHex(); } 
+		else if (type == 'hsb') { hsb = color; rgb = color.hsbToRgb(); hex = rgb.rgbToHex(); }
+		else { hex = color; rgb = color.hexToRgb(true); hsb = rgb.rgbToHsb(); }
+		
+		this.setMooRainbow(rgb);
+		this.autoSet(hsb);
+	},
+	
+	autoSet: function(hsb) {
+		var curH = this.snippet('curSize', 'int').h;
+		var curW = this.snippet('curSize', 'int').w;
+		var oveH = this.layout.overlay.height;
+		var oveW = this.layout.overlay.width;
+		var sliH = this.layout.slider.height;
+		var arwH = this.snippet('arrSize', 'int');
+		var hue;
+		
+		var posx = Math.round(((oveW * hsb[1]) / 100) - curW);
+		var posy = Math.round(- ((oveH * hsb[2]) / 100) + oveH - curH);
+
+		var c = Math.round(((sliH * hsb[0]) / 360)); c = (c == 360) ? 0 : c;
+		var position = sliH - c + this.snippet('slider') - arwH;
+		hue = [this.sets.hsb[0], 100, 100].hsbToRgb().rgbToHex();
+		
+		this.layout.cursor.setStyles({'top': posy, 'left': posx});
+		this.layout.arrows.setStyle('top', position);
+		this.layout.overlay.setStyle('background-color', hue);
+		this.sliderPos = this.snippet('arrPos') - arwH;
+		this.pickerPos.x = this.snippet('curPos').l + curW;
+		this.pickerPos.y = this.snippet('curPos').t + curH;
+	},
+	
+	setMooRainbow: function(color, type) {
+		if (!type || (type != 'hsb' && type != 'hex')) type = 'rgb';
+		var rgb, hsb, hex;
+
+		if (type == 'rgb') { rgb = color; hsb = color.rgbToHsb(); hex = color.rgbToHex(); } 
+		else if (type == 'hsb') { hsb = color; rgb = color.hsbToRgb(); hex = rgb.rgbToHex(); }
+		else { hex = color; rgb = color.hexToRgb(); hsb = rgb.rgbToHsb(); }
+
+		this.sets = {
+			rgb: rgb,
+			hsb: hsb,
+			hex: hex
+		};
+
+		if (!this.pickerPos.x)
+			this.autoSet(hsb);		
+
+		this.RedInput.value = rgb[0];
+		this.GreenInput.value = rgb[1];
+		this.BlueInput.value = rgb[2];
+		this.HueInput.value = hsb[0];
+		this.SatuInput.value =  hsb[1];
+		this.BrighInput.value = hsb[2];
+		this.hexInput.value = hex;
+		
+		this.currentColor = rgb;
+
+		this.chooseColor.setStyle('background-color', rgb.rgbToHex());
+		
+		this.fireEvent('onChange', [this.sets, this]);
+	},
+	
+	parseColors: function(x, y, z) {
+		var s = Math.round((x * 100) / this.layout.overlay.width);
+		var b = 100 - Math.round((y * 100) / this.layout.overlay.height);
+		var h = 360 - Math.round((z * 360) / this.layout.slider.height) + this.snippet('slider') - this.snippet('arrSize', 'int');
+		h -= this.snippet('arrSize', 'int');
+		h = (h >= 360) ? 0 : (h < 0) ? 0 : h;
+		s = (s > 100) ? 100 : (s < 0) ? 0 : s;
+		b = (b > 100) ? 100 : (b < 0) ? 0 : b;
+
+		return [h, s, b];
+	},
+	
+	OverlayEvents: function() {
+		var lim, curH, curW, inputs;
+		curH = this.snippet('curSize', 'int').h;
+		curW = this.snippet('curSize', 'int').w;
+		inputs = this.arrRGB.concat(this.arrHSB, this.hexInput);
+
+		document.addEvent('click', function() { 
+			if(this.visible) this.hide(this.layout); 
+		}.bind(this));
+
+		inputs.each(function(el) {
+			el.addEvent('keydown', this.eventKeydown.bind(this, el));
+			el.addEvent('keyup', this.eventKeyup.bind(this, el));
+		}, this);
+		[this.element, this.layout].each(function(el) {
+			el.addEvents({
+				'click': function(e) { e.stop(); },
+				'keyup': function(e) {
+					if(e.key == 'esc' && this.visible) this.hide(this.layout);
+				}.bind(this)
+			}, this);
+		}, this);
+		
+		lim = {
+			x: [0 - curW, (this.layout.overlay.width - curW)],
+			y: [0 - curH, (this.layout.overlay.height - curH)]
+		};
+
+		this.layout.drag = new Drag(this.layout.cursor, {
+			onStart: this.overlayDrag.bind(this),
+			onDrag: this.overlayDrag.bind(this),
+			snap: 0
+		});	
+		
+		this.layout.overlay2.addEvent('mousedown', function(e){
+			this.layout.cursor.setStyles({
+				'top': e.page.y - this.layout.overlay.getTop() - curH,
+				'left': e.page.x - this.layout.overlay.getLeft() - curW
+			});
+                        this.overlayDrag.call(this);
+			this.layout.drag.start(e);
+		}.bind(this));
+		
+		this.okButton.addEvent('click', function() {
+			if(this.currentColor == this.options.startColor) {
+				this.hide();
+				this.fireEvent('onComplete', [this.sets, this]);
+			}
+			else {
+				this.backupColor = this.currentColor;
+				this.layout.backup.setStyle('background-color', this.backupColor.rgbToHex());
+				this.hide();
+				this.fireEvent('onComplete', [this.sets, this]);
+			}
+		}.bind(this));
+	},
+	
+	overlayDrag: function() {
+		var curH = this.snippet('curSize', 'int').h;
+		var curW = this.snippet('curSize', 'int').w;
+		this.pickerPos.x = this.snippet('curPos').l + curW;
+		this.pickerPos.y = this.snippet('curPos').t + curH;
+		
+		this.setMooRainbow(this.parseColors(this.pickerPos.x, this.pickerPos.y, this.sliderPos), 'hsb');
+		this.fireEvent('onChange', [this.sets, this]);
+	},
+	
+	sliderEvents: function() {
+		var arwH = this.snippet('arrSize', 'int'), lim;
+
+		lim = [0 + this.snippet('slider') - arwH, this.layout.slider.height - arwH + this.snippet('slider')];
+		this.layout.sliderDrag = new Drag(this.layout.arrows, {
+			limit: {y: lim},
+			modifiers: {x: false},
+			onStart: this.sliderDrag.bind(this),
+			onDrag: this.sliderDrag.bind(this),
+			snap: 0
+		});	
+	
+		this.layout.slider.addEvent('mousedown', function(e){
+			this.layout.arrows.setStyle(
+				'top', e.page.y - this.layout.slider.getTop() + this.snippet('slider') - arwH
+			);
+                        this.sliderDrag.call(this);
+			this.layout.sliderDrag.start(e);
+		}.bind(this));
+	},
+
+	sliderDrag: function() {
+		var arwH = this.snippet('arrSize', 'int'), hue;
+		
+		this.sliderPos = this.snippet('arrPos') - arwH;
+		this.setMooRainbow(this.parseColors(this.pickerPos.x, this.pickerPos.y, this.sliderPos), 'hsb');
+		hue = [this.sets.hsb[0], 100, 100].hsbToRgb().rgbToHex();
+		this.layout.overlay.setStyle('background-color', hue);
+		this.fireEvent('onChange', [this.sets, this]);
+	},
+	
+	backupEvent: function() {
+		this.layout.backup.addEvent('click', function() {
+			this.manualSet(this.backupColor);
+			this.fireEvent('onChange', [this.sets, this]);
+		}.bind(this));
+	},
+	
+	wheelEvents: function() {
+		var arrColors = this.arrRGB.copy().extend(this.arrHSB);
+
+		arrColors.each(function(el) {
+			el.addEvents({
+				'mousewheel': function(e) {
+					this.eventKeys(e, el);
+				}.bind(this),
+				'keydown': function(e) {
+					this.eventKeys(e, el);
+				}.bind(this),
+
+			});
+		}, this);
+		
+		[this.layout.arrows, this.layout.slider].each(function(el) {
+			el.addEvents({
+				'mousewheel': function(e) {
+					this.eventKeys(e, this.arrHSB[0], 'slider');
+				}.bind(this),
+				'keydown': function(e) {
+					this.eventKeys(e, this.arrHSB[0], 'slider');
+				}.bind(this)
+			});
+		}, this);
+	},
+	
+	eventKeys: function(e, el, id) {
+		var wheel, type;		
+		id = (!id) ? el.id : this.arrHSB[0];
+
+		if (e.type == 'keydown') {
+			if (e.key == 'up') wheel = 1;
+			else if (e.key == 'down') wheel = -1;
+			else return;
+		} else if (e.type == Element.Events.mousewheel.type) wheel = (e.wheel > 0) ? 1 : -1;
+
+		if (this.arrRGB.test(el)) type = 'rgb';
+		else if (this.arrHSB.test(el)) type = 'hsb';
+		else type = 'hsb';
+
+		if (type == 'rgb') {
+			var rgb = this.sets.rgb, hsb = this.sets.hsb, prefix = this.options.prefix, pass;
+			var value = el.value.toInt() + wheel;
+			value = (value > 255) ? 255 : (value < 0) ? 0 : value;
+
+			switch(el.className) {
+				case prefix + 'rInput': pass = [value, rgb[1], rgb[2]];	break;
+				case prefix + 'gInput': pass = [rgb[0], value, rgb[2]];	break;
+				case prefix + 'bInput':	pass = [rgb[0], rgb[1], value];	break;
+				default : pass = rgb;
+			}
+			this.manualSet(pass);
+			this.fireEvent('onChange', [this.sets, this]);
+		} else {
+			var rgb = this.sets.rgb, hsb = this.sets.hsb, prefix = this.options.prefix, pass;
+			var value = el.value.toInt() + wheel;
+
+			if (el.className.test(/(HueInput)/)) value = (value > 359) ? 0 : (value < 0) ? 0 : value;
+			else value = (value > 100) ? 100 : (value < 0) ? 0 : value;
+
+			switch(el.className) {
+				case prefix + 'HueInput': pass = [value, hsb[1], hsb[2]]; break;
+				case prefix + 'SatuInput': pass = [hsb[0], value, hsb[2]]; break;
+				case prefix + 'BrighInput':	pass = [hsb[0], hsb[1], value]; break;
+				default : pass = hsb;
+			}
+			this.manualSet(pass, 'hsb');
+			this.fireEvent('onChange', [this.sets, this]);
+		}
+		e.stop();
+	},
+	
+	eventKeydown: function(el, e) {
+		var n = e.code, k = e.key;
+
+		if 	((!el.className.test(/hexInput/) && !(n >= 48 && n <= 57)) &&
+			(k!='backspace' && k!='tab' && k !='delete' && k!='left' && k!='right'))
+		e.stop();
+	},
+	
+	eventKeyup: function(el, e) {
+		var n = e.code, k = e.key, pass, prefix, chr = el.value.charAt(0);
+
+		if (!(el.value || el.value === 0)) return;
+		if (el.className.test(/hexInput/)) {
+			if (chr != "#" && el.value.length != 6) return;
+			if (chr == '#' && el.value.length != 7) return;
+		} else {
+			if (!(n >= 48 && n <= 57) && (!['backspace', 'tab', 'delete', 'left', 'right'].test(k)) && el.value.length > 3) return;
+		}
+		
+		prefix = this.options.prefix;
+
+		if (el.className.test(/(rInput|gInput|bInput)/)) {
+			if (el.value  < 0 || el.value > 255) return;
+			switch(el.className){
+				case prefix + 'rInput': pass = [el.value, this.sets.rgb[1], this.sets.rgb[2]]; break;
+				case prefix + 'gInput': pass = [this.sets.rgb[0], el.value, this.sets.rgb[2]]; break;
+				case prefix + 'bInput': pass = [this.sets.rgb[0], this.sets.rgb[1], el.value]; break;
+				default : pass = this.sets.rgb;
+			}
+			this.manualSet(pass);
+			this.fireEvent('onChange', [this.sets, this]);
+		}
+		else if (!el.className.test(/hexInput/)) {
+			if (el.className.test(/HueInput/) && el.value  < 0 || el.value > 360) return;
+			else if (el.className.test(/HueInput/) && el.value == 360) el.value = 0;
+			else if (el.className.test(/(SatuInput|BrighInput)/) && el.value  < 0 || el.value > 100) return;
+			switch(el.className){
+				case prefix + 'HueInput': pass = [el.value, this.sets.hsb[1], this.sets.hsb[2]]; break;
+				case prefix + 'SatuInput': pass = [this.sets.hsb[0], el.value, this.sets.hsb[2]]; break;
+				case prefix + 'BrighInput': pass = [this.sets.hsb[0], this.sets.hsb[1], el.value]; break;
+				default : pass = this.sets.hsb;
+			}
+			this.manualSet(pass, 'hsb');
+			this.fireEvent('onChange', [this.sets, this]);
+		} else {
+			pass = el.value.hexToRgb(true);
+			if (isNaN(pass[0])||isNaN(pass[1])||isNaN(pass[2])) return;
+
+			if (pass || pass === 0) {
+				this.manualSet(pass);
+				this.fireEvent('onChange', [this.sets, this]);
+			}
+		}
+			
+	},
+			
+	doLayout: function() {
+		var id = this.options.id, prefix = this.options.prefix;
+		var idPrefix = id + ' .' + prefix;
+
+		this.layout = new Element('div', {
+			'styles': {'display': 'block', 'position': 'absolute'},
+			'id': id
+		}).inject(document.body);
+
+		var box = new Element('div', {
+			'styles':  {'position': 'relative'},
+			'class': prefix + 'box'
+		}).inject(this.layout);
+			
+		var div = new Element('div', {
+			'styles': {'position': 'absolute', 'overflow': 'hidden'},
+			'class': prefix + 'overlayBox'
+		}).inject(box);
+		
+		var ar = new Element('div', {
+			'styles': {'position': 'absolute', 'zIndex': 1},
+			'class': prefix + 'arrows'
+		}).inject(box);
+		ar.width = ar.getStyle('width').toInt();
+		ar.height = ar.getStyle('height').toInt();
+		
+		var ov = new Element('img', {
+			'styles': {'background-color': '#fff', 'position': 'relative', 'zIndex': 2},
+			'src': this.options.imgPath + 'moor_woverlay.png',
+			'class': prefix + 'overlay'
+		}).inject(div);
+		
+		var ov2 = new Element('img', {
+			'styles': {'position': 'absolute', 'top': 0, 'left': 0, 'zIndex': 2},
+			'src': this.options.imgPath + 'moor_boverlay.png',
+			'class': prefix + 'overlay'
+		}).inject(div);
+		
+		if (window.ie6) {
+			div.setStyle('overflow', '');
+			var src = ov.src;
+			ov.src = this.options.imgPath + 'blank.gif';
+			ov.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + src + "', sizingMethod='scale')";
+			src = ov2.src;
+			ov2.src = this.options.imgPath + 'blank.gif';
+			ov2.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + src + "', sizingMethod='scale')";
+		}
+		ov.width = ov2.width = div.getStyle('width').toInt();
+		ov.height = ov2.height = div.getStyle('height').toInt();
+
+		var cr = new Element('div', {
+			'styles': {'overflow': 'hidden', 'position': 'absolute', 'zIndex': 2},
+			'class': prefix + 'cursor'	
+		}).inject(div);
+		cr.width = cr.getStyle('width').toInt();
+		cr.height = cr.getStyle('height').toInt();
+		
+		var sl = new Element('img', {
+			'styles': {'position': 'absolute', 'z-index': 2},
+			'src': this.options.imgPath + 'moor_slider.png',
+			'class': prefix + 'slider'
+		}).inject(box);
+		this.layout.slider = Slick.find(document, '#' + idPrefix + 'slider');
+		sl.width = sl.getStyle('width').toInt();
+		sl.height = sl.getStyle('height').toInt();
+
+		new Element('div', {
+			'styles': {'position': 'absolute'},
+			'class': prefix + 'colorBox'
+		}).inject(box);
+
+		new Element('div', {
+			'styles': {'zIndex': 2, 'position': 'absolute'},
+			'class': prefix + 'chooseColor'
+		}).inject(box);
+			
+		this.layout.backup = new Element('div', {
+			'styles': {'zIndex': 2, 'position': 'absolute', 'cursor': 'pointer'},
+			'class': prefix + 'currentColor'
+		}).inject(box);
+		
+		var R = new Element('label').inject(box).setStyle('position', 'absolute');
+		var G = R.clone().inject(box).addClass(prefix + 'gLabel').appendText('G: ');
+		var B = R.clone().inject(box).addClass(prefix + 'bLabel').appendText('B: ');
+		R.appendText('R: ').addClass(prefix + 'rLabel');
+		
+		var inputR = new Element('input').set('disabled', true); // PATCH
+		var inputG = inputR.clone().inject(G).addClass(prefix + 'gInput');
+		var inputB = inputR.clone().inject(B).addClass(prefix + 'bInput');
+		inputR.inject(R).addClass(prefix + 'rInput');
+		
+		var HU = new Element('label').inject(box).setStyle('position', 'absolute');
+		var SA = HU.clone().inject(box).addClass(prefix + 'SatuLabel').appendText('S: ');
+		var BR = HU.clone().inject(box).addClass(prefix + 'BrighLabel').appendText('B: ');
+		HU.appendText('H: ').addClass(prefix + 'HueLabel');
+
+		var inputHU = new Element('input').set('disabled', true); // PATCH
+		var inputSA = inputHU.clone().inject(SA).addClass(prefix + 'SatuInput');
+		var inputBR = inputHU.clone().inject(BR).addClass(prefix + 'BrighInput');
+		inputHU.inject(HU).addClass(prefix + 'HueInput');
+		SA.appendText(' %'); BR.appendText(' %');
+		(new Element('span', {'styles': {'position': 'absolute'}, 'class': prefix + 'ballino'}).set('html', " &deg;").inject(HU, 'after'));
+
+		var hex = new Element('label').inject(box).setStyle('position', 'absolute').addClass(prefix + 'hexLabel').appendText('#hex: ').adopt(new Element('input').addClass(prefix + 'hexInput'));
+		
+		var ok = new Element('input', {
+			'styles': {'position': 'absolute'},
+			'type': 'button',
+			'value': 'Select',
+			'class': prefix + 'okButton'
+		}).inject(box);
+		
+		this.rePosition();
+
+		var overlays = $$('#' + idPrefix + 'overlay');
+		this.layout.overlay = overlays[0];
+		this.layout.overlay2 = overlays[1];
+		this.layout.cursor = Slick.find(document, '#' + idPrefix + 'cursor');
+		this.layout.arrows = Slick.find(document, '#' + idPrefix + 'arrows');
+		this.chooseColor = Slick.find(document, '#' + idPrefix + 'chooseColor');
+		this.layout.backup = Slick.find(document, '#' + idPrefix + 'currentColor');
+		this.RedInput = Slick.find(document, '#' + idPrefix + 'rInput');
+		this.GreenInput = Slick.find(document, '#' + idPrefix + 'gInput');
+		this.BlueInput = Slick.find(document, '#' + idPrefix + 'bInput');
+		this.HueInput = Slick.find(document, '#' + idPrefix + 'HueInput');
+		this.SatuInput = Slick.find(document, '#' + idPrefix + 'SatuInput');
+		this.BrighInput = Slick.find(document, '#' + idPrefix + 'BrighInput');
+		this.hexInput = Slick.find(document, '#' + idPrefix + 'hexInput');
+
+		this.arrRGB = [this.RedInput, this.GreenInput, this.BlueInput];
+		this.arrHSB = [this.HueInput, this.SatuInput, this.BrighInput];
+		this.okButton = Slick.find(document, '#' + idPrefix + 'okButton');
+		
+		this.layout.cursor.setStyle('background-image', 'url(' + this.options.imgPath + 'moor_cursor.gif)');
+		
+		if (!window.khtml) this.hide();
+	},
+	rePosition: function() {
+		var coords = this.element.getCoordinates();
+		this.layout.setStyles({
+			'left': coords.left - 325, // PATCH: - 325
+			'top': coords.top + coords.height + 8 // PATCH: + 8
+		});
+	},
+	
+	snippet: function(mode, type) {
+		var size; type = (type) ? type : 'none';
+
+		switch(mode) {
+			case 'arrPos':
+				var t = this.layout.arrows.getStyle('top').toInt();
+				size = t;
+				break;
+			case 'arrSize': 
+				var h = this.layout.arrows.height;
+				h = (type == 'int') ? (h/2).toInt() : h;
+				size = h;
+				break;		
+			case 'curPos':
+				var l = this.layout.cursor.getStyle('left').toInt();
+				var t = this.layout.cursor.getStyle('top').toInt();
+				size = {'l': l, 't': t};
+				break;
+			case 'slider':
+				var t = this.layout.slider.getStyle('marginTop').toInt();
+				size = t;
+				break;
+			default :
+				var h = this.layout.cursor.height;
+				var w = this.layout.cursor.width;
+				h = (type == 'int') ? (h/2).toInt() : h;
+				w = (type == 'int') ? (w/2).toInt() : w;
+				size = {w: w, h: h};
+		};
+		return size;
+	}
+});
+
+MooRainbow.implement(new Options);
+MooRainbow.implement(new Events);

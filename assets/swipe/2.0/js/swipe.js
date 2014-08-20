@@ -4,7 +4,7 @@
  * Brad Birdsall
  * Copyright 2013, MIT License
  *
-*/
+ */
 
 function Swipe(container, options) {
 
@@ -457,7 +457,7 @@ function Swipe(container, options) {
       }
 
     },
-    end: function(event) {
+    end: function() {
 
       // measure duration
       var duration = +new Date - start.time;

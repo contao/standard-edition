@@ -1,2 +1,262 @@
-/* Slimbox v1.8, (c) 2007-2009 Christophe Beyls <http://www.digitalia.be>, MIT-style license */
-var Slimbox=function(){function A(){var t=e.getScroll(),n=e.getSize();$$(m,E).setStyle("left",t.x+n.x/2),a&&v.setStyles({left:t.x,top:t.y,width:n.x,height:n.y})}function O(n){["object",t?"select":"embed"].forEach(function(e){Array.forEach(document.getElementsByTagName(e),function(e){n&&(e._slimbox=e.style.visibility),e.style.visibility=n?"hidden":e._slimbox})}),v.style.display=n?"":"none";var r=n?"addEvent":"removeEvent";e[r]("scroll",A)[r]("resize",A),document[r]("keydown",M)}function M(e){var t=e.code;return n.closeKeys.contains(t)?F():n.nextKeys.contains(t)?D():n.previousKeys.contains(t)?_():!1}function _(){return P(o)}function D(){return P(u)}function P(e){return e>=0&&(i=e,s=r[e][0],o=(i||(n.loop?r.length:0))-1,u=(i+1)%r.length||(n.loop?0:-1),j(),m.className="lbLoading",h=new Image,h.onload=H,h.src=s),!1}function H(){m.className="",k.set(0),g.setStyles({backgroundImage:"url("+s+")",display:""}),y.setStyle("width",h.width),$$(y,b,w).setStyle("height",h.height),x.set("html",r[i][1]||""),T.set("html",(r.length>1&&n.counterText||"").replace(/{x}/,i+1).replace(/{y}/,r.length)),o>=0&&(p.src=r[o][0]),u>=0&&(d.src=r[u][0]),l=g.offsetWidth,c=g.offsetHeight;var e=Math.max(0,f-c/2),t=0,a;m.offsetHeight!=c&&(t=C.start({height:c,top:e})),m.offsetWidth!=l&&(t=C.start({width:l,marginLeft:-l/2})),a=function(){E.setStyles({width:l,top:e+c,marginLeft:-l/2,visibility:"hidden",display:""}),k.start(1)},t?C.chain(a):a()}function B(){o>=0&&(b.style.display=""),u>=0&&(w.style.display=""),L.set(-S.offsetHeight).start(0),E.style.visibility=""}function j(){h.onload=null,h.src=p.src=d.src=s,C.cancel(),k.cancel(),L.cancel(),$$(b,w,g,E).setStyle("display","none")}function F(){return i>=0&&(j(),i=o=u=-1,m.style.display="none",N.cancel().chain(O).start(0)),!1}var e=window,t=Browser.ie6,n,r,i=-1,s,o,u,a,f,l,c,h={},p=new Image,d=new Image,v,m,g,y,b,w,E,S,x,T,N,C,k,L;return e.addEvent("domready",function(){$(document.body).adopt($$(v=new Element("div#lbOverlay",{events:{click:F}}),m=new Element("div#lbCenter"),E=new Element("div#lbBottomContainer")).setStyle("display","none")),g=(new Element("div#lbImage")).inject(m).adopt(y=(new Element("div",{styles:{position:"relative"}})).adopt(b=new Element("a#lbPrevLink[href=#]",{events:{click:_}}),w=new Element("a#lbNextLink[href=#]",{events:{click:D}}))),S=(new Element("div#lbBottom")).inject(E).adopt(new Element("a#lbCloseLink[href=#]",{events:{click:F}}),x=new Element("div#lbCaption"),T=new Element("div#lbNumber"),new Element("div",{styles:{clear:"both"}}))}),Element.implement({slimbox:function(e,t){return $$(this).slimbox(e,t),this}}),Elements.implement({slimbox:function(e,t,n){t=t||function(e){return[e.href,e.title]},n=n||function(){return!0};var r=this;return r.removeEvents("click").addEvent("click",function(){var i=r.filter(n,this);return Slimbox.open(i.map(t),i.indexOf(this),e)}),r}}),{open:function(i,s,o){return n=Object.append({loop:!1,overlayOpacity:.8,overlayFadeDuration:400,resizeDuration:400,resizeTransition:!1,initialWidth:250,initialHeight:250,imageFadeDuration:400,captionAnimationDuration:400,counterText:"Image {x} of {y}",closeKeys:[27,88,67],previousKeys:[37,80],nextKeys:[39,78]},o||{}),N=new Fx.Tween(v,{property:"opacity",duration:n.overlayFadeDuration}),C=new Fx.Morph(m,Object.append({duration:n.resizeDuration,link:"chain"},n.resizeTransition?{transition:n.resizeTransition}:{})),k=new Fx.Tween(g,{property:"opacity",duration:n.imageFadeDuration,onComplete:B}),L=new Fx.Tween(S,{property:"margin-top",duration:n.captionAnimationDuration}),typeof i=="string"&&(i=[[i,s]],s=0),f=e.getScrollTop()+e.getHeight()/2,l=n.initialWidth,c=n.initialHeight,m.setStyles({top:Math.max(0,f-c/2-40),width:l,height:c,marginLeft:-l/2,display:""}),a=t||v.currentStyle&&v.currentStyle.position!="fixed",a&&(v.style.position="absolute"),N.set(0).start(n.overlayOpacity),A(),O(1),r=i,n.loop=n.loop&&r.length>1,P(s)}}}();
+/*
+	Slimbox v1.8 - The ultimate lightweight Lightbox clone
+	(c) 2007-2011 Christophe Beyls <http://www.digitalia.be>
+	MIT-style license.
+*/
+
+var Slimbox = (function() {
+
+	// Global variables, accessible to Slimbox only
+	var win = window, ie6 = Browser.ie6, options, images, activeImage = -1, activeURL, prevImage, nextImage, compatibleOverlay, middle, centerWidth, centerHeight,
+
+	// Preload images
+	preload = {}, preloadPrev = new Image(), preloadNext = new Image(),
+
+	// DOM elements
+	overlay, center, image, sizer, prevLink, nextLink, bottomContainer, bottom, caption, number,
+
+	// Effects
+	fxOverlay, fxResize, fxImage, fxBottom;
+
+	/*
+		Initialization
+	*/
+
+	win.addEvent("domready", function() {
+		// Append the Slimbox HTML code at the bottom of the document
+		$(document.body).adopt(
+			$$(
+				overlay = new Element("div#lbOverlay", {events: {click: close}}),
+				center = new Element("div#lbCenter"),
+				bottomContainer = new Element("div#lbBottomContainer")
+			).setStyle("display", "none")
+		);
+
+		image = new Element("div#lbImage").inject(center).adopt(
+			sizer = new Element("div", {styles: {position: "relative"}}).adopt(
+				prevLink = new Element("a#lbPrevLink[href=#]", {events: {click: previous}}),
+				nextLink = new Element("a#lbNextLink[href=#]", {events: {click: next}})
+			)
+		);
+
+		bottom = new Element("div#lbBottom").inject(bottomContainer).adopt(
+			new Element("a#lbCloseLink[href=#]", {events: {click: close}}),
+			caption = new Element("div#lbCaption"),
+			number = new Element("div#lbNumber"),
+			new Element("div", {styles: {clear: "both"}})
+		);
+	});
+
+
+	/*
+		Internal functions
+	*/
+
+	function position() {
+		var scroll = win.getScroll(), size = win.getSize();
+		$$(center, bottomContainer).setStyle("left", scroll.x + (size.x / 2));
+		if (compatibleOverlay) overlay.setStyles({left: scroll.x, top: scroll.y, width: size.x, height: size.y});
+	}
+
+	function setup(open) {
+		["object", ie6 ? "select" : "embed"].forEach(function(tag) {
+			Array.forEach(document.getElementsByTagName(tag), function(el) {
+				if (open) el._slimbox = el.style.visibility;
+				el.style.visibility = open ? "hidden" : el._slimbox;
+			});
+		});
+
+		overlay.style.display = open ? "" : "none";
+
+		var fn = open ? "addEvent" : "removeEvent";
+		win[fn]("scroll", position)[fn]("resize", position);
+		document[fn]("keydown", keyDown);
+	}
+
+	function keyDown(event) {
+		var code = event.code;
+		// Prevent default keyboard action (like navigating inside the page)
+		return options.closeKeys.contains(code) ? close()
+			: options.nextKeys.contains(code) ? next()
+			: options.previousKeys.contains(code) ? previous()
+			: false;
+	}
+
+	function previous() {
+		return changeImage(prevImage);
+	}
+
+	function next() {
+		return changeImage(nextImage);
+	}
+
+	function changeImage(imageIndex) {
+		if (imageIndex >= 0) {
+			activeImage = imageIndex;
+			activeURL = images[imageIndex][0];
+			prevImage = (activeImage || (options.loop ? images.length : 0)) - 1;
+			nextImage = ((activeImage + 1) % images.length) || (options.loop ? 0 : -1);
+
+			stop();
+			center.className = "lbLoading";
+
+			preload = new Image();
+			preload.onload = animateBox;
+			preload.src = activeURL;
+		}
+
+		return false;
+	}
+
+	function animateBox() {
+		center.className = "";
+		fxImage.set(0);
+		image.setStyles({backgroundImage: "url(" + activeURL + ")", display: ""});
+		sizer.setStyle("width", preload.width);
+		$$(sizer, prevLink, nextLink).setStyle("height", preload.height);
+
+		caption.set("html", images[activeImage][1] || "");
+		number.set("html", (((images.length > 1) && options.counterText) || "").replace(/{x}/, activeImage + 1).replace(/{y}/, images.length));
+
+		if (prevImage >= 0) preloadPrev.src = images[prevImage][0];
+		if (nextImage >= 0) preloadNext.src = images[nextImage][0];
+
+		centerWidth = image.offsetWidth;
+		centerHeight = image.offsetHeight;
+		var top = Math.max(0, middle - (centerHeight / 2)), check = 0, fn;
+		if (center.offsetHeight != centerHeight) {
+			check = fxResize.start({height: centerHeight, top: top});
+		}
+		if (center.offsetWidth != centerWidth) {
+			check = fxResize.start({width: centerWidth, marginLeft: -centerWidth/2});
+		}
+		fn = function() {
+			bottomContainer.setStyles({width: centerWidth, top: top + centerHeight, marginLeft: -centerWidth/2, visibility: "hidden", display: ""});
+			fxImage.start(1);
+		};
+		if (check) {
+			fxResize.chain(fn);
+		}
+		else {
+			fn();
+		}
+	}
+
+	function animateCaption() {
+		if (prevImage >= 0) prevLink.style.display = "";
+		if (nextImage >= 0) nextLink.style.display = "";
+		fxBottom.set(-bottom.offsetHeight).start(0);
+		bottomContainer.style.visibility = "";
+	}
+
+	function stop() {
+		preload.onload = null;
+		preload.src = preloadPrev.src = preloadNext.src = activeURL;
+		fxResize.cancel();
+		fxImage.cancel();
+		fxBottom.cancel();
+		$$(prevLink, nextLink, image, bottomContainer).setStyle("display", "none");
+	}
+
+	function close() {
+		if (activeImage >= 0) {
+			stop();
+			activeImage = prevImage = nextImage = -1;
+			center.style.display = "none";
+			fxOverlay.cancel().chain(setup).start(0);
+		}
+
+		return false;
+	}
+
+
+	/*
+		API
+	*/
+
+	Element.implement({
+		slimbox: function(_options, linkMapper) {
+			// The processing of a single element is similar to the processing of a collection with a single element
+			$$(this).slimbox(_options, linkMapper);
+
+			return this;
+		}
+	});
+
+	Elements.implement({
+		/*
+			options:	Optional options object, see Slimbox.open()
+			linkMapper:	Optional function taking a link DOM element and an index as arguments and returning an array containing 2 elements:
+					the image URL and the image caption (may contain HTML)
+			linksFilter:	Optional function taking a link DOM element and an index as arguments and returning true if the element is part of
+					the image collection that will be shown on click, false if not. "this" refers to the element that was clicked.
+					This function must always return true when the DOM element argument is "this".
+		*/
+		slimbox: function(_options, linkMapper, linksFilter) {
+			linkMapper = linkMapper || function(el) {
+				return [el.href, el.title];
+			};
+
+			linksFilter = linksFilter || function() {
+				return true;
+			};
+
+			var links = this;
+
+			links.removeEvents("click").addEvent("click", function() {
+				// Build the list of images that will be displayed
+				var filteredLinks = links.filter(linksFilter, this);
+				return Slimbox.open(filteredLinks.map(linkMapper), filteredLinks.indexOf(this), _options);
+			});
+
+			return links;
+		}
+	});
+
+	return {
+		open: function(_images, startImage, _options) {
+			options = Object.append({
+				loop: false,				// Allows to navigate between first and last images
+				overlayOpacity: 0.8,			// 1 is opaque, 0 is completely transparent (change the color in the CSS file)
+				overlayFadeDuration: 400,		// Duration of the overlay fade-in and fade-out animations (in milliseconds)
+				resizeDuration: 400,			// Duration of each of the box resize animations (in milliseconds)
+				resizeTransition: false,		// false uses the mootools default transition
+				initialWidth: 250,			// Initial width of the box (in pixels)
+				initialHeight: 250,			// Initial height of the box (in pixels)
+				imageFadeDuration: 400,			// Duration of the image fade-in animation (in milliseconds)
+				captionAnimationDuration: 400,		// Duration of the caption animation (in milliseconds)
+				counterText: "Image {x} of {y}",	// Translate or change as you wish, or set it to false to disable counter text for image groups
+				closeKeys: [27, 88, 67],		// Array of keycodes to close Slimbox, default: Esc (27), 'x' (88), 'c' (67)
+				previousKeys: [37, 80],			// Array of keycodes to navigate to the previous image, default: Left arrow (37), 'p' (80)
+				nextKeys: [39, 78]			// Array of keycodes to navigate to the next image, default: Right arrow (39), 'n' (78)
+			}, _options || {});
+
+			// Setup effects
+			fxOverlay = new Fx.Tween(overlay, {property: "opacity", duration: options.overlayFadeDuration});
+			fxResize = new Fx.Morph(center, Object.append({duration: options.resizeDuration, link: "chain"}, options.resizeTransition ? {transition: options.resizeTransition} : {}));
+			fxImage = new Fx.Tween(image, {property: "opacity", duration: options.imageFadeDuration, onComplete: animateCaption});
+			fxBottom = new Fx.Tween(bottom, {property: "margin-top", duration: options.captionAnimationDuration});
+
+			// The function is called for a single image, with URL and Title as first two arguments
+			if (typeof _images == "string") {
+				_images = [[_images, startImage]];
+				startImage = 0;
+			}
+
+			middle = win.getScrollTop() + (win.getHeight() / 2);
+			centerWidth = options.initialWidth;
+			centerHeight = options.initialHeight;
+			center.setStyles({top: Math.max(0, middle - (centerHeight / 2) /* PATCH - 40*/ - 40), width: centerWidth, height: centerHeight, marginLeft: -centerWidth/2, display: ""});
+			compatibleOverlay = ie6 || (overlay.currentStyle && (overlay.currentStyle.position != "fixed"));
+			if (compatibleOverlay) overlay.style.position = "absolute";
+			fxOverlay.set(0).start(options.overlayOpacity);
+			position();
+			setup(1);
+
+			images = _images;
+			options.loop = options.loop && (images.length > 1);
+			return changeImage(startImage);
+		}
+	};
+
+})();
