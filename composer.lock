@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "25c9760a35c96f813aea45063801dcb0",
+    "hash": "5d04dfb6876e9fa559f2d0479a51f918",
     "packages": [
         {
             "name": "contao-community-alliance/composer-plugin",
@@ -221,6 +221,82 @@
             ],
             "description": "SyntaxHighlighter integration for Contao Open Source CMS",
             "time": "2014-08-21 08:48:39"
+        },
+        {
+            "name": "contao-components/jquery",
+            "version": "1.11.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contao-components/jquery.git",
+                "reference": "e00d16bef7c73cbe45ed3d348940b2e75ee08c65"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contao-components/jquery/zipball/e00d16bef7c73cbe45ed3d348940b2e75ee08c65",
+                "reference": "e00d16bef7c73cbe45ed3d348940b2e75ee08c65",
+                "shasum": ""
+            },
+            "require": {
+                "robloach/component-installer": "~0.0"
+            },
+            "type": "component",
+            "extra": {
+                "component": {
+                    "scripts": [
+                        "js/jquery.min.js"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Leo Feyer",
+                    "homepage": "https://github.com/leofeyer"
+                }
+            ],
+            "description": "jQuery integration for Contao Open Source CMS",
+            "time": "2014-08-21 13:34:23"
+        },
+        {
+            "name": "contao-components/jquery-ui",
+            "version": "1.11.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contao-components/jquery-ui.git",
+                "reference": "15c1be14b138cf3a0d7e33451bc164885b2d3d86"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contao-components/jquery-ui/zipball/15c1be14b138cf3a0d7e33451bc164885b2d3d86",
+                "reference": "15c1be14b138cf3a0d7e33451bc164885b2d3d86",
+                "shasum": ""
+            },
+            "require": {
+                "robloach/component-installer": "~0.0"
+            },
+            "type": "component",
+            "extra": {
+                "component": {
+                    "scripts": [
+                        "js/jquery-ui.min.js"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Leo Feyer",
+                    "homepage": "https://github.com/leofeyer"
+                }
+            ],
+            "description": "jQuery UI integration for Contao Open Source CMS",
+            "time": "2014-08-21 14:54:23"
         },
         {
             "name": "contao-components/mediaelement",
@@ -566,12 +642,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-core.git",
-                "reference": "e40b12c41ab813533d8c67b76d74a6f81b8c1650"
+                "reference": "8a518a01692847077d90f16deb6d64fc77786e0d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-core/zipball/e40b12c41ab813533d8c67b76d74a6f81b8c1650",
-                "reference": "e40b12c41ab813533d8c67b76d74a6f81b8c1650",
+                "url": "https://api.github.com/repos/contao/module-core/zipball/8a518a01692847077d90f16deb6d64fc77786e0d",
+                "reference": "8a518a01692847077d90f16deb6d64fc77786e0d",
                 "shasum": ""
             },
             "require": {
