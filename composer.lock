@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5d04dfb6876e9fa559f2d0479a51f918",
+    "hash": "c7ddbed3df49cf82a78a18037791fa19",
     "packages": [
         {
             "name": "contao-community-alliance/composer-plugin",
@@ -221,6 +221,45 @@
             ],
             "description": "SyntaxHighlighter integration for Contao Open Source CMS",
             "time": "2014-08-21 08:48:39"
+        },
+        {
+            "name": "contao-components/html5shiv",
+            "version": "3.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contao-components/html5shiv.git",
+                "reference": "b1811ac9a19b42d8a0461c1556dee72b710ec1d3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contao-components/html5shiv/zipball/b1811ac9a19b42d8a0461c1556dee72b710ec1d3",
+                "reference": "b1811ac9a19b42d8a0461c1556dee72b710ec1d3",
+                "shasum": ""
+            },
+            "require": {
+                "robloach/component-installer": "~0.0"
+            },
+            "type": "component",
+            "extra": {
+                "component": {
+                    "scripts": [
+                        "js/html5shiv.min.js",
+                        "js/html5shiv-printshiv.min.js"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Leo Feyer",
+                    "homepage": "https://github.com/leofeyer"
+                }
+            ],
+            "description": "HTML5 Shiv integration for Contao Open Source CMS",
+            "time": "2014-08-21 15:10:23"
         },
         {
             "name": "contao-components/jquery",
@@ -642,12 +681,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-core.git",
-                "reference": "8a518a01692847077d90f16deb6d64fc77786e0d"
+                "reference": "a976439b808e9b92056c5464463cf8c14f349811"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-core/zipball/8a518a01692847077d90f16deb6d64fc77786e0d",
-                "reference": "8a518a01692847077d90f16deb6d64fc77786e0d",
+                "url": "https://api.github.com/repos/contao/module-core/zipball/a976439b808e9b92056c5464463cf8c14f349811",
+                "reference": "a976439b808e9b92056c5464463cf8c14f349811",
                 "shasum": ""
             },
             "require": {
@@ -690,7 +729,7 @@
                 }
             ],
             "description": "Contao 4 core module",
-            "time": "2014-08-21 11:27:47"
+            "time": "2014-08-21 15:03:15"
         },
         {
             "name": "contao/module-faq",
