@@ -19,8 +19,6 @@ define('LONG_TERM_SUPPORT', false);
 define('HTML5SHIV', '3.7.0');
 define('JQUERY', '1.11.0');
 define('JQUERY_UI', '1.10.4');
-define('COLORBOX', '1.5.8');
-define('MEDIAELEMENT', '2.14.2');
 define('TABLESORTER', '2.0.5');
 define('MOOTOOLS', '1.5.0');
 define('COLORPICKER', '1.4');

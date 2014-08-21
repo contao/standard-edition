@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "bcc67c368aa8917d0b19309789ff9d56",
+    "hash": "b86b40fc3cf4fb8ef8e71680cfcb4786",
     "packages": [
         {
             "name": "contao-community-alliance/composer-plugin",
@@ -96,6 +96,50 @@
             "time": "2014-08-21 07:07:05"
         },
         {
+            "name": "contao-components/colorbox",
+            "version": "1.5.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contao-components/colorbox.git",
+                "reference": "fd3287c2c44fe0e9b0b01ebec58ba10d2b5d699e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contao-components/colorbox/zipball/fd3287c2c44fe0e9b0b01ebec58ba10d2b5d699e",
+                "reference": "fd3287c2c44fe0e9b0b01ebec58ba10d2b5d699e",
+                "shasum": ""
+            },
+            "require": {
+                "robloach/component-installer": "~0.0"
+            },
+            "type": "component",
+            "extra": {
+                "component": {
+                    "scripts": [
+                        "js/colorbox.min.js"
+                    ],
+                    "styles": [
+                        "css/colorbox.min.css"
+                    ],
+                    "files": [
+                        "images/*"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Leo Feyer",
+                    "homepage": "https://github.com/leofeyer"
+                }
+            ],
+            "description": "Colorbox integration for Contao Open Source CMS",
+            "time": "2014-08-21 09:18:43"
+        },
+        {
             "name": "contao-components/dropzone",
             "version": "3.8.5",
             "source": {
@@ -179,6 +223,51 @@
             "time": "2014-08-21 08:48:39"
         },
         {
+            "name": "contao-components/mediaelement",
+            "version": "2.14.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contao-components/mediaelement.git",
+                "reference": "270be8f60c9aebfad306bce7d978fdd1816667f1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contao-components/mediaelement/zipball/270be8f60c9aebfad306bce7d978fdd1816667f1",
+                "reference": "270be8f60c9aebfad306bce7d978fdd1816667f1",
+                "shasum": ""
+            },
+            "require": {
+                "robloach/component-installer": "~0.0"
+            },
+            "type": "component",
+            "extra": {
+                "component": {
+                    "scripts": [
+                        "js/*.min.js"
+                    ],
+                    "styles": [
+                        "css/*.min.css"
+                    ],
+                    "files": [
+                        "images/*",
+                        "legacy/*"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Leo Feyer",
+                    "homepage": "https://github.com/leofeyer"
+                }
+            ],
+            "description": "MediaElement.js integration for Contao Open Source CMS",
+            "time": "2014-08-21 09:43:10"
+        },
+        {
             "name": "contao-components/swipe",
             "version": "2.0.0",
             "source": {
@@ -202,12 +291,6 @@
                         "js/swipe.min.js"
                     ],
                     "styles": [
-                        "css/swipe.min.css"
-                    ],
-                    "files": [
-                        "js/swipe.js",
-                        "js/swipe.min.js",
-                        "css/swipe.css",
                         "css/swipe.min.css"
                     ]
                 }
@@ -246,10 +329,10 @@
             "extra": {
                 "component": {
                     "files": [
-                        "langs/*",
-                        "plugins/*",
-                        "skins/*",
-                        "themes/*",
+                        "langs/**",
+                        "plugins/**",
+                        "skins/**",
+                        "themes/**",
                         "tinymce.*"
                     ]
                 }
