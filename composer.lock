@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b6def6565e448d81c9611515714f4190",
+    "hash": "de127c6f8aba2972611b8def1b666a17",
     "packages": [
         {
             "name": "contao-community-alliance/composer-plugin",
@@ -58,17 +58,55 @@
             "time": "2014-07-22 21:27:29"
         },
         {
+            "name": "contao-components/ace",
+            "version": "1.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contao-components/ace.git",
+                "reference": "6b52ca94c64d45682d64f5823faef67bf9fd77f6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contao-components/ace/zipball/6b52ca94c64d45682d64f5823faef67bf9fd77f6",
+                "reference": "6b52ca94c64d45682d64f5823faef67bf9fd77f6",
+                "shasum": ""
+            },
+            "require": {
+                "robloach/component-installer": "~0.0"
+            },
+            "type": "component",
+            "extra": {
+                "component": {
+                    "files": [
+                        "js/*"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Leo Feyer",
+                    "homepage": "https://github.com/leofeyer"
+                }
+            ],
+            "description": "ACE code editor integration for Contao Open Source CMS",
+            "time": "2014-08-21 07:07:05"
+        },
+        {
             "name": "contao-components/swipe",
             "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/swipe.git",
-                "reference": "54b60fa2202f85411967e6581fc30ae6ddd94c95"
+                "reference": "bafc16ab9d223fba1ed19bbca4d9445d69998348"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/swipe/zipball/54b60fa2202f85411967e6581fc30ae6ddd94c95",
-                "reference": "54b60fa2202f85411967e6581fc30ae6ddd94c95",
+                "url": "https://api.github.com/repos/contao-components/swipe/zipball/bafc16ab9d223fba1ed19bbca4d9445d69998348",
+                "reference": "bafc16ab9d223fba1ed19bbca4d9445d69998348",
                 "shasum": ""
             },
             "require": {
@@ -110,12 +148,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/tinymce4.git",
-                "reference": "d2cc1115d924ba3a85fec3384957dd2d009cab11"
+                "reference": "3c176e3dbc9c8e8b14756b3cf6d70f39e4b6bb5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/tinymce4/zipball/d2cc1115d924ba3a85fec3384957dd2d009cab11",
-                "reference": "d2cc1115d924ba3a85fec3384957dd2d009cab11",
+                "url": "https://api.github.com/repos/contao-components/tinymce4/zipball/3c176e3dbc9c8e8b14756b3cf6d70f39e4b6bb5e",
+                "reference": "3c176e3dbc9c8e8b14756b3cf6d70f39e4b6bb5e",
                 "shasum": ""
             },
             "require": {
