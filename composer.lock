@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d4bf179b44fa7ac3906ff539074d2bc2",
+    "hash": "bcc67c368aa8917d0b19309789ff9d56",
     "packages": [
         {
             "name": "contao-community-alliance/composer-plugin",
@@ -138,6 +138,45 @@
             ],
             "description": "DropZone integration for Contao Open Source CMS",
             "time": "2014-08-21 07:52:16"
+        },
+        {
+            "name": "contao-components/highlighter",
+            "version": "3.0.83",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contao-components/highlighter.git",
+                "reference": "0883bbcc420bc19ccb49c16b2971610ed3cdd294"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contao-components/highlighter/zipball/0883bbcc420bc19ccb49c16b2971610ed3cdd294",
+                "reference": "0883bbcc420bc19ccb49c16b2971610ed3cdd294",
+                "shasum": ""
+            },
+            "require": {
+                "robloach/component-installer": "~0.0"
+            },
+            "type": "component",
+            "extra": {
+                "component": {
+                    "files": [
+                        "js/*",
+                        "css/*"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Leo Feyer",
+                    "homepage": "https://github.com/leofeyer"
+                }
+            ],
+            "description": "SyntaxHighlighter integration for Contao Open Source CMS",
+            "time": "2014-08-21 08:48:39"
         },
         {
             "name": "contao-components/swipe",
