@@ -23,6 +23,7 @@
         "contao/module-newsletter": "dev-develop",
         "contao/module-repository": "dev-develop",
         "contao-components/ace": "~1.1",
+        "contao-components/dropzone": "~3.8",
         "contao-components/swipe": "~2.0",
         "contao-components/tinymce4": "~4.0",
         "leafo/lessphp": "~0.4",
