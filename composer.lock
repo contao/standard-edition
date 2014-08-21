@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b86b40fc3cf4fb8ef8e71680cfcb4786",
+    "hash": "25c9760a35c96f813aea45063801dcb0",
     "packages": [
         {
             "name": "contao-community-alliance/composer-plugin",
@@ -63,12 +63,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/ace.git",
-                "reference": "6b52ca94c64d45682d64f5823faef67bf9fd77f6"
+                "reference": "ea572be9b964318f211a2f3d3f38d532c2bed1c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/ace/zipball/6b52ca94c64d45682d64f5823faef67bf9fd77f6",
-                "reference": "6b52ca94c64d45682d64f5823faef67bf9fd77f6",
+                "url": "https://api.github.com/repos/contao-components/ace/zipball/ea572be9b964318f211a2f3d3f38d532c2bed1c9",
+                "reference": "ea572be9b964318f211a2f3d3f38d532c2bed1c9",
                 "shasum": ""
             },
             "require": {
@@ -93,7 +93,7 @@
                 }
             ],
             "description": "ACE code editor integration for Contao Open Source CMS",
-            "time": "2014-08-21 07:07:05"
+            "time": "2014-08-21 09:20:34"
         },
         {
             "name": "contao-components/colorbox",
@@ -145,12 +145,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/dropzone.git",
-                "reference": "a031315a20a81215b60e0abea7de06c613998348"
+                "reference": "b81159242db93d810c7bc6f564683d1305fc3daf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/dropzone/zipball/a031315a20a81215b60e0abea7de06c613998348",
-                "reference": "a031315a20a81215b60e0abea7de06c613998348",
+                "url": "https://api.github.com/repos/contao-components/dropzone/zipball/b81159242db93d810c7bc6f564683d1305fc3daf",
+                "reference": "b81159242db93d810c7bc6f564683d1305fc3daf",
                 "shasum": ""
             },
             "require": {
@@ -181,7 +181,7 @@
                 }
             ],
             "description": "DropZone integration for Contao Open Source CMS",
-            "time": "2014-08-21 07:52:16"
+            "time": "2014-08-21 09:21:42"
         },
         {
             "name": "contao-components/highlighter",
@@ -273,12 +273,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/swipe.git",
-                "reference": "bafc16ab9d223fba1ed19bbca4d9445d69998348"
+                "reference": "e480f2e6963ed080e499c1cc2aa539f926c0d324"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/swipe/zipball/bafc16ab9d223fba1ed19bbca4d9445d69998348",
-                "reference": "bafc16ab9d223fba1ed19bbca4d9445d69998348",
+                "url": "https://api.github.com/repos/contao-components/swipe/zipball/e480f2e6963ed080e499c1cc2aa539f926c0d324",
+                "reference": "e480f2e6963ed080e499c1cc2aa539f926c0d324",
                 "shasum": ""
             },
             "require": {
@@ -306,7 +306,51 @@
                 }
             ],
             "description": "A JavaScript touch slider with dot menu",
-            "time": "2014-08-20 19:08:24"
+            "time": "2014-08-21 09:24:07"
+        },
+        {
+            "name": "contao-components/tablesorter",
+            "version": "2.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contao-components/tablesorter.git",
+                "reference": "bbc3e3b2dcb6ab16b0ac9aa2b8079a11f4b2ee46"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contao-components/tablesorter/zipball/bbc3e3b2dcb6ab16b0ac9aa2b8079a11f4b2ee46",
+                "reference": "bbc3e3b2dcb6ab16b0ac9aa2b8079a11f4b2ee46",
+                "shasum": ""
+            },
+            "require": {
+                "robloach/component-installer": "~0.0"
+            },
+            "type": "component",
+            "extra": {
+                "component": {
+                    "scripts": [
+                        "js/tablesorter.min.js"
+                    ],
+                    "styles": [
+                        "css/tablesorter.min.css"
+                    ],
+                    "files": [
+                        "images/*"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Leo Feyer",
+                    "homepage": "https://github.com/leofeyer"
+                }
+            ],
+            "description": "jQuery tablesorter integration for Contao Open Source CMS",
+            "time": "2014-08-21 13:15:03"
         },
         {
             "name": "contao-components/tinymce4",
@@ -314,12 +358,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/tinymce4.git",
-                "reference": "3c176e3dbc9c8e8b14756b3cf6d70f39e4b6bb5e"
+                "reference": "24e9f32cb18c4036848d1aac5feacdb7d6383c8f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/tinymce4/zipball/3c176e3dbc9c8e8b14756b3cf6d70f39e4b6bb5e",
-                "reference": "3c176e3dbc9c8e8b14756b3cf6d70f39e4b6bb5e",
+                "url": "https://api.github.com/repos/contao-components/tinymce4/zipball/24e9f32cb18c4036848d1aac5feacdb7d6383c8f",
+                "reference": "24e9f32cb18c4036848d1aac5feacdb7d6383c8f",
                 "shasum": ""
             },
             "require": {
@@ -348,7 +392,7 @@
                 }
             ],
             "description": "TinyMCE 4 integration for Contao Open Source CMS",
-            "time": "2014-08-20 18:40:04"
+            "time": "2014-08-21 09:22:39"
         },
         {
             "name": "contao/contao-bundle",
@@ -522,12 +566,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-core.git",
-                "reference": "dd66f4fd1ef1cf9b741f1848facee74e886d8727"
+                "reference": "e40b12c41ab813533d8c67b76d74a6f81b8c1650"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-core/zipball/dd66f4fd1ef1cf9b741f1848facee74e886d8727",
-                "reference": "dd66f4fd1ef1cf9b741f1848facee74e886d8727",
+                "url": "https://api.github.com/repos/contao/module-core/zipball/e40b12c41ab813533d8c67b76d74a6f81b8c1650",
+                "reference": "e40b12c41ab813533d8c67b76d74a6f81b8c1650",
                 "shasum": ""
             },
             "require": {
@@ -570,7 +614,7 @@
                 }
             ],
             "description": "Contao 4 core module",
-            "time": "2014-08-20 15:26:51"
+            "time": "2014-08-21 11:27:47"
         },
         {
             "name": "contao/module-faq",
@@ -900,7 +944,7 @@
                 {
                     "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
+                    "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -953,7 +997,7 @@
                 {
                     "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
+                    "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
