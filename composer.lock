@@ -945,12 +945,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-core.git",
-                "reference": "01ac166e7f90800db6d8c9c8f839d9432338c7a1"
+                "reference": "9011bad6f0d472deb6df9ffa55bf4d2ded63d34b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-core/zipball/01ac166e7f90800db6d8c9c8f839d9432338c7a1",
-                "reference": "01ac166e7f90800db6d8c9c8f839d9432338c7a1",
+                "url": "https://api.github.com/repos/contao/module-core/zipball/9011bad6f0d472deb6df9ffa55bf4d2ded63d34b",
+                "reference": "9011bad6f0d472deb6df9ffa55bf4d2ded63d34b",
                 "shasum": ""
             },
             "require": {
