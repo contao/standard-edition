@@ -4,9 +4,13 @@ Contao Open Source CMS API changes
 Version 3.* to 4.0
 ------------------
 
-### `assets/contao/images`
+### `assets/contao`
 
-The `assets/contao/images` directory has been renamed to `assets/icons`.
+The `assets/contao` directory has been removed:
+
+- `assets/contao/css` -> `assets/framework`
+- `assets/contao/images` -> `assets/icons`
+- `assets/contao/js` -> `assets/core`
 
 
 ### MooTools slimbox
