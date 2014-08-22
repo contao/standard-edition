@@ -4,6 +4,9 @@ Contao Open Source CMS changelog
 Version 4.0.0-alpha3 (2014-XX-XX)
 ---------------------------------
 
+### Removed
+Removed the "default" theme in favor of the "flexible" theme.
+
 ### Changed
 Load the third-party components via `contao-components`.
 

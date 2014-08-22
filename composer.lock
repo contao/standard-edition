@@ -815,12 +815,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/contao-library.git",
-                "reference": "0a74e8c95b4d9aab02910c64b06f919ebb25cd92"
+                "reference": "9ceb49b785b0bc44ecf520fae347ebc0d1c7d0bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/contao-library/zipball/0a74e8c95b4d9aab02910c64b06f919ebb25cd92",
-                "reference": "0a74e8c95b4d9aab02910c64b06f919ebb25cd92",
+                "url": "https://api.github.com/repos/contao/contao-library/zipball/9ceb49b785b0bc44ecf520fae347ebc0d1c7d0bb",
+                "reference": "9ceb49b785b0bc44ecf520fae347ebc0d1c7d0bb",
                 "shasum": ""
             },
             "type": "library",
