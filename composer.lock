@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "34f3387aab5e980665073a92c3f40ebc",
+    "hash": "3480107bf9202da6f98910a44a5dfe9f",
     "packages": [
         {
             "name": "contao-community-alliance/composer-plugin",
@@ -607,6 +607,50 @@
             "time": "2014-08-22 07:11:58"
         },
         {
+            "name": "contao-components/simplemodal",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contao-components/simplemodal.git",
+                "reference": "770e419c7790d6e0b3a56392d075becda51261f0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contao-components/simplemodal/zipball/770e419c7790d6e0b3a56392d075becda51261f0",
+                "reference": "770e419c7790d6e0b3a56392d075becda51261f0",
+                "shasum": ""
+            },
+            "require": {
+                "robloach/component-installer": "~0.0"
+            },
+            "type": "component",
+            "extra": {
+                "component": {
+                    "scripts": [
+                        "js/simplemodal.min.js"
+                    ],
+                    "styles": [
+                        "css/simplemodal.min.css"
+                    ],
+                    "files": [
+                        "images/*"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Leo Feyer",
+                    "homepage": "https://github.com/leofeyer"
+                }
+            ],
+            "description": "SimpleModal integration for Contao Open Source CMS",
+            "time": "2014-08-22 08:44:33"
+        },
+        {
             "name": "contao-components/swipe",
             "version": "2.0.0",
             "source": {
@@ -901,12 +945,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-core.git",
-                "reference": "04b553c72df4633d58ca30d034e42bce339b182b"
+                "reference": "a11a740d44287cf8ce808eb1688d371eebe0798d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-core/zipball/04b553c72df4633d58ca30d034e42bce339b182b",
-                "reference": "04b553c72df4633d58ca30d034e42bce339b182b",
+                "url": "https://api.github.com/repos/contao/module-core/zipball/a11a740d44287cf8ce808eb1688d371eebe0798d",
+                "reference": "a11a740d44287cf8ce808eb1688d371eebe0798d",
                 "shasum": ""
             },
             "require": {
@@ -949,7 +993,7 @@
                 }
             ],
             "description": "Contao 4 core module",
-            "time": "2014-08-22 07:21:57"
+            "time": "2014-08-22 08:38:40"
         },
         {
             "name": "contao/module-faq",

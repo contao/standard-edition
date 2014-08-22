@@ -15,10 +15,6 @@ define('VERSION', '4.0');
 define('BUILD', '0-alpha2');
 define('LONG_TERM_SUPPORT', false);
 
-// Plugin versions (backwards compatibility)
-define('SIMPLEMODAL', '1.2');
-define('SLIMBOX', '1.8');
-
 // Link constants
 define('LINK_BLUR', ' onclick="this.blur()"');
 define('LINK_NEW_WINDOW', ' onclick="return !window.open(this.href)"');
