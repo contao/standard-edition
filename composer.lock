@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ee052c631390ccc71c264be4da0aaf64",
+    "hash": "9bee2237d40e83ed69212acd8f8a74c2",
     "packages": [
         {
             "name": "contao-community-alliance/composer-plugin",
@@ -94,6 +94,50 @@
             ],
             "description": "ACE code editor integration for Contao Open Source CMS",
             "time": "2014-08-21 14:56:33"
+        },
+        {
+            "name": "contao-components/chosen",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contao-components/chosen.git",
+                "reference": "ed920cd332ab58901e07c923f7ab384046b993f4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contao-components/chosen/zipball/ed920cd332ab58901e07c923f7ab384046b993f4",
+                "reference": "ed920cd332ab58901e07c923f7ab384046b993f4",
+                "shasum": ""
+            },
+            "require": {
+                "robloach/component-installer": "~0.0"
+            },
+            "type": "component",
+            "extra": {
+                "component": {
+                    "scripts": [
+                        "js/chosen.min.js"
+                    ],
+                    "styles": [
+                        "css/chosen.min.css"
+                    ],
+                    "files": [
+                        "images/*"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Leo Feyer",
+                    "homepage": "https://github.com/leofeyer"
+                }
+            ],
+            "description": "Chosen integration for Contao Open Source CMS",
+            "time": "2014-08-22 07:44:20"
         },
         {
             "name": "contao-components/colorbox",
