@@ -30,6 +30,7 @@
         "contao-components/jquery": "~1.11",
         "contao-components/jquery-ui": "~1.11",
         "contao-components/mediaelement": "~2.14",
+        "contao-components/mootools": "~1.5",
         "contao-components/swipe": "~2.0",
         "contao-components/tablesorter": "~2.0",
         "contao-components/tinymce4": "~4.0",

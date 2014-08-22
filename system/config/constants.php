@@ -16,7 +16,6 @@ define('BUILD', '0-alpha2');
 define('LONG_TERM_SUPPORT', false);
 
 // Plugin versions (backwards compatibility)
-define('MOOTOOLS', '1.5.0');
 define('COLORPICKER', '1.4');
 define('DATEPICKER', '2.2.0');
 define('MEDIABOX', '1.4.6');
