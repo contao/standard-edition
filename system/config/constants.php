@@ -16,9 +16,6 @@ define('BUILD', '0-alpha2');
 define('LONG_TERM_SUPPORT', false);
 
 // Plugin versions (backwards compatibility)
-define('COLORPICKER', '1.4');
-define('DATEPICKER', '2.2.0');
-define('MEDIABOX', '1.4.6');
 define('SIMPLEMODAL', '1.2');
 define('SLIMBOX', '1.8');
 

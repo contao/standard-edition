@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9bee2237d40e83ed69212acd8f8a74c2",
+    "hash": "34f3387aab5e980665073a92c3f40ebc",
     "packages": [
         {
             "name": "contao-community-alliance/composer-plugin",
@@ -182,6 +182,94 @@
             ],
             "description": "Colorbox integration for Contao Open Source CMS",
             "time": "2014-08-21 09:18:43"
+        },
+        {
+            "name": "contao-components/colorpicker",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contao-components/colorpicker.git",
+                "reference": "ef53ea7993a0bf1e9f673535aff033cfac8aa850"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contao-components/colorpicker/zipball/ef53ea7993a0bf1e9f673535aff033cfac8aa850",
+                "reference": "ef53ea7993a0bf1e9f673535aff033cfac8aa850",
+                "shasum": ""
+            },
+            "require": {
+                "robloach/component-installer": "~0.0"
+            },
+            "type": "component",
+            "extra": {
+                "component": {
+                    "scripts": [
+                        "js/mooRainbow.min.js"
+                    ],
+                    "styles": [
+                        "css/mooRainbow.min.css"
+                    ],
+                    "files": [
+                        "images/*"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Leo Feyer",
+                    "homepage": "https://github.com/leofeyer"
+                }
+            ],
+            "description": "Color picker integration for Contao Open Source CMS",
+            "time": "2014-08-22 07:58:26"
+        },
+        {
+            "name": "contao-components/datepicker",
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contao-components/datepicker.git",
+                "reference": "2bda62a0386b34714f6cc4d497709b5ba10b8fb4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contao-components/datepicker/zipball/2bda62a0386b34714f6cc4d497709b5ba10b8fb4",
+                "reference": "2bda62a0386b34714f6cc4d497709b5ba10b8fb4",
+                "shasum": ""
+            },
+            "require": {
+                "robloach/component-installer": "~0.0"
+            },
+            "type": "component",
+            "extra": {
+                "component": {
+                    "scripts": [
+                        "js/datepicker.min.js"
+                    ],
+                    "styles": [
+                        "css/datepicker.min.css"
+                    ],
+                    "files": [
+                        "images/*"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Leo Feyer",
+                    "homepage": "https://github.com/leofeyer"
+                }
+            ],
+            "description": "Date picker integration for Contao Open Source CMS",
+            "time": "2014-08-22 08:08:01"
         },
         {
             "name": "contao-components/dropzone",
@@ -382,6 +470,53 @@
             ],
             "description": "jQuery UI integration for Contao Open Source CMS",
             "time": "2014-08-21 14:54:23"
+        },
+        {
+            "name": "contao-components/mediabox",
+            "version": "1.4.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contao-components/mediabox.git",
+                "reference": "6868e2250e96762cddda3efbfdb8f887d59b1535"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contao-components/mediabox/zipball/6868e2250e96762cddda3efbfdb8f887d59b1535",
+                "reference": "6868e2250e96762cddda3efbfdb8f887d59b1535",
+                "shasum": ""
+            },
+            "require": {
+                "robloach/component-installer": "~0.0"
+            },
+            "type": "component",
+            "extra": {
+                "component": {
+                    "scripts": [
+                        "js/mediabox.min.js"
+                    ],
+                    "styles": [
+                        "css/mediabox-black.min.css"
+                    ],
+                    "files": [
+                        "js/Quickie.js",
+                        "css/mediabox-white.min.css",
+                        "images/*",
+                        "player/*"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Leo Feyer",
+                    "homepage": "https://github.com/leofeyer"
+                }
+            ],
+            "description": "Mediabox integration for Contao Open Source CMS",
+            "time": "2014-08-22 08:26:14"
         },
         {
             "name": "contao-components/mediaelement",
@@ -766,12 +901,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-core.git",
-                "reference": "cd420b7c49c17348878899f641f15c14f3eca114"
+                "reference": "04b553c72df4633d58ca30d034e42bce339b182b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-core/zipball/cd420b7c49c17348878899f641f15c14f3eca114",
-                "reference": "cd420b7c49c17348878899f641f15c14f3eca114",
+                "url": "https://api.github.com/repos/contao/module-core/zipball/04b553c72df4633d58ca30d034e42bce339b182b",
+                "reference": "04b553c72df4633d58ca30d034e42bce339b182b",
                 "shasum": ""
             },
             "require": {
