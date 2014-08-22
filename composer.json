@@ -44,7 +44,6 @@
         "leafo/scssphp-compass": "dev-master",
         "mabrahamde/idna-converter": "dev-master",
         "michelf/php-markdown": "~1.4",
-        "sensio/distribution-bundle": "~3.0",
         "simplepie/simplepie": "~1.3",
         "swiftmailer/swiftmailer": "~5.2",
         "symfony/console": "~2.5",
@@ -55,7 +54,8 @@
         "tecnick.com/tcpdf": "~6.0"
     },
     "require-dev": {
-        "contao/contao-devtools": "dev-develop"
+        "contao/contao-devtools": "dev-develop",
+        "sensio/distribution-bundle": "~3.0"
     },
     "replace": {
         "contao/core": "self.version"

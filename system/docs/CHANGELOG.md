@@ -1,7 +1,7 @@
 Contao Open Source CMS changelog
 ================================
 
-Version 4.0.0-alpha4 (2014-XX-XX)
+Version 4.0.0-alpha3 (2014-XX-XX)
 ---------------------------------
 
 ### Changed
@@ -18,10 +18,6 @@ Removed the CSS3PIE plugin.
 
 ### Changed
 The devtools are now available as Symfony commands (see `app/console`).
-
-
-Version 4.0.0-alpha3 (2014-XX-XX)
----------------------------------
 
 ### Changed
 Make the public extension folders configurable (see #8).
