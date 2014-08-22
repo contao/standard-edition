@@ -4,6 +4,12 @@ Contao Open Source CMS API changes
 Version 3.* to 4.0
 ------------------
 
+### MooTools slimbox
+
+The MooTools "slimbox" plugin has been removed. Use the MooTools "mediabox" or
+the jQuery "colorbox" plugin instead.
+
+
 ### "postFlushData" hook
 
 The "postFlushData" hook now passes a `PostResponseEvent` object instead of

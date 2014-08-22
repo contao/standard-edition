@@ -17,6 +17,9 @@ The devtools are now available as Symfony commands (see `app/console`).
 Version 4.0.0-alpha3 (2014-XX-XX)
 ---------------------------------
 
+### Removed
+Removed the MooTools "slimbox" plugin.
+
 ### Changed
 Make the public extension folders configurable (see #8).
 
