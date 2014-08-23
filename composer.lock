@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9d886f8387d8c21620bba1aec67d3a95",
+    "hash": "e3ec75753aa6ce06317dc24a84d643ce",
     "packages": [
         {
             "name": "contao-community-alliance/composer-plugin",
@@ -59,16 +59,16 @@
         },
         {
             "name": "contao-components/ace",
-            "version": "1.1.3",
+            "version": "1.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/ace.git",
-                "reference": "de81fdcfe34307af535b5494223c776884d1ba04"
+                "reference": "8a2190e91a03e0d358c0f106b78ed8ab2c77df13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/ace/zipball/de81fdcfe34307af535b5494223c776884d1ba04",
-                "reference": "de81fdcfe34307af535b5494223c776884d1ba04",
+                "url": "https://api.github.com/repos/contao-components/ace/zipball/8a2190e91a03e0d358c0f106b78ed8ab2c77df13",
+                "reference": "8a2190e91a03e0d358c0f106b78ed8ab2c77df13",
                 "shasum": ""
             },
             "require": {
@@ -93,7 +93,7 @@
                 }
             ],
             "description": "ACE code editor integration for Contao Open Source CMS",
-            "time": "2014-08-21 14:56:33"
+            "time": "2014-08-22 18:15:16"
         },
         {
             "name": "contao-components/chosen",
@@ -141,16 +141,16 @@
         },
         {
             "name": "contao-components/colorbox",
-            "version": "1.5.8",
+            "version": "1.5.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/colorbox.git",
-                "reference": "fd3287c2c44fe0e9b0b01ebec58ba10d2b5d699e"
+                "reference": "d95f141db6305ae9bd66c0505fb18b4545fa89db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/colorbox/zipball/fd3287c2c44fe0e9b0b01ebec58ba10d2b5d699e",
-                "reference": "fd3287c2c44fe0e9b0b01ebec58ba10d2b5d699e",
+                "url": "https://api.github.com/repos/contao-components/colorbox/zipball/d95f141db6305ae9bd66c0505fb18b4545fa89db",
+                "reference": "d95f141db6305ae9bd66c0505fb18b4545fa89db",
                 "shasum": ""
             },
             "require": {
@@ -181,7 +181,7 @@
                 }
             ],
             "description": "Colorbox integration for Contao Open Source CMS",
-            "time": "2014-08-21 09:18:43"
+            "time": "2014-08-22 18:51:15"
         },
         {
             "name": "contao-components/colorpicker",
@@ -273,16 +273,16 @@
         },
         {
             "name": "contao-components/dropzone",
-            "version": "3.8.5",
+            "version": "3.10.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/dropzone.git",
-                "reference": "84d9175255f5650047d19bfc517ce2db3961b259"
+                "reference": "aa71e34565e5e490d99ba2837437fb6ebea906ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/dropzone/zipball/84d9175255f5650047d19bfc517ce2db3961b259",
-                "reference": "84d9175255f5650047d19bfc517ce2db3961b259",
+                "url": "https://api.github.com/repos/contao-components/dropzone/zipball/aa71e34565e5e490d99ba2837437fb6ebea906ef",
+                "reference": "aa71e34565e5e490d99ba2837437fb6ebea906ef",
                 "shasum": ""
             },
             "require": {
@@ -313,7 +313,7 @@
                 }
             ],
             "description": "DropZone integration for Contao Open Source CMS",
-            "time": "2014-08-21 14:56:55"
+            "time": "2014-08-22 19:06:05"
         },
         {
             "name": "contao-components/highlighter",
@@ -356,16 +356,16 @@
         },
         {
             "name": "contao-components/html5shiv",
-            "version": "3.7.0",
+            "version": "3.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/html5shiv.git",
-                "reference": "f295f22700f339efb6f3006d90383290409842e9"
+                "reference": "d2755852f73f70232d0f19a243cf48f4bd4bb97e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/html5shiv/zipball/f295f22700f339efb6f3006d90383290409842e9",
-                "reference": "f295f22700f339efb6f3006d90383290409842e9",
+                "url": "https://api.github.com/repos/contao-components/html5shiv/zipball/d2755852f73f70232d0f19a243cf48f4bd4bb97e",
+                "reference": "d2755852f73f70232d0f19a243cf48f4bd4bb97e",
                 "shasum": ""
             },
             "require": {
@@ -393,20 +393,20 @@
                 }
             ],
             "description": "HTML5 Shiv integration for Contao Open Source CMS",
-            "time": "2014-08-21 18:50:04"
+            "time": "2014-08-22 19:13:40"
         },
         {
             "name": "contao-components/jquery",
-            "version": "1.11.0",
+            "version": "1.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/jquery.git",
-                "reference": "e00d16bef7c73cbe45ed3d348940b2e75ee08c65"
+                "reference": "600dbb21d2158a9f59fddb28c96f49d24904aacd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/jquery/zipball/e00d16bef7c73cbe45ed3d348940b2e75ee08c65",
-                "reference": "e00d16bef7c73cbe45ed3d348940b2e75ee08c65",
+                "url": "https://api.github.com/repos/contao-components/jquery/zipball/600dbb21d2158a9f59fddb28c96f49d24904aacd",
+                "reference": "600dbb21d2158a9f59fddb28c96f49d24904aacd",
                 "shasum": ""
             },
             "require": {
@@ -431,7 +431,7 @@
                 }
             ],
             "description": "jQuery integration for Contao Open Source CMS",
-            "time": "2014-08-21 13:34:23"
+            "time": "2014-08-23 18:10:09"
         },
         {
             "name": "contao-components/jquery-ui",
@@ -520,16 +520,16 @@
         },
         {
             "name": "contao-components/mediaelement",
-            "version": "2.14.2",
+            "version": "2.15.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/mediaelement.git",
-                "reference": "37d1485ebb980433d68ed1eadb6947b40f1581f1"
+                "reference": "546d40ed666d5ded11b3f424e6b99382ee009f6c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/mediaelement/zipball/37d1485ebb980433d68ed1eadb6947b40f1581f1",
-                "reference": "37d1485ebb980433d68ed1eadb6947b40f1581f1",
+                "url": "https://api.github.com/repos/contao-components/mediaelement/zipball/546d40ed666d5ded11b3f424e6b99382ee009f6c",
+                "reference": "546d40ed666d5ded11b3f424e6b99382ee009f6c",
                 "shasum": ""
             },
             "require": {
@@ -561,7 +561,7 @@
                 }
             ],
             "description": "MediaElement.js integration for Contao Open Source CMS",
-            "time": "2014-08-21 19:05:12"
+            "time": "2014-08-23 18:35:32"
         },
         {
             "name": "contao-components/mootools",
@@ -737,16 +737,16 @@
         },
         {
             "name": "contao-components/tinymce4",
-            "version": "4.0.26",
+            "version": "4.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/tinymce4.git",
-                "reference": "8b243bf0aedc8584dd1ad66cb808e9d8e6271a62"
+                "reference": "ff7030b15b0373b3cdbd7b82b8704d6342081b57"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/tinymce4/zipball/8b243bf0aedc8584dd1ad66cb808e9d8e6271a62",
-                "reference": "8b243bf0aedc8584dd1ad66cb808e9d8e6271a62",
+                "url": "https://api.github.com/repos/contao-components/tinymce4/zipball/ff7030b15b0373b3cdbd7b82b8704d6342081b57",
+                "reference": "ff7030b15b0373b3cdbd7b82b8704d6342081b57",
                 "shasum": ""
             },
             "require": {
@@ -771,7 +771,7 @@
                 }
             ],
             "description": "TinyMCE 4 integration for Contao Open Source CMS",
-            "time": "2014-08-21 18:52:30"
+            "time": "2014-08-23 18:55:52"
         },
         {
             "name": "contao/contao-bundle",
@@ -840,7 +840,7 @@
                 }
             ],
             "description": "Contao 4 library",
-            "time": "2014-08-22 11:21:41"
+            "time": "2014-08-22 17:42:31"
         },
         {
             "name": "contao/module-calendar",
