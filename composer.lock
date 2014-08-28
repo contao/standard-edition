@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e3ec75753aa6ce06317dc24a84d643ce",
+    "hash": "b2b6cacbf82a09e81c0b9a3d21cd85c3",
     "packages": [
         {
             "name": "contao-community-alliance/composer-plugin",
@@ -779,12 +779,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/contao-bundle.git",
-                "reference": "cf3d592aaf35dbbf87b15bff2f75ded1613a6bbf"
+                "reference": "7938fd8b6b04d31abcfd585528a89d313d174714"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/contao-bundle/zipball/cf3d592aaf35dbbf87b15bff2f75ded1613a6bbf",
-                "reference": "cf3d592aaf35dbbf87b15bff2f75ded1613a6bbf",
+                "url": "https://api.github.com/repos/contao/contao-bundle/zipball/7938fd8b6b04d31abcfd585528a89d313d174714",
+                "reference": "7938fd8b6b04d31abcfd585528a89d313d174714",
                 "shasum": ""
             },
             "require": {
@@ -812,7 +812,7 @@
                 }
             ],
             "description": "Contao 4 Symfony bundle",
-            "time": "2014-08-27 10:48:09"
+            "time": "2014-08-28 09:40:43"
         },
         {
             "name": "contao/contao-library",
@@ -820,13 +820,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/contao-library.git",
-                "reference": "afb4c8f4e1e6bb8cb52984c340421b0ac8ef8aa4"
+                "reference": "da762a3cc291750f5d9529df52bf3a92363c6587"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/contao-library/zipball/afb4c8f4e1e6bb8cb52984c340421b0ac8ef8aa4",
-                "reference": "afb4c8f4e1e6bb8cb52984c340421b0ac8ef8aa4",
+                "url": "https://api.github.com/repos/contao/contao-library/zipball/da762a3cc291750f5d9529df52bf3a92363c6587",
+                "reference": "da762a3cc291750f5d9529df52bf3a92363c6587",
                 "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~3.7"
             },
             "type": "library",
             "autoload": {
@@ -845,7 +848,7 @@
                 }
             ],
             "description": "Contao 4 library",
-            "time": "2014-08-26 09:38:20"
+            "time": "2014-08-28 13:35:28"
         },
         {
             "name": "contao/module-calendar",
@@ -950,12 +953,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-core.git",
-                "reference": "aeae1a5dfad985c93b1b73824b5b1aca1e5d03a7"
+                "reference": "7bfb17cb73aa3ed84bb80679e84467d24258de51"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-core/zipball/aeae1a5dfad985c93b1b73824b5b1aca1e5d03a7",
-                "reference": "aeae1a5dfad985c93b1b73824b5b1aca1e5d03a7",
+                "url": "https://api.github.com/repos/contao/module-core/zipball/7bfb17cb73aa3ed84bb80679e84467d24258de51",
+                "reference": "7bfb17cb73aa3ed84bb80679e84467d24258de51",
                 "shasum": ""
             },
             "require": {
@@ -998,7 +1001,7 @@
                 }
             ],
             "description": "Contao 4 core module",
-            "time": "2014-08-26 09:14:04"
+            "time": "2014-08-27 11:35:13"
         },
         {
             "name": "contao/module-faq",
@@ -1234,39 +1237,6 @@
             ],
             "description": "Contao 4 repository module",
             "time": "2014-08-25 09:15:10"
-        },
-        {
-            "name": "contao/php-diff",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/contao/php-diff.git",
-                "reference": "9928f73548f26c4b8627d78a3722e52f63efadbd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/contao/php-diff/zipball/9928f73548f26c4b8627d78a3722e52f63efadbd",
-                "reference": "9928f73548f26c4b8627d78a3722e52f63efadbd",
-                "shasum": ""
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Diff": "lib/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Leo Feyer",
-                    "homepage": "https://github.com/leofeyer"
-                }
-            ],
-            "description": "A comprehensive library for generating differences between two hashable objects (strings or arrays).",
-            "time": "2014-05-17 19:04:01"
         },
         {
             "name": "doctrine/annotations",
@@ -1691,6 +1661,40 @@
                 "markdown"
             ],
             "time": "2014-05-05 02:43:50"
+        },
+        {
+            "name": "phpspec/php-diff",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpspec/php-diff.git",
+                "reference": "30e103d19519fe678ae64a60d77884ef3d71b28a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpspec/php-diff/zipball/30e103d19519fe678ae64a60d77884ef3d71b28a",
+                "reference": "30e103d19519fe678ae64a60d77884ef3d71b28a",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Diff": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Boulton",
+                    "homepage": "http://github.com/chrisboulton",
+                    "role": "Original developer"
+                }
+            ],
+            "description": "A comprehensive library for generating differences between two hashable objects (strings or arrays).",
+            "time": "2013-11-01 13:02:21"
         },
         {
             "name": "psr/log",
@@ -2998,12 +3002,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/contao-devtools.git",
-                "reference": "6a51ca3934d364850b203f09ef46d95757e0da79"
+                "reference": "a189c2856bc62957be5279878fd13872229657ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/contao-devtools/zipball/6a51ca3934d364850b203f09ef46d95757e0da79",
-                "reference": "6a51ca3934d364850b203f09ef46d95757e0da79",
+                "url": "https://api.github.com/repos/contao/contao-devtools/zipball/a189c2856bc62957be5279878fd13872229657ca",
+                "reference": "a189c2856bc62957be5279878fd13872229657ca",
                 "shasum": ""
             },
             "require": {
@@ -3026,7 +3030,7 @@
                 }
             ],
             "description": "Contao 4 developers bundle",
-            "time": "2014-08-27 10:49:24"
+            "time": "2014-08-28 09:40:22"
         },
         {
             "name": "sensio/distribution-bundle",
@@ -3499,7 +3503,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "contao/php-diff": 20,
         "contao/contao-bundle": 20,
         "contao/contao-library": 20,
         "contao/module-calendar": 20,
