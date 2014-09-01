@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b2b6cacbf82a09e81c0b9a3d21cd85c3",
+    "hash": "136b2ab6ff4a5640d409aa759ab23462",
     "packages": [
         {
             "name": "contao-community-alliance/composer-plugin",
@@ -316,17 +316,17 @@
             "time": "2014-08-22 19:06:05"
         },
         {
-            "name": "contao-components/highlighter",
-            "version": "3.0.83",
+            "name": "contao-components/highlight",
+            "version": "8.2.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/contao-components/highlighter.git",
-                "reference": "0883bbcc420bc19ccb49c16b2971610ed3cdd294"
+                "url": "https://github.com/contao-components/highlight.git",
+                "reference": "5896c94b6bbd6e499df03c421ed772271141d46f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/highlighter/zipball/0883bbcc420bc19ccb49c16b2971610ed3cdd294",
-                "reference": "0883bbcc420bc19ccb49c16b2971610ed3cdd294",
+                "url": "https://api.github.com/repos/contao-components/highlight/zipball/5896c94b6bbd6e499df03c421ed772271141d46f",
+                "reference": "5896c94b6bbd6e499df03c421ed772271141d46f",
                 "shasum": ""
             },
             "require": {
@@ -335,8 +335,10 @@
             "type": "component",
             "extra": {
                 "component": {
+                    "scripts": [
+                        "js/highlight.pack.js"
+                    ],
                     "files": [
-                        "js/*",
                         "css/*"
                     ]
                 }
@@ -351,8 +353,8 @@
                     "homepage": "https://github.com/leofeyer"
                 }
             ],
-            "description": "SyntaxHighlighter integration for Contao Open Source CMS",
-            "time": "2014-08-21 08:48:39"
+            "description": "Highlight.js integration for Contao Open Source CMS",
+            "time": "2014-09-01 18:58:01"
         },
         {
             "name": "contao-components/html5shiv",
@@ -820,12 +822,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/contao-library.git",
-                "reference": "da762a3cc291750f5d9529df52bf3a92363c6587"
+                "reference": "49a645952b3f52d6feff58cc214d7e744b8aed7c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/contao-library/zipball/da762a3cc291750f5d9529df52bf3a92363c6587",
-                "reference": "da762a3cc291750f5d9529df52bf3a92363c6587",
+                "url": "https://api.github.com/repos/contao/contao-library/zipball/49a645952b3f52d6feff58cc214d7e744b8aed7c",
+                "reference": "49a645952b3f52d6feff58cc214d7e744b8aed7c",
                 "shasum": ""
             },
             "require-dev": {
@@ -848,7 +850,7 @@
                 }
             ],
             "description": "Contao 4 library",
-            "time": "2014-08-28 13:35:28"
+            "time": "2014-09-01 19:03:49"
         },
         {
             "name": "contao/module-calendar",
@@ -953,12 +955,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-core.git",
-                "reference": "7bfb17cb73aa3ed84bb80679e84467d24258de51"
+                "reference": "8154973bb0f5050a1971f461b0c6a2d895113d9c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-core/zipball/7bfb17cb73aa3ed84bb80679e84467d24258de51",
-                "reference": "7bfb17cb73aa3ed84bb80679e84467d24258de51",
+                "url": "https://api.github.com/repos/contao/module-core/zipball/8154973bb0f5050a1971f461b0c6a2d895113d9c",
+                "reference": "8154973bb0f5050a1971f461b0c6a2d895113d9c",
                 "shasum": ""
             },
             "require": {
@@ -1001,7 +1003,7 @@
                 }
             ],
             "description": "Contao 4 core module",
-            "time": "2014-08-27 11:35:13"
+            "time": "2014-09-01 19:03:37"
         },
         {
             "name": "contao/module-faq",

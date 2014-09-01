@@ -4,6 +4,9 @@ Contao Open Source CMS changelog
 Version 4.0.0-alpha3 (2014-XX-XX)
 ---------------------------------
 
+### Changed
+Replace the syntax highlighter component with highlight.js.
+
 ### Removed
 Removed the "default" theme in favor of the "flexible" theme.
 
