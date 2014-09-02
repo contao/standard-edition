@@ -5,6 +5,9 @@ Version 4.0.0-alpha3 (2014-XX-XX)
 ---------------------------------
 
 ### Changed
+Remove the JS library dependencies (see #23).
+
+### Changed
 Replace the syntax highlighter component with highlight.js.
 
 ### Removed
