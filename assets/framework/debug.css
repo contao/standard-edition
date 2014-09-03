@@ -35,19 +35,19 @@
 	font-family:Verdana,sans-serif;
 }
 #contao-debug .debug-info {
-	background:url("../../../system/themes/default/images/show.gif") left 0 no-repeat;
+	background:url("../../system/themes/flexible/images/show.gif") left 0 no-repeat;
 }
 #contao-debug .debug-time {
-	background:url("../../../system/themes/default/images/news.gif") left 0 no-repeat;
+	background:url("../../system/themes/flexible/images/news.gif") left 0 no-repeat;
 }
 #contao-debug .debug-memory,#contao-debug .debug-models {
-	background:url("../../../system/themes/default/images/modules.gif") left 0 no-repeat;
+	background:url("../../system/themes/flexible/images/modules.gif") left 0 no-repeat;
 }
 #contao-debug .debug-db {
-	background:url("../../../system/themes/default/images/db.gif") left 0 no-repeat;
+	background:url("../../system/themes/flexible/images/db.gif") left 0 no-repeat;
 }
 #contao-debug .debug-rows {
-	background:url("../../../system/themes/default/images/rows.gif") left 0 no-repeat;
+	background:url("../../system/themes/flexible/images/rows.gif") left 0 no-repeat;
 }
 #contao-debug div {
 	height:260px;
@@ -73,9 +73,9 @@
 	top:2px;
 	height:28px;
 	right:28px;
-	background:url("../../../system/themes/default/images/expand.gif") right 5px no-repeat;
+	background:url("../../system/themes/flexible/images/expand.gif") right 5px no-repeat;
 	cursor:pointer;
 }
 #contao-debug.closed #debug-tog {
-	background-image:url("../../../system/themes/default/images/collapse.gif");
+	background-image:url("../../system/themes/flexible/images/collapse.gif");
 }
