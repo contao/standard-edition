@@ -67,8 +67,8 @@ wrapping element, use `Message::generateUnwrapped()` instead.
 
 ### `ondelete_callback`
 
-The `ondelete_callback` of the `DC_Folder` driver now passes `$this` as first
-argument just like the `ondelete_callback` of the `DC_Table` driver does.
+The `ondelete_callback` of the `DC_Table` driver now passes `$this` as last
+argument just like in `DC_Folder` and in any other callback.
 
 
 ### Markup changes
