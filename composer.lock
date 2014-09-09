@@ -822,12 +822,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/contao-library.git",
-                "reference": "0d806e8ebe2eca58b4a14aa1dbf9692b8fb37096"
+                "reference": "27487b73c04621e8212d0259f867f2a343d6fcb4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/contao-library/zipball/0d806e8ebe2eca58b4a14aa1dbf9692b8fb37096",
-                "reference": "0d806e8ebe2eca58b4a14aa1dbf9692b8fb37096",
+                "url": "https://api.github.com/repos/contao/contao-library/zipball/27487b73c04621e8212d0259f867f2a343d6fcb4",
+                "reference": "27487b73c04621e8212d0259f867f2a343d6fcb4",
                 "shasum": ""
             },
             "require-dev": {
@@ -858,12 +858,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-calendar.git",
-                "reference": "024681300b32df64b326efb2640fd3c3565c34b3"
+                "reference": "6978dc4826dcb2323c783b9f0dc379b55598dcf6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-calendar/zipball/024681300b32df64b326efb2640fd3c3565c34b3",
-                "reference": "024681300b32df64b326efb2640fd3c3565c34b3",
+                "url": "https://api.github.com/repos/contao/module-calendar/zipball/6978dc4826dcb2323c783b9f0dc379b55598dcf6",
+                "reference": "6978dc4826dcb2323c783b9f0dc379b55598dcf6",
                 "shasum": ""
             },
             "require": {
@@ -955,12 +955,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-core.git",
-                "reference": "89dbcd205383ddf8d44df25c013a922799139daf"
+                "reference": "4fcc3142f5930436712790d39b554be9e997653c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-core/zipball/89dbcd205383ddf8d44df25c013a922799139daf",
-                "reference": "89dbcd205383ddf8d44df25c013a922799139daf",
+                "url": "https://api.github.com/repos/contao/module-core/zipball/4fcc3142f5930436712790d39b554be9e997653c",
+                "reference": "4fcc3142f5930436712790d39b554be9e997653c",
                 "shasum": ""
             },
             "require": {
@@ -1011,12 +1011,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-faq.git",
-                "reference": "a740988f5f328767c95890f009c777a28400cb36"
+                "reference": "11c31b39612ad38cba61e8df031059cb29518cc7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-faq/zipball/a740988f5f328767c95890f009c777a28400cb36",
-                "reference": "a740988f5f328767c95890f009c777a28400cb36",
+                "url": "https://api.github.com/repos/contao/module-faq/zipball/11c31b39612ad38cba61e8df031059cb29518cc7",
+                "reference": "11c31b39612ad38cba61e8df031059cb29518cc7",
                 "shasum": ""
             },
             "require": {
@@ -1104,12 +1104,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-news.git",
-                "reference": "a87cff4ac83f8785a27867025441a5b82a4ac14e"
+                "reference": "c78fb8617458612a8cdac22d8500dbf260d3522a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-news/zipball/a87cff4ac83f8785a27867025441a5b82a4ac14e",
-                "reference": "a87cff4ac83f8785a27867025441a5b82a4ac14e",
+                "url": "https://api.github.com/repos/contao/module-news/zipball/c78fb8617458612a8cdac22d8500dbf260d3522a",
+                "reference": "c78fb8617458612a8cdac22d8500dbf260d3522a",
                 "shasum": ""
             },
             "require": {
