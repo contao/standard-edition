@@ -33,20 +33,6 @@ public function myPostFlushData($strResponse, Template $objTemplate) {}
 ```
 
 
-### `system/bin`
-
-The command line tools from `system/bin` have been converted to Symfony
-commands and can now be used as follows:
-
-```bash
-app/console contao:automator
-app/console contao:filesync
-app/console generate:autoload
-app/console generate:extension
-app/console generate:sqldump
-```
-
-
 ### `Message::generate()`
 
 The `Message` class now supports scopes, which can optionally be passed as

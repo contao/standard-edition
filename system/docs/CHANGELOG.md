@@ -26,16 +26,10 @@ Removed the CSS3PIE plugin.
 `Controller::replaceInsertTags()` is now public static.
 
 ### Changed
-The devtools are now available as Symfony commands (see `app/console`).
-
-### Changed
 Make the public extension folders configurable (see #8).
 
 ### Fixed
 Correctly symlink the upload folder.
-
-### New
-Add the Symfony resources.
 
 ### Fixed
 Update the vendor libraries (fixes various issues).

@@ -10,10 +10,6 @@ Thumbs.db
 .idea/
 nbproject/
 
-# Symfony
-/app/cache/*
-/app/logs/*
-
 # Generated assets
 /assets/css/*
 /assets/images/*
