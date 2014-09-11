@@ -5,6 +5,9 @@ Version 4.0.0-alpha3 (2014-XX-XX)
 ---------------------------------
 
 ### Changed
+Return `null` if a widget is empty and the DB field is nullable (see #17).
+
+### Changed
 Remove the JS library dependencies (see #23).
 
 ### Changed
