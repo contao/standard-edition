@@ -20,27 +20,12 @@
         "contao/module-newsletter": "dev-develop",
         "contao/module-repository": "dev-develop"
     },
-    "require-dev": {
-        "contao/contao-devtools": "dev-develop",
-        "sensio/distribution-bundle": "~3.0",
-        "symfony/finder": "~2.5"
-    },
     "replace": {
         "contao/core": "self.version"
     },
     "config": {
         "preferred-install": "dist",
         "component-dir": "components"
-    },
-    "scripts": {
-        "post-install-cmd": [
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache"
-        ],
-        "post-update-cmd": [
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache"
-        ]
     },
     "prefer-stable": true,
     "minimum-stability": "dev"
