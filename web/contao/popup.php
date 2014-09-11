@@ -20,5 +20,5 @@ define('TL_MODE', 'BE');
 require __DIR__ . '/../../system/initialize.php';
 
 // Run the controller
-$controller = new BackendPopup;
+$controller = new BackendPopup();
 $controller->run();

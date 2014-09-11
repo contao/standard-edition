@@ -24,5 +24,5 @@ require __DIR__ . '/../../system/initialize.php';
 @error_reporting(E_ALL|E_STRICT);
 
 // Run the controller
-$controller = new BackendInstall;
+$controller = new BackendInstall();
 $controller->run();

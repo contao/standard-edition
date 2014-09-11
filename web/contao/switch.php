@@ -20,5 +20,5 @@ define('TL_MODE', 'FE');
 require __DIR__ . '/../../system/initialize.php';
 
 // Run the controller
-$controller = new BackendSwitch;
+$controller = new BackendSwitch();
 $controller->run();

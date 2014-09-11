@@ -20,5 +20,5 @@ define('TL_MODE', 'FE');
 require __DIR__ . '/../../system/initialize.php';
 
 // Run the controller
-$controller = new FrontendShare;
+$controller = new FrontendShare();
 $controller->run();

@@ -20,5 +20,5 @@ define('TL_MODE', 'BE');
 require __DIR__ . '/../../system/initialize.php';
 
 // Run the controller
-$controller = new BackendPassword;
+$controller = new BackendPassword();
 $controller->run();
