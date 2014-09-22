@@ -781,12 +781,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/contao-library.git",
-                "reference": "f6dbbf778460c3213994a419bc811ffc77c9331f"
+                "reference": "73526b99c265beb990cc11a1deeacb84c67b73b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/contao-library/zipball/f6dbbf778460c3213994a419bc811ffc77c9331f",
-                "reference": "f6dbbf778460c3213994a419bc811ffc77c9331f",
+                "url": "https://api.github.com/repos/contao/contao-library/zipball/73526b99c265beb990cc11a1deeacb84c67b73b8",
+                "reference": "73526b99c265beb990cc11a1deeacb84c67b73b8",
                 "shasum": ""
             },
             "require": {
@@ -817,7 +817,7 @@
                 }
             ],
             "description": "Contao 4 library",
-            "time": "2014-09-18 08:50:51"
+            "time": "2014-09-22 11:10:57"
         },
         {
             "name": "contao/module-calendar",
@@ -825,12 +825,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-calendar.git",
-                "reference": "aa3da7af277c190d4502f3cdcb252bf03cd4f7c6"
+                "reference": "98b4951b73aca5b7ea3a76def7bcbe465464390b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-calendar/zipball/aa3da7af277c190d4502f3cdcb252bf03cd4f7c6",
-                "reference": "aa3da7af277c190d4502f3cdcb252bf03cd4f7c6",
+                "url": "https://api.github.com/repos/contao/module-calendar/zipball/98b4951b73aca5b7ea3a76def7bcbe465464390b",
+                "reference": "98b4951b73aca5b7ea3a76def7bcbe465464390b",
                 "shasum": ""
             },
             "require": {
@@ -865,7 +865,7 @@
                 }
             ],
             "description": "Contao 4 calendar module",
-            "time": "2014-09-09 14:43:02"
+            "time": "2014-09-22 11:24:20"
         },
         {
             "name": "contao/module-comments",
@@ -914,7 +914,7 @@
                 }
             ],
             "description": "Contao 4 comments module",
-            "time": "2014-08-18 14:59:37"
+            "time": "2014-09-22 10:46:48"
         },
         {
             "name": "contao/module-core",
@@ -922,12 +922,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-core.git",
-                "reference": "d938adedad7611c5d36f1ee82348b9e2cb6d4aa5"
+                "reference": "47898983fed0cc04b1eb4e9f974970ed3b672b61"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-core/zipball/d938adedad7611c5d36f1ee82348b9e2cb6d4aa5",
-                "reference": "d938adedad7611c5d36f1ee82348b9e2cb6d4aa5",
+                "url": "https://api.github.com/repos/contao/module-core/zipball/47898983fed0cc04b1eb4e9f974970ed3b672b61",
+                "reference": "47898983fed0cc04b1eb4e9f974970ed3b672b61",
                 "shasum": ""
             },
             "require": {
@@ -991,7 +991,7 @@
                 }
             ],
             "description": "Contao 4 core module",
-            "time": "2014-09-18 08:50:21"
+            "time": "2014-09-22 11:26:57"
         },
         {
             "name": "contao/module-faq",
@@ -1038,7 +1038,7 @@
                 }
             ],
             "description": "Contao 4 FAQ module",
-            "time": "2014-09-09 14:42:25"
+            "time": "2014-09-22 10:47:20"
         },
         {
             "name": "contao/module-listing",
@@ -1084,7 +1084,7 @@
                 }
             ],
             "description": "Contao 4 listing module",
-            "time": "2014-09-17 15:39:09"
+            "time": "2014-09-22 10:47:35"
         },
         {
             "name": "contao/module-news",
@@ -1092,12 +1092,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-news.git",
-                "reference": "406aa02b459d4c3a52caca0674c5ee7e1c00c3fb"
+                "reference": "4e436670954ee52f853de75df0b0aae78da01e3c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-news/zipball/406aa02b459d4c3a52caca0674c5ee7e1c00c3fb",
-                "reference": "406aa02b459d4c3a52caca0674c5ee7e1c00c3fb",
+                "url": "https://api.github.com/repos/contao/module-news/zipball/4e436670954ee52f853de75df0b0aae78da01e3c",
+                "reference": "4e436670954ee52f853de75df0b0aae78da01e3c",
                 "shasum": ""
             },
             "require": {
@@ -1132,7 +1132,7 @@
                 }
             ],
             "description": "Contao 4 news module",
-            "time": "2014-09-09 14:42:44"
+            "time": "2014-09-22 11:27:58"
         },
         {
             "name": "contao/module-newsletter",
@@ -1180,7 +1180,7 @@
                 }
             ],
             "description": "Contao 4 newsletter module",
-            "time": "2014-08-18 14:57:06"
+            "time": "2014-09-22 10:48:04"
         },
         {
             "name": "contao/module-repository",
@@ -1226,7 +1226,7 @@
                 }
             ],
             "description": "Contao 4 repository module",
-            "time": "2014-08-25 09:15:10"
+            "time": "2014-09-22 10:48:18"
         },
         {
             "name": "kriswallsmith/assetic",
@@ -1661,16 +1661,16 @@
         },
         {
             "name": "swiftmailer/swiftmailer",
-            "version": "v5.2.1",
+            "version": "v5.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "2b9af56cc676c338d52fca4c657e5bdff73bb7af"
+                "reference": "e02f71a35436af4bd58a1bd90116089e632e29e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/2b9af56cc676c338d52fca4c657e5bdff73bb7af",
-                "reference": "2b9af56cc676c338d52fca4c657e5bdff73bb7af",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/e02f71a35436af4bd58a1bd90116089e632e29e1",
+                "reference": "e02f71a35436af4bd58a1bd90116089e632e29e1",
                 "shasum": ""
             },
             "require": {
@@ -1696,13 +1696,11 @@
             ],
             "authors": [
                 {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
+                    "name": "Chris Corbyn"
                 },
                 {
-                    "name": "Chris Corbyn"
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
                 }
             ],
             "description": "Swiftmailer, free feature-rich PHP mailer",
@@ -1711,7 +1709,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2014-06-13 11:44:54"
+            "time": "2014-09-20 07:17:36"
         },
         {
             "name": "symfony/process",
