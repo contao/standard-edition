@@ -4,7 +4,7 @@
     <arg value="contao:version" />
   </exec>
 
-  <target name="build" depends="clone, update, purge, archive, cleanup">
+  <target name="build" depends="clone, update, languages, purge, archive, cleanup">
     <echo message="Contao ${version} build complete" />
   </target>
 
@@ -32,6 +32,17 @@
       <arg value="--no-dev" />
       <arg value="--no-scripts" />
     </exec>
+  </target>
+
+  <target name="languages">
+    <exec executable="txget" dir="contao-${version}/vendor/contao/module-calendar" failonerror="true" />
+    <exec executable="txget" dir="contao-${version}/vendor/contao/module-comments" failonerror="true" />
+    <exec executable="txget" dir="contao-${version}/vendor/contao/module-core" failonerror="true" />
+    <exec executable="txget" dir="contao-${version}/vendor/contao/module-faq" failonerror="true" />
+    <exec executable="txget" dir="contao-${version}/vendor/contao/module-listing" failonerror="true" />
+    <exec executable="txget" dir="contao-${version}/vendor/contao/module-news" failonerror="true" />
+    <exec executable="txget" dir="contao-${version}/vendor/contao/module-newsletter" failonerror="true" />
+    <exec executable="txget" dir="contao-${version}/vendor/contao/module-repository" failonerror="true" />
   </target>
 
   <target name="purge">
