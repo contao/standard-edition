@@ -40,7 +40,7 @@ window.tinymce && tinymce.init({
   content_css: "<?= Environment::get('path') ?>/system/themes/tinymce.css",
   extended_valid_elements: "b/strong,i/em",
   menubar: "file edit insert view format table",
-  toolbar: "link image | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | undo redo | code"
+  toolbar: "link unlink | image | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | undo redo | code"
 });
 </script>
 <?php endif; ?>
