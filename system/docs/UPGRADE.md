@@ -4,6 +4,12 @@ Contao Open Source CMS API changes
 Version 3.* to 4.0
 ------------------
 
+### `DcaExtractor`
+
+The `DcaExtractor` class is no longer instantiable via `new DcaExtractor()`.
+Use the `DcaExtractor::getInstance($table)` method instead.
+
+
 ### `assets/contao`
 
 The `assets/contao` directory has been removed:
@@ -17,20 +23,6 @@ The `assets/contao` directory has been removed:
 
 The MooTools "slimbox" plugin has been removed. Use the MooTools "mediabox" or
 the jQuery "colorbox" plugin instead.
-
-
-### "postFlushData" hook
-
-The "postFlushData" hook now passes a `PostResponseEvent` object instead of
-the response content and the template class:
-
-```php
-// Contao 4
-public function myPostFlushData(PostResponseEvent $event) {}
-
-// Contao 3
-public function myPostFlushData($strResponse, Template $objTemplate) {}
-```
 
 
 ### `Message::generate()`
