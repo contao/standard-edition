@@ -11,14 +11,19 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "contao/module-calendar": "dev-develop",
-        "contao/module-comments": "dev-develop",
-        "contao/module-core": "dev-develop",
-        "contao/module-faq": "dev-develop",
-        "contao/module-listing": "dev-develop",
-        "contao/module-news": "dev-develop",
-        "contao/module-newsletter": "dev-develop",
-        "contao/module-repository": "dev-develop"
+        "contao/module-calendar": "dev-feature/symfony2",
+        "contao/module-comments": "dev-feature/symfony2",
+        "contao/module-core": "dev-feature/symfony2",
+        "contao/module-faq": "dev-feature/symfony2",
+        "contao/module-listing": "dev-feature/symfony2",
+        "contao/module-news": "dev-feature/symfony2",
+        "contao/module-newsletter": "dev-feature/symfony2",
+        "contao/module-repository": "dev-feature/symfony2",
+        "symfony/framework-bundle": "~2.5"
+    },
+    "require-dev": {
+        "sensio/distribution-bundle": "~3.0",
+        "symfony/finder": "~2.5"
     },
     "replace": {
         "contao/core": "self.version"
@@ -26,6 +31,16 @@
     "config": {
         "preferred-install": "dist",
         "component-dir": "components"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache"
+        ],
+        "post-update-cmd": [
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache"
+        ]
     },
     "prefer-stable": true,
     "minimum-stability": "dev"
