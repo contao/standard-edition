@@ -142,9 +142,9 @@ function die_nicely($strTemplate, $strFallback)
 	{
 		include TL_ROOT . "/templates/$strTemplate.html5";
 	}
-	elseif (file_exists(TL_ROOT . "/system/modules/core/templates/backend/$strTemplate.html5"))
+	elseif (file_exists(TL_ROOT . "/vendor/contao/module-core/src/Resources/templates/backend/$strTemplate.html5"))
 	{
-		include TL_ROOT . "/system/modules/core/templates/backend/$strTemplate.html5";
+		include TL_ROOT . "/vendor/contao/module-core/src/Resources/templates/backend/$strTemplate.html5";
 	}
 	else
 	{

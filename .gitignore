@@ -47,16 +47,17 @@ nbproject/
 # Symlinked resources
 /web/assets
 /web/components
-/web/files
+/web/files/
 /web/system/modules/*
 /web/system/themes
+/web/vendor/
 
 # Disabled modules
 /system/modules/*/.skip
 
 # Composer package manager
-/composer
-/system/modules/!composer
+/composer/
+/system/modules/!composer/
 
 # Generated feeds
 /web/share/*.xml
