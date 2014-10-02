@@ -766,7 +766,7 @@
                 }
             ],
             "description": "Contao 4 library",
-            "time": "2014-09-29 19:01:46"
+            "time": "2014-10-02 10:02:29"
         },
         {
             "name": "contao/module-calendar",
@@ -774,12 +774,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-calendar.git",
-                "reference": "e54ed721521cf975c0ab864647b10fb82015332a"
+                "reference": "2d7ce95df062d6db2b087fa5dd0047ff76f240a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-calendar/zipball/e54ed721521cf975c0ab864647b10fb82015332a",
-                "reference": "e54ed721521cf975c0ab864647b10fb82015332a",
+                "url": "https://api.github.com/repos/contao/module-calendar/zipball/2d7ce95df062d6db2b087fa5dd0047ff76f240a4",
+                "reference": "2d7ce95df062d6db2b087fa5dd0047ff76f240a4",
                 "shasum": ""
             },
             "require": {
@@ -788,18 +788,14 @@
                 "php": ">=5.4.0"
             },
             "type": "library",
-            "extra": {
-                "contao": {
-                    "sources": {
-                        "src": "system/modules/calendar"
-                    }
-                }
-            },
             "autoload": {
+                "psr-4": {
+                    "Contao\\Bundle\\CalendarBundle\\": "src/"
+                },
                 "classmap": [
-                    "src/classes/",
-                    "src/models/",
-                    "src/modules/"
+                    "src/Resources/classes/",
+                    "src/Resources/models/",
+                    "src/Resources/modules/"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -813,7 +809,7 @@
                 }
             ],
             "description": "Contao 4 calendar module",
-            "time": "2014-09-29 19:12:10"
+            "time": "2014-10-02 15:41:01"
         },
         {
             "name": "contao/module-comments",
@@ -934,7 +930,7 @@
                 }
             ],
             "description": "Contao 4 core module",
-            "time": "2014-09-29 19:11:44"
+            "time": "2014-10-02 10:02:09"
         },
         {
             "name": "contao/module-faq",
@@ -1033,12 +1029,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-news.git",
-                "reference": "3b8b359fb414ed0fb05511f744a808d846b7b00d"
+                "reference": "3e9394687d8671847a8da1afceb424eb0194424c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-news/zipball/3b8b359fb414ed0fb05511f744a808d846b7b00d",
-                "reference": "3b8b359fb414ed0fb05511f744a808d846b7b00d",
+                "url": "https://api.github.com/repos/contao/module-news/zipball/3e9394687d8671847a8da1afceb424eb0194424c",
+                "reference": "3e9394687d8671847a8da1afceb424eb0194424c",
                 "shasum": ""
             },
             "require": {
@@ -1047,18 +1043,14 @@
                 "php": ">=5.4.0"
             },
             "type": "library",
-            "extra": {
-                "contao": {
-                    "sources": {
-                        "src": "system/modules/news"
-                    }
-                }
-            },
             "autoload": {
+                "psr-4": {
+                    "Contao\\Bundle\\NewsBundle\\": "src/"
+                },
                 "classmap": [
-                    "src/classes/",
-                    "src/models/",
-                    "src/modules/"
+                    "src/Resources/classes/",
+                    "src/Resources/models/",
+                    "src/Resources/modules/"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1072,7 +1064,7 @@
                 }
             ],
             "description": "Contao 4 news module",
-            "time": "2014-09-29 19:11:07"
+            "time": "2014-10-02 15:40:43"
         },
         {
             "name": "contao/module-newsletter",
@@ -2664,16 +2656,16 @@
         },
         {
             "name": "tecnick.com/tcpdf",
-            "version": "6.0.093",
+            "version": "6.0.094",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tecnickcom/TCPDF.git",
-                "reference": "8ec040b3ccedc2a0150a7b6b46c18c59d932ad59"
+                "reference": "89d007897e20471d4990d4bd0456272dece03a26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/8ec040b3ccedc2a0150a7b6b46c18c59d932ad59",
-                "reference": "8ec040b3ccedc2a0150a7b6b46c18c59d932ad59",
+                "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/89d007897e20471d4990d4bd0456272dece03a26",
+                "reference": "89d007897e20471d4990d4bd0456272dece03a26",
                 "shasum": ""
             },
             "require": {
@@ -2723,7 +2715,7 @@
                 "pdf417",
                 "qrcode"
             ],
-            "time": "2014-09-02 19:31:33"
+            "time": "2014-09-30 17:01:15"
         }
     ],
     "packages-dev": [
