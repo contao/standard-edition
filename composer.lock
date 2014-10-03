@@ -558,6 +558,44 @@
             "time": "2014-08-22 07:11:58"
         },
         {
+            "name": "contao-components/picturefill",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contao-components/picturefill.git",
+                "reference": "04fac195e6393a3328f6c3d94c2954fc20e553d1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contao-components/picturefill/zipball/04fac195e6393a3328f6c3d94c2954fc20e553d1",
+                "reference": "04fac195e6393a3328f6c3d94c2954fc20e553d1",
+                "shasum": ""
+            },
+            "require": {
+                "robloach/component-installer": "~0.0"
+            },
+            "type": "component",
+            "extra": {
+                "component": {
+                    "scripts": [
+                        "js/picturefill.min.js"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Leo Feyer",
+                    "homepage": "https://github.com/leofeyer"
+                }
+            ],
+            "description": "Picturefill.js integration for Contao Open Source CMS",
+            "time": "2014-10-03 09:28:43"
+        },
+        {
             "name": "contao-components/simplemodal",
             "version": "1.2.0",
             "source": {
@@ -730,12 +768,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/contao-library.git",
-                "reference": "b2885a56d17d39090a312b02c0e47259f0225479"
+                "reference": "67a72e8a9993758e530d63b392fccbb70379cee0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/contao-library/zipball/b2885a56d17d39090a312b02c0e47259f0225479",
-                "reference": "b2885a56d17d39090a312b02c0e47259f0225479",
+                "url": "https://api.github.com/repos/contao/contao-library/zipball/67a72e8a9993758e530d63b392fccbb70379cee0",
+                "reference": "67a72e8a9993758e530d63b392fccbb70379cee0",
                 "shasum": ""
             },
             "require": {
@@ -766,7 +804,7 @@
                 }
             ],
             "description": "Contao 4 library",
-            "time": "2014-10-02 10:02:29"
+            "time": "2014-10-03 10:46:25"
         },
         {
             "name": "contao/module-calendar",
@@ -774,12 +812,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-calendar.git",
-                "reference": "2d7ce95df062d6db2b087fa5dd0047ff76f240a4"
+                "reference": "792ebd63fe601e4e7613622fea36068793b68314"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-calendar/zipball/2d7ce95df062d6db2b087fa5dd0047ff76f240a4",
-                "reference": "2d7ce95df062d6db2b087fa5dd0047ff76f240a4",
+                "url": "https://api.github.com/repos/contao/module-calendar/zipball/792ebd63fe601e4e7613622fea36068793b68314",
+                "reference": "792ebd63fe601e4e7613622fea36068793b68314",
                 "shasum": ""
             },
             "require": {
@@ -809,7 +847,7 @@
                 }
             ],
             "description": "Contao 4 calendar module",
-            "time": "2014-10-02 15:41:01"
+            "time": "2014-10-03 10:43:41"
         },
         {
             "name": "contao/module-comments",
@@ -865,12 +903,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-core.git",
-                "reference": "8f2c185ca0d230432d906ab842ccafe08a8aa09e"
+                "reference": "25ca3275b421a748bf25d8307ddbb90ad0538e44"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-core/zipball/8f2c185ca0d230432d906ab842ccafe08a8aa09e",
-                "reference": "8f2c185ca0d230432d906ab842ccafe08a8aa09e",
+                "url": "https://api.github.com/repos/contao/module-core/zipball/25ca3275b421a748bf25d8307ddbb90ad0538e44",
+                "reference": "25ca3275b421a748bf25d8307ddbb90ad0538e44",
                 "shasum": ""
             },
             "require": {
@@ -887,6 +925,7 @@
                 "contao-components/mediabox": "~1.4",
                 "contao-components/mediaelement": "~2.15",
                 "contao-components/mootools": "~1.5",
+                "contao-components/picturefill": "~2.1",
                 "contao-components/simplemodal": "~1.2",
                 "contao-components/swipe": "~2.0",
                 "contao-components/tablesorter": "~2.0",
@@ -930,7 +969,7 @@
                 }
             ],
             "description": "Contao 4 core module",
-            "time": "2014-10-02 10:02:09"
+            "time": "2014-10-03 10:43:14"
         },
         {
             "name": "contao/module-faq",
@@ -938,12 +977,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-faq.git",
-                "reference": "e7593bcdd7745631c0d1357c827ffbbd419c36d7"
+                "reference": "45c2757d145dff49c254ede3bf5cf73255a78c03"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-faq/zipball/e7593bcdd7745631c0d1357c827ffbbd419c36d7",
-                "reference": "e7593bcdd7745631c0d1357c827ffbbd419c36d7",
+                "url": "https://api.github.com/repos/contao/module-faq/zipball/45c2757d145dff49c254ede3bf5cf73255a78c03",
+                "reference": "45c2757d145dff49c254ede3bf5cf73255a78c03",
                 "shasum": ""
             },
             "require": {
@@ -976,7 +1015,7 @@
                 }
             ],
             "description": "Contao 4 FAQ module",
-            "time": "2014-09-29 19:11:32"
+            "time": "2014-10-03 10:34:26"
         },
         {
             "name": "contao/module-listing",
@@ -1029,12 +1068,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-news.git",
-                "reference": "3e9394687d8671847a8da1afceb424eb0194424c"
+                "reference": "ba0c42145f20cb041d391500d0b47320105e47b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-news/zipball/3e9394687d8671847a8da1afceb424eb0194424c",
-                "reference": "3e9394687d8671847a8da1afceb424eb0194424c",
+                "url": "https://api.github.com/repos/contao/module-news/zipball/ba0c42145f20cb041d391500d0b47320105e47b0",
+                "reference": "ba0c42145f20cb041d391500d0b47320105e47b0",
                 "shasum": ""
             },
             "require": {
@@ -1064,7 +1103,7 @@
                 }
             ],
             "description": "Contao 4 news module",
-            "time": "2014-10-02 15:40:43"
+            "time": "2014-10-03 10:33:35"
         },
         {
             "name": "contao/module-newsletter",
@@ -2656,16 +2695,16 @@
         },
         {
             "name": "tecnick.com/tcpdf",
-            "version": "6.0.094",
+            "version": "6.0.095",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tecnickcom/TCPDF.git",
-                "reference": "89d007897e20471d4990d4bd0456272dece03a26"
+                "reference": "4c66489b8b769357e8f9827da89231cc060553b3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/89d007897e20471d4990d4bd0456272dece03a26",
-                "reference": "89d007897e20471d4990d4bd0456272dece03a26",
+                "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/4c66489b8b769357e8f9827da89231cc060553b3",
+                "reference": "4c66489b8b769357e8f9827da89231cc060553b3",
                 "shasum": ""
             },
             "require": {
@@ -2715,7 +2754,7 @@
                 "pdf417",
                 "qrcode"
             ],
-            "time": "2014-09-30 17:01:15"
+            "time": "2014-10-02 16:33:03"
         }
     ],
     "packages-dev": [
