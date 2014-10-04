@@ -1,0 +1,3 @@
+contao:
+    resource: .
+    type: contao_frontend
