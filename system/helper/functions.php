@@ -66,6 +66,7 @@ function __error($intType, $strMessage, $strFile, $intLine)
 									str_replace(TL_ROOT . '/', '', $strFile), // see #4971
 									$intLine);
 
+				header('HTTP/1.1 500 Internal Server Error');
 				$strMessage .= "\n" . '<pre style="margin:11px 0 0">' . "\n" . str_replace(TL_ROOT . '/', '', $e->getTraceAsString()) . "\n" . '</pre>';
 				echo '<br>' . $strMessage;
 			}
@@ -107,6 +108,7 @@ function __exception(Exception $e)
 							str_replace(TL_ROOT . '/', '', $e->getFile()),
 							$e->getLine());
 
+		header('HTTP/1.1 500 Internal Server Error');
 		$strMessage .= "\n" . '<pre style="margin:11px 0 0">' . "\n" . str_replace(TL_ROOT . '/', '', $e->getTraceAsString()) . "\n" . '</pre>';
 		echo '<br>' . $strMessage;
 	}
