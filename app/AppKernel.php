@@ -17,7 +17,17 @@ class AppKernel extends ContaoKernel
 {
     public function registerBundles()
     {
-        return parent::registerBundles();
+        $bundles = [
+            new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
+        ];
+
+        if (in_array($this->getEnvironment(), ['dev', 'test'])) {
+            $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
+        }
+
+	    $this->addAutoloadBundles($bundles);
+
+        return $bundles;
     }
 
     public function registerContainerConfiguration(LoaderInterface $loader)
