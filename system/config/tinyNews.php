@@ -34,7 +34,7 @@ window.tinymce && tinymce.init({
     <?= Backend::getTinyTemplates() ?>
   ],
   doctype: "<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 3.2//EN\">",
-  plugins: "autosave charmap code fullscreen image link paste searchreplace tabfocus table template visualblocks",
+  plugins: "autosave charmap code fullscreen image link lists paste searchreplace tabfocus table template visualblocks",
   browser_spellcheck: true,
   tabfocus_elements: ":prev,:next",
   content_css: "<?= Environment::get('path') ?>/system/themes/tinymce.css",

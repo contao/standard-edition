@@ -317,16 +317,16 @@
         },
         {
             "name": "contao-components/highlight",
-            "version": "8.2.0",
+            "version": "8.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/highlight.git",
-                "reference": "5896c94b6bbd6e499df03c421ed772271141d46f"
+                "reference": "47692071451ffbf1ff3980cbbec789cf478489d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/highlight/zipball/5896c94b6bbd6e499df03c421ed772271141d46f",
-                "reference": "5896c94b6bbd6e499df03c421ed772271141d46f",
+                "url": "https://api.github.com/repos/contao-components/highlight/zipball/47692071451ffbf1ff3980cbbec789cf478489d5",
+                "reference": "47692071451ffbf1ff3980cbbec789cf478489d5",
                 "shasum": ""
             },
             "require": {
@@ -354,7 +354,7 @@
                 }
             ],
             "description": "Highlight.js integration for Contao Open Source CMS",
-            "time": "2014-09-01 18:58:01"
+            "time": "2014-10-21 13:57:16"
         },
         {
             "name": "contao-components/html5shiv",
@@ -567,16 +567,16 @@
         },
         {
             "name": "contao-components/mootools",
-            "version": "1.5.0",
+            "version": "1.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/mootools.git",
-                "reference": "55bc0dc9f8e1bbedbcf07c8663ef8f43343ef419"
+                "reference": "7b61a8c0b9c03cab476eb626a72e523e52708ed9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/mootools/zipball/55bc0dc9f8e1bbedbcf07c8663ef8f43343ef419",
-                "reference": "55bc0dc9f8e1bbedbcf07c8663ef8f43343ef419",
+                "url": "https://api.github.com/repos/contao-components/mootools/zipball/7b61a8c0b9c03cab476eb626a72e523e52708ed9",
+                "reference": "7b61a8c0b9c03cab476eb626a72e523e52708ed9",
                 "shasum": ""
             },
             "require": {
@@ -606,7 +606,7 @@
                 }
             ],
             "description": "MooTools integration for Contao Open Source CMS",
-            "time": "2014-08-22 07:11:58"
+            "time": "2014-10-20 10:57:40"
         },
         {
             "name": "contao-components/picturefill",
@@ -692,16 +692,16 @@
         },
         {
             "name": "contao-components/swipe",
-            "version": "2.0.0",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/swipe.git",
-                "reference": "026c44d4bde938c79edfbcd612aba177e2c7ae5c"
+                "reference": "d43e48caf7283f53343869c9ad20827e5a3d0518"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/swipe/zipball/026c44d4bde938c79edfbcd612aba177e2c7ae5c",
-                "reference": "026c44d4bde938c79edfbcd612aba177e2c7ae5c",
+                "url": "https://api.github.com/repos/contao-components/swipe/zipball/d43e48caf7283f53343869c9ad20827e5a3d0518",
+                "reference": "d43e48caf7283f53343869c9ad20827e5a3d0518",
                 "shasum": ""
             },
             "require": {
@@ -729,7 +729,7 @@
                 }
             ],
             "description": "A JavaScript touch slider with dot menu",
-            "time": "2014-08-21 14:57:43"
+            "time": "2014-10-20 09:46:10"
         },
         {
             "name": "contao-components/tablesorter",
@@ -777,16 +777,16 @@
         },
         {
             "name": "contao-components/tinymce4",
-            "version": "4.1.4",
+            "version": "4.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/tinymce4.git",
-                "reference": "ff7030b15b0373b3cdbd7b82b8704d6342081b57"
+                "reference": "85eb1e999b7c53b688b9347ba28ed3a7d482de3b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/tinymce4/zipball/ff7030b15b0373b3cdbd7b82b8704d6342081b57",
-                "reference": "ff7030b15b0373b3cdbd7b82b8704d6342081b57",
+                "url": "https://api.github.com/repos/contao-components/tinymce4/zipball/85eb1e999b7c53b688b9347ba28ed3a7d482de3b",
+                "reference": "85eb1e999b7c53b688b9347ba28ed3a7d482de3b",
                 "shasum": ""
             },
             "require": {
@@ -811,7 +811,7 @@
                 }
             ],
             "description": "TinyMCE 4 integration for Contao Open Source CMS",
-            "time": "2014-08-23 19:02:24"
+            "time": "2014-10-21 13:46:43"
         },
         {
             "name": "contao/contao-library",
@@ -819,12 +819,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/contao-library.git",
-                "reference": "2007bb5c4201544b67970237aa997d3d0791443b"
+                "reference": "c34f97a9b922ff7ddcea15bc88b8deb201d12bc3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/contao-library/zipball/2007bb5c4201544b67970237aa997d3d0791443b",
-                "reference": "2007bb5c4201544b67970237aa997d3d0791443b",
+                "url": "https://api.github.com/repos/contao/contao-library/zipball/c34f97a9b922ff7ddcea15bc88b8deb201d12bc3",
+                "reference": "c34f97a9b922ff7ddcea15bc88b8deb201d12bc3",
                 "shasum": ""
             },
             "require": {
@@ -855,7 +855,7 @@
                 }
             ],
             "description": "Contao 4 library",
-            "time": "2014-10-03 09:45:12"
+            "time": "2014-10-21 10:34:04"
         },
         {
             "name": "contao/module-calendar",
@@ -863,12 +863,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-calendar.git",
-                "reference": "5a236e7ad692c17c43027f53a03318b9ad946c6e"
+                "reference": "1da7ae3e745f3121f4f9ff6e6a9a3d6cef337894"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-calendar/zipball/5a236e7ad692c17c43027f53a03318b9ad946c6e",
-                "reference": "5a236e7ad692c17c43027f53a03318b9ad946c6e",
+                "url": "https://api.github.com/repos/contao/module-calendar/zipball/1da7ae3e745f3121f4f9ff6e6a9a3d6cef337894",
+                "reference": "1da7ae3e745f3121f4f9ff6e6a9a3d6cef337894",
                 "shasum": ""
             },
             "require": {
@@ -903,7 +903,7 @@
                 }
             ],
             "description": "Contao 4 calendar module",
-            "time": "2014-10-03 09:44:44"
+            "time": "2014-10-20 11:18:09"
         },
         {
             "name": "contao/module-comments",
@@ -952,7 +952,7 @@
                 }
             ],
             "description": "Contao 4 comments module",
-            "time": "2014-09-23 17:39:32"
+            "time": "2014-10-03 14:14:37"
         },
         {
             "name": "contao/module-core",
@@ -960,12 +960,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-core.git",
-                "reference": "0059f03e848f50f533a84f711bf929322384bee2"
+                "reference": "3173ac9eb380532d6951a469e088eded183f3b7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-core/zipball/0059f03e848f50f533a84f711bf929322384bee2",
-                "reference": "0059f03e848f50f533a84f711bf929322384bee2",
+                "url": "https://api.github.com/repos/contao/module-core/zipball/3173ac9eb380532d6951a469e088eded183f3b7e",
+                "reference": "3173ac9eb380532d6951a469e088eded183f3b7e",
                 "shasum": ""
             },
             "require": {
@@ -1030,7 +1030,7 @@
                 }
             ],
             "description": "Contao 4 core module",
-            "time": "2014-10-03 09:44:23"
+            "time": "2014-10-21 10:00:00"
         },
         {
             "name": "contao/module-faq",
@@ -1038,12 +1038,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-faq.git",
-                "reference": "fa5e0d7d66b4e81752ab3680bb8d655685c74ca5"
+                "reference": "21fc5014fb9b68288fd336c0fdb9b68ab323ed47"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-faq/zipball/fa5e0d7d66b4e81752ab3680bb8d655685c74ca5",
-                "reference": "fa5e0d7d66b4e81752ab3680bb8d655685c74ca5",
+                "url": "https://api.github.com/repos/contao/module-faq/zipball/21fc5014fb9b68288fd336c0fdb9b68ab323ed47",
+                "reference": "21fc5014fb9b68288fd336c0fdb9b68ab323ed47",
                 "shasum": ""
             },
             "require": {
@@ -1077,7 +1077,7 @@
                 }
             ],
             "description": "Contao 4 FAQ module",
-            "time": "2014-10-03 09:43:35"
+            "time": "2014-10-21 12:17:46"
         },
         {
             "name": "contao/module-listing",
@@ -1171,7 +1171,7 @@
                 }
             ],
             "description": "Contao 4 news module",
-            "time": "2014-10-03 09:43:16"
+            "time": "2014-10-03 14:18:02"
         },
         {
             "name": "contao/module-newsletter",
@@ -1219,7 +1219,7 @@
                 }
             ],
             "description": "Contao 4 newsletter module",
-            "time": "2014-09-25 15:04:21"
+            "time": "2014-10-03 14:13:52"
         },
         {
             "name": "contao/module-repository",
@@ -1227,12 +1227,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-repository.git",
-                "reference": "d32516c8f88cc4beb07a1386e4fd05a0e05135a9"
+                "reference": "ec7303bc2edef9632d8ac57bedd35f65bfdcc13a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-repository/zipball/d32516c8f88cc4beb07a1386e4fd05a0e05135a9",
-                "reference": "d32516c8f88cc4beb07a1386e4fd05a0e05135a9",
+                "url": "https://api.github.com/repos/contao/module-repository/zipball/ec7303bc2edef9632d8ac57bedd35f65bfdcc13a",
+                "reference": "ec7303bc2edef9632d8ac57bedd35f65bfdcc13a",
                 "shasum": ""
             },
             "require": {
@@ -1265,20 +1265,20 @@
                 }
             ],
             "description": "Contao 4 repository module",
-            "time": "2014-09-22 10:48:18"
+            "time": "2014-10-03 18:38:58"
         },
         {
             "name": "kriswallsmith/assetic",
-            "version": "v1.1.2",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kriswallsmith/assetic.git",
-                "reference": "735cffd3982c6e8cdebe292d5db39d077f65890f"
+                "reference": "df991c124a2212371443b586a1be767500036dee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/735cffd3982c6e8cdebe292d5db39d077f65890f",
-                "reference": "735cffd3982c6e8cdebe292d5db39d077f65890f",
+                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/df991c124a2212371443b586a1be767500036dee",
+                "reference": "df991c124a2212371443b586a1be767500036dee",
                 "shasum": ""
             },
             "require": {
@@ -1293,7 +1293,9 @@
                 "leafo/scssphp": "*",
                 "leafo/scssphp-compass": "*",
                 "mrclay/minify": "*",
-                "phpunit/phpunit": "~3.7",
+                "patchwork/jsqueeze": "~1.0",
+                "phpunit/phpunit": "~4",
+                "psr/log": "~1.0",
                 "ptachoire/cssembed": "*",
                 "twig/twig": "~1.6"
             },
@@ -1301,13 +1303,14 @@
                 "leafo/lessphp": "Assetic provides the integration with the lessphp LESS compiler",
                 "leafo/scssphp": "Assetic provides the integration with the scssphp SCSS compiler",
                 "leafo/scssphp-compass": "Assetic provides the integration with the SCSS compass plugin",
+                "patchwork/jsqueeze": "Assetic provides the integration with the JSqueeze JavaScript compressor",
                 "ptachoire/cssembed": "Assetic provides the integration with phpcssembed to embed data uris",
                 "twig/twig": "Assetic provides the integration with the Twig templating engine"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1-dev"
+                    "dev-master": "1.2-dev"
                 }
             },
             "autoload": {
@@ -1336,7 +1339,7 @@
                 "compression",
                 "minification"
             ],
-            "time": "2013-07-19 00:03:27"
+            "time": "2014-10-14 14:45:32"
         },
         {
             "name": "leafo/lessphp",
@@ -1700,20 +1703,20 @@
         },
         {
             "name": "swiftmailer/swiftmailer",
-            "version": "v5.2.2",
+            "version": "v5.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "e02f71a35436af4bd58a1bd90116089e632e29e1"
+                "reference": "b86b927dfefdb56ab0b22d1350033d9a38e9f205"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/e02f71a35436af4bd58a1bd90116089e632e29e1",
-                "reference": "e02f71a35436af4bd58a1bd90116089e632e29e1",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/b86b927dfefdb56ab0b22d1350033d9a38e9f205",
+                "reference": "b86b927dfefdb56ab0b22d1350033d9a38e9f205",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.2.4"
+                "php": ">=5.3.3"
             },
             "require-dev": {
                 "mockery/mockery": "~0.9.1"
@@ -1721,7 +1724,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "5.2-dev"
+                    "dev-master": "5.3-dev"
                 }
             },
             "autoload": {
@@ -1748,7 +1751,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2014-09-20 07:17:36"
+            "time": "2014-10-04 05:53:18"
         },
         {
             "name": "symfony/process",
@@ -1799,16 +1802,16 @@
         },
         {
             "name": "tecnick.com/tcpdf",
-            "version": "6.0.095",
+            "version": "6.0.097",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tecnickcom/TCPDF.git",
-                "reference": "4c66489b8b769357e8f9827da89231cc060553b3"
+                "reference": "73b436e180d91cb0e9897242ccfb4b49fc498901"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/4c66489b8b769357e8f9827da89231cc060553b3",
-                "reference": "4c66489b8b769357e8f9827da89231cc060553b3",
+                "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/73b436e180d91cb0e9897242ccfb4b49fc498901",
+                "reference": "73b436e180d91cb0e9897242ccfb4b49fc498901",
                 "shasum": ""
             },
             "require": {
@@ -1858,7 +1861,7 @@
                 "pdf417",
                 "qrcode"
             ],
-            "time": "2014-10-02 16:33:03"
+            "time": "2014-10-20 20:02:38"
         }
     ],
     "packages-dev": [],
