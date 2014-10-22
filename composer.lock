@@ -819,12 +819,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/contao-library.git",
-                "reference": "c34f97a9b922ff7ddcea15bc88b8deb201d12bc3"
+                "reference": "5cbcd350e188ece846ef36e153970d64d2169759"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/contao-library/zipball/c34f97a9b922ff7ddcea15bc88b8deb201d12bc3",
-                "reference": "c34f97a9b922ff7ddcea15bc88b8deb201d12bc3",
+                "url": "https://api.github.com/repos/contao/contao-library/zipball/5cbcd350e188ece846ef36e153970d64d2169759",
+                "reference": "5cbcd350e188ece846ef36e153970d64d2169759",
                 "shasum": ""
             },
             "require": {
@@ -960,12 +960,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-core.git",
-                "reference": "3173ac9eb380532d6951a469e088eded183f3b7e"
+                "reference": "f6626b940634c3877cbfb25aeb8376388d43beea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-core/zipball/3173ac9eb380532d6951a469e088eded183f3b7e",
-                "reference": "3173ac9eb380532d6951a469e088eded183f3b7e",
+                "url": "https://api.github.com/repos/contao/module-core/zipball/f6626b940634c3877cbfb25aeb8376388d43beea",
+                "reference": "f6626b940634c3877cbfb25aeb8376388d43beea",
                 "shasum": ""
             },
             "require": {
