@@ -4,24 +4,25 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "23486c8ab769d0d68e0283df930e81c6",
+    "hash": "08185cdcd14eb885dd7037e3b017c873",
     "packages": [
         {
             "name": "contao-community-alliance/composer-plugin",
-            "version": "2.2.2",
+            "version": "2.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-community-alliance/composer-plugin.git",
-                "reference": "0bc66a20a895536833c302c6a1db37d4441cca21"
+                "reference": "a7e4a41526cbc426d8e28d2d9764975fccaffd00"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-community-alliance/composer-plugin/zipball/0bc66a20a895536833c302c6a1db37d4441cca21",
-                "reference": "0bc66a20a895536833c302c6a1db37d4441cca21",
+                "url": "https://api.github.com/repos/contao-community-alliance/composer-plugin/zipball/a7e4a41526cbc426d8e28d2d9764975fccaffd00",
+                "reference": "a7e4a41526cbc426d8e28d2d9764975fccaffd00",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "1.0.0"
+                "composer-plugin-api": "1.0.0",
+                "php": ">=5.3.2"
             },
             "conflict": {
                 "contao-community-alliance/composer": "<0.9-dev",
@@ -31,10 +32,10 @@
                 "contao-community-alliance/composer-installer": "1.7.1"
             },
             "require-dev": {
-                "bit3/php-coding-standard": "*",
                 "composer/composer": "dev-master",
-                "pdepend/pdepend": "1.1.*",
-                "phpunit/phpunit": ">=3.7.10,<4-dev"
+                "contao-community-alliance/build-system": "~1.0",
+                "contao-community-alliance/build-system-all-tasks": "~1.0",
+                "contao-community-alliance/coding-standard": "~1.0"
             },
             "type": "composer-plugin",
             "extra": {
@@ -55,7 +56,7 @@
             ],
             "description": "Composer plugin that provide contao integration and installer.",
             "homepage": "http://c-c-a.org/",
-            "time": "2014-07-22 21:27:29"
+            "time": "2014-10-24 10:30:50"
         },
         {
             "name": "contao-components/ace",
@@ -609,44 +610,6 @@
             "time": "2014-10-20 10:57:40"
         },
         {
-            "name": "contao-components/picturefill",
-            "version": "2.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/contao-components/picturefill.git",
-                "reference": "04fac195e6393a3328f6c3d94c2954fc20e553d1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/picturefill/zipball/04fac195e6393a3328f6c3d94c2954fc20e553d1",
-                "reference": "04fac195e6393a3328f6c3d94c2954fc20e553d1",
-                "shasum": ""
-            },
-            "require": {
-                "robloach/component-installer": "~0.0"
-            },
-            "type": "component",
-            "extra": {
-                "component": {
-                    "scripts": [
-                        "js/picturefill.min.js"
-                    ]
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Leo Feyer",
-                    "homepage": "https://github.com/leofeyer"
-                }
-            ],
-            "description": "Picturefill.js integration for Contao Open Source CMS",
-            "time": "2014-10-03 09:28:43"
-        },
-        {
             "name": "contao-components/respimage",
             "version": "0.9.6",
             "source": {
@@ -998,34 +961,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-core.git",
-                "reference": "01553531ebeb84e166da189689c5d75b6ba9a51c"
+                "reference": "401a2c60b40072cfb4a8cca8071abca778c4de4b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-core/zipball/01553531ebeb84e166da189689c5d75b6ba9a51c",
-                "reference": "01553531ebeb84e166da189689c5d75b6ba9a51c",
+                "url": "https://api.github.com/repos/contao/module-core/zipball/401a2c60b40072cfb4a8cca8071abca778c4de4b",
+                "reference": "401a2c60b40072cfb4a8cca8071abca778c4de4b",
                 "shasum": ""
             },
             "require": {
                 "contao-community-alliance/composer-plugin": "~2.0",
-                "contao-components/ace": "~1.1",
-                "contao-components/chosen": "~1.0",
-                "contao-components/colorbox": "~1.5",
-                "contao-components/colorpicker": "~1.4",
-                "contao-components/datepicker": "~2.2",
-                "contao-components/dropzone": "~3.10",
-                "contao-components/highlight": "~8.2",
-                "contao-components/html5shiv": "~3.7",
-                "contao-components/jquery": "~1.11",
-                "contao-components/jquery-ui": "~1.11",
-                "contao-components/mediabox": "~1.4",
-                "contao-components/mediaelement": "~2.15",
-                "contao-components/mootools": "~1.5",
-                "contao-components/picturefill": "~2.1",
-                "contao-components/simplemodal": "~1.2",
-                "contao-components/swipe": "~2.0",
-                "contao-components/tablesorter": "~2.0",
-                "contao-components/tinymce4": "~4.1",
                 "contao/contao-library": "dev-develop",
                 "michelf/php-markdown": "~1.4",
                 "php": ">=5.4.0",
@@ -1068,7 +1013,7 @@
                 }
             ],
             "description": "Contao 4 core module",
-            "time": "2014-10-23 14:15:23"
+            "time": "2014-10-24 10:16:37"
         },
         {
             "name": "contao/module-faq",
