@@ -768,12 +768,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/contao-library.git",
-                "reference": "476feb8de81e71acc9d46c1d2b6e4339676a6644"
+                "reference": "e9f41d367bf00e82ac8abceef4377493b949a1fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/contao-library/zipball/476feb8de81e71acc9d46c1d2b6e4339676a6644",
-                "reference": "476feb8de81e71acc9d46c1d2b6e4339676a6644",
+                "url": "https://api.github.com/repos/contao/contao-library/zipball/e9f41d367bf00e82ac8abceef4377493b949a1fb",
+                "reference": "e9f41d367bf00e82ac8abceef4377493b949a1fb",
                 "shasum": ""
             },
             "require": {
@@ -812,12 +812,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-calendar.git",
-                "reference": "082d7924bcd471005e4ae453feb12118f21c257d"
+                "reference": "bac445ffc38ee44be92ec217e35f6062e8e70ebb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-calendar/zipball/082d7924bcd471005e4ae453feb12118f21c257d",
-                "reference": "082d7924bcd471005e4ae453feb12118f21c257d",
+                "url": "https://api.github.com/repos/contao/module-calendar/zipball/bac445ffc38ee44be92ec217e35f6062e8e70ebb",
+                "reference": "bac445ffc38ee44be92ec217e35f6062e8e70ebb",
                 "shasum": ""
             },
             "require": {
@@ -903,12 +903,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-core.git",
-                "reference": "008facd2e2d4672017fbd6fd618143e3fdedb791"
+                "reference": "df11c228a645d34a290f820dc485d5381ca23ab3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-core/zipball/008facd2e2d4672017fbd6fd618143e3fdedb791",
-                "reference": "008facd2e2d4672017fbd6fd618143e3fdedb791",
+                "url": "https://api.github.com/repos/contao/module-core/zipball/df11c228a645d34a290f820dc485d5381ca23ab3",
+                "reference": "df11c228a645d34a290f820dc485d5381ca23ab3",
                 "shasum": ""
             },
             "require": {
@@ -1053,12 +1053,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-news.git",
-                "reference": "bba587afed34dc7dddf2b2d0e53de2c217a3b5f8"
+                "reference": "78791092f863b3dd7f956f9beb75f791b333d96a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-news/zipball/bba587afed34dc7dddf2b2d0e53de2c217a3b5f8",
-                "reference": "bba587afed34dc7dddf2b2d0e53de2c217a3b5f8",
+                "url": "https://api.github.com/repos/contao/module-news/zipball/78791092f863b3dd7f956f9beb75f791b333d96a",
+                "reference": "78791092f863b3dd7f956f9beb75f791b333d96a",
                 "shasum": ""
             },
             "require": {
