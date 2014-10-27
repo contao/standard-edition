@@ -19,7 +19,6 @@
         "contao/module-listing": "dev-feature/symfony2",
         "contao/module-news": "dev-feature/symfony2",
         "contao/module-newsletter": "dev-feature/symfony2",
-        "contao/module-repository": "dev-feature/symfony2",
         "contao-components/ace": "~1.1",
         "contao-components/chosen": "~1.0",
         "contao-components/colorbox": "~1.5",
@@ -40,7 +39,8 @@
         "contao-components/tinymce4": "~4.1"
     },
     "require-dev": {
-        "sensio/distribution-bundle": "~3.0"
+        "sensio/distribution-bundle": "~3.0",
+        "incenteev/composer-parameter-handler": "~2.0"
     },
     "replace": {
         "contao/core": "self.version"
@@ -51,13 +51,20 @@
     },
     "scripts": {
         "post-install-cmd": [
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache"
         ],
         "post-update-cmd": [
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache"
         ]
+    },
+    "extra": {
+        "incenteev-parameters": {
+            "file": "app/config/parameters.yml"
+        }
     },
     "prefer-stable": true,
     "minimum-stability": "dev"
