@@ -15,6 +15,8 @@ namespace Contao;
 // Set the script name
 define('TL_SCRIPT', 'contao/install.php');
 
+// FIXME: parameters.yml prüfen
+
 // Initialize the system
 define('TL_MODE', 'BE');
 require __DIR__ . '/../../system/initialize.php';
