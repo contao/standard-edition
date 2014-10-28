@@ -25,7 +25,7 @@ class AppKernel extends ContaoKernel
             $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
         }
 
-	    $this->addAutoloadBundles($bundles);
+        $this->addAutoloadBundles($bundles);
 
         return $bundles;
     }
