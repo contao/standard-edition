@@ -10,7 +10,7 @@
  * @license http://www.gnu.org/licenses/lgpl-3.0.html LGPL
  */
 
-use Contao\Bundle\CoreBundle\HttpKernel\ContaoKernel;
+use Contao\CoreBundle\HttpKernel\ContaoKernel;
 use Symfony\Component\Config\Loader\LoaderInterface;
 
 class AppKernel extends ContaoKernel
