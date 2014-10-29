@@ -763,65 +763,20 @@
             "time": "2014-10-21 13:46:43"
         },
         {
-            "name": "contao/contao-library",
-            "version": "dev-feature/symfony2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/contao/contao-library.git",
-                "reference": "7c630098369e2036b5f271747ed715061e3e7b2e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/contao/contao-library/zipball/7c630098369e2036b5f271747ed715061e3e7b2e",
-                "reference": "7c630098369e2036b5f271747ed715061e3e7b2e",
-                "shasum": ""
-            },
-            "require": {
-                "leafo/lessphp": "~0.4",
-                "leafo/scssphp": "dev-master",
-                "leafo/scssphp-compass": "dev-master",
-                "mabrahamde/idna-converter": "dev-master",
-                "php": ">=5.4.0",
-                "swiftmailer/swiftmailer": "~5.2"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~3.7"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Contao\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "LGPL-3.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Leo Feyer",
-                    "homepage": "https://github.com/leofeyer"
-                }
-            ],
-            "description": "Contao 4 library",
-            "time": "2014-10-27 17:11:19"
-        },
-        {
             "name": "contao/module-calendar",
             "version": "dev-feature/symfony2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-calendar.git",
-                "reference": "c6706d103160ddc12589676e4d475be703932415"
+                "reference": "e32bae68850b4697c9f8f62d2328618e4ab4d0c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-calendar/zipball/c6706d103160ddc12589676e4d475be703932415",
-                "reference": "c6706d103160ddc12589676e4d475be703932415",
+                "url": "https://api.github.com/repos/contao/module-calendar/zipball/e32bae68850b4697c9f8f62d2328618e4ab4d0c0",
+                "reference": "e32bae68850b4697c9f8f62d2328618e4ab4d0c0",
                 "shasum": ""
             },
             "require": {
-                "contao/contao-library": "dev-feature/symfony2",
                 "contao/module-core": "dev-feature/symfony2",
                 "php": ">=5.4.0",
                 "symfony/framework-bundle": "~2.5"
@@ -848,7 +803,7 @@
                 }
             ],
             "description": "Contao 4 calendar module",
-            "time": "2014-10-27 09:40:05"
+            "time": "2014-10-29 19:03:08"
         },
         {
             "name": "contao/module-comments",
@@ -856,16 +811,15 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-comments.git",
-                "reference": "6f3108a3fe9ae62df92e80925ebc3c19b03953bf"
+                "reference": "6b73af4e5d073e228fd4f2c324796ab037907a38"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-comments/zipball/6f3108a3fe9ae62df92e80925ebc3c19b03953bf",
-                "reference": "6f3108a3fe9ae62df92e80925ebc3c19b03953bf",
+                "url": "https://api.github.com/repos/contao/module-comments/zipball/6b73af4e5d073e228fd4f2c324796ab037907a38",
+                "reference": "6b73af4e5d073e228fd4f2c324796ab037907a38",
                 "shasum": ""
             },
             "require": {
-                "contao/contao-library": "dev-feature/symfony2",
                 "contao/module-core": "dev-feature/symfony2",
                 "php": ">=5.4.0"
             },
@@ -896,7 +850,7 @@
                 }
             ],
             "description": "Contao 4 comments module",
-            "time": "2014-09-29 19:11:58"
+            "time": "2014-10-29 19:02:52"
         },
         {
             "name": "contao/module-core",
@@ -904,20 +858,25 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-core.git",
-                "reference": "0aab78b898e0ec28f9a690069a2c9a1463dab133"
+                "reference": "c1ddc098232b30862f01673084a0b88ca26af0e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-core/zipball/0aab78b898e0ec28f9a690069a2c9a1463dab133",
-                "reference": "0aab78b898e0ec28f9a690069a2c9a1463dab133",
+                "url": "https://api.github.com/repos/contao/module-core/zipball/c1ddc098232b30862f01673084a0b88ca26af0e2",
+                "reference": "c1ddc098232b30862f01673084a0b88ca26af0e2",
                 "shasum": ""
             },
             "require": {
-                "contao/contao-library": "dev-feature/symfony2",
+                "leafo/lessphp": "~0.4",
+                "leafo/scssphp": "dev-master",
+                "leafo/scssphp-compass": "dev-master",
+                "mabrahamde/idna-converter": "dev-master",
                 "michelf/php-markdown": "~1.4",
                 "php": ">=5.4.0",
                 "phpspec/php-diff": "~1.0",
                 "simplepie/simplepie": "~1.3",
+                "swiftmailer/swiftmailer": "~5.2",
+                "symfony/finder": "~2.5",
                 "symfony/framework-bundle": "~2.5",
                 "tecnick.com/tcpdf": "~6.0"
             },
@@ -936,6 +895,7 @@
                     "contao/elements/",
                     "contao/forms/",
                     "contao/hybrids/",
+                    "contao/library/",
                     "contao/maintenance/",
                     "contao/models/",
                     "contao/modules/",
@@ -955,7 +915,7 @@
                 }
             ],
             "description": "Contao 4 core module",
-            "time": "2014-10-27 13:49:48"
+            "time": "2014-10-29 19:10:46"
         },
         {
             "name": "contao/module-faq",
@@ -963,16 +923,15 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-faq.git",
-                "reference": "45c2757d145dff49c254ede3bf5cf73255a78c03"
+                "reference": "b0e9f63da7052a9826973b58682a2effd7e1fe65"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-faq/zipball/45c2757d145dff49c254ede3bf5cf73255a78c03",
-                "reference": "45c2757d145dff49c254ede3bf5cf73255a78c03",
+                "url": "https://api.github.com/repos/contao/module-faq/zipball/b0e9f63da7052a9826973b58682a2effd7e1fe65",
+                "reference": "b0e9f63da7052a9826973b58682a2effd7e1fe65",
                 "shasum": ""
             },
             "require": {
-                "contao/contao-library": "dev-feature/symfony2",
                 "contao/module-core": "dev-feature/symfony2",
                 "php": ">=5.4.0"
             },
@@ -1001,7 +960,7 @@
                 }
             ],
             "description": "Contao 4 FAQ module",
-            "time": "2014-10-03 10:34:26"
+            "time": "2014-10-29 19:02:18"
         },
         {
             "name": "contao/module-listing",
@@ -1009,16 +968,15 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-listing.git",
-                "reference": "abc5eda518816d825612cd04fffd344168f23082"
+                "reference": "d255519b1a6cac5ec7f108490a144ba74fb54951"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-listing/zipball/abc5eda518816d825612cd04fffd344168f23082",
-                "reference": "abc5eda518816d825612cd04fffd344168f23082",
+                "url": "https://api.github.com/repos/contao/module-listing/zipball/d255519b1a6cac5ec7f108490a144ba74fb54951",
+                "reference": "d255519b1a6cac5ec7f108490a144ba74fb54951",
                 "shasum": ""
             },
             "require": {
-                "contao/contao-library": "dev-feature/symfony2",
                 "contao/module-core": "dev-feature/symfony2",
                 "php": ">=5.4.0"
             },
@@ -1046,7 +1004,7 @@
                 }
             ],
             "description": "Contao 4 listing module",
-            "time": "2014-09-29 19:11:20"
+            "time": "2014-10-29 19:01:12"
         },
         {
             "name": "contao/module-news",
@@ -1054,16 +1012,15 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-news.git",
-                "reference": "69ac50e2063f03387322a776b03378038c171d71"
+                "reference": "5e7902fb1e4a953975bb53cb7cc1a1dac01c1d8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-news/zipball/69ac50e2063f03387322a776b03378038c171d71",
-                "reference": "69ac50e2063f03387322a776b03378038c171d71",
+                "url": "https://api.github.com/repos/contao/module-news/zipball/5e7902fb1e4a953975bb53cb7cc1a1dac01c1d8d",
+                "reference": "5e7902fb1e4a953975bb53cb7cc1a1dac01c1d8d",
                 "shasum": ""
             },
             "require": {
-                "contao/contao-library": "dev-feature/symfony2",
                 "contao/module-core": "dev-feature/symfony2",
                 "php": ">=5.4.0",
                 "symfony/framework-bundle": "~2.5"
@@ -1090,7 +1047,7 @@
                 }
             ],
             "description": "Contao 4 news module",
-            "time": "2014-10-27 09:39:43"
+            "time": "2014-10-29 19:00:54"
         },
         {
             "name": "contao/module-newsletter",
@@ -1098,16 +1055,15 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-newsletter.git",
-                "reference": "1112f0b4a3e709de67f5815c25595f306e1d3c52"
+                "reference": "31d6fc466b5f8e6e0ac8b4a2fab7ea0169f216cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-newsletter/zipball/1112f0b4a3e709de67f5815c25595f306e1d3c52",
-                "reference": "1112f0b4a3e709de67f5815c25595f306e1d3c52",
+                "url": "https://api.github.com/repos/contao/module-newsletter/zipball/31d6fc466b5f8e6e0ac8b4a2fab7ea0169f216cd",
+                "reference": "31d6fc466b5f8e6e0ac8b4a2fab7ea0169f216cd",
                 "shasum": ""
             },
             "require": {
-                "contao/contao-library": "dev-feature/symfony2",
                 "contao/module-core": "dev-feature/symfony2",
                 "php": ">=5.4.0"
             },
@@ -1137,7 +1093,7 @@
                 }
             ],
             "description": "Contao 4 newsletter module",
-            "time": "2014-09-29 19:10:52"
+            "time": "2014-10-29 19:00:37"
         },
         {
             "name": "doctrine/annotations",
