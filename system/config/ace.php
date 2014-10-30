@@ -15,7 +15,7 @@ namespace Contao;
 if ($GLOBALS['TL_CONFIG']['useCE']):
 
 ?>
-<script>window.ace || document.write('<script src="<?= TL_ASSETS_URL ?>components/ace/js/ace.js" charset="utf-8">\x3C/script>')</script>
+<script>window.ace || document.write('<script src="<?= TL_ASSETS_URL ?>assets/ace/js/ace.js" charset="utf-8">\x3C/script>')</script>
 <script>
 window.ace && window.addEvent('domready', function() {
   var ta = document.getElementById('<?= $selector ?>'),

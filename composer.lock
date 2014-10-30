@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d9305d918ba0eab0982e139bad24b71b",
+    "hash": "273341ee5965b98a145336b46143f98a",
     "packages": [
         {
             "name": "contao-components/ace",
@@ -182,12 +182,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/contao.git",
-                "reference": "fb63465e36bd7ff7637ec8b9398a530c702b1641"
+                "reference": "7ada1a642c7511f103958dedd39083a8ccd24a09"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/contao/zipball/fb63465e36bd7ff7637ec8b9398a530c702b1641",
-                "reference": "fb63465e36bd7ff7637ec8b9398a530c702b1641",
+                "url": "https://api.github.com/repos/contao-components/contao/zipball/7ada1a642c7511f103958dedd39083a8ccd24a09",
+                "reference": "7ada1a642c7511f103958dedd39083a8ccd24a09",
                 "shasum": ""
             },
             "require": {
@@ -991,12 +991,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-core.git",
-                "reference": "dbb05f7037dfa067921f4b03e4272b2eefb1b8f4"
+                "reference": "da126ec68c6407607b3f883300d8f5f46bf24207"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-core/zipball/dbb05f7037dfa067921f4b03e4272b2eefb1b8f4",
-                "reference": "dbb05f7037dfa067921f4b03e4272b2eefb1b8f4",
+                "url": "https://api.github.com/repos/contao/module-core/zipball/da126ec68c6407607b3f883300d8f5f46bf24207",
+                "reference": "da126ec68c6407607b3f883300d8f5f46bf24207",
                 "shasum": ""
             },
             "require": {
@@ -1101,12 +1101,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-listing.git",
-                "reference": "07778a7f8203c3e4b093b6200361368a6438060a"
+                "reference": "50096a190325aa43e4d5d957966bea910c3ccb3d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-listing/zipball/07778a7f8203c3e4b093b6200361368a6438060a",
-                "reference": "07778a7f8203c3e4b093b6200361368a6438060a",
+                "url": "https://api.github.com/repos/contao/module-listing/zipball/50096a190325aa43e4d5d957966bea910c3ccb3d",
+                "reference": "50096a190325aa43e4d5d957966bea910c3ccb3d",
                 "shasum": ""
             },
             "require": {
@@ -1137,7 +1137,7 @@
                 }
             ],
             "description": "Contao 4 listing module",
-            "time": "2014-10-30 15:34:56"
+            "time": "2014-10-30 18:29:41"
         },
         {
             "name": "contao/module-news",

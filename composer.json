@@ -49,8 +49,8 @@
         "contao/core": "self.version"
     },
     "config": {
-        "preferred-install": "dist",
-        "component-dir": "components"
+        "component-dir": "assets",
+        "preferred-install": "dist"
     },
     "scripts": {
         "post-install-cmd": [
