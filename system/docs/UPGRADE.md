@@ -10,15 +10,6 @@ The `DcaExtractor` class is no longer instantiable via `new DcaExtractor()`.
 Use the `DcaExtractor::getInstance($table)` method instead.
 
 
-### `assets/contao`
-
-The `assets/contao` directory has been removed:
-
-- `assets/contao/css` -> `assets/framework`
-- `assets/contao/images` -> `assets/icons`
-- `assets/contao/js` -> `assets/core`
-
-
 ### MooTools slimbox
 
 The MooTools "slimbox" plugin has been removed. Use the MooTools "mediabox" or

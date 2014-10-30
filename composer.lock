@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "85dff2c376cb8d3c565ac412715936ab",
+    "hash": "d9305d918ba0eab0982e139bad24b71b",
     "packages": [
         {
             "name": "contao-components/ace",
@@ -175,6 +175,51 @@
             ],
             "description": "Color picker integration for Contao Open Source CMS",
             "time": "2014-08-22 07:58:26"
+        },
+        {
+            "name": "contao-components/contao",
+            "version": "3.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contao-components/contao.git",
+                "reference": "fb63465e36bd7ff7637ec8b9398a530c702b1641"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contao-components/contao/zipball/fb63465e36bd7ff7637ec8b9398a530c702b1641",
+                "reference": "fb63465e36bd7ff7637ec8b9398a530c702b1641",
+                "shasum": ""
+            },
+            "require": {
+                "robloach/component-installer": "~0.0"
+            },
+            "type": "component",
+            "extra": {
+                "component": {
+                    "scripts": [
+                        "js/core.min.js",
+                        "js/mootao.min.js"
+                    ],
+                    "files": [
+                        "css/*",
+                        "images/*",
+                        "js/core.js",
+                        "js/mootao.js"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Leo Feyer",
+                    "homepage": "https://github.com/leofeyer"
+                }
+            ],
+            "description": "Contao Open Source CMS components",
+            "time": "2014-10-30 15:28:03"
         },
         {
             "name": "contao-components/datepicker",
@@ -640,6 +685,50 @@
             "time": "2014-08-22 08:44:33"
         },
         {
+            "name": "contao-components/stylect",
+            "version": "3.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contao-components/stylect.git",
+                "reference": "63c18911d3e317789976adfa36155d442a6f1471"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contao-components/stylect/zipball/63c18911d3e317789976adfa36155d442a6f1471",
+                "reference": "63c18911d3e317789976adfa36155d442a6f1471",
+                "shasum": ""
+            },
+            "require": {
+                "robloach/component-installer": "~0.0"
+            },
+            "type": "component",
+            "extra": {
+                "component": {
+                    "scripts": [
+                        "js/stylect.min.js"
+                    ],
+                    "styles": [
+                        "css/stylect.min.css"
+                    ],
+                    "files": [
+                        "images/*"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Leo Feyer",
+                    "homepage": "https://github.com/leofeyer"
+                }
+            ],
+            "description": "Contao Open Source CMS stylect",
+            "time": "2014-10-30 15:54:45"
+        },
+        {
             "name": "contao-components/swipe",
             "version": "2.0.1",
             "source": {
@@ -679,6 +768,50 @@
             ],
             "description": "A JavaScript touch slider with dot menu",
             "time": "2014-10-20 09:46:10"
+        },
+        {
+            "name": "contao-components/tablesort",
+            "version": "3.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contao-components/tablesort.git",
+                "reference": "7fd8a8dddfe9129419fc657cdfcb70ae49e5e325"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contao-components/tablesort/zipball/7fd8a8dddfe9129419fc657cdfcb70ae49e5e325",
+                "reference": "7fd8a8dddfe9129419fc657cdfcb70ae49e5e325",
+                "shasum": ""
+            },
+            "require": {
+                "robloach/component-installer": "~0.0"
+            },
+            "type": "component",
+            "extra": {
+                "component": {
+                    "scripts": [
+                        "js/tablesort.min.js"
+                    ],
+                    "styles": [
+                        "css/tablesort.min.css"
+                    ],
+                    "files": [
+                        "images/*"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Leo Feyer",
+                    "homepage": "https://github.com/leofeyer"
+                }
+            ],
+            "description": "Contao Open Source CMS tablesort",
+            "time": "2014-10-30 16:00:55"
         },
         {
             "name": "contao-components/tablesorter",
@@ -768,12 +901,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-calendar.git",
-                "reference": "e32bae68850b4697c9f8f62d2328618e4ab4d0c0"
+                "reference": "af3e0ed1a913c927f688b46f46732831db0d1df1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-calendar/zipball/e32bae68850b4697c9f8f62d2328618e4ab4d0c0",
-                "reference": "e32bae68850b4697c9f8f62d2328618e4ab4d0c0",
+                "url": "https://api.github.com/repos/contao/module-calendar/zipball/af3e0ed1a913c927f688b46f46732831db0d1df1",
+                "reference": "af3e0ed1a913c927f688b46f46732831db0d1df1",
                 "shasum": ""
             },
             "require": {
@@ -803,7 +936,7 @@
                 }
             ],
             "description": "Contao 4 calendar module",
-            "time": "2014-10-29 19:03:08"
+            "time": "2014-10-30 15:08:20"
         },
         {
             "name": "contao/module-comments",
@@ -811,12 +944,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-comments.git",
-                "reference": "6b73af4e5d073e228fd4f2c324796ab037907a38"
+                "reference": "95263998cec89314af003864cc51aad9b9167f14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-comments/zipball/6b73af4e5d073e228fd4f2c324796ab037907a38",
-                "reference": "6b73af4e5d073e228fd4f2c324796ab037907a38",
+                "url": "https://api.github.com/repos/contao/module-comments/zipball/95263998cec89314af003864cc51aad9b9167f14",
+                "reference": "95263998cec89314af003864cc51aad9b9167f14",
                 "shasum": ""
             },
             "require": {
@@ -850,7 +983,7 @@
                 }
             ],
             "description": "Contao 4 comments module",
-            "time": "2014-10-29 19:02:52"
+            "time": "2014-10-30 15:07:24"
         },
         {
             "name": "contao/module-core",
@@ -858,12 +991,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-core.git",
-                "reference": "c1ddc098232b30862f01673084a0b88ca26af0e2"
+                "reference": "dbb05f7037dfa067921f4b03e4272b2eefb1b8f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-core/zipball/c1ddc098232b30862f01673084a0b88ca26af0e2",
-                "reference": "c1ddc098232b30862f01673084a0b88ca26af0e2",
+                "url": "https://api.github.com/repos/contao/module-core/zipball/dbb05f7037dfa067921f4b03e4272b2eefb1b8f4",
+                "reference": "dbb05f7037dfa067921f4b03e4272b2eefb1b8f4",
                 "shasum": ""
             },
             "require": {
@@ -915,7 +1048,7 @@
                 }
             ],
             "description": "Contao 4 core module",
-            "time": "2014-10-29 19:10:46"
+            "time": "2014-10-30 16:03:02"
         },
         {
             "name": "contao/module-faq",
@@ -923,12 +1056,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-faq.git",
-                "reference": "b0e9f63da7052a9826973b58682a2effd7e1fe65"
+                "reference": "1bd5cb6a991024805d15abbc5da3054599be1b2f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-faq/zipball/b0e9f63da7052a9826973b58682a2effd7e1fe65",
-                "reference": "b0e9f63da7052a9826973b58682a2effd7e1fe65",
+                "url": "https://api.github.com/repos/contao/module-faq/zipball/1bd5cb6a991024805d15abbc5da3054599be1b2f",
+                "reference": "1bd5cb6a991024805d15abbc5da3054599be1b2f",
                 "shasum": ""
             },
             "require": {
@@ -960,7 +1093,7 @@
                 }
             ],
             "description": "Contao 4 FAQ module",
-            "time": "2014-10-29 19:02:18"
+            "time": "2014-10-30 15:06:47"
         },
         {
             "name": "contao/module-listing",
@@ -968,12 +1101,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-listing.git",
-                "reference": "d255519b1a6cac5ec7f108490a144ba74fb54951"
+                "reference": "07778a7f8203c3e4b093b6200361368a6438060a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-listing/zipball/d255519b1a6cac5ec7f108490a144ba74fb54951",
-                "reference": "d255519b1a6cac5ec7f108490a144ba74fb54951",
+                "url": "https://api.github.com/repos/contao/module-listing/zipball/07778a7f8203c3e4b093b6200361368a6438060a",
+                "reference": "07778a7f8203c3e4b093b6200361368a6438060a",
                 "shasum": ""
             },
             "require": {
@@ -1004,7 +1137,7 @@
                 }
             ],
             "description": "Contao 4 listing module",
-            "time": "2014-10-29 19:01:12"
+            "time": "2014-10-30 15:34:56"
         },
         {
             "name": "contao/module-news",
@@ -1012,12 +1145,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-news.git",
-                "reference": "5e7902fb1e4a953975bb53cb7cc1a1dac01c1d8d"
+                "reference": "d665db07419d834f594f0c7c4f99382ba616c93a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-news/zipball/5e7902fb1e4a953975bb53cb7cc1a1dac01c1d8d",
-                "reference": "5e7902fb1e4a953975bb53cb7cc1a1dac01c1d8d",
+                "url": "https://api.github.com/repos/contao/module-news/zipball/d665db07419d834f594f0c7c4f99382ba616c93a",
+                "reference": "d665db07419d834f594f0c7c4f99382ba616c93a",
                 "shasum": ""
             },
             "require": {
@@ -1047,7 +1180,7 @@
                 }
             ],
             "description": "Contao 4 news module",
-            "time": "2014-10-29 19:00:54"
+            "time": "2014-10-30 15:34:34"
         },
         {
             "name": "contao/module-newsletter",
@@ -1055,12 +1188,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/module-newsletter.git",
-                "reference": "31d6fc466b5f8e6e0ac8b4a2fab7ea0169f216cd"
+                "reference": "95c2c59cc981a0e9647aa9548ce5fd37c5bf84b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/module-newsletter/zipball/31d6fc466b5f8e6e0ac8b4a2fab7ea0169f216cd",
-                "reference": "31d6fc466b5f8e6e0ac8b4a2fab7ea0169f216cd",
+                "url": "https://api.github.com/repos/contao/module-newsletter/zipball/95c2c59cc981a0e9647aa9548ce5fd37c5bf84b4",
+                "reference": "95c2c59cc981a0e9647aa9548ce5fd37c5bf84b4",
                 "shasum": ""
             },
             "require": {
@@ -1093,7 +1226,7 @@
                 }
             ],
             "description": "Contao 4 newsletter module",
-            "time": "2014-10-29 19:00:37"
+            "time": "2014-10-30 15:01:58"
         },
         {
             "name": "doctrine/annotations",
@@ -1615,12 +1748,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/leafo/scssphp.git",
-                "reference": "8c08da585537e97efd528c7d278463d2b9396371"
+                "reference": "9bcad028603a185fbd1a590fa64a2cbab646a946"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/leafo/scssphp/zipball/8c08da585537e97efd528c7d278463d2b9396371",
-                "reference": "8c08da585537e97efd528c7d278463d2b9396371",
+                "url": "https://api.github.com/repos/leafo/scssphp/zipball/9bcad028603a185fbd1a590fa64a2cbab646a946",
+                "reference": "9bcad028603a185fbd1a590fa64a2cbab646a946",
                 "shasum": ""
             },
             "require": {
@@ -1662,7 +1795,7 @@
                 "scss",
                 "stylesheet"
             ],
-            "time": "2014-08-12 22:41:53"
+            "time": "2014-10-30 12:51:26"
         },
         {
             "name": "leafo/scssphp-compass",
