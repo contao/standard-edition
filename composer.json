@@ -12,6 +12,7 @@
     "require": {
         "php": ">=5.4.0",
         "symfony/symfony": "~2.5",
+        "doctrine/dbal": "~2.2,>=2.2.3",
         "contao/module-core": "dev-feature/symfony2",
         "contao/module-calendar": "dev-feature/symfony2",
         "contao/module-comments": "dev-feature/symfony2",
