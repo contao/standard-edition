@@ -1,0 +1,13 @@
+imports:
+    - { resource: parameters.yml }
+
+parameters:
+    locale: en
+
+framework:
+    router:
+        resource: "%kernel.root_dir%/config/routing.yml"
+        strict_requirements: ~
+    secret: "%secret%"
+
+# TODO: Doctrine und Swiftmailer konfigurieren

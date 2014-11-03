@@ -1,0 +1,65 @@
+# Hidden OS files
+.DS_Store
+Thumbs.db
+
+# Common IDE files
+.buildpath
+.project
+.settings/
+.build/
+.idea/
+nbproject/
+
+# Symfony
+/app/cache/*
+/app/config/parameters.yml
+/app/logs/*
+
+# Assets
+/assets/
+
+# User files
+/files/*
+
+# Internal cache
+/system/cache/*
+
+# Configuration files
+/system/config/dcaconfig.php
+/system/config/initconfig.php
+/system/config/langconfig.php
+/system/config/localconfig.php
+
+# Logs and temporary files
+/system/logs/*
+/system/tmp/*
+
+# Customized templates
+/templates/*
+
+# Vendor libraries
+/vendor/
+
+# Symlinked resources
+/web/assets
+/web/files/
+/web/system/modules/*
+/web/system/themes
+/web/vendor/
+
+# Disabled modules
+/system/modules/*/.skip
+
+# Composer package manager
+/composer/
+/system/modules/!composer/
+
+# Generated feeds
+/web/share/*.xml
+
+# Cron timeout
+/web/system/cron/cron.txt
+
+# Document root files
+/web/.htaccess
+/web/robots.txt
