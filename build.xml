@@ -35,14 +35,13 @@
   </target>
 
   <target name="languages">
-    <exec executable="txget" dir="contao-${version}/vendor/contao/module-calendar" failonerror="true" />
-    <exec executable="txget" dir="contao-${version}/vendor/contao/module-comments" failonerror="true" />
-    <exec executable="txget" dir="contao-${version}/vendor/contao/module-core" failonerror="true" />
-    <exec executable="txget" dir="contao-${version}/vendor/contao/module-faq" failonerror="true" />
-    <exec executable="txget" dir="contao-${version}/vendor/contao/module-listing" failonerror="true" />
-    <exec executable="txget" dir="contao-${version}/vendor/contao/module-news" failonerror="true" />
-    <exec executable="txget" dir="contao-${version}/vendor/contao/module-newsletter" failonerror="true" />
-    <exec executable="txget" dir="contao-${version}/vendor/contao/module-repository" failonerror="true" />
+    <exec executable="txget" dir="contao-${version}/vendor/contao/calendar-bundle" failonerror="true" />
+    <exec executable="txget" dir="contao-${version}/vendor/contao/comments-bundle" failonerror="true" />
+    <exec executable="txget" dir="contao-${version}/vendor/contao/core-bundle" failonerror="true" />
+    <exec executable="txget" dir="contao-${version}/vendor/contao/faq-bundle" failonerror="true" />
+    <exec executable="txget" dir="contao-${version}/vendor/contao/listing-bundle" failonerror="true" />
+    <exec executable="txget" dir="contao-${version}/vendor/contao/news-bundle" failonerror="true" />
+    <exec executable="txget" dir="contao-${version}/vendor/contao/newsletter-bundle" failonerror="true" />
   </target>
 
   <target name="purge">
@@ -52,9 +51,6 @@
     <delete dir="contao-${version}/vendor/psr/log/Psr/Log/Test" />
     <delete dir="contao-${version}/vendor/simplepie/simplepie/compatibility_test" />
     <delete dir="contao-${version}/vendor/tecnick.com/tcpdf/examples" />
-    <delete includeemptydirs="true" verbose="true">
-      <fileset dir="contao-${version}/vendor/contao" includes="*/*/languages/**" />
-    </delete>
     <delete includeemptydirs="true" verbose="true">
       <fileset dir="contao-${version}/vendor" includes="*/*/demo/**,*/*/doc/**,*/*/docs/**,*/*/notes/**,*/*/site/**,*/*/tests/**" />
     </delete>
