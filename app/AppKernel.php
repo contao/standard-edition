@@ -17,6 +17,7 @@ class AppKernel extends ContaoKernel
     {
         $bundles = [
             new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
+            new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'])) {
