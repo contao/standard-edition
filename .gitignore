@@ -34,6 +34,9 @@ nbproject/
 /system/logs/*
 /system/tmp/*
 
+# Themes
+/system/themes/*
+
 # Customized templates
 /templates/*
 
