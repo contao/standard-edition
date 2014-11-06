@@ -8,29 +8,22 @@
     "packages": [
         {
             "name": "contao-components/ace",
-            "version": "1.1.6",
+            "version": "1.1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/ace.git",
-                "reference": "8a2190e91a03e0d358c0f106b78ed8ab2c77df13"
+                "reference": "b4ae67b6d371610c0af2e7c08dc1fda5ff1e8e47"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/ace/zipball/8a2190e91a03e0d358c0f106b78ed8ab2c77df13",
-                "reference": "8a2190e91a03e0d358c0f106b78ed8ab2c77df13",
+                "url": "https://api.github.com/repos/contao-components/ace/zipball/b4ae67b6d371610c0af2e7c08dc1fda5ff1e8e47",
+                "reference": "b4ae67b6d371610c0af2e7c08dc1fda5ff1e8e47",
                 "shasum": ""
             },
             "require": {
-                "robloach/component-installer": "~0.0"
+                "contao-components/installer": "~1.0"
             },
-            "type": "component",
-            "extra": {
-                "component": {
-                    "files": [
-                        "js/*"
-                    ]
-                }
-            },
+            "type": "contao-component",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
@@ -42,39 +35,26 @@
                 }
             ],
             "description": "ACE code editor integration for Contao Open Source CMS",
-            "time": "2014-08-22 18:15:16"
+            "time": "2014-11-06 08:48:17"
         },
         {
             "name": "contao-components/chosen",
-            "version": "1.0.2",
+            "version": "1.0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/chosen.git",
-                "reference": "ed920cd332ab58901e07c923f7ab384046b993f4"
+                "reference": "ba8ad0401610f2e0e787dbad0118809bff13fc33"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/chosen/zipball/ed920cd332ab58901e07c923f7ab384046b993f4",
-                "reference": "ed920cd332ab58901e07c923f7ab384046b993f4",
+                "url": "https://api.github.com/repos/contao-components/chosen/zipball/ba8ad0401610f2e0e787dbad0118809bff13fc33",
+                "reference": "ba8ad0401610f2e0e787dbad0118809bff13fc33",
                 "shasum": ""
             },
             "require": {
-                "robloach/component-installer": "~0.0"
+                "contao-components/installer": "~1.0"
             },
-            "type": "component",
-            "extra": {
-                "component": {
-                    "scripts": [
-                        "js/chosen.min.js"
-                    ],
-                    "styles": [
-                        "css/chosen.min.css"
-                    ],
-                    "files": [
-                        "images/*"
-                    ]
-                }
-            },
+            "type": "contao-component",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -86,39 +66,26 @@
                 }
             ],
             "description": "Chosen integration for Contao Open Source CMS",
-            "time": "2014-08-22 07:44:20"
+            "time": "2014-11-06 08:48:59"
         },
         {
             "name": "contao-components/colorbox",
-            "version": "1.5.13",
+            "version": "1.5.13.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/colorbox.git",
-                "reference": "d95f141db6305ae9bd66c0505fb18b4545fa89db"
+                "reference": "9df7a15091dae55a64b19ff1359e519c5caff259"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/colorbox/zipball/d95f141db6305ae9bd66c0505fb18b4545fa89db",
-                "reference": "d95f141db6305ae9bd66c0505fb18b4545fa89db",
+                "url": "https://api.github.com/repos/contao-components/colorbox/zipball/9df7a15091dae55a64b19ff1359e519c5caff259",
+                "reference": "9df7a15091dae55a64b19ff1359e519c5caff259",
                 "shasum": ""
             },
             "require": {
-                "robloach/component-installer": "~0.0"
+                "contao-components/installer": "~1.0"
             },
-            "type": "component",
-            "extra": {
-                "component": {
-                    "scripts": [
-                        "js/colorbox.min.js"
-                    ],
-                    "styles": [
-                        "css/colorbox.min.css"
-                    ],
-                    "files": [
-                        "images/*"
-                    ]
-                }
-            },
+            "type": "contao-component",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -130,39 +97,26 @@
                 }
             ],
             "description": "Colorbox integration for Contao Open Source CMS",
-            "time": "2014-08-22 18:51:15"
+            "time": "2014-11-06 08:50:08"
         },
         {
             "name": "contao-components/colorpicker",
-            "version": "1.4.0",
+            "version": "1.4.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/colorpicker.git",
-                "reference": "ef53ea7993a0bf1e9f673535aff033cfac8aa850"
+                "reference": "33ac9812fe02b6bea5cdbaf4a551599765fea29e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/colorpicker/zipball/ef53ea7993a0bf1e9f673535aff033cfac8aa850",
-                "reference": "ef53ea7993a0bf1e9f673535aff033cfac8aa850",
+                "url": "https://api.github.com/repos/contao-components/colorpicker/zipball/33ac9812fe02b6bea5cdbaf4a551599765fea29e",
+                "reference": "33ac9812fe02b6bea5cdbaf4a551599765fea29e",
                 "shasum": ""
             },
             "require": {
-                "robloach/component-installer": "~0.0"
+                "contao-components/installer": "~1.0"
             },
-            "type": "component",
-            "extra": {
-                "component": {
-                    "scripts": [
-                        "js/mooRainbow.min.js"
-                    ],
-                    "styles": [
-                        "css/mooRainbow.min.css"
-                    ],
-                    "files": [
-                        "images/*"
-                    ]
-                }
-            },
+            "type": "contao-component",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -174,40 +128,26 @@
                 }
             ],
             "description": "Color picker integration for Contao Open Source CMS",
-            "time": "2014-08-22 07:58:26"
+            "time": "2014-11-06 08:52:18"
         },
         {
             "name": "contao-components/contao",
-            "version": "3.4.0",
+            "version": "3.4.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/contao.git",
-                "reference": "7ada1a642c7511f103958dedd39083a8ccd24a09"
+                "reference": "57f5cfaabf6b8e21725e00e253d2d66237776a49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/contao/zipball/7ada1a642c7511f103958dedd39083a8ccd24a09",
-                "reference": "7ada1a642c7511f103958dedd39083a8ccd24a09",
+                "url": "https://api.github.com/repos/contao-components/contao/zipball/57f5cfaabf6b8e21725e00e253d2d66237776a49",
+                "reference": "57f5cfaabf6b8e21725e00e253d2d66237776a49",
                 "shasum": ""
             },
             "require": {
-                "robloach/component-installer": "~0.0"
+                "contao-components/installer": "~1.0"
             },
-            "type": "component",
-            "extra": {
-                "component": {
-                    "scripts": [
-                        "js/core.min.js",
-                        "js/mootao.min.js"
-                    ],
-                    "styles": [
-                        "css/*.min.css"
-                    ],
-                    "files": [
-                        "images/*"
-                    ]
-                }
-            },
+            "type": "contao-component",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -219,39 +159,26 @@
                 }
             ],
             "description": "Contao Open Source CMS components",
-            "time": "2014-10-30 15:53:17"
+            "time": "2014-11-06 08:56:49"
         },
         {
             "name": "contao-components/datepicker",
-            "version": "2.2.0",
+            "version": "2.2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/datepicker.git",
-                "reference": "2bda62a0386b34714f6cc4d497709b5ba10b8fb4"
+                "reference": "12766877c12fb74218958b34b3c47cbb46970fc5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/datepicker/zipball/2bda62a0386b34714f6cc4d497709b5ba10b8fb4",
-                "reference": "2bda62a0386b34714f6cc4d497709b5ba10b8fb4",
+                "url": "https://api.github.com/repos/contao-components/datepicker/zipball/12766877c12fb74218958b34b3c47cbb46970fc5",
+                "reference": "12766877c12fb74218958b34b3c47cbb46970fc5",
                 "shasum": ""
             },
             "require": {
-                "robloach/component-installer": "~0.0"
+                "contao-components/installer": "~1.0"
             },
-            "type": "component",
-            "extra": {
-                "component": {
-                    "scripts": [
-                        "js/datepicker.min.js"
-                    ],
-                    "styles": [
-                        "css/datepicker.min.css"
-                    ],
-                    "files": [
-                        "images/*"
-                    ]
-                }
-            },
+            "type": "contao-component",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -263,39 +190,26 @@
                 }
             ],
             "description": "Date picker integration for Contao Open Source CMS",
-            "time": "2014-08-22 08:08:01"
+            "time": "2014-11-06 08:53:16"
         },
         {
             "name": "contao-components/dropzone",
-            "version": "3.10.2",
+            "version": "3.10.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/dropzone.git",
-                "reference": "aa71e34565e5e490d99ba2837437fb6ebea906ef"
+                "reference": "ecf7a15c5e5276bc94b1d31217fa47003d467372"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/dropzone/zipball/aa71e34565e5e490d99ba2837437fb6ebea906ef",
-                "reference": "aa71e34565e5e490d99ba2837437fb6ebea906ef",
+                "url": "https://api.github.com/repos/contao-components/dropzone/zipball/ecf7a15c5e5276bc94b1d31217fa47003d467372",
+                "reference": "ecf7a15c5e5276bc94b1d31217fa47003d467372",
                 "shasum": ""
             },
             "require": {
-                "robloach/component-installer": "~0.0"
+                "contao-components/installer": "~1.0"
             },
-            "type": "component",
-            "extra": {
-                "component": {
-                    "scripts": [
-                        "js/dropzone.min.js"
-                    ],
-                    "styles": [
-                        "css/dropzone.min.css"
-                    ],
-                    "files": [
-                        "images/*"
-                    ]
-                }
-            },
+            "type": "contao-component",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -307,36 +221,26 @@
                 }
             ],
             "description": "DropZone integration for Contao Open Source CMS",
-            "time": "2014-08-22 19:07:55"
+            "time": "2014-11-06 08:53:56"
         },
         {
             "name": "contao-components/highlight",
-            "version": "8.2.1",
+            "version": "8.2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/highlight.git",
-                "reference": "47692071451ffbf1ff3980cbbec789cf478489d5"
+                "reference": "e7937a2e6a04aa1e0fa11f5f851758fdf4b7e180"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/highlight/zipball/47692071451ffbf1ff3980cbbec789cf478489d5",
-                "reference": "47692071451ffbf1ff3980cbbec789cf478489d5",
+                "url": "https://api.github.com/repos/contao-components/highlight/zipball/e7937a2e6a04aa1e0fa11f5f851758fdf4b7e180",
+                "reference": "e7937a2e6a04aa1e0fa11f5f851758fdf4b7e180",
                 "shasum": ""
             },
             "require": {
-                "robloach/component-installer": "~0.0"
+                "contao-components/installer": "~1.0"
             },
-            "type": "component",
-            "extra": {
-                "component": {
-                    "scripts": [
-                        "js/highlight.pack.js"
-                    ],
-                    "files": [
-                        "css/*"
-                    ]
-                }
-            },
+            "type": "contao-component",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -348,36 +252,26 @@
                 }
             ],
             "description": "Highlight.js integration for Contao Open Source CMS",
-            "time": "2014-10-21 13:57:16"
+            "time": "2014-11-06 08:58:16"
         },
         {
             "name": "contao-components/html5shiv",
-            "version": "3.7.2",
+            "version": "3.7.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/html5shiv.git",
-                "reference": "d2755852f73f70232d0f19a243cf48f4bd4bb97e"
+                "reference": "cef093b9447f0de4272019eff4b0748d1881476f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/html5shiv/zipball/d2755852f73f70232d0f19a243cf48f4bd4bb97e",
-                "reference": "d2755852f73f70232d0f19a243cf48f4bd4bb97e",
+                "url": "https://api.github.com/repos/contao-components/html5shiv/zipball/cef093b9447f0de4272019eff4b0748d1881476f",
+                "reference": "cef093b9447f0de4272019eff4b0748d1881476f",
                 "shasum": ""
             },
             "require": {
-                "robloach/component-installer": "~0.0"
+                "contao-components/installer": "~1.0"
             },
-            "type": "component",
-            "extra": {
-                "component": {
-                    "scripts": [
-                        "js/html5shiv.min.js"
-                    ],
-                    "files": [
-                        "js/html5shiv-printshiv.min.js"
-                    ]
-                }
-            },
+            "type": "contao-component",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -389,33 +283,70 @@
                 }
             ],
             "description": "HTML5 Shiv integration for Contao Open Source CMS",
-            "time": "2014-08-22 19:13:40"
+            "time": "2014-11-06 08:59:02"
         },
         {
-            "name": "contao-components/jquery",
-            "version": "1.11.1",
+            "name": "contao-components/installer",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/contao-components/jquery.git",
-                "reference": "600dbb21d2158a9f59fddb28c96f49d24904aacd"
+                "url": "https://github.com/contao-components/installer.git",
+                "reference": "845fe3b31fc85595770e8b1b110673fb40e97ba6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/jquery/zipball/600dbb21d2158a9f59fddb28c96f49d24904aacd",
-                "reference": "600dbb21d2158a9f59fddb28c96f49d24904aacd",
+                "url": "https://api.github.com/repos/contao-components/installer/zipball/845fe3b31fc85595770e8b1b110673fb40e97ba6",
+                "reference": "845fe3b31fc85595770e8b1b110673fb40e97ba6",
                 "shasum": ""
             },
             "require": {
-                "robloach/component-installer": "~0.0"
+                "composer-plugin-api": "1.0.0",
+                "php": ">=5.4.0"
             },
-            "type": "component",
+            "require-dev": {
+                "composer/composer": "dev-master",
+                "phpunit/phpunit": "~3.7"
+            },
+            "type": "composer-installer",
             "extra": {
-                "component": {
-                    "scripts": [
-                        "js/jquery.min.js"
-                    ]
+                "class": "Contao\\Composer\\ComponentInstaller"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Contao\\Composer\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Leo Feyer",
+                    "homepage": "https://github.com/leofeyer"
+                }
+            ],
+            "description": "Contao components installer",
+            "time": "2014-11-06 08:35:24"
+        },
+        {
+            "name": "contao-components/jquery",
+            "version": "1.11.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contao-components/jquery.git",
+                "reference": "ce90cc24da3121a439b3443853887f323af9918f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contao-components/jquery/zipball/ce90cc24da3121a439b3443853887f323af9918f",
+                "reference": "ce90cc24da3121a439b3443853887f323af9918f",
+                "shasum": ""
+            },
+            "require": {
+                "contao-components/installer": "~1.0"
+            },
+            "type": "contao-component",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -427,33 +358,26 @@
                 }
             ],
             "description": "jQuery integration for Contao Open Source CMS",
-            "time": "2014-08-23 18:10:09"
+            "time": "2014-11-06 09:00:48"
         },
         {
             "name": "contao-components/jquery-ui",
-            "version": "1.11.1",
+            "version": "1.11.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/jquery-ui.git",
-                "reference": "410aa09df3c2e2b5b22054523362b70010cdead8"
+                "reference": "eff161c48826431ab60b6c97ce820a18542f2c97"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/jquery-ui/zipball/410aa09df3c2e2b5b22054523362b70010cdead8",
-                "reference": "410aa09df3c2e2b5b22054523362b70010cdead8",
+                "url": "https://api.github.com/repos/contao-components/jquery-ui/zipball/eff161c48826431ab60b6c97ce820a18542f2c97",
+                "reference": "eff161c48826431ab60b6c97ce820a18542f2c97",
                 "shasum": ""
             },
             "require": {
-                "robloach/component-installer": "~0.0"
+                "contao-components/installer": "~1.0"
             },
-            "type": "component",
-            "extra": {
-                "component": {
-                    "scripts": [
-                        "js/jquery-ui.min.js"
-                    ]
-                }
-            },
+            "type": "contao-component",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -465,42 +389,26 @@
                 }
             ],
             "description": "jQuery UI integration for Contao Open Source CMS",
-            "time": "2014-08-23 18:13:19"
+            "time": "2014-11-06 09:01:19"
         },
         {
             "name": "contao-components/mediabox",
-            "version": "1.4.6",
+            "version": "1.4.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/mediabox.git",
-                "reference": "6868e2250e96762cddda3efbfdb8f887d59b1535"
+                "reference": "d1a90512683498e65fab298ff410d01b23dcc49d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/mediabox/zipball/6868e2250e96762cddda3efbfdb8f887d59b1535",
-                "reference": "6868e2250e96762cddda3efbfdb8f887d59b1535",
+                "url": "https://api.github.com/repos/contao-components/mediabox/zipball/d1a90512683498e65fab298ff410d01b23dcc49d",
+                "reference": "d1a90512683498e65fab298ff410d01b23dcc49d",
                 "shasum": ""
             },
             "require": {
-                "robloach/component-installer": "~0.0"
+                "contao-components/installer": "~1.0"
             },
-            "type": "component",
-            "extra": {
-                "component": {
-                    "scripts": [
-                        "js/mediabox.min.js"
-                    ],
-                    "styles": [
-                        "css/mediabox-black.min.css"
-                    ],
-                    "files": [
-                        "js/Quickie.js",
-                        "css/mediabox-white.min.css",
-                        "images/*",
-                        "player/*"
-                    ]
-                }
-            },
+            "type": "contao-component",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -512,40 +420,26 @@
                 }
             ],
             "description": "Mediabox integration for Contao Open Source CMS",
-            "time": "2014-08-22 08:26:14"
+            "time": "2014-11-06 09:01:52"
         },
         {
             "name": "contao-components/mediaelement",
-            "version": "2.15.1",
+            "version": "2.15.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/mediaelement.git",
-                "reference": "546d40ed666d5ded11b3f424e6b99382ee009f6c"
+                "reference": "e0b57ca98212dbe977c4607f744dd346b0f81a5c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/mediaelement/zipball/546d40ed666d5ded11b3f424e6b99382ee009f6c",
-                "reference": "546d40ed666d5ded11b3f424e6b99382ee009f6c",
+                "url": "https://api.github.com/repos/contao-components/mediaelement/zipball/e0b57ca98212dbe977c4607f744dd346b0f81a5c",
+                "reference": "e0b57ca98212dbe977c4607f744dd346b0f81a5c",
                 "shasum": ""
             },
             "require": {
-                "robloach/component-installer": "~0.0"
+                "contao-components/installer": "~1.0"
             },
-            "type": "component",
-            "extra": {
-                "component": {
-                    "scripts": [
-                        "js/mediaelement-and-player.min.js"
-                    ],
-                    "styles": [
-                        "css/mediaelementplayer.min.css"
-                    ],
-                    "files": [
-                        "images/*",
-                        "legacy/*"
-                    ]
-                }
-            },
+            "type": "contao-component",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -557,38 +451,26 @@
                 }
             ],
             "description": "MediaElement.js integration for Contao Open Source CMS",
-            "time": "2014-08-23 18:35:32"
+            "time": "2014-11-06 09:02:26"
         },
         {
             "name": "contao-components/mootools",
-            "version": "1.5.1",
+            "version": "1.5.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/mootools.git",
-                "reference": "7b61a8c0b9c03cab476eb626a72e523e52708ed9"
+                "reference": "7c3b99b5b4fa8c03f5085c85b192f35e7f0ada29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/mootools/zipball/7b61a8c0b9c03cab476eb626a72e523e52708ed9",
-                "reference": "7b61a8c0b9c03cab476eb626a72e523e52708ed9",
+                "url": "https://api.github.com/repos/contao-components/mootools/zipball/7c3b99b5b4fa8c03f5085c85b192f35e7f0ada29",
+                "reference": "7c3b99b5b4fa8c03f5085c85b192f35e7f0ada29",
                 "shasum": ""
             },
             "require": {
-                "robloach/component-installer": "~0.0"
+                "contao-components/installer": "~1.0"
             },
-            "type": "component",
-            "extra": {
-                "component": {
-                    "scripts": [
-                        "js/mootools.min.js"
-                    ],
-                    "files": [
-                        "js/mootools-core.min.js",
-                        "js/mootools-more.min.js",
-                        "js/mootools-mobile.min.js"
-                    ]
-                }
-            },
+            "type": "contao-component",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -600,33 +482,26 @@
                 }
             ],
             "description": "MooTools integration for Contao Open Source CMS",
-            "time": "2014-10-20 10:57:40"
+            "time": "2014-11-06 09:03:00"
         },
         {
             "name": "contao-components/respimage",
-            "version": "0.9.6",
+            "version": "0.9.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/respimage.git",
-                "reference": "2ee7e51c72e599e4e56836367ed7239c0480aa81"
+                "reference": "6bf8ac9f98a12f6848a1d0f5535a2b0349d670e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/respimage/zipball/2ee7e51c72e599e4e56836367ed7239c0480aa81",
-                "reference": "2ee7e51c72e599e4e56836367ed7239c0480aa81",
+                "url": "https://api.github.com/repos/contao-components/respimage/zipball/6bf8ac9f98a12f6848a1d0f5535a2b0349d670e8",
+                "reference": "6bf8ac9f98a12f6848a1d0f5535a2b0349d670e8",
                 "shasum": ""
             },
             "require": {
-                "robloach/component-installer": "~0.0"
+                "contao-components/installer": "~1.0"
             },
-            "type": "component",
-            "extra": {
-                "component": {
-                    "scripts": [
-                        "js/respimage.min.js"
-                    ]
-                }
-            },
+            "type": "contao-component",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -638,39 +513,26 @@
                 }
             ],
             "description": "Respimage.js integration for Contao Open Source CMS",
-            "time": "2014-10-24 09:41:19"
+            "time": "2014-11-06 09:03:29"
         },
         {
             "name": "contao-components/simplemodal",
-            "version": "1.2.0",
+            "version": "1.2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/simplemodal.git",
-                "reference": "770e419c7790d6e0b3a56392d075becda51261f0"
+                "reference": "c64870657b47b9457ce45bf5482e63408919de57"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/simplemodal/zipball/770e419c7790d6e0b3a56392d075becda51261f0",
-                "reference": "770e419c7790d6e0b3a56392d075becda51261f0",
+                "url": "https://api.github.com/repos/contao-components/simplemodal/zipball/c64870657b47b9457ce45bf5482e63408919de57",
+                "reference": "c64870657b47b9457ce45bf5482e63408919de57",
                 "shasum": ""
             },
             "require": {
-                "robloach/component-installer": "~0.0"
+                "contao-components/installer": "~1.0"
             },
-            "type": "component",
-            "extra": {
-                "component": {
-                    "scripts": [
-                        "js/simplemodal.min.js"
-                    ],
-                    "styles": [
-                        "css/simplemodal.min.css"
-                    ],
-                    "files": [
-                        "images/*"
-                    ]
-                }
-            },
+            "type": "contao-component",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -682,39 +544,26 @@
                 }
             ],
             "description": "SimpleModal integration for Contao Open Source CMS",
-            "time": "2014-08-22 08:44:33"
+            "time": "2014-11-06 09:03:58"
         },
         {
             "name": "contao-components/stylect",
-            "version": "3.4.0",
+            "version": "3.4.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/stylect.git",
-                "reference": "63c18911d3e317789976adfa36155d442a6f1471"
+                "reference": "b3caa32e495889faed26fb878acaa5909684ee20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/stylect/zipball/63c18911d3e317789976adfa36155d442a6f1471",
-                "reference": "63c18911d3e317789976adfa36155d442a6f1471",
+                "url": "https://api.github.com/repos/contao-components/stylect/zipball/b3caa32e495889faed26fb878acaa5909684ee20",
+                "reference": "b3caa32e495889faed26fb878acaa5909684ee20",
                 "shasum": ""
             },
             "require": {
-                "robloach/component-installer": "~0.0"
+                "contao-components/installer": "~1.0"
             },
-            "type": "component",
-            "extra": {
-                "component": {
-                    "scripts": [
-                        "js/stylect.min.js"
-                    ],
-                    "styles": [
-                        "css/stylect.min.css"
-                    ],
-                    "files": [
-                        "images/*"
-                    ]
-                }
-            },
+            "type": "contao-component",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -726,36 +575,26 @@
                 }
             ],
             "description": "Contao Open Source CMS stylect",
-            "time": "2014-10-30 15:54:45"
+            "time": "2014-11-06 09:05:10"
         },
         {
             "name": "contao-components/swipe",
-            "version": "2.0.1",
+            "version": "2.0.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/swipe.git",
-                "reference": "d43e48caf7283f53343869c9ad20827e5a3d0518"
+                "reference": "ee74f5dd8059366fbf1ffa53e8d82d46ad057f4e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/swipe/zipball/d43e48caf7283f53343869c9ad20827e5a3d0518",
-                "reference": "d43e48caf7283f53343869c9ad20827e5a3d0518",
+                "url": "https://api.github.com/repos/contao-components/swipe/zipball/ee74f5dd8059366fbf1ffa53e8d82d46ad057f4e",
+                "reference": "ee74f5dd8059366fbf1ffa53e8d82d46ad057f4e",
                 "shasum": ""
             },
             "require": {
-                "robloach/component-installer": "~0.0"
+                "contao-components/installer": "~1.0"
             },
-            "type": "component",
-            "extra": {
-                "component": {
-                    "scripts": [
-                        "js/swipe.min.js"
-                    ],
-                    "styles": [
-                        "css/swipe.min.css"
-                    ]
-                }
-            },
+            "type": "contao-component",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -767,39 +606,26 @@
                 }
             ],
             "description": "A JavaScript touch slider with dot menu",
-            "time": "2014-10-20 09:46:10"
+            "time": "2014-11-06 09:05:42"
         },
         {
             "name": "contao-components/tablesort",
-            "version": "3.4.0",
+            "version": "3.4.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/tablesort.git",
-                "reference": "7fd8a8dddfe9129419fc657cdfcb70ae49e5e325"
+                "reference": "51b36cf580a2fb77e6a49bdb16ab22e82c518321"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/tablesort/zipball/7fd8a8dddfe9129419fc657cdfcb70ae49e5e325",
-                "reference": "7fd8a8dddfe9129419fc657cdfcb70ae49e5e325",
+                "url": "https://api.github.com/repos/contao-components/tablesort/zipball/51b36cf580a2fb77e6a49bdb16ab22e82c518321",
+                "reference": "51b36cf580a2fb77e6a49bdb16ab22e82c518321",
                 "shasum": ""
             },
             "require": {
-                "robloach/component-installer": "~0.0"
+                "contao-components/installer": "~1.0"
             },
-            "type": "component",
-            "extra": {
-                "component": {
-                    "scripts": [
-                        "js/tablesort.min.js"
-                    ],
-                    "styles": [
-                        "css/tablesort.min.css"
-                    ],
-                    "files": [
-                        "images/*"
-                    ]
-                }
-            },
+            "type": "contao-component",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -811,39 +637,26 @@
                 }
             ],
             "description": "Contao Open Source CMS tablesort",
-            "time": "2014-10-30 16:00:55"
+            "time": "2014-11-06 09:06:40"
         },
         {
             "name": "contao-components/tablesorter",
-            "version": "2.0.5",
+            "version": "2.0.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/tablesorter.git",
-                "reference": "bbc3e3b2dcb6ab16b0ac9aa2b8079a11f4b2ee46"
+                "reference": "1be1c47163d0217cdac5bdcb2a8916878e63f832"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/tablesorter/zipball/bbc3e3b2dcb6ab16b0ac9aa2b8079a11f4b2ee46",
-                "reference": "bbc3e3b2dcb6ab16b0ac9aa2b8079a11f4b2ee46",
+                "url": "https://api.github.com/repos/contao-components/tablesorter/zipball/1be1c47163d0217cdac5bdcb2a8916878e63f832",
+                "reference": "1be1c47163d0217cdac5bdcb2a8916878e63f832",
                 "shasum": ""
             },
             "require": {
-                "robloach/component-installer": "~0.0"
+                "contao-components/installer": "~1.0"
             },
-            "type": "component",
-            "extra": {
-                "component": {
-                    "scripts": [
-                        "js/tablesorter.min.js"
-                    ],
-                    "styles": [
-                        "css/tablesorter.min.css"
-                    ],
-                    "files": [
-                        "images/*"
-                    ]
-                }
-            },
+            "type": "contao-component",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -855,33 +668,26 @@
                 }
             ],
             "description": "jQuery tablesorter integration for Contao Open Source CMS",
-            "time": "2014-08-21 13:15:03"
+            "time": "2014-11-06 09:07:09"
         },
         {
             "name": "contao-components/tinymce4",
-            "version": "4.1.6",
+            "version": "4.1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/tinymce4.git",
-                "reference": "85eb1e999b7c53b688b9347ba28ed3a7d482de3b"
+                "reference": "51d2df2df2b0c0e334d288fa763626c5ffed7a85"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/tinymce4/zipball/85eb1e999b7c53b688b9347ba28ed3a7d482de3b",
-                "reference": "85eb1e999b7c53b688b9347ba28ed3a7d482de3b",
+                "url": "https://api.github.com/repos/contao-components/tinymce4/zipball/51d2df2df2b0c0e334d288fa763626c5ffed7a85",
+                "reference": "51d2df2df2b0c0e334d288fa763626c5ffed7a85",
                 "shasum": ""
             },
             "require": {
-                "robloach/component-installer": "~0.0"
+                "contao-components/installer": "~1.0"
             },
-            "type": "component",
-            "extra": {
-                "component": {
-                    "files": [
-                        "js/**"
-                    ]
-                }
-            },
+            "type": "contao-component",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "LGPL-2.1+"
@@ -893,7 +699,7 @@
                 }
             ],
             "description": "TinyMCE 4 integration for Contao Open Source CMS",
-            "time": "2014-10-21 13:46:43"
+            "time": "2014-11-06 09:07:43"
         },
         {
             "name": "contao/calendar-bundle",
@@ -977,12 +783,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/core-bundle.git",
-                "reference": "916767a6079f4612ded8371d497bec8a89339cb5"
+                "reference": "db598e783c02757700337d41e305c52a9d1d5c3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/core-bundle/zipball/916767a6079f4612ded8371d497bec8a89339cb5",
-                "reference": "916767a6079f4612ded8371d497bec8a89339cb5",
+                "url": "https://api.github.com/repos/contao/core-bundle/zipball/db598e783c02757700337d41e305c52a9d1d5c3e",
+                "reference": "db598e783c02757700337d41e305c52a9d1d5c3e",
                 "shasum": ""
             },
             "require": {
@@ -1019,7 +825,7 @@
                 }
             ],
             "description": "Contao 4 core bundle",
-            "time": "2014-11-05 12:27:33"
+            "time": "2014-11-05 14:36:13"
         },
         {
             "name": "contao/faq-bundle",
@@ -1758,80 +1564,6 @@
             "time": "2014-01-12 16:20:24"
         },
         {
-            "name": "kriswallsmith/assetic",
-            "version": "v1.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/kriswallsmith/assetic.git",
-                "reference": "df991c124a2212371443b586a1be767500036dee"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/df991c124a2212371443b586a1be767500036dee",
-                "reference": "df991c124a2212371443b586a1be767500036dee",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.1",
-                "symfony/process": "~2.1"
-            },
-            "require-dev": {
-                "cssmin/cssmin": "*",
-                "joliclic/javascript-packer": "*",
-                "kamicane/packager": "*",
-                "leafo/lessphp": "*",
-                "leafo/scssphp": "*",
-                "leafo/scssphp-compass": "*",
-                "mrclay/minify": "*",
-                "patchwork/jsqueeze": "~1.0",
-                "phpunit/phpunit": "~4",
-                "psr/log": "~1.0",
-                "ptachoire/cssembed": "*",
-                "twig/twig": "~1.6"
-            },
-            "suggest": {
-                "leafo/lessphp": "Assetic provides the integration with the lessphp LESS compiler",
-                "leafo/scssphp": "Assetic provides the integration with the scssphp SCSS compiler",
-                "leafo/scssphp-compass": "Assetic provides the integration with the SCSS compass plugin",
-                "patchwork/jsqueeze": "Assetic provides the integration with the JSqueeze JavaScript compressor",
-                "ptachoire/cssembed": "Assetic provides the integration with phpcssembed to embed data uris",
-                "twig/twig": "Assetic provides the integration with the Twig templating engine"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.2-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Assetic": "src/"
-                },
-                "files": [
-                    "src/functions.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Kris Wallsmith",
-                    "email": "kris.wallsmith@gmail.com",
-                    "homepage": "http://kriswallsmith.net/"
-                }
-            ],
-            "description": "Asset Management for PHP",
-            "homepage": "https://github.com/kriswallsmith/assetic",
-            "keywords": [
-                "assets",
-                "compression",
-                "minification"
-            ],
-            "time": "2014-10-14 14:45:32"
-        },
-        {
             "name": "leafo/lessphp",
             "version": "v0.4.0",
             "source": {
@@ -2130,50 +1862,6 @@
                 "psr-3"
             ],
             "time": "2012-12-21 11:40:51"
-        },
-        {
-            "name": "robloach/component-installer",
-            "version": "0.0.12",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/RobLoach/component-installer.git",
-                "reference": "1864f25db21fc173e02a359f646acd596c1b0460"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/RobLoach/component-installer/zipball/1864f25db21fc173e02a359f646acd596c1b0460",
-                "reference": "1864f25db21fc173e02a359f646acd596c1b0460",
-                "shasum": ""
-            },
-            "require": {
-                "kriswallsmith/assetic": "1.*",
-                "php": ">=5.3.2"
-            },
-            "require-dev": {
-                "composer/composer": "1.*"
-            },
-            "type": "composer-installer",
-            "extra": {
-                "class": "ComponentInstaller\\Installer"
-            },
-            "autoload": {
-                "psr-0": {
-                    "ComponentInstaller": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Rob Loach",
-                    "email": "robloach@gmail.com",
-                    "homepage": "http://robloach.net"
-                }
-            ],
-            "description": "Allows installation of Components via Composer.",
-            "time": "2013-08-31 23:46:48"
         },
         {
             "name": "simplepie/simplepie",
