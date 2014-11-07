@@ -118,7 +118,6 @@ namespace  {
 	class FormTextArea extends \Contao\FormTextArea {}
 	class FormTextField extends \Contao\FormTextField {}
 	class Automator extends \Contao\Automator {}
-	abstract class BaseTemplate extends \Contao\BaseTemplate {}
 	class Cache extends \Contao\Cache {}
 	class ClassLoader extends \Contao\ClassLoader {}
 	class Combiner extends \Contao\Combiner {}
@@ -155,6 +154,7 @@ namespace  {
 	class String extends \Contao\String {}
 	abstract class System extends \Contao\System {}
 	abstract class Template extends \Contao\Template {}
+	trait TemplateInheritance { use \Contao\TemplateInheritance }
 	class TemplateLoader extends \Contao\TemplateLoader {}
 	abstract class User extends \Contao\User {}
 	class Validator extends \Contao\Validator {}
@@ -251,10 +251,6 @@ namespace Database\Mysqli {
 	class Result extends \Contao\Database\Mysqli\Result {}
 	class Statement extends \Contao\Database\Mysqli\Statement {}
 }
-namespace Files {
-	class Ftp extends \Contao\Files\Ftp {}
-	class Php extends \Contao\Files\Php {}
-}
 namespace Filter {
 	class SqlFiles extends \Contao\Filter\SqlFiles {}
 	class SyncExclude extends \Contao\Filter\SyncExclude {}
@@ -263,13 +259,6 @@ namespace Model {
 	class Collection extends \Contao\Model\Collection {}
 	class QueryBuilder extends \Contao\Model\QueryBuilder {}
 	class Registry extends \Contao\Model\Registry {}
-}
-
-// devtools
-namespace  {
-	class ModuleAutoload extends \Contao\ModuleAutoload {}
-	class ModuleExtension extends \Contao\ModuleExtension {}
-	class ModuleLabels extends \Contao\ModuleLabels {}
 }
 
 // faq

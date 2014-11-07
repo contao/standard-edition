@@ -74,6 +74,5 @@
             "file": "app/config/parameters.yml"
         }
     },
-    "prefer-stable": true,
     "minimum-stability": "dev"
 }
