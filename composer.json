@@ -14,13 +14,13 @@
         "symfony/symfony": "~2.5",
         "doctrine/dbal": "~2.2",
         "doctrine/doctrine-bundle": "~1.2",
-        "contao/calendar-bundle": "~4.0",
-        "contao/comments-bundle": "~4.0",
-        "contao/core-bundle": "~4.0",
-        "contao/faq-bundle": "~4.0",
-        "contao/listing-bundle": "~4.0",
-        "contao/news-bundle": "~4.0",
-        "contao/newsletter-bundle": "~4.0",
+        "contao/calendar-bundle": "dev-develop",
+        "contao/comments-bundle": "dev-develop",
+        "contao/core-bundle": "dev-develop",
+        "contao/faq-bundle": "dev-develop",
+        "contao/listing-bundle": "dev-develop",
+        "contao/news-bundle": "dev-develop",
+        "contao/newsletter-bundle": "dev-develop",
         "contao-components/ace": "~1.1",
         "contao-components/chosen": "~1.0",
         "contao-components/colorbox": "~1.5",
@@ -74,5 +74,6 @@
             "file": "app/config/parameters.yml"
         }
     },
+    "prefer-stable": true,
     "minimum-stability": "dev"
 }

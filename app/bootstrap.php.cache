@@ -95,10 +95,6 @@ public function getInt($key, $default = 0, $deep = false)
 {
 return (int) $this->get($key, $default, $deep);
 }
-public function getBoolean($key, $default = false, $deep = false)
-{
-return $this->filter($key, $default, $deep, FILTER_VALIDATE_BOOLEAN);
-}
 public function filter($key, $default = null, $deep = false, $filter = FILTER_DEFAULT, $options = array())
 {
 $value = $this->get($key, $default, $deep);
@@ -400,16 +396,6 @@ const HEADER_CLIENT_IP ='client_ip';
 const HEADER_CLIENT_HOST ='client_host';
 const HEADER_CLIENT_PROTO ='client_proto';
 const HEADER_CLIENT_PORT ='client_port';
-const METHOD_HEAD ='HEAD';
-const METHOD_GET ='GET';
-const METHOD_POST ='POST';
-const METHOD_PUT ='PUT';
-const METHOD_PATCH ='PATCH';
-const METHOD_DELETE ='DELETE';
-const METHOD_PURGE ='PURGE';
-const METHOD_OPTIONS ='OPTIONS';
-const METHOD_TRACE ='TRACE';
-const METHOD_CONNECT ='CONNECT';
 protected static $trustedProxies = array();
 protected static $trustedHostPatterns = array();
 protected static $trustedHosts = array();
@@ -1175,7 +1161,7 @@ return (string) $pathInfo;
 }
 protected static function initializeFormats()
 {
-static::$formats = array('html'=> array('text/html','application/xhtml+xml'),'txt'=> array('text/plain'),'js'=> array('application/javascript','application/x-javascript','text/javascript'),'css'=> array('text/css'),'json'=> array('application/json','application/x-json'),'xml'=> array('text/xml','application/xml','application/x-xml'),'rdf'=> array('application/rdf+xml'),'atom'=> array('application/atom+xml'),'rss'=> array('application/rss+xml'),'form'=> array('application/x-www-form-urlencoded'),
+static::$formats = array('html'=> array('text/html','application/xhtml+xml'),'txt'=> array('text/plain'),'js'=> array('application/javascript','application/x-javascript','text/javascript'),'css'=> array('text/css'),'json'=> array('application/json','application/x-json'),'xml'=> array('text/xml','application/xml','application/x-xml'),'rdf'=> array('application/rdf+xml'),'atom'=> array('application/atom+xml'),'rss'=> array('application/rss+xml'),
 );
 }
 private function setPhpDefaultLocale($locale)
@@ -1860,9 +1846,9 @@ $flattenedCookies[] = $cookie;
 }
 return $flattenedCookies;
 }
-public function clearCookie($name, $path ='/', $domain = null, $secure = false, $httpOnly = true)
+public function clearCookie($name, $path ='/', $domain = null)
 {
-$this->setCookie(new Cookie($name, null, 1, $path, $domain, $secure, $httpOnly));
+$this->setCookie(new Cookie($name, null, 1, $path, $domain));
 }
 public function makeDisposition($disposition, $filename, $filenameFallback ='')
 {
@@ -2015,10 +2001,10 @@ $this->services[$id] = $service;
 if (method_exists($this, $method ='synchronize'.strtr($id, array('_'=>'','.'=>'_','\\'=>'_')).'Service')) {
 $this->$method();
 }
-if (null === $service) {
-if (self::SCOPE_CONTAINER !== $scope) {
+if (self::SCOPE_CONTAINER !== $scope && null === $service) {
 unset($this->scopedServices[$scope][$id]);
 }
+if (null === $service) {
 unset($this->services[$id]);
 }
 }
@@ -2142,18 +2128,16 @@ throw new InvalidArgumentException(sprintf('The scope "%s" is not active.', $nam
 $services = array($this->services, $this->scopedServices[$name]);
 unset($this->scopedServices[$name]);
 foreach ($this->scopeChildren[$name] as $child) {
-if (isset($this->scopedServices[$child])) {
+if (!isset($this->scopedServices[$child])) {
+continue;
+}
 $services[] = $this->scopedServices[$child];
 unset($this->scopedServices[$child]);
-}
 }
 $this->services = call_user_func_array('array_diff_key', $services);
 if (isset($this->scopeStacks[$name]) && count($this->scopeStacks[$name]) > 0) {
 $services = $this->scopeStacks[$name]->pop();
 $this->scopedServices += $services;
-if ($this->scopeStacks[$name]->isEmpty()) {
-unset($this->scopeStacks[$name]);
-}
 foreach ($services as $array) {
 foreach ($array as $id => $service) {
 $this->set($id, $service, $name);
@@ -2280,12 +2264,12 @@ protected $booted = false;
 protected $name;
 protected $startTime;
 protected $loadClassCache;
-const VERSION ='2.6.0-DEV';
-const VERSION_ID ='20600';
+const VERSION ='2.5.6';
+const VERSION_ID ='20506';
 const MAJOR_VERSION ='2';
-const MINOR_VERSION ='6';
-const RELEASE_VERSION ='0';
-const EXTRA_VERSION ='DEV';
+const MINOR_VERSION ='5';
+const RELEASE_VERSION ='6';
+const EXTRA_VERSION ='';
 public function __construct($environment, $debug)
 {
 $this->environment = $environment;
@@ -2786,13 +2770,13 @@ public function build(ContainerBuilder $container)
 public function getContainerExtension()
 {
 if (null === $this->extension) {
-$class = $this->getContainerExtensionClass();
+$basename = preg_replace('/Bundle$/','', $this->getName());
+$class = $this->getNamespace().'\\DependencyInjection\\'.$basename.'Extension';
 if (class_exists($class)) {
 $extension = new $class();
-$basename = preg_replace('/Bundle$/','', $this->getName());
 $expectedAlias = Container::underscore($basename);
 if ($expectedAlias != $extension->getAlias()) {
-throw new \LogicException(sprintf('Users will expect the alias of the default extension of a bundle to be the underscored version of the bundle name ("%s"). You can override "Bundle::getContainerExtension()" if you want to use "%s" or another alias.',
+throw new \LogicException(sprintf('The extension alias for the default extension of a '.'bundle must be the underscored version of the '.'bundle name ("%s" instead of "%s")',
 $expectedAlias, $extension->getAlias()
 ));
 }
@@ -2855,11 +2839,6 @@ if ($r->isSubclassOf('Symfony\\Component\\Console\\Command\\Command') && !$r->is
 $application->add($r->newInstance());
 }
 }
-}
-protected function getContainerExtensionClass()
-{
-$basename = preg_replace('/Bundle$/','', $this->getName());
-return $this->getNamespace().'\\DependencyInjection\\'.$basename.'Extension';
 }
 }
 }
@@ -2988,7 +2967,7 @@ if ($event->hasResponse()) {
 return $this->filterResponse($event->getResponse(), $request, $type);
 }
 if (false === $controller = $this->resolver->getController($request)) {
-throw new NotFoundHttpException(sprintf('Unable to find the controller for path "%s". The route is wrongly configured.', $request->getPathInfo()));
+throw new NotFoundHttpException(sprintf('Unable to find the controller for path "%s". Maybe you forgot to add the matching route in your routing configuration?', $request->getPathInfo()));
 }
 $event = new FilterControllerEvent($this, $controller, $request, $type);
 $this->dispatcher->dispatch(KernelEvents::CONTROLLER, $event);
