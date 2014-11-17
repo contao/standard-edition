@@ -1,7 +1,3 @@
-# Hidden OS files
-.DS_Store
-Thumbs.db
-
 # Common IDE files
 .buildpath
 .project

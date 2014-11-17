@@ -707,12 +707,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/calendar-bundle.git",
-                "reference": "a7ffa29abeaa47f09c42962ee2bb88b97af28f2c"
+                "reference": "b5e781a77d2d6ac70543a159877168ac7e2360c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/calendar-bundle/zipball/a7ffa29abeaa47f09c42962ee2bb88b97af28f2c",
-                "reference": "a7ffa29abeaa47f09c42962ee2bb88b97af28f2c",
+                "url": "https://api.github.com/repos/contao/calendar-bundle/zipball/b5e781a77d2d6ac70543a159877168ac7e2360c9",
+                "reference": "b5e781a77d2d6ac70543a159877168ac7e2360c9",
                 "shasum": ""
             },
             "require": {
@@ -750,12 +750,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/comments-bundle.git",
-                "reference": "74665ff8c5070df741954062a5aa21e29d746025"
+                "reference": "33af34d6da9dc3c30955b4d492a4d4e4ec813f6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/comments-bundle/zipball/74665ff8c5070df741954062a5aa21e29d746025",
-                "reference": "74665ff8c5070df741954062a5aa21e29d746025",
+                "url": "https://api.github.com/repos/contao/comments-bundle/zipball/33af34d6da9dc3c30955b4d492a4d4e4ec813f6e",
+                "reference": "33af34d6da9dc3c30955b4d492a4d4e4ec813f6e",
                 "shasum": ""
             },
             "require": {
@@ -793,19 +793,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/core-bundle.git",
-                "reference": "9525e54bfd7f439a9329cb7e49b5bf18d753e725"
+                "reference": "7ca2a1be7f6bd4afd583601101db55f79a1e190d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/core-bundle/zipball/9525e54bfd7f439a9329cb7e49b5bf18d753e725",
-                "reference": "9525e54bfd7f439a9329cb7e49b5bf18d753e725",
+                "url": "https://api.github.com/repos/contao/core-bundle/zipball/7ca2a1be7f6bd4afd583601101db55f79a1e190d",
+                "reference": "7ca2a1be7f6bd4afd583601101db55f79a1e190d",
                 "shasum": ""
             },
             "require": {
                 "leafo/lessphp": "~0.4",
                 "leafo/scssphp": "dev-master",
                 "leafo/scssphp-compass": "dev-master",
-                "mabrahamde/idna-converter": "dev-master",
                 "michelf/php-markdown": "~1.4",
                 "php": ">=5.4.0",
                 "phpspec/php-diff": "~1.0",
@@ -813,7 +812,8 @@
                 "swiftmailer/swiftmailer": "~5.2",
                 "symfony/finder": "~2.5",
                 "symfony/framework-bundle": "~2.5",
-                "tecnick.com/tcpdf": "~6.0"
+                "tecnick.com/tcpdf": "~6.0",
+                "true/punycode": "~1.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "~3.7"
@@ -840,7 +840,7 @@
                 }
             ],
             "description": "Contao 4 core bundle",
-            "time": "2014-11-07 12:53:02"
+            "time": "2014-11-17 08:14:49"
         },
         {
             "name": "contao/faq-bundle",
@@ -848,12 +848,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/faq-bundle.git",
-                "reference": "e55cb273eca958916e183f8eb469a195eacf60c6"
+                "reference": "25f9de1a446eae03890d4335b5b2fa3982e0cc78"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/faq-bundle/zipball/e55cb273eca958916e183f8eb469a195eacf60c6",
-                "reference": "e55cb273eca958916e183f8eb469a195eacf60c6",
+                "url": "https://api.github.com/repos/contao/faq-bundle/zipball/25f9de1a446eae03890d4335b5b2fa3982e0cc78",
+                "reference": "25f9de1a446eae03890d4335b5b2fa3982e0cc78",
                 "shasum": ""
             },
             "require": {
@@ -891,12 +891,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/listing-bundle.git",
-                "reference": "3d7197a8cee05f383b25f6cd50899419e341f3b8"
+                "reference": "44013b077cad1656dbfa618624d191f58fe8b061"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/listing-bundle/zipball/3d7197a8cee05f383b25f6cd50899419e341f3b8",
-                "reference": "3d7197a8cee05f383b25f6cd50899419e341f3b8",
+                "url": "https://api.github.com/repos/contao/listing-bundle/zipball/44013b077cad1656dbfa618624d191f58fe8b061",
+                "reference": "44013b077cad1656dbfa618624d191f58fe8b061",
                 "shasum": ""
             },
             "require": {
@@ -934,12 +934,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/news-bundle.git",
-                "reference": "001b7c8961bc338347cf865639e71f08d24c38b5"
+                "reference": "b33e51ccdeaf4a67835e2a7e317c711de18d4729"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/news-bundle/zipball/001b7c8961bc338347cf865639e71f08d24c38b5",
-                "reference": "001b7c8961bc338347cf865639e71f08d24c38b5",
+                "url": "https://api.github.com/repos/contao/news-bundle/zipball/b33e51ccdeaf4a67835e2a7e317c711de18d4729",
+                "reference": "b33e51ccdeaf4a67835e2a7e317c711de18d4729",
                 "shasum": ""
             },
             "require": {
@@ -977,12 +977,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/newsletter-bundle.git",
-                "reference": "067dc7857dc79fb70c2de1db009e36ecb3fb4de6"
+                "reference": "30e16f1d0304f205e4cc146fd6b32ff2c84fca3f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/newsletter-bundle/zipball/067dc7857dc79fb70c2de1db009e36ecb3fb4de6",
-                "reference": "067dc7857dc79fb70c2de1db009e36ecb3fb4de6",
+                "url": "https://api.github.com/repos/contao/newsletter-bundle/zipball/30e16f1d0304f205e4cc146fd6b32ff2c84fca3f",
+                "reference": "30e16f1d0304f205e4cc146fd6b32ff2c84fca3f",
                 "shasum": ""
             },
             "require": {
@@ -1730,52 +1730,6 @@
             "time": "2012-08-02 02:04:32"
         },
         {
-            "name": "mabrahamde/idna-converter",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mabrahamde/php-idna-converter.git",
-                "reference": "8bc7b0516564e40ec137f3b6c7b5f1b69a4fce64"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mabrahamde/php-idna-converter/zipball/8bc7b0516564e40ec137f3b6c7b5f1b69a4fce64",
-                "reference": "8bc7b0516564e40ec137f3b6c7b5f1b69a4fce64",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.0.0"
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "src/phlylabs/idna_convert.class.php",
-                    "src/phlylabs/uctc.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "LGPL"
-            ],
-            "authors": [
-                {
-                    "name": "Martin Abraham",
-                    "email": "dev@mabraham.de",
-                    "homepage": "http://mabraham.de",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Converts domain names between UTF-8 and ASCII (punycode) notation. This is a fork of phlyLabs' pure PHP IDNA Converter",
-            "keywords": [
-                "domain",
-                "encode",
-                "idn",
-                "idna",
-                "lib"
-            ],
-            "time": "2013-12-05 18:00:20"
-        },
-        {
             "name": "michelf/php-markdown",
             "version": "1.4.1",
             "source": {
@@ -2119,16 +2073,16 @@
         },
         {
             "name": "tecnick.com/tcpdf",
-            "version": "6.0.097",
+            "version": "6.0.099",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tecnickcom/TCPDF.git",
-                "reference": "73b436e180d91cb0e9897242ccfb4b49fc498901"
+                "reference": "75e7ad39458e060d0cae6fcb7d50a2c9f3af1b01"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/73b436e180d91cb0e9897242ccfb4b49fc498901",
-                "reference": "73b436e180d91cb0e9897242ccfb4b49fc498901",
+                "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/75e7ad39458e060d0cae6fcb7d50a2c9f3af1b01",
+                "reference": "75e7ad39458e060d0cae6fcb7d50a2c9f3af1b01",
                 "shasum": ""
             },
             "require": {
@@ -2178,7 +2132,54 @@
                 "pdf417",
                 "qrcode"
             ],
-            "time": "2014-10-20 20:02:38"
+            "time": "2014-11-15 12:35:49"
+        },
+        {
+            "name": "true/punycode",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/true/php-punycode.git",
+                "reference": "59dca474914324763397be2ea3d6ad3bc48f4688"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/true/php-punycode/zipball/59dca474914324763397be2ea3d6ad3bc48f4688",
+                "reference": "59dca474914324763397be2ea3d6ad3bc48f4688",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.x",
+                "satooshi/php-coveralls": "dev-master",
+                "squizlabs/php_codesniffer": "2.0.x-dev"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "True\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Renan Gon\u00e7alves",
+                    "email": "renan.saddam@gmail.com"
+                }
+            ],
+            "description": "A Bootstring encoding of Unicode for Internationalized Domain Names in Applications (IDNA)",
+            "homepage": "https://github.com/true/php-punycode",
+            "keywords": [
+                "idna",
+                "punycode"
+            ],
+            "time": "2014-08-26 14:21:01"
         },
         {
             "name": "twig/twig",
