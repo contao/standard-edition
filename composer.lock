@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3d6420158494513b73e5ec4b3510beed",
+    "hash": "f1a5bcfd62a6d0e5a1d4f41127bf9162",
     "packages": [
         {
             "name": "contao-components/ace",
@@ -129,6 +129,34 @@
             ],
             "description": "Color picker integration for Contao Open Source CMS",
             "time": "2014-11-06 08:52:18"
+        },
+        {
+            "name": "contao-components/compass",
+            "version": "0.12.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contao-components/compass.git",
+                "reference": "a174266fa89c3c808a9c2c090bf64693dec237f2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contao-components/compass/zipball/a174266fa89c3c808a9c2c090bf64693dec237f2",
+                "reference": "a174266fa89c3c808a9c2c090bf64693dec237f2",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Leo Feyer",
+                    "homepage": "https://github.com/leofeyer"
+                }
+            ],
+            "description": "Compass integration for Contao Open Source CMS",
+            "time": "2014-11-18 08:30:16"
         },
         {
             "name": "contao-components/contao",
@@ -742,7 +770,7 @@
                 }
             ],
             "description": "Contao 4 calendar bundle",
-            "time": "2014-11-07 08:24:42"
+            "time": "2014-11-17 08:46:21"
         },
         {
             "name": "contao/comments-bundle",
@@ -785,7 +813,7 @@
                 }
             ],
             "description": "Contao 4 comments bundle",
-            "time": "2014-11-07 08:24:28"
+            "time": "2014-11-17 08:46:10"
         },
         {
             "name": "contao/core-bundle",
@@ -793,18 +821,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/core-bundle.git",
-                "reference": "7ca2a1be7f6bd4afd583601101db55f79a1e190d"
+                "reference": "584154507c87ecd4040dafd6e71539558a329837"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/core-bundle/zipball/7ca2a1be7f6bd4afd583601101db55f79a1e190d",
-                "reference": "7ca2a1be7f6bd4afd583601101db55f79a1e190d",
+                "url": "https://api.github.com/repos/contao/core-bundle/zipball/584154507c87ecd4040dafd6e71539558a329837",
+                "reference": "584154507c87ecd4040dafd6e71539558a329837",
                 "shasum": ""
             },
             "require": {
                 "leafo/lessphp": "~0.4",
-                "leafo/scssphp": "dev-master",
-                "leafo/scssphp-compass": "dev-master",
+                "leafo/scssphp": "~0.1",
                 "michelf/php-markdown": "~1.4",
                 "php": ">=5.4.0",
                 "phpspec/php-diff": "~1.0",
@@ -840,7 +867,7 @@
                 }
             ],
             "description": "Contao 4 core bundle",
-            "time": "2014-11-17 08:14:49"
+            "time": "2014-11-18 08:34:31"
         },
         {
             "name": "contao/faq-bundle",
@@ -883,7 +910,7 @@
                 }
             ],
             "description": "Contao 4 FAQ bundle",
-            "time": "2014-11-07 08:24:05"
+            "time": "2014-11-17 08:45:44"
         },
         {
             "name": "contao/listing-bundle",
@@ -926,7 +953,7 @@
                 }
             ],
             "description": "Contao 4 listing bundle",
-            "time": "2014-11-07 08:23:52"
+            "time": "2014-11-17 08:45:32"
         },
         {
             "name": "contao/news-bundle",
@@ -969,7 +996,7 @@
                 }
             ],
             "description": "Contao 4 news bundle",
-            "time": "2014-11-07 08:23:40"
+            "time": "2014-11-17 08:45:21"
         },
         {
             "name": "contao/newsletter-bundle",
@@ -1012,7 +1039,7 @@
                 }
             ],
             "description": "Contao 4 newsletter bundle",
-            "time": "2014-11-07 08:23:26"
+            "time": "2014-11-17 08:45:07"
         },
         {
             "name": "doctrine/annotations",
@@ -1641,16 +1668,16 @@
         },
         {
             "name": "leafo/scssphp",
-            "version": "dev-master",
+            "version": "v0.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/leafo/scssphp.git",
-                "reference": "b65729d314abd13f83507a406246746e278f135d"
+                "reference": "8c08da585537e97efd528c7d278463d2b9396371"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/leafo/scssphp/zipball/b65729d314abd13f83507a406246746e278f135d",
-                "reference": "b65729d314abd13f83507a406246746e278f135d",
+                "url": "https://api.github.com/repos/leafo/scssphp/zipball/8c08da585537e97efd528c7d278463d2b9396371",
+                "reference": "8c08da585537e97efd528c7d278463d2b9396371",
                 "shasum": ""
             },
             "require": {
@@ -1692,42 +1719,7 @@
                 "scss",
                 "stylesheet"
             ],
-            "time": "2014-11-01 17:49:18"
-        },
-        {
-            "name": "leafo/scssphp-compass",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/leafo/scssphp-compass.git",
-                "reference": "f1631ddb17731326863954d99b39694f0bbed6ec"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/leafo/scssphp-compass/zipball/f1631ddb17731326863954d99b39694f0bbed6ec",
-                "reference": "f1631ddb17731326863954d99b39694f0bbed6ec",
-                "shasum": ""
-            },
-            "require": {
-                "leafo/scssphp": "dev-master"
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "compass.inc.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "authors": [
-                {
-                    "name": "Leaf Corcoran",
-                    "email": "leafot@gmail.com",
-                    "homepage": "http://leafo.net"
-                }
-            ],
-            "description": "Compass for scssphp",
-            "homepage": "http://leafo.net/scssphp/",
-            "time": "2012-08-02 02:04:32"
+            "time": "2014-08-12 22:41:53"
         },
         {
             "name": "michelf/php-markdown",
@@ -2169,7 +2161,7 @@
             ],
             "authors": [
                 {
-                    "name": "Renan Gon\u00e7alves",
+                    "name": "Renan Gonçalves",
                     "email": "renan.saddam@gmail.com"
                 }
             ],
