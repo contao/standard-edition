@@ -3,20 +3,16 @@
 /**
  * Contao Open Source CMS
  *
- * Copyright (c) 2005-2014 Leo Feyer
+ * Copyright (c) 2005-2015 Leo Feyer
  *
- * @package Core
- * @link    https://contao.org
- * @license http://www.gnu.org/licenses/lgpl-3.0.html LGPL
+ * @license LGPL-3.0+
  */
 
 
 /**
- * Interface for listable data containers
+ * Interface listable
  *
- * @copyright  Leo Feyer 2005-2014
- * @author     Leo Feyer <https://contao.org>
- * @package    Core
+ * @author Leo Feyer <https://github.com/leofeyer>
  */
 interface listable
 {
@@ -28,11 +24,9 @@ interface listable
 
 
 /**
- * Interface for editable data containers
+ * Interface editable
  *
- * @copyright  Leo Feyer 2005-2014
- * @author     Leo Feyer <https://contao.org>
- * @package    Core
+ * @author Leo Feyer <https://github.com/leofeyer>
  */
 interface editable
 {
@@ -45,11 +39,9 @@ interface editable
 
 
 /**
- * Interface for executable maintenance jobs
+ * Interface executable
  *
- * @copyright  Leo Feyer 2005-2014
- * @author     Leo Feyer <https://contao.org>
- * @package    Core
+ * @author Leo Feyer <https://github.com/leofeyer>
  */
 interface executable
 {
@@ -59,10 +51,8 @@ interface executable
 
 
 /**
- * Interface for widgets that can upload files
+ * Interface uploadable
  *
- * @copyright  Leo Feyer 2005-2014
- * @author     Leo Feyer <https://contao.org>
- * @package    Core
+ * @author Leo Feyer <https://github.com/leofeyer>
  */
 interface uploadable {}
