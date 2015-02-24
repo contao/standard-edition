@@ -10,16 +10,5 @@ framework:
         strict_requirements: ~
     secret: "%secret%"
 
-doctrine:
-    dbal:
-        default_connection: default
-        connections:
-            default:
-                driver:   "%database_driver%"
-                host:     "%database_host%"
-                dbname:   "%database_name%"
-                user:     "%database_user%"
-                password: "%database_password%"
-
 # TODO: Swiftmailer konfigurieren
 
