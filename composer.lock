@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2767031581a274b079e0da69be400d5e",
+    "hash": "263ac424b60ed6d78ed3be03c61494c5",
     "packages": [
         {
             "name": "contao-components/ace",
@@ -315,16 +315,16 @@
         },
         {
             "name": "contao-components/installer",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/installer.git",
-                "reference": "004463e45682692f8f7fc09d67c741247f66f3fd"
+                "reference": "3d3b9a4c154ed90716af570f806373afcd720f0a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/installer/zipball/004463e45682692f8f7fc09d67c741247f66f3fd",
-                "reference": "004463e45682692f8f7fc09d67c741247f66f3fd",
+                "url": "https://api.github.com/repos/contao-components/installer/zipball/3d3b9a4c154ed90716af570f806373afcd720f0a",
+                "reference": "3d3b9a4c154ed90716af570f806373afcd720f0a",
                 "shasum": ""
             },
             "require": {
@@ -355,7 +355,7 @@
                 }
             ],
             "description": "Contao components installer",
-            "time": "2015-02-13 11:48:46"
+            "time": "2015-02-23 11:19:37"
         },
         {
             "name": "contao-components/jquery",
@@ -821,15 +821,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/core-bundle.git",
-                "reference": "768b42e3693d9017d1f2e6e073ee3dbc2e2347f6"
+                "reference": "86c0731950f5be0d469a22091edce07af1e8cdf6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/core-bundle/zipball/768b42e3693d9017d1f2e6e073ee3dbc2e2347f6",
-                "reference": "768b42e3693d9017d1f2e6e073ee3dbc2e2347f6",
+                "url": "https://api.github.com/repos/contao/core-bundle/zipball/86c0731950f5be0d469a22091edce07af1e8cdf6",
+                "reference": "86c0731950f5be0d469a22091edce07af1e8cdf6",
                 "shasum": ""
             },
             "require": {
+                "contao/integration-bundle": "dev-develop",
+                "doctrine/doctrine-bundle": "~1.3",
                 "leafo/scssphp": "~0.1",
                 "michelf/php-markdown": "~1.4",
                 "oyejorge/less.php": "~1.7",
@@ -837,13 +839,14 @@
                 "phpspec/php-diff": "~1.0",
                 "simplepie/simplepie": "~1.3",
                 "swiftmailer/swiftmailer": "~5.2",
-                "symfony/finder": "~2.5",
-                "symfony/framework-bundle": "~2.5",
+                "symfony/console": "~2.6",
+                "symfony/finder": "~2.6",
+                "symfony/framework-bundle": "~2.6",
                 "tecnick.com/tcpdf": "~6.0",
                 "true/punycode": "~1.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~3.7"
+                "phpunit/phpunit": "~4.5"
             },
             "type": "library",
             "extra": {
@@ -867,7 +870,7 @@
                 }
             ],
             "description": "Contao 4 core bundle",
-            "time": "2015-02-23 11:13:49"
+            "time": "2015-02-24 16:54:00"
         },
         {
             "name": "contao/faq-bundle",
@@ -911,6 +914,42 @@
             ],
             "description": "Contao 4 FAQ bundle",
             "time": "2015-02-23 11:14:56"
+        },
+        {
+            "name": "contao/integration-bundle",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contao/integration-bundle.git",
+                "reference": "b1573f8047943e1be2261e73b4e88ec09738148c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contao/integration-bundle/zipball/b1573f8047943e1be2261e73b4e88ec09738148c",
+                "reference": "b1573f8047943e1be2261e73b4e88ec09738148c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Contao\\IntegrationBundle\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Andreas Schempp",
+                    "homepage": "https://github.com/aschempp"
+                }
+            ],
+            "description": "Contao 4 integration bundle",
+            "time": "2015-02-24 16:25:47"
         },
         {
             "name": "contao/listing-bundle",
