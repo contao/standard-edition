@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Contao Open Source CMS
+ * This file is part of Contao.
  *
  * Copyright (c) 2005-2015 Leo Feyer
  *
@@ -10,7 +10,8 @@
 
 use Symfony\Component\HttpFoundation\Request;
 
-require_once __DIR__ . '/../app/bootstrap.php.cache';
+$loader = require_once __DIR__ . '/../app/bootstrap.php.cache';
+
 require_once __DIR__ . '/../app/AppKernel.php';
 
 $kernel = new AppKernel('prod', false);
