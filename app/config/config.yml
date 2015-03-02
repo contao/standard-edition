@@ -2,6 +2,7 @@ imports:
     - { resource: parameters.yml }
 
 parameters:
+    # FIXME: should this be configurable via parameters.yml?
     locale: en
 
 framework:
@@ -9,6 +10,3 @@ framework:
         resource: "%kernel.root_dir%/config/routing.yml"
         strict_requirements: ~
     secret: "%secret%"
-
-# TODO: Swiftmailer konfigurieren
-

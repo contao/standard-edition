@@ -11,4 +11,7 @@ parameters:
     mailer_user:       ~
     mailer_password:   ~
 
+    prepend_locale:    false
+    url_suffix:        .html
+
     secret:            ThisTokenIsNotSoSecretChangeIt

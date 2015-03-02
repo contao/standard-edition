@@ -16,7 +16,7 @@
 
 // TL_ROOT
 namespace {
-	define('TL_ROOT', __DIR__ . '../../../');
+	define('TL_ROOT', __DIR__ . '/../../../');
 }
 
 // calendar
