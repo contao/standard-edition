@@ -735,12 +735,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/calendar-bundle.git",
-                "reference": "8f93316a12578b0ea1b386a31513f4c3163e8085"
+                "reference": "8bd49595d500ec6a865475b97a6f983255845e2a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/calendar-bundle/zipball/8f93316a12578b0ea1b386a31513f4c3163e8085",
-                "reference": "8f93316a12578b0ea1b386a31513f4c3163e8085",
+                "url": "https://api.github.com/repos/contao/calendar-bundle/zipball/8bd49595d500ec6a865475b97a6f983255845e2a",
+                "reference": "8bd49595d500ec6a865475b97a6f983255845e2a",
                 "shasum": ""
             },
             "require": {
@@ -770,7 +770,7 @@
                 }
             ],
             "description": "Contao 4 calendar bundle",
-            "time": "2015-02-23 11:15:28"
+            "time": "2015-03-03 18:59:46"
         },
         {
             "name": "contao/comments-bundle",
@@ -778,12 +778,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/comments-bundle.git",
-                "reference": "5753f938b1c7a3a340ae96480da1adb252e782a6"
+                "reference": "fd7161e66c3981a0a86d49755b7bfc6df1e1f7a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/comments-bundle/zipball/5753f938b1c7a3a340ae96480da1adb252e782a6",
-                "reference": "5753f938b1c7a3a340ae96480da1adb252e782a6",
+                "url": "https://api.github.com/repos/contao/comments-bundle/zipball/fd7161e66c3981a0a86d49755b7bfc6df1e1f7a7",
+                "reference": "fd7161e66c3981a0a86d49755b7bfc6df1e1f7a7",
                 "shasum": ""
             },
             "require": {
@@ -813,7 +813,7 @@
                 }
             ],
             "description": "Contao 4 comments bundle",
-            "time": "2015-02-23 11:15:14"
+            "time": "2015-03-03 18:59:32"
         },
         {
             "name": "contao/core-bundle",
@@ -821,12 +821,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/core-bundle.git",
-                "reference": "86c0731950f5be0d469a22091edce07af1e8cdf6"
+                "reference": "15701dbc09a6f1d9ce3ed51f898185c8bbee7ce3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/core-bundle/zipball/86c0731950f5be0d469a22091edce07af1e8cdf6",
-                "reference": "86c0731950f5be0d469a22091edce07af1e8cdf6",
+                "url": "https://api.github.com/repos/contao/core-bundle/zipball/15701dbc09a6f1d9ce3ed51f898185c8bbee7ce3",
+                "reference": "15701dbc09a6f1d9ce3ed51f898185c8bbee7ce3",
                 "shasum": ""
             },
             "require": {
@@ -870,7 +870,7 @@
                 }
             ],
             "description": "Contao 4 core bundle",
-            "time": "2015-02-24 16:54:00"
+            "time": "2015-03-03 18:59:18"
         },
         {
             "name": "contao/faq-bundle",
@@ -878,12 +878,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/faq-bundle.git",
-                "reference": "12ad647fc072b111d9e00a92d17c2222fafbc862"
+                "reference": "a536ff454d676c2d7e2aca2a5808371896cc62da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/faq-bundle/zipball/12ad647fc072b111d9e00a92d17c2222fafbc862",
-                "reference": "12ad647fc072b111d9e00a92d17c2222fafbc862",
+                "url": "https://api.github.com/repos/contao/faq-bundle/zipball/a536ff454d676c2d7e2aca2a5808371896cc62da",
+                "reference": "a536ff454d676c2d7e2aca2a5808371896cc62da",
                 "shasum": ""
             },
             "require": {
@@ -913,7 +913,7 @@
                 }
             ],
             "description": "Contao 4 FAQ bundle",
-            "time": "2015-02-23 11:14:56"
+            "time": "2015-03-03 18:59:02"
         },
         {
             "name": "contao/integration-bundle",
@@ -957,12 +957,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/listing-bundle.git",
-                "reference": "c9f1c6f01505d445ac0f2c5f37c83ec4b2b7eea3"
+                "reference": "3e198fd62364ee4641252b9b72c003ee3f13a326"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/listing-bundle/zipball/c9f1c6f01505d445ac0f2c5f37c83ec4b2b7eea3",
-                "reference": "c9f1c6f01505d445ac0f2c5f37c83ec4b2b7eea3",
+                "url": "https://api.github.com/repos/contao/listing-bundle/zipball/3e198fd62364ee4641252b9b72c003ee3f13a326",
+                "reference": "3e198fd62364ee4641252b9b72c003ee3f13a326",
                 "shasum": ""
             },
             "require": {
@@ -992,7 +992,7 @@
                 }
             ],
             "description": "Contao 4 listing bundle",
-            "time": "2015-02-23 11:14:41"
+            "time": "2015-03-03 18:58:49"
         },
         {
             "name": "contao/news-bundle",
@@ -1000,12 +1000,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/news-bundle.git",
-                "reference": "bae5e1b1f951976d96d1398af4564939876d081a"
+                "reference": "cce59d4db88a86e2e3edb353e4281efb7c574216"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/news-bundle/zipball/bae5e1b1f951976d96d1398af4564939876d081a",
-                "reference": "bae5e1b1f951976d96d1398af4564939876d081a",
+                "url": "https://api.github.com/repos/contao/news-bundle/zipball/cce59d4db88a86e2e3edb353e4281efb7c574216",
+                "reference": "cce59d4db88a86e2e3edb353e4281efb7c574216",
                 "shasum": ""
             },
             "require": {
@@ -1035,7 +1035,7 @@
                 }
             ],
             "description": "Contao 4 news bundle",
-            "time": "2015-02-23 11:14:25"
+            "time": "2015-03-03 18:58:34"
         },
         {
             "name": "contao/newsletter-bundle",
@@ -1043,12 +1043,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/newsletter-bundle.git",
-                "reference": "d03868b23ce472596ec25fa544a12ee34df9cf3b"
+                "reference": "d6a6fb950cd5ba5c09c2a9f70af6baabc74b7da0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/newsletter-bundle/zipball/d03868b23ce472596ec25fa544a12ee34df9cf3b",
-                "reference": "d03868b23ce472596ec25fa544a12ee34df9cf3b",
+                "url": "https://api.github.com/repos/contao/newsletter-bundle/zipball/d6a6fb950cd5ba5c09c2a9f70af6baabc74b7da0",
+                "reference": "d6a6fb950cd5ba5c09c2a9f70af6baabc74b7da0",
                 "shasum": ""
             },
             "require": {
@@ -1078,7 +1078,7 @@
                 }
             ],
             "description": "Contao 4 newsletter bundle",
-            "time": "2015-02-23 11:14:09"
+            "time": "2015-03-03 18:58:15"
         },
         {
             "name": "doctrine/annotations",
@@ -1437,16 +1437,16 @@
         },
         {
             "name": "doctrine/doctrine-bundle",
-            "version": "v1.3.0",
+            "version": "v1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineBundle.git",
-                "reference": "3beb3a780485ab01f86941f4892cd23ef8c39c6b"
+                "reference": "1986ff3a945b584c6505d07eae92d77e41131078"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/3beb3a780485ab01f86941f4892cd23ef8c39c6b",
-                "reference": "3beb3a780485ab01f86941f4892cd23ef8c39c6b",
+                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/1986ff3a945b584c6505d07eae92d77e41131078",
+                "reference": "1986ff3a945b584c6505d07eae92d77e41131078",
                 "shasum": ""
             },
             "require": {
@@ -1455,17 +1455,15 @@
                 "jdorn/sql-formatter": "~1.1",
                 "php": ">=5.3.2",
                 "symfony/doctrine-bridge": "~2.2",
-                "symfony/framework-bundle": "~2.2"
+                "symfony/framework-bundle": "~2.3"
             },
             "require-dev": {
                 "doctrine/orm": "~2.3",
-                "phpunit/php-code-coverage": "~1.2",
-                "phpunit/phpunit": "~3.7",
-                "phpunit/phpunit-mock-objects": "~1.2",
+                "phpunit/phpunit": "~4",
                 "satooshi/php-coveralls": "~0.6.1",
                 "symfony/validator": "~2.2",
                 "symfony/yaml": "~2.2",
-                "twig/twig": "~1"
+                "twig/twig": "~1.10"
             },
             "suggest": {
                 "doctrine/orm": "The Doctrine ORM integration is optional in the bundle.",
@@ -1474,7 +1472,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.3.x-dev"
+                    "dev-master": "1.4.x-dev"
                 }
             },
             "autoload": {
@@ -1512,7 +1510,7 @@
                 "orm",
                 "persistence"
             ],
-            "time": "2014-11-28 08:32:03"
+            "time": "2015-02-28 11:04:45"
         },
         {
             "name": "doctrine/doctrine-cache-bundle",
@@ -1826,16 +1824,16 @@
         },
         {
             "name": "michelf/php-markdown",
-            "version": "1.4.1",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/michelf/php-markdown.git",
-                "reference": "de9a19c7bf352d41cc99ed86c3c0ef17e87394b6"
+                "reference": "e1aabe18173231ebcefc90e615565742fc1c7fd9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/michelf/php-markdown/zipball/de9a19c7bf352d41cc99ed86c3c0ef17e87394b6",
-                "reference": "de9a19c7bf352d41cc99ed86c3c0ef17e87394b6",
+                "url": "https://api.github.com/repos/michelf/php-markdown/zipball/e1aabe18173231ebcefc90e615565742fc1c7fd9",
+                "reference": "e1aabe18173231ebcefc90e615565742fc1c7fd9",
                 "shasum": ""
             },
             "require": {
@@ -1858,22 +1856,22 @@
             ],
             "authors": [
                 {
-                    "name": "Michel Fortin",
-                    "email": "michel.fortin@michelf.ca",
-                    "homepage": "http://michelf.ca/",
-                    "role": "Developer"
-                },
-                {
                     "name": "John Gruber",
                     "homepage": "http://daringfireball.net/"
+                },
+                {
+                    "name": "Michel Fortin",
+                    "email": "michel.fortin@michelf.ca",
+                    "homepage": "https://michelf.ca/",
+                    "role": "Developer"
                 }
             ],
             "description": "PHP Markdown",
-            "homepage": "http://michelf.ca/projects/php-markdown/",
+            "homepage": "https://michelf.ca/projects/php-markdown/",
             "keywords": [
                 "markdown"
             ],
-            "time": "2014-05-05 02:43:50"
+            "time": "2015-03-01 12:03:08"
         },
         {
             "name": "oyejorge/less.php",
@@ -2451,28 +2449,35 @@
         },
         {
             "name": "sensio/distribution-bundle",
-            "version": "v3.0.16",
+            "version": "v3.0.18",
             "target-dir": "Sensio/Bundle/DistributionBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioDistributionBundle.git",
-                "reference": "aa30f8cd3ee68144e043ca30713aa7d7df35c5fa"
+                "reference": "ac026149ffb1d3a5c893290d2d3ca8795013de08"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/aa30f8cd3ee68144e043ca30713aa7d7df35c5fa",
-                "reference": "aa30f8cd3ee68144e043ca30713aa7d7df35c5fa",
+                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/ac026149ffb1d3a5c893290d2d3ca8795013de08",
+                "reference": "ac026149ffb1d3a5c893290d2d3ca8795013de08",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3",
                 "sensiolabs/security-checker": "~2.0",
                 "symfony/class-loader": "~2.2",
-                "symfony/form": "~2.2",
                 "symfony/framework-bundle": "~2.3",
-                "symfony/process": "~2.2",
+                "symfony/process": "~2.2"
+            },
+            "require-dev": {
+                "symfony/form": "~2.2",
                 "symfony/validator": "~2.2",
                 "symfony/yaml": "~2.2"
+            },
+            "suggest": {
+                "symfony/form": "If you want to use the configurator",
+                "symfony/validator": "If you want to use the configurator",
+                "symfony/yaml": "If you want to use  the configurator"
             },
             "type": "symfony-bundle",
             "extra": {
@@ -2500,7 +2505,7 @@
                 "configuration",
                 "distribution"
             ],
-            "time": "2015-02-01 05:42:21"
+            "time": "2015-02-27 12:59:18"
         },
         {
             "name": "sensiolabs/security-checker",
