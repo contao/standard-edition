@@ -13,6 +13,8 @@
         "php": ">=5.4.0",
         "symfony/symfony": "~2.6",
         "doctrine/annotations": "~1.2",
+        "incenteev/composer-parameter-handler": "~2.0",
+        "sensio/distribution-bundle": "~3.0",
         "contao/calendar-bundle": "dev-develop",
         "contao/comments-bundle": "dev-develop",
         "contao/core-bundle": "dev-develop",
@@ -42,10 +44,6 @@
         "contao-components/tablesort": "~3.4",
         "contao-components/tablesorter": "~2.0",
         "contao-components/tinymce4": "~4.1"
-    },
-    "require-dev": {
-        "sensio/distribution-bundle": "~3.0",
-        "incenteev/composer-parameter-handler": "~2.0"
     },
     "replace": {
         "contao/core": "self.version"
