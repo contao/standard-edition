@@ -6,10 +6,8 @@
 .idea/
 nbproject/
 
-# Symfony
-/app/cache/*
+# App config
 /app/config/parameters.yml
-/app/logs/*
 
 # Assets
 /assets/
@@ -17,24 +15,11 @@ nbproject/
 # User files
 /files/*
 
-# Internal cache
-/system/cache/*
-
 # Configuration files
 /system/config/dcaconfig.php
 /system/config/initconfig.php
 /system/config/langconfig.php
 /system/config/localconfig.php
-
-# Logs and temporary files
-/system/logs/*
-/system/tmp/*
-
-# Themes
-/system/themes/*
-
-# Customized templates
-/templates/*
 
 # Vendor libraries
 /vendor/
@@ -42,23 +27,17 @@ nbproject/
 # Symlinked resources
 /web/assets
 /web/files/
-/web/system/modules/*
+/web/system/modules/
 /web/system/themes
 /web/vendor/
 
-# Disabled modules
+# Document root files
+/web/.htaccess
+/web/robots.txt
+
+# Skip files
 /system/modules/*/.skip
 
 # Composer package manager
 /composer/
 /system/modules/!composer/
-
-# Generated feeds
-/web/share/*.xml
-
-# Cron timeout
-/web/system/cron/cron.txt
-
-# Document root files
-/web/.htaccess
-/web/robots.txt
