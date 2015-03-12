@@ -821,12 +821,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/core-bundle.git",
-                "reference": "600255a920349ce9eec8069e3195dc9b1032e17b"
+                "reference": "0929a43892171f8bbf22ebebd03843234e09ee41"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/core-bundle/zipball/600255a920349ce9eec8069e3195dc9b1032e17b",
-                "reference": "600255a920349ce9eec8069e3195dc9b1032e17b",
+                "url": "https://api.github.com/repos/contao/core-bundle/zipball/0929a43892171f8bbf22ebebd03843234e09ee41",
+                "reference": "0929a43892171f8bbf22ebebd03843234e09ee41",
                 "shasum": ""
             },
             "require": {

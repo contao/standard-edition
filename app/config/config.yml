@@ -6,12 +6,22 @@ parameters:
     # FIXME: should this be configurable via parameters.yml?
     locale: en
 
+# Framework configuration
 framework:
+    secret: "%secret%"
     router:
         resource: "%kernel.root_dir%/config/routing.yml"
         strict_requirements: ~
-    secret: "%secret%"
+    templating:
+        engines: ['twig']
+    default_locale: "%locale%"
 
+# Twig configuration
+twig:
+    debug: "%kernel.debug%"
+    strict_variables: "%kernel.debug%"
+
+# SwiftMailer configuration
 swiftmailer:
     transport: "%mailer_transport%"
     host:      "%mailer_host%"
