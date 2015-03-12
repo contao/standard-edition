@@ -9,29 +9,18 @@ nbproject/
 # App config
 /app/config/parameters.yml
 
-# Assets
+# Generated folders
 /assets/
-
-# User files
 /files/
-
-# Configuration files
-/system/config/dcaconfig.php
-/system/config/initconfig.php
-/system/config/langconfig.php
-/system/config/localconfig.php
-
-# Templates
+/system/
 /templates/
-
-# Vendor libraries
 /vendor/
 
 # Symlinked resources
 /web/assets
 /web/files/
-/web/system/modules/
-/web/system/themes
+/web/share/
+/web/system/
 /web/vendor/
 
 # Robots.txt
