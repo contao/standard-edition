@@ -11,7 +11,7 @@
 use Contao\CoreBundle\HttpKernel\ContaoKernel;
 use Symfony\Component\Config\Loader\LoaderInterface;
 
-class AppKernel extends ContaoKernel
+class AppKernel extends ContaoKernel // FIXME: extends Kernel
 {
     public function registerBundles()
     {
@@ -23,6 +23,12 @@ class AppKernel extends ContaoKernel
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new Contao\CoreBundle\ContaoCoreBundle(),
+            new Contao\CalendarBundle\ContaoCalendarBundle(),
+            new Contao\CommentsBundle\ContaoCommentsBundle(),
+            new Contao\FaqBundle\ContaoFaqBundle(),
+            new Contao\ListingBundle\ContaoListingBundle(),
+            new Contao\NewsBundle\ContaoNewsBundle(),
+            new Contao\NewsletterBundle\ContaoNewsletterBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'])) {

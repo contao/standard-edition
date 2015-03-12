@@ -16,7 +16,7 @@ require_once __DIR__ . '/../app/AppKernel.php';
 
 $kernel = new AppKernel('prod', false);
 $kernel->loadClassCache();
-$kernel->loadBundleCache();
+$kernel->loadBundleCache(); // FIXME: remove
 
 // Handle the request
 $request  = Request::createFromGlobals();
