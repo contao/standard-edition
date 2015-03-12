@@ -15,6 +15,7 @@
         "doctrine/annotations": "~1.2",
         "incenteev/composer-parameter-handler": "~2.0",
         "sensio/distribution-bundle": "~3.0",
+        "sensio/framework-extra-bundle": "~3.0",
         "contao/calendar-bundle": "dev-develop",
         "contao/comments-bundle": "dev-develop",
         "contao/core-bundle": "dev-feature/no-more-magic",
