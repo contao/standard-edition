@@ -1,5 +1,5 @@
 {
-    "name": "contao/contao",
+    "name": "contao/standard-edition",
     "type": "project",
     "description": "Contao Open Source CMS",
     "license": "LGPL-3.0+",
