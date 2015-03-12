@@ -13,13 +13,16 @@ nbproject/
 /assets/
 
 # User files
-/files/*
+/files/
 
 # Configuration files
 /system/config/dcaconfig.php
 /system/config/initconfig.php
 /system/config/langconfig.php
 /system/config/localconfig.php
+
+# Templates
+/templates/
 
 # Vendor libraries
 /vendor/
@@ -31,8 +34,7 @@ nbproject/
 /web/system/themes
 /web/vendor/
 
-# Document root files
-/web/.htaccess
+# Robots.txt
 /web/robots.txt
 
 # Skip files
