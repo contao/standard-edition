@@ -1,5 +1,6 @@
 imports:
     - { resource: parameters.yml }
+    - { resource: security.yml }
 
 parameters:
     # FIXME: should this be configurable via parameters.yml?

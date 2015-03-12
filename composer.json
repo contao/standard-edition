@@ -17,7 +17,7 @@
         "sensio/distribution-bundle": "~3.0",
         "contao/calendar-bundle": "dev-develop",
         "contao/comments-bundle": "dev-develop",
-        "contao/core-bundle": "dev-develop",
+        "contao/core-bundle": "dev-feature/no-more-magic",
         "contao/faq-bundle": "dev-develop",
         "contao/listing-bundle": "dev-develop",
         "contao/news-bundle": "dev-develop",
