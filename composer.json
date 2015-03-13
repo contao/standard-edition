@@ -12,7 +12,6 @@
     "require": {
         "php": ">=5.4.0",
         "contao/contao": "~4.0",
-        "contao/core-bundle": "dev-feature/no-more-magic as 4.0",
         "doctrine/annotations": "~1.2",
         "incenteev/composer-parameter-handler": "~2.0",
         "sensio/distribution-bundle": "~3.0",
