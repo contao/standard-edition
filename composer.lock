@@ -886,12 +886,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/core-bundle.git",
-                "reference": "ae1891c4107754af43e6fd63d3a2acf53854c5dd"
+                "reference": "0c355783eea8a25510e62b05e055a55ebc2ca083"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/core-bundle/zipball/ae1891c4107754af43e6fd63d3a2acf53854c5dd",
-                "reference": "ae1891c4107754af43e6fd63d3a2acf53854c5dd",
+                "url": "https://api.github.com/repos/contao/core-bundle/zipball/0c355783eea8a25510e62b05e055a55ebc2ca083",
+                "reference": "0c355783eea8a25510e62b05e055a55ebc2ca083",
                 "shasum": ""
             },
             "require": {

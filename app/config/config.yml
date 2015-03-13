@@ -2,10 +2,6 @@ imports:
     - { resource: parameters.yml }
     - { resource: security.yml }
 
-parameters:
-    # FIXME: should this be configurable via parameters.yml?
-    locale: en
-
 # Framework configuration
 framework:
     secret: "%secret%"
@@ -16,6 +12,11 @@ framework:
         engines: ['twig']
     default_locale: "%locale%"
     session: false
+
+# Contao configuration
+contao:
+    prepend_locale: "%prepend_locale%"
+    url_suffix: "%url_suffix%"
 
 # Twig configuration
 twig:
