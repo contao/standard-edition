@@ -11,19 +11,30 @@
 use Contao\CoreBundle\HttpKernel\ContaoKernel;
 use Symfony\Component\Config\Loader\LoaderInterface;
 
-class AppKernel extends ContaoKernel
+class AppKernel extends ContaoKernel // FIXME: extends Kernel
 {
     public function registerBundles()
     {
         $bundles = [
             new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
+            new Symfony\Bundle\SecurityBundle\SecurityBundle(),
+            new Symfony\Bundle\TwigBundle\TwigBundle(),
+            new Symfony\Bundle\SwiftmailerBundle\SwiftmailerBundle(),
+            new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
+            new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
+            new Contao\CoreBundle\ContaoCoreBundle(),
+            new Contao\CalendarBundle\ContaoCalendarBundle(),
+            new Contao\CommentsBundle\ContaoCommentsBundle(),
+            new Contao\FaqBundle\ContaoFaqBundle(),
+            new Contao\ListingBundle\ContaoListingBundle(),
+            new Contao\NewsBundle\ContaoNewsBundle(),
+            new Contao\NewsletterBundle\ContaoNewsletterBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'])) {
+            $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
             $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
         }
-
-        $this->addAutoloadBundles($bundles);
 
         return $bundles;
     }

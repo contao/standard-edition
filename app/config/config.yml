@@ -1,16 +1,39 @@
 imports:
     - { resource: parameters.yml }
+    - { resource: security.yml }
 
 parameters:
     # FIXME: should this be configurable via parameters.yml?
     locale: en
 
+# Framework configuration
 framework:
+    secret: "%secret%"
     router:
         resource: "%kernel.root_dir%/config/routing.yml"
         strict_requirements: ~
-    secret: "%secret%"
+    templating:
+        engines: ['twig']
+    default_locale: "%locale%"
+    session: false
 
+# Twig configuration
+twig:
+    debug: "%kernel.debug%"
+    strict_variables: "%kernel.debug%"
+
+# Doctrine configuration
+doctrine:
+    dbal:
+        driver:   "%database_driver%"
+        host:     "%database_host%"
+        port:     "%database_port%"
+        dbname:   "%database_name%"
+        user:     "%database_user%"
+        password: "%database_password%"
+        charset:  UTF8MB4
+
+# SwiftMailer configuration
 swiftmailer:
     transport: "%mailer_transport%"
     host:      "%mailer_host%"

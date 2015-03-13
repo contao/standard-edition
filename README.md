@@ -1,70 +1,53 @@
-Contao Open Source CMS
-======================
+Contao standard edition
+=======================
 
-Contao is an Open Source PHP Content Management System for people who want a
-professional website that is easy to maintain. Visit the [project website][1]
-for more information.
-
-
-System requirements
--------------------
-
- * Web server with symlink support
- * PHP 5.4+ with GDlib, DOM, Phar, openssl and SOAP
- * MySQL 5.0.3+
+Welcome to the Contao standard edition, a fully-functional Contao 4 application
+that you can use as the skeleton for your new applications.
 
 
-Installation
-------------
+What's inside?
+--------------
 
-See the [installation chapter][2] of the user's manual.
+The Contao standard edition is configured with the following defaults:
 
+  * Twig as template engine;
+  * Doctrine DBAL;
+  * Swiftmailer;
+  * Annotations enabled for everything.
 
-Documentation
--------------
+It comes pre-configured with the following Symfony bundles:
 
- * [User's manual][3]
- * [Change log][4]
- * [API changes][5]
- * [Community wiki][6]
+  * **FrameworkBundle** - The core Symfony framework bundle
 
+  * **SecurityBundle** - Integrates Symfony's security component
 
-License
--------
+  * **TwigBundle** - Adds support for the Twig templating engine
 
-Contao is licensed under the terms of the LGPLv3. The full license text is
-available in the [`system/docs`][7] folder.
+  * **SwiftmailerBundle** - Adds support for Swiftmailer
 
-Note that the LGPL incorporates the terms and conditions of the GPL, therefore
-both licenses are included there. This, however, does not imply that Contao is
-dual licensed under both the GPL and the LGPL.
+  * **DoctrineBundle** - Adds support for the Doctrine ORM
 
+  * **SensioFrameworkExtraBundle** - Adds various annotation capabilities
 
-Getting support
----------------
+  * **WebProfilerBundle** (in dev/test env) - Adds the web debug toolbar
 
-Visit the [support page][8] to learn about the available support options.
+  * **SensioDistributionBundle** (in dev/test env) - Adds functionality for
+    configuring and working with Symfony distributions
 
+It also comes pre-configured with the following Contao bundles:
 
-Installing from Git
--------------------
+  * **ContaoCoreBundle** - The Contao core bundle
 
-We are using [Composer][9] to manage third-party scripts, so after you have
-cloned the repository, make sure to install the vendor libraries:
+  * **ContaoCalendarBundle** - The Contao calendar bundle
 
-```
-git clone https://github.com/contao/contao.git
-cd contao
-php composer.phar install --prefer-dist
-```
+  * **ContaoCommentsBundle** - The Contao comments bundle
 
+  * **ContaoFaqBundle** - The Contao FAQ bundle
 
-[1]: https://contao.org
-[2]: https://contao.org/manual/installation.html
-[3]: https://contao.org/manual.html
-[4]: system/docs/CHANGELOG.md
-[5]: system/docs/UPGRADE.md
-[6]: http://contaowiki.org
-[7]: system/docs
-[8]: https://contao.org/support.html
-[9]: https://getcomposer.org
+  * **ContaoListingBundle** - The Contao listing bundle
+
+  * **ContaoNewsBundle** - The Contao news bundle
+
+  * **ContaoNewsletterBundle** - The Contao newsletter bundle
+
+Enjoy!

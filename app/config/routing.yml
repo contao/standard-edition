@@ -1,3 +1,8 @@
-bundles:
+ContaoCoreBundle:
+    resource: "@ContaoCoreBundle/Controller"
+    type: annotation
+
+# The fallback route must be the last one!
+contao_frontend:
     resource: .
-    type: bundles
+    type: contao_frontend
