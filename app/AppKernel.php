@@ -8,11 +8,22 @@
  * @license LGPL-3.0+
  */
 
-use Contao\CoreBundle\HttpKernel\ContaoKernel;
+use Contao\CoreBundle\HttpKernel\Bundle\ContaoBundleInterface;
 use Symfony\Component\Config\Loader\LoaderInterface;
+use Symfony\Component\HttpKernel\Kernel;
 
-class AppKernel extends ContaoKernel // FIXME: extends Kernel
+class AppKernel extends Kernel
 {
+    /**
+     * @var ContaoBundleInterface[]
+     *
+     * @todo Get rid of this with https://github.com/contao/core-bundle/pull/55
+     */
+    protected $contaoBundles = [];
+
+    /**
+     * {@inheritdoc}
+     */
     public function registerBundles()
     {
         $bundles = [
@@ -39,8 +50,31 @@ class AppKernel extends ContaoKernel // FIXME: extends Kernel
         return $bundles;
     }
 
+    /**
+     * {@inheritdoc}
+     */
     public function registerContainerConfiguration(LoaderInterface $loader)
     {
         $loader->load(__DIR__ . '/config/config_' . $this->getEnvironment() . '.yml');
+    }
+
+    /**
+     * Returns a list of Contao bundles.
+     *
+     * @return ContaoBundleInterface[]
+     *
+     * @todo Get rid of this with https://github.com/contao/core-bundle/pull/55
+     */
+    public function getContaoBundles()
+    {
+        if (empty($this->contaoBundles)) {
+            foreach ($this->getBundles() as $bundle) {
+                if ($bundle instanceof ContaoBundleInterface) {
+                    $this->contaoBundles[] = $bundle;
+                }
+            }
+        }
+
+        return $this->contaoBundles;
     }
 }
