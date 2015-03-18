@@ -25,15 +25,17 @@
     "scripts": {
         "post-install-cmd": [
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
-            "Contao\\CoreBundle\\Composer\\ScriptHandler::addContaoDirectories",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache"
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
+            "Contao\\CoreBundle\\Composer\\ScriptHandler::addContaoDirectories"
         ],
         "post-update-cmd": [
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
-            "Contao\\CoreBundle\\Composer\\ScriptHandler::addContaoDirectories",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache"
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
+            "Contao\\CoreBundle\\Composer\\ScriptHandler::addContaoDirectories"
         ]
     },
     "extra": {
@@ -42,7 +44,8 @@
         },
         "incenteev-parameters": {
             "file": "app/config/parameters.yml"
-        }
+        },
+        "symfony-assets-install": "relative"
     },
     "prefer-stable": true,
     "minimum-stability": "dev"
