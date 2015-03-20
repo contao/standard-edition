@@ -801,7 +801,7 @@ $pos = strpos($host,':', strrpos($host,']'));
 $pos = strrpos($host,':');
 }
 if (false !== $pos) {
-return intval(substr($host, $pos + 1));
+return (int) substr($host, $pos + 1);
 }
 return'https'=== $this->getScheme() ? 443 : 80;
 }
@@ -1214,7 +1214,7 @@ if (0 !== strpos(rawurldecode($string), $prefix)) {
 return false;
 }
 $len = strlen($prefix);
-if (preg_match("#^(%[[:xdigit:]]{2}|.){{$len}}#", $string, $match)) {
+if (preg_match(sprintf('#^(%%[[:xdigit:]]{2}|.){%d}#', $len), $string, $match)) {
 return $match[0];
 }
 return false;
@@ -1770,7 +1770,7 @@ ob_end_clean();
 protected function ensureIEOverSSLCompatibility(Request $request)
 {
 if (false !== stripos($this->headers->get('Content-Disposition'),'attachment') && preg_match('/MSIE (.*?);/i', $request->server->get('HTTP_USER_AGENT'), $match) == 1 && true === $request->isSecure()) {
-if (intval(preg_replace("/(MSIE )(.*?);/","$2", $match[0])) < 9) {
+if ((int) preg_replace("/(MSIE )(.*?);/","$2", $match[0]) < 9) {
 $this->headers->remove('Cache-Control');
 }
 }
@@ -2304,11 +2304,11 @@ protected $booted = false;
 protected $name;
 protected $startTime;
 protected $loadClassCache;
-const VERSION ='2.6.4';
-const VERSION_ID ='20604';
+const VERSION ='2.6.5';
+const VERSION_ID ='20605';
 const MAJOR_VERSION ='2';
 const MINOR_VERSION ='6';
-const RELEASE_VERSION ='4';
+const RELEASE_VERSION ='5';
 const EXTRA_VERSION ='';
 public function __construct($environment, $debug)
 {
@@ -2599,7 +2599,7 @@ protected function buildContainer()
 {
 foreach (array('cache'=> $this->getCacheDir(),'logs'=> $this->getLogDir()) as $name => $dir) {
 if (!is_dir($dir)) {
-if (false === @mkdir($dir, 0777, true)) {
+if (false === @mkdir($dir, 0777, true) && !is_dir($dir)) {
 throw new \RuntimeException(sprintf("Unable to create the %s directory (%s)\n", $name, $dir));
 }
 } elseif (!is_writable($dir)) {

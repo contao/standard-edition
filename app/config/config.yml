@@ -17,6 +17,7 @@ framework:
 contao:
     prepend_locale: "%prepend_locale%"
     url_suffix: "%url_suffix%"
+    upload_path: "%upload_path%"
 
 # Twig configuration
 twig:

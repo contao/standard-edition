@@ -14,5 +14,6 @@ parameters:
     locale:            en
     prepend_locale:    false
     url_suffix:        .html
+    upload_path:       files
 
     secret:            ThisTokenIsNotSoSecretChangeIt
