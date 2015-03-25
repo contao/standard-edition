@@ -24,19 +24,19 @@
     },
     "scripts": {
         "post-install-cmd": [
+            "Contao\\CoreBundle\\Composer\\ScriptHandler::addDirectories",
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
-            "Contao\\CoreBundle\\Composer\\ScriptHandler::addDirectories",
             "Contao\\CoreBundle\\Composer\\ScriptHandler::generateSymlinks"
         ],
         "post-update-cmd": [
+            "Contao\\CoreBundle\\Composer\\ScriptHandler::addDirectories",
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
-            "Contao\\CoreBundle\\Composer\\ScriptHandler::addDirectories",
             "Contao\\CoreBundle\\Composer\\ScriptHandler::generateSymlinks"
         ]
     },
