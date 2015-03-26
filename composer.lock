@@ -873,12 +873,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/core-bundle.git",
-                "reference": "f02f9ac8faf14b4f4c1433fbe0fe4b813e5d6b54"
+                "reference": "1be976516cde17601419feabc8ddd5e59305e0d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/core-bundle/zipball/f02f9ac8faf14b4f4c1433fbe0fe4b813e5d6b54",
-                "reference": "f02f9ac8faf14b4f4c1433fbe0fe4b813e5d6b54",
+                "url": "https://api.github.com/repos/contao/core-bundle/zipball/1be976516cde17601419feabc8ddd5e59305e0d7",
+                "reference": "1be976516cde17601419feabc8ddd5e59305e0d7",
                 "shasum": ""
             },
             "require": {
