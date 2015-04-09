@@ -11,7 +11,9 @@ framework:
     templating:
         engines: ['twig']
     default_locale: "%locale%"
-    session: false
+    session:
+        handler_id: ~
+    csrf_protection: ~
 
 # Contao configuration
 contao:
