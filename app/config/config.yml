@@ -10,7 +10,7 @@ framework:
         strict_requirements: ~
     templating:
         engines: ['twig']
-    default_locale: "%locale%"
+    default_locale: en
     session:
         handler_id: ~
     csrf_protection: ~
