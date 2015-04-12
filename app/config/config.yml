@@ -2,6 +2,11 @@ imports:
     - { resource: parameters.yml }
     - { resource: security.yml }
 
+# Put parameters here that don't need to change on each machine where the app is deployed
+# http://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
+parameters:
+    locale: en
+
 # Framework configuration
 framework:
     secret: "%secret%"
@@ -10,7 +15,7 @@ framework:
         strict_requirements: ~
     templating:
         engines: ['twig']
-    default_locale: en
+    default_locale:  "%locale%"
     session:
         handler_id: ~
     csrf_protection: ~
@@ -32,7 +37,7 @@ doctrine:
         default_connection: default
         connections:
             default:
-                driver:   "%database_driver%"
+                driver:   pdo_mysql
                 host:     "%database_host%"
                 port:     "%database_port%"
                 dbname:   "%database_name%"
