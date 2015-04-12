@@ -23,8 +23,9 @@ framework:
 # Contao configuration
 contao:
     prepend_locale: "%prepend_locale%"
-    url_suffix: "%url_suffix%"
-    upload_path: "%upload_path%"
+    url_suffix:     "%url_suffix%"
+    upload_path:    "%upload_path%"
+    encryption_key: "%kernel.secret%"
 
 # Twig configuration
 twig:
