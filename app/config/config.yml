@@ -42,7 +42,7 @@ doctrine:
                 dbname:   "%database_name%"
                 user:     "%database_user%"
                 password: "%database_password%"
-                charset:  UTF8MB4
+                charset:  UTF8
 
 # SwiftMailer configuration
 swiftmailer:
