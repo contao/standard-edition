@@ -11,8 +11,8 @@
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Debug\Debug;
 
-// Access to debug front controllers must only allowed from localhost or with username and password.
-// FIXME: add link to documentation that explains what to do.
+// Access to debug front controllers is only allowed on localhost or with username and password.
+// FIXME: add link to documentation that explains what to do
 $accessKey = '';
 
 if (isset($_SERVER['HTTP_CLIENT_IP'])
@@ -24,13 +24,14 @@ if (isset($_SERVER['HTTP_CLIENT_IP'])
     if ('' === $username || '' === $password) {
         header('HTTP/1.0 403 Forbidden');
         exit('You are not allowed to access this file. Check ' . basename(__FILE__) . ' for more information.');
+    }
 
-    } elseif (!isset($_SERVER['PHP_AUTH_USER'])
+    if (!isset($_SERVER['PHP_AUTH_USER'])
         || !isset($_SERVER['PHP_AUTH_PW'])
         || hash('sha512', $_SERVER['PHP_AUTH_USER']) !== $username
         || hash('sha512', $_SERVER['PHP_AUTH_PW']) !== $password
     ) {
-        header('WWW-Authenticate: Basic realm="Contao Debug"');
+        header('WWW-Authenticate: Basic realm="Contao debug"');
         header('HTTP/1.0 401 Unauthorized');
         exit('You are not allowed to access this file. Check ' . basename(__FILE__) . ' for more information.');
     }
@@ -39,7 +40,6 @@ if (isset($_SERVER['HTTP_CLIENT_IP'])
 }
 
 unset($accessKey);
-
 
 $loader = require_once __DIR__ . '/../app/bootstrap.php.cache';
 Debug::enable();
