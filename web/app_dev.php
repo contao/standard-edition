@@ -35,7 +35,7 @@ if (isset($_SERVER['HTTP_CLIENT_IP'])
         exit('You are not allowed to access this file. Check ' . basename(__FILE__) . ' for more information.');
     }
 
-    unset($username, $password, $_SERVER['PHP_AUTH_USER'], $_SERVER['PHP_AUTH_PW']);
+    unset($username, $password);
 }
 
 unset($accessKey);
