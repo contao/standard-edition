@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3787eef80e27cda1e6726bb02c79643d",
+    "hash": "62331f380ed7c764bad40888ed7607b6",
     "packages": [
         {
             "name": "contao-components/ace",
@@ -735,12 +735,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/calendar-bundle.git",
-                "reference": "260b9357b699d73338d626bb2b8ef3204925f608"
+                "reference": "0948d0fca1b1e31a511418a558d6f6bdca857ed9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/calendar-bundle/zipball/260b9357b699d73338d626bb2b8ef3204925f608",
-                "reference": "260b9357b699d73338d626bb2b8ef3204925f608",
+                "url": "https://api.github.com/repos/contao/calendar-bundle/zipball/0948d0fca1b1e31a511418a558d6f6bdca857ed9",
+                "reference": "0948d0fca1b1e31a511418a558d6f6bdca857ed9",
                 "shasum": ""
             },
             "require": {
@@ -781,12 +781,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/comments-bundle.git",
-                "reference": "3b74ae6578c47b27f03c31de4361376c1a164d6d"
+                "reference": "e00ea792988469408a7e503fbc9fa57218fa84f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/comments-bundle/zipball/3b74ae6578c47b27f03c31de4361376c1a164d6d",
-                "reference": "3b74ae6578c47b27f03c31de4361376c1a164d6d",
+                "url": "https://api.github.com/repos/contao/comments-bundle/zipball/e00ea792988469408a7e503fbc9fa57218fa84f9",
+                "reference": "e00ea792988469408a7e503fbc9fa57218fa84f9",
                 "shasum": ""
             },
             "require": {
@@ -873,12 +873,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/core-bundle.git",
-                "reference": "e9e6b5e60ae8627f650e8519eb0fa1f29afeffeb"
+                "reference": "a3c24d6bf33878c440e237ea4c77672531ea5a31"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/core-bundle/zipball/e9e6b5e60ae8627f650e8519eb0fa1f29afeffeb",
-                "reference": "e9e6b5e60ae8627f650e8519eb0fa1f29afeffeb",
+                "url": "https://api.github.com/repos/contao/core-bundle/zipball/a3c24d6bf33878c440e237ea4c77672531ea5a31",
+                "reference": "a3c24d6bf33878c440e237ea4c77672531ea5a31",
                 "shasum": ""
             },
             "require": {
@@ -957,12 +957,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/faq-bundle.git",
-                "reference": "427a215423175d20286a3a27d882c2eb29fd3e2e"
+                "reference": "25ccce0b0fcd07be59329e786e79affa4196a749"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/faq-bundle/zipball/427a215423175d20286a3a27d882c2eb29fd3e2e",
-                "reference": "427a215423175d20286a3a27d882c2eb29fd3e2e",
+                "url": "https://api.github.com/repos/contao/faq-bundle/zipball/25ccce0b0fcd07be59329e786e79affa4196a749",
+                "reference": "25ccce0b0fcd07be59329e786e79affa4196a749",
                 "shasum": ""
             },
             "require": {
@@ -1003,12 +1003,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/listing-bundle.git",
-                "reference": "c1b0ba5c35500e9326344981c052867a558c4d24"
+                "reference": "4acbd458c219379776675c5d0f31b2f3bb85b1a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/listing-bundle/zipball/c1b0ba5c35500e9326344981c052867a558c4d24",
-                "reference": "c1b0ba5c35500e9326344981c052867a558c4d24",
+                "url": "https://api.github.com/repos/contao/listing-bundle/zipball/4acbd458c219379776675c5d0f31b2f3bb85b1a1",
+                "reference": "4acbd458c219379776675c5d0f31b2f3bb85b1a1",
                 "shasum": ""
             },
             "require": {
@@ -1049,12 +1049,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/news-bundle.git",
-                "reference": "ed5684fd618098a332b16e405653471481600583"
+                "reference": "7ab57a9e0b5753af7ed37ece31e76cd8e2daa15c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/news-bundle/zipball/ed5684fd618098a332b16e405653471481600583",
-                "reference": "ed5684fd618098a332b16e405653471481600583",
+                "url": "https://api.github.com/repos/contao/news-bundle/zipball/7ab57a9e0b5753af7ed37ece31e76cd8e2daa15c",
+                "reference": "7ab57a9e0b5753af7ed37ece31e76cd8e2daa15c",
                 "shasum": ""
             },
             "require": {
@@ -1095,12 +1095,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/newsletter-bundle.git",
-                "reference": "9860bb7e3ad037acadd33b39257daa5edf197831"
+                "reference": "fa4286af97c7ae95c68c14b4892f860aa9a68f45"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/newsletter-bundle/zipball/9860bb7e3ad037acadd33b39257daa5edf197831",
-                "reference": "9860bb7e3ad037acadd33b39257daa5edf197831",
+                "url": "https://api.github.com/repos/contao/newsletter-bundle/zipball/fa4286af97c7ae95c68c14b4892f860aa9a68f45",
+                "reference": "fa4286af97c7ae95c68c14b4892f860aa9a68f45",
                 "shasum": ""
             },
             "require": {
