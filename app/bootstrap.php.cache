@@ -652,7 +652,7 @@ return self::$trustedProxies;
 public static function setTrustedHosts(array $hostPatterns)
 {
 self::$trustedHostPatterns = array_map(function ($hostPattern) {
-return sprintf('{%s}i', str_replace('}','\\}', $hostPattern));
+return sprintf('#%s#i', $hostPattern);
 }, $hostPatterns);
 self::$trustedHosts = array();
 }
@@ -1043,8 +1043,8 @@ return $this->languages;
 }
 $languages = AcceptHeader::fromString($this->headers->get('Accept-Language'))->all();
 $this->languages = array();
-foreach (array_keys($languages) as $lang) {
-if (strstr($lang,'-')) {
+foreach ($languages as $lang => $acceptHeaderItem) {
+if (false !== strpos($lang,'-')) {
 $codes = explode('-', $lang);
 if ('i'=== $codes[0]) {
 if (count($codes) > 1) {
@@ -1996,7 +1996,6 @@ protected $loading = array();
 public function __construct(ParameterBagInterface $parameterBag = null)
 {
 $this->parameterBag = $parameterBag ?: new ParameterBag();
-$this->set('service_container', $this);
 }
 public function compile()
 {
@@ -2089,7 +2088,7 @@ if (!$id) {
 throw new ServiceNotFoundException($id);
 }
 $alternatives = array();
-foreach (array_keys($this->services) as $key) {
+foreach ($this->services as $key => $associatedService) {
 $lev = levenshtein($id, $key);
 if ($lev <= strlen($id) / 3 || false !== strpos($key, $id)) {
 $alternatives[] = $key;
@@ -2311,11 +2310,11 @@ protected $booted = false;
 protected $name;
 protected $startTime;
 protected $loadClassCache;
-const VERSION ='2.6.6';
-const VERSION_ID ='20606';
+const VERSION ='2.6.7';
+const VERSION_ID ='20607';
 const MAJOR_VERSION ='2';
 const MINOR_VERSION ='6';
-const RELEASE_VERSION ='6';
+const RELEASE_VERSION ='7';
 const EXTRA_VERSION ='';
 public function __construct($environment, $debug)
 {
@@ -2643,7 +2642,7 @@ $container->getCompilerPassConfig()->setMergePass(new MergeExtensionConfiguratio
 protected function getContainerBuilder()
 {
 $container = new ContainerBuilder(new ParameterBag($this->getKernelParameters()));
-if (class_exists('ProxyManager\Configuration')) {
+if (class_exists('ProxyManager\Configuration') && class_exists('Symfony\Bridge\ProxyManager\LazyProxy\Instantiator\RuntimeInstantiator')) {
 $container->setProxyInstantiator(new RuntimeInstantiator());
 }
 return $container;
@@ -2651,8 +2650,8 @@ return $container;
 protected function dumpContainer(ConfigCache $cache, ContainerBuilder $container, $class, $baseClass)
 {
 $dumper = new PhpDumper($container);
-if (class_exists('ProxyManager\Configuration')) {
-$dumper->setProxyDumper(new ProxyDumper());
+if (class_exists('ProxyManager\Configuration') && class_exists('Symfony\Bridge\ProxyManager\LazyProxy\PhpDumper\ProxyDumper')) {
+$dumper->setProxyDumper(new ProxyDumper(md5((string) $cache)));
 }
 $content = $dumper->dump(array('class'=> $class,'base_class'=> $baseClass,'file'=> (string) $cache));
 if (!$this->debug) {
@@ -3151,4 +3150,3 @@ return $response;
 }
 
 namespace { return $loader; }
-            
