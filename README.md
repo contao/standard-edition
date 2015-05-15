@@ -22,10 +22,14 @@ It comes pre-configured with the following Symfony bundles:
   * **SecurityBundle** - Integrates Symfony's security component
 
   * **TwigBundle** - Adds support for the Twig templating engine
+  
+  * **MonologBundle** - Adds support for Monolog, a logging library
 
   * **SwiftmailerBundle** - Adds support for Swiftmailer
 
   * **DoctrineBundle** - Adds support for the Doctrine ORM
+
+  * **DebugBundle** (in dev/test env) - Adds the `dump()` function
 
   * **SensioFrameworkExtraBundle** - Adds various annotation capabilities
 
