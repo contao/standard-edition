@@ -1,11 +1,3 @@
-# Common IDE files
-.buildpath
-.project
-.settings/
-.build/
-.idea/
-nbproject/
-
 # App config
 /app/config/parameters.yml
 
