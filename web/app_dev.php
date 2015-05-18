@@ -31,7 +31,7 @@ if (isset($_SERVER['HTTP_CLIENT_IP'])
 
     if (!isset($_SERVER['PHP_AUTH_USER'])
         || !isset($_SERVER['PHP_AUTH_PW'])
-        || hash('sha512', $_SERVER['PHP_AUTH_USER'] . ':' , $_SERVER['PHP_AUTH_PW']) !== $accessKey
+        || hash('sha512', $_SERVER['PHP_AUTH_USER'] . ':' . $_SERVER['PHP_AUTH_PW']) !== $accessKey
     ) {
         header('WWW-Authenticate: Basic realm="Contao debug"');
         header('HTTP/1.0 401 Unauthorized');
