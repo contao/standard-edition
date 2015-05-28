@@ -42,7 +42,7 @@ return $default;
 }
 $value = $this->parameters[$root];
 $currentKey = null;
-for ($i = $pos, $c = strlen($path); $i < $c; $i++) {
+for ($i = $pos, $c = strlen($path); $i < $c; ++$i) {
 $char = $path[$i];
 if ('['=== $char) {
 if (null !== $currentKey) {
@@ -382,6 +382,8 @@ list($headers['PHP_AUTH_USER'], $headers['PHP_AUTH_PW']) = $exploded;
 } elseif (empty($this->parameters['PHP_AUTH_DIGEST']) && (0 === stripos($authorizationHeader,'digest '))) {
 $headers['PHP_AUTH_DIGEST'] = $authorizationHeader;
 $this->parameters['PHP_AUTH_DIGEST'] = $authorizationHeader;
+} elseif (0 === stripos($authorizationHeader,'bearer ')) {
+$headers['AUTHORIZATION'] = $authorizationHeader;
 }
 }
 }
@@ -1051,7 +1053,7 @@ if (count($codes) > 1) {
 $lang = $codes[1];
 }
 } else {
-for ($i = 0, $max = count($codes); $i < $max; $i++) {
+for ($i = 0, $max = count($codes); $i < $max; ++$i) {
 if ($i === 0) {
 $lang = strtolower($codes[0]);
 } else {
@@ -1147,7 +1149,7 @@ $requestUri = $this->getRequestUri();
 if ($baseUrl && false !== $prefix = $this->getUrlencodedPrefix($requestUri, $baseUrl)) {
 return $prefix;
 }
-if ($baseUrl && false !== $prefix = $this->getUrlencodedPrefix($requestUri, dirname($baseUrl).'/')) {
+if ($baseUrl && false !== $prefix = $this->getUrlencodedPrefix($requestUri, rtrim(dirname($baseUrl),'/').'/')) {
 return rtrim($prefix,'/');
 }
 $truncatedRequestUri = $requestUri;
@@ -2310,11 +2312,11 @@ protected $booted = false;
 protected $name;
 protected $startTime;
 protected $loadClassCache;
-const VERSION ='2.6.7';
-const VERSION_ID ='20607';
+const VERSION ='2.6.8';
+const VERSION_ID ='20608';
 const MAJOR_VERSION ='2';
 const MINOR_VERSION ='6';
-const RELEASE_VERSION ='7';
+const RELEASE_VERSION ='8';
 const EXTRA_VERSION ='';
 public function __construct($environment, $debug)
 {
@@ -2820,6 +2822,9 @@ if (null === $this->extension) {
 $class = $this->getContainerExtensionClass();
 if (class_exists($class)) {
 $extension = new $class();
+if (!$extension instanceof ExtensionInterface) {
+throw new \LogicException(sprintf('Extension %s must implement Symfony\Component\DependencyInjection\Extension\ExtensionInterface.', $class));
+}
 $basename = preg_replace('/Bundle$/','', $this->getName());
 $expectedAlias = Container::underscore($basename);
 if ($expectedAlias != $extension->getAlias()) {
