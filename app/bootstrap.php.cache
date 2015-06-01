@@ -401,6 +401,7 @@ namespace Symfony\Component\HttpFoundation
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 class Request
 {
+const HEADER_FORWARDED ='forwarded';
 const HEADER_CLIENT_IP ='client_ip';
 const HEADER_CLIENT_HOST ='client_host';
 const HEADER_CLIENT_PROTO ='client_proto';
@@ -419,6 +420,7 @@ protected static $trustedProxies = array();
 protected static $trustedHostPatterns = array();
 protected static $trustedHosts = array();
 protected static $trustedHeaders = array(
+self::HEADER_FORWARDED =>'FORWARDED',
 self::HEADER_CLIENT_IP =>'X_FORWARDED_FOR',
 self::HEADER_CLIENT_HOST =>'X_FORWARDED_HOST',
 self::HEADER_CLIENT_PROTO =>'X_FORWARDED_PROTO',
@@ -735,16 +737,19 @@ $this->session = $session;
 }
 public function getClientIps()
 {
+$clientIps = array();
 $ip = $this->server->get('REMOTE_ADDR');
 if (!$this->isFromTrustedProxy()) {
 return array($ip);
 }
-if (!self::$trustedHeaders[self::HEADER_CLIENT_IP] || !$this->headers->has(self::$trustedHeaders[self::HEADER_CLIENT_IP])) {
-return array($ip);
-}
+if (self::$trustedHeaders[self::HEADER_FORWARDED] && $this->headers->has(self::$trustedHeaders[self::HEADER_FORWARDED])) {
+$forwardedHeader = $this->headers->get(self::$trustedHeaders[self::HEADER_FORWARDED]);
+preg_match_all('{(for)=("?\[?)([a-z0-9\.:_\-/]*)}', $forwardedHeader, $matches);
+$clientIps = $matches[3];
+} elseif (self::$trustedHeaders[self::HEADER_CLIENT_IP] && $this->headers->has(self::$trustedHeaders[self::HEADER_CLIENT_IP])) {
 $clientIps = array_map('trim', explode(',', $this->headers->get(self::$trustedHeaders[self::HEADER_CLIENT_IP])));
-$clientIps[] = $ip;
-$ip = $clientIps[0];
+}
+$clientIps[] = $ip; $ip = $clientIps[0];
 foreach ($clientIps as $key => $clientIp) {
 if (preg_match('{((?:\d+\.){3}\d+)\:\d+}', $clientIp, $match)) {
 $clientIps[$key] = $clientIp = $match[1];
@@ -859,6 +864,31 @@ return $this->getSchemeAndHttpHost().$this->getBaseUrl().$this->getPathInfo().$q
 public function getUriForPath($path)
 {
 return $this->getSchemeAndHttpHost().$this->getBaseUrl().$path;
+}
+public function getRelativeUriForPath($path)
+{
+if (!isset($path[0]) ||'/'!== $path[0]) {
+return $path;
+}
+if ($path === $basePath = $this->getPathInfo()) {
+return'';
+}
+$sourceDirs = explode('/', isset($basePath[0]) &&'/'=== $basePath[0] ? substr($basePath, 1) : $basePath);
+$targetDirs = explode('/', isset($path[0]) &&'/'=== $path[0] ? substr($path, 1) : $path);
+array_pop($sourceDirs);
+$targetFile = array_pop($targetDirs);
+foreach ($sourceDirs as $i => $dir) {
+if (isset($targetDirs[$i]) && $dir === $targetDirs[$i]) {
+unset($sourceDirs[$i], $targetDirs[$i]);
+} else {
+break;
+}
+}
+$targetDirs[] = $targetFile;
+$path = str_repeat('../', count($sourceDirs)).implode('/', $targetDirs);
+return !isset($path[0]) ||'/'=== $path[0]
+|| false !== ($colonPos = strpos($path,':')) && ($colonPos < ($slashPos = strpos($path,'/')) || false === $slashPos)
+? "./$path" : $path;
 }
 public function getQueryString()
 {
@@ -1995,6 +2025,7 @@ protected $scopeChildren = array();
 protected $scopedServices = array();
 protected $scopeStacks = array();
 protected $loading = array();
+private $underscoreMap = array('_'=>'','.'=>'_','\\'=>'_');
 public function __construct(ParameterBagInterface $parameterBag = null)
 {
 $this->parameterBag = $parameterBag ?: new ParameterBag();
@@ -2040,7 +2071,7 @@ throw new RuntimeException(sprintf('You cannot set service "%s" of inactive scop
 $this->scopedServices[$scope][$id] = $service;
 }
 $this->services[$id] = $service;
-if (method_exists($this, $method ='synchronize'.strtr($id, array('_'=>'','.'=>'_','\\'=>'_')).'Service')) {
+if (method_exists($this, $method ='synchronize'.strtr($id, $this->underscoreMap).'Service')) {
 $this->$method();
 }
 if (null === $service) {
@@ -2052,22 +2083,24 @@ unset($this->services[$id]);
 }
 public function has($id)
 {
-$id = strtolower($id);
-if ('service_container'=== $id) {
+for ($i = 2;;) {
+if ('service_container'=== $id
+|| isset($this->aliases[$id])
+|| isset($this->services[$id])
+|| array_key_exists($id, $this->services)
+) {
 return true;
 }
-return isset($this->services[$id])
-|| array_key_exists($id, $this->services)
-|| isset($this->aliases[$id])
-|| method_exists($this,'get'.strtr($id, array('_'=>'','.'=>'_','\\'=>'_')).'Service')
-;
+if (--$i && $id !== $lcId = strtolower($id)) {
+$id = $lcId;
+} else {
+return method_exists($this,'get'.strtr($id, $this->underscoreMap).'Service');
+}
+}
 }
 public function get($id, $invalidBehavior = self::EXCEPTION_ON_INVALID_REFERENCE)
 {
-foreach (array(false, true) as $strtolower) {
-if ($strtolower) {
-$id = strtolower($id);
-}
+for ($i = 2;;) {
 if ('service_container'=== $id) {
 return $this;
 }
@@ -2077,13 +2110,15 @@ $id = $this->aliases[$id];
 if (isset($this->services[$id]) || array_key_exists($id, $this->services)) {
 return $this->services[$id];
 }
-}
 if (isset($this->loading[$id])) {
 throw new ServiceCircularReferenceException($id, array_keys($this->loading));
 }
 if (isset($this->methodMap[$id])) {
 $method = $this->methodMap[$id];
-} elseif (method_exists($this, $method ='get'.strtr($id, array('_'=>'','.'=>'_','\\'=>'_')).'Service')) {
+} elseif (--$i && $id !== $lcId = strtolower($id)) {
+$id = $lcId;
+continue;
+} elseif (method_exists($this, $method ='get'.strtr($id, $this->underscoreMap).'Service')) {
 } else {
 if (self::EXCEPTION_ON_INVALID_REFERENCE === $invalidBehavior) {
 if (!$id) {
@@ -2115,6 +2150,7 @@ throw $e;
 }
 unset($this->loading[$id]);
 return $service;
+}
 }
 public function initialized($id)
 {
@@ -2312,12 +2348,14 @@ protected $booted = false;
 protected $name;
 protected $startTime;
 protected $loadClassCache;
-const VERSION ='2.6.8';
-const VERSION_ID ='20608';
+const VERSION ='2.7.0';
+const VERSION_ID ='20700';
 const MAJOR_VERSION ='2';
-const MINOR_VERSION ='6';
-const RELEASE_VERSION ='8';
+const MINOR_VERSION ='7';
+const RELEASE_VERSION ='0';
 const EXTRA_VERSION ='';
+const END_OF_MAINTENANCE ='05/2018';
+const END_OF_LIFE ='05/2019';
 public function __construct($environment, $debug)
 {
 $this->environment = $environment;
@@ -2327,10 +2365,16 @@ $this->name = $this->getName();
 if ($this->debug) {
 $this->startTime = microtime(true);
 }
+$defClass = new \ReflectionMethod($this,'init');
+$defClass = $defClass->getDeclaringClass()->name;
+if (__CLASS__ !== $defClass) {
+trigger_error(sprintf('Calling the %s::init() method is deprecated since version 2.3 and will be removed in 3.0. Move your logic to the constructor method instead.', $defClass), E_USER_DEPRECATED);
 $this->init();
+}
 }
 public function init()
 {
+trigger_error('The '.__METHOD__.' method is deprecated since version 2.3 and will be removed in 3.0. Move your logic to the constructor method instead.', E_USER_DEPRECATED);
 }
 public function __clone()
 {
@@ -2394,6 +2438,7 @@ return $this->bundles;
 }
 public function isClassInActiveBundle($class)
 {
+trigger_error('The '.__METHOD__.' method is deprecated since version 2.6 and will be removed in version 3.0.', E_USER_DEPRECATED);
 foreach ($this->getBundles() as $bundle) {
 if (0 === strpos($class, $bundle->getNamespace())) {
 return true;
@@ -2574,7 +2619,7 @@ $container->compile();
 $this->dumpContainer($cache, $container, $class, $this->getContainerBaseClass());
 $fresh = false;
 }
-require_once $cache;
+require_once $cache->getPath();
 $this->container = new $class();
 $this->container->set('kernel', $this);
 if (!$fresh && $this->container->has('cache_warmer')) {
@@ -2653,9 +2698,9 @@ protected function dumpContainer(ConfigCache $cache, ContainerBuilder $container
 {
 $dumper = new PhpDumper($container);
 if (class_exists('ProxyManager\Configuration') && class_exists('Symfony\Bridge\ProxyManager\LazyProxy\PhpDumper\ProxyDumper')) {
-$dumper->setProxyDumper(new ProxyDumper(md5((string) $cache)));
+$dumper->setProxyDumper(new ProxyDumper(md5($cache->getPath())));
 }
-$content = $dumper->dump(array('class'=> $class,'base_class'=> $baseClass,'file'=> (string) $cache));
+$content = $dumper->dump(array('class'=> $class,'base_class'=> $baseClass,'file'=> $cache->getPath()));
 if (!$this->debug) {
 $content = static::stripComments($content);
 }
@@ -2902,9 +2947,19 @@ return $this->getNamespace().'\\DependencyInjection\\'.$basename.'Extension';
 namespace Symfony\Component\Config
 {
 use Symfony\Component\Config\Resource\ResourceInterface;
+interface ConfigCacheInterface
+{
+public function getPath();
+public function isFresh();
+public function write($content, array $metadata = null);
+}
+}
+namespace Symfony\Component\Config
+{
+use Symfony\Component\Config\Resource\ResourceInterface;
 use Symfony\Component\Filesystem\Exception\IOException;
 use Symfony\Component\Filesystem\Filesystem;
-class ConfigCache
+class ConfigCache implements ConfigCacheInterface
 {
 private $debug;
 private $file;
@@ -2914,6 +2969,11 @@ $this->file = $file;
 $this->debug = (bool) $debug;
 }
 public function __toString()
+{
+trigger_error('ConfigCache::__toString() is deprecated since version 2.7 and will be removed in 3.0. Use the getPath() method instead.', E_USER_DEPRECATED);
+return $this->file;
+}
+public function getPath()
 {
 return $this->file;
 }
@@ -2991,6 +3051,7 @@ $this->requestStack = $requestStack ?: new RequestStack();
 }
 public function handle(Request $request, $type = HttpKernelInterface::MASTER_REQUEST, $catch = true)
 {
+$request->headers->set('X-Php-Ob-Level', ob_get_level());
 try {
 return $this->handleRaw($request, $type);
 } catch (\Exception $e) {
@@ -3127,9 +3188,12 @@ use Symfony\Component\DependencyInjection\Scope;
 class ContainerAwareHttpKernel extends HttpKernel
 {
 protected $container;
-public function __construct(EventDispatcherInterface $dispatcher, ContainerInterface $container, ControllerResolverInterface $controllerResolver, RequestStack $requestStack = null)
+public function __construct(EventDispatcherInterface $dispatcher, ContainerInterface $container, ControllerResolverInterface $controllerResolver, RequestStack $requestStack = null, $triggerDeprecation = true)
 {
 parent::__construct($dispatcher, $controllerResolver, $requestStack);
+if ($triggerDeprecation) {
+trigger_error('The '.__CLASS__.' class is deprecated since version 2.7 and will be removed in 3.0. Use the Symfony\Component\HttpKernel\HttpKernel class instead.', E_USER_DEPRECATED);
+}
 $this->container = $container;
 if (!$container->hasScope('request')) {
 $container->addScope(new Scope('request'));
@@ -3137,7 +3201,6 @@ $container->addScope(new Scope('request'));
 }
 public function handle(Request $request, $type = HttpKernelInterface::MASTER_REQUEST, $catch = true)
 {
-$request->headers->set('X-Php-Ob-Level', ob_get_level());
 $this->container->enterScope('request');
 $this->container->set('request', $request,'request');
 try {

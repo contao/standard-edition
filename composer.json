@@ -11,14 +11,14 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "contao/contao": "~4.0",
-        "doctrine/annotations": "~1.2",
-        "incenteev/composer-parameter-handler": "~2.0",
-        "sensio/distribution-bundle": "~3.0",
-        "sensio/framework-extra-bundle": "~3.0",
-        "symfony/monolog-bundle": "~2.6",
+        "symfony/symfony": "~2.7",
+        "symfony/monolog-bundle": "~2.7",
         "symfony/swiftmailer-bundle": "~2.3",
-        "symfony/symfony": "~2.6"
+        "sensio/distribution-bundle": "~3.0,>=3.0.12",
+        "sensio/framework-extra-bundle": "~3.0,>=3.0.2",
+        "doctrine/annotations": "~1.2",
+        "contao/contao": "~4.0",
+        "incenteev/composer-parameter-handler": "~2.0"
     },
     "config": {
         "component-dir": "assets",

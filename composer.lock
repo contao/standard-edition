@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "62331f380ed7c764bad40888ed7607b6",
+    "hash": "e41b711079ae824df7bc4d0e84d267cf",
     "packages": [
         {
             "name": "contao-components/ace",
@@ -735,12 +735,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/calendar-bundle.git",
-                "reference": "ae51ecda8a82d7dcc74c650eabba94b46dff0f5c"
+                "reference": "b08ce7f550a5aa2114770c0351a410f1eb9f924f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/calendar-bundle/zipball/ae51ecda8a82d7dcc74c650eabba94b46dff0f5c",
-                "reference": "ae51ecda8a82d7dcc74c650eabba94b46dff0f5c",
+                "url": "https://api.github.com/repos/contao/calendar-bundle/zipball/b08ce7f550a5aa2114770c0351a410f1eb9f924f",
+                "reference": "b08ce7f550a5aa2114770c0351a410f1eb9f924f",
                 "shasum": ""
             },
             "require": {
@@ -781,12 +781,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/comments-bundle.git",
-                "reference": "1b1b9ac291aba9d54fb990f7b6f91ba9453cc965"
+                "reference": "9de2fa1606047843f421cdf1231953d3272f64e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/comments-bundle/zipball/1b1b9ac291aba9d54fb990f7b6f91ba9453cc965",
-                "reference": "1b1b9ac291aba9d54fb990f7b6f91ba9453cc965",
+                "url": "https://api.github.com/repos/contao/comments-bundle/zipball/9de2fa1606047843f421cdf1231953d3272f64e2",
+                "reference": "9de2fa1606047843f421cdf1231953d3272f64e2",
                 "shasum": ""
             },
             "require": {
@@ -873,12 +873,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/core-bundle.git",
-                "reference": "0b2194e8fa042e4da5972f7ad06c28415f37677f"
+                "reference": "5e17cc17f3a7aee2724b7f7c95567e4683d6f889"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/core-bundle/zipball/0b2194e8fa042e4da5972f7ad06c28415f37677f",
-                "reference": "0b2194e8fa042e4da5972f7ad06c28415f37677f",
+                "url": "https://api.github.com/repos/contao/core-bundle/zipball/5e17cc17f3a7aee2724b7f7c95567e4683d6f889",
+                "reference": "5e17cc17f3a7aee2724b7f7c95567e4683d6f889",
                 "shasum": ""
             },
             "require": {
@@ -958,12 +958,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/faq-bundle.git",
-                "reference": "3125da61cf72f48da7e7b07504eb2feb32053d04"
+                "reference": "d632941a6718a92112fd6c141f88683daa958970"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/faq-bundle/zipball/3125da61cf72f48da7e7b07504eb2feb32053d04",
-                "reference": "3125da61cf72f48da7e7b07504eb2feb32053d04",
+                "url": "https://api.github.com/repos/contao/faq-bundle/zipball/d632941a6718a92112fd6c141f88683daa958970",
+                "reference": "d632941a6718a92112fd6c141f88683daa958970",
                 "shasum": ""
             },
             "require": {
@@ -1004,12 +1004,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/listing-bundle.git",
-                "reference": "5fbdeb9cb4253ab369ef24d9ac79ecd7c123a428"
+                "reference": "1891a86db030d599be26ae3bd53f83bb3e31a516"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/listing-bundle/zipball/5fbdeb9cb4253ab369ef24d9ac79ecd7c123a428",
-                "reference": "5fbdeb9cb4253ab369ef24d9ac79ecd7c123a428",
+                "url": "https://api.github.com/repos/contao/listing-bundle/zipball/1891a86db030d599be26ae3bd53f83bb3e31a516",
+                "reference": "1891a86db030d599be26ae3bd53f83bb3e31a516",
                 "shasum": ""
             },
             "require": {
@@ -1050,12 +1050,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/news-bundle.git",
-                "reference": "3f45e912dd8714f7544caee88590f907fbf6a126"
+                "reference": "23445cf27b559e749f72f218e45a5454167f7d01"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/news-bundle/zipball/3f45e912dd8714f7544caee88590f907fbf6a126",
-                "reference": "3f45e912dd8714f7544caee88590f907fbf6a126",
+                "url": "https://api.github.com/repos/contao/news-bundle/zipball/23445cf27b559e749f72f218e45a5454167f7d01",
+                "reference": "23445cf27b559e749f72f218e45a5454167f7d01",
                 "shasum": ""
             },
             "require": {
@@ -1096,12 +1096,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/newsletter-bundle.git",
-                "reference": "18d2744b6e56354b20effe36d10f6070313cb6ac"
+                "reference": "0f9781dbad61eea539d0f71c52b53cc9ac32d781"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/newsletter-bundle/zipball/18d2744b6e56354b20effe36d10f6070313cb6ac",
-                "reference": "18d2744b6e56354b20effe36d10f6070313cb6ac",
+                "url": "https://api.github.com/repos/contao/newsletter-bundle/zipball/0f9781dbad61eea539d0f71c52b53cc9ac32d781",
+                "reference": "0f9781dbad61eea539d0f71c52b53cc9ac32d781",
                 "shasum": ""
             },
             "require": {
@@ -2181,17 +2181,17 @@
         },
         {
             "name": "sensio/distribution-bundle",
-            "version": "v3.0.24",
+            "version": "v3.0.25",
             "target-dir": "Sensio/Bundle/DistributionBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioDistributionBundle.git",
-                "reference": "79b820aee1f1daeb2717fa9471ee19275cc1d638"
+                "reference": "01931139b0f067a4016d5d56e82c2b3086533b89"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/79b820aee1f1daeb2717fa9471ee19275cc1d638",
-                "reference": "79b820aee1f1daeb2717fa9471ee19275cc1d638",
+                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/01931139b0f067a4016d5d56e82c2b3086533b89",
+                "reference": "01931139b0f067a4016d5d56e82c2b3086533b89",
                 "shasum": ""
             },
             "require": {
@@ -2237,21 +2237,20 @@
                 "configuration",
                 "distribution"
             ],
-            "time": "2015-05-16 12:57:08"
+            "time": "2015-05-29 22:35:41"
         },
         {
             "name": "sensio/framework-extra-bundle",
-            "version": "v3.0.7",
-            "target-dir": "Sensio/Bundle/FrameworkExtraBundle",
+            "version": "v3.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioFrameworkExtraBundle.git",
-                "reference": "5c37623576ea9e841b87dc0d85414d98fa6f7abb"
+                "reference": "a30fc18bf147bc25faf6b1d54bf55cfad4b63cba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/5c37623576ea9e841b87dc0d85414d98fa6f7abb",
-                "reference": "5c37623576ea9e841b87dc0d85414d98fa6f7abb",
+                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/a30fc18bf147bc25faf6b1d54bf55cfad4b63cba",
+                "reference": "a30fc18bf147bc25faf6b1d54bf55cfad4b63cba",
                 "shasum": ""
             },
             "require": {
@@ -2264,6 +2263,7 @@
             },
             "suggest": {
                 "symfony/expression-language": "",
+                "symfony/psr-http-message-bridge": "To use the PSR-7 converters",
                 "symfony/security-bundle": ""
             },
             "type": "symfony-bundle",
@@ -2273,8 +2273,8 @@
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Sensio\\Bundle\\FrameworkExtraBundle": ""
+                "psr-4": {
+                    "Sensio\\Bundle\\FrameworkExtraBundle\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2292,7 +2292,7 @@
                 "annotations",
                 "controllers"
             ],
-            "time": "2015-04-02 12:28:58"
+            "time": "2015-05-29 18:27:23"
         },
         {
             "name": "sensiolabs/security-checker",
@@ -2563,25 +2563,26 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v2.6.8",
+            "version": "v2.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "7ae1934082d9ac299303b146e4a999274a723e94"
+                "reference": "9975b1eca3de4db792a2c3e4e16f676a4aadcd46"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/7ae1934082d9ac299303b146e4a999274a723e94",
-                "reference": "7ae1934082d9ac299303b146e4a999274a723e94",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/9975b1eca3de4db792a2c3e4e16f676a4aadcd46",
+                "reference": "9975b1eca3de4db792a2c3e4e16f676a4aadcd46",
                 "shasum": ""
             },
             "require": {
                 "doctrine/common": "~2.3",
-                "php": ">=5.3.3",
+                "php": ">=5.3.9",
                 "psr/log": "~1.0",
-                "twig/twig": "~1.12,>=1.12.3"
+                "twig/twig": "~1.18"
             },
             "replace": {
+                "symfony/asset": "self.version",
                 "symfony/browser-kit": "self.version",
                 "symfony/class-loader": "self.version",
                 "symfony/config": "self.version",
@@ -2605,7 +2606,6 @@
                 "symfony/monolog-bridge": "self.version",
                 "symfony/options-resolver": "self.version",
                 "symfony/process": "self.version",
-                "symfony/propel1-bridge": "self.version",
                 "symfony/property-access": "self.version",
                 "symfony/proxy-manager-bridge": "self.version",
                 "symfony/routing": "self.version",
@@ -2636,18 +2636,23 @@
                 "ircmaxell/password-compat": "~1.0",
                 "monolog/monolog": "~1.11",
                 "ocramius/proxy-manager": "~0.4|~1.0",
-                "propel/propel1": "~1.6",
-                "symfony/phpunit-bridge": "~2.7"
+                "symfony/phpunit-bridge": "self.version"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.6-dev"
+                    "dev-master": "2.7-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Symfony\\": "src/"
+                "psr-4": {
+                    "Symfony\\Bridge\\Doctrine\\": "src/Symfony/Bridge/Doctrine/",
+                    "Symfony\\Bridge\\Monolog\\": "src/Symfony/Bridge/Monolog/",
+                    "Symfony\\Bridge\\ProxyManager\\": "src/Symfony/Bridge/ProxyManager/",
+                    "Symfony\\Bridge\\Swiftmailer\\": "src/Symfony/Bridge/Swiftmailer/",
+                    "Symfony\\Bridge\\Twig\\": "src/Symfony/Bridge/Twig/",
+                    "Symfony\\Bundle\\": "src/Symfony/Bundle/",
+                    "Symfony\\Component\\": "src/Symfony/Component/"
                 },
                 "classmap": [
                     "src/Symfony/Component/HttpFoundation/Resources/stubs",
@@ -2676,7 +2681,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2015-05-27 00:17:10"
+            "time": "2015-05-30 16:52:28"
         },
         {
             "name": "tecnick.com/tcpdf",
