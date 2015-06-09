@@ -1,0 +1,26 @@
+# App config
+/app/config/parameters.yml
+
+# Generated folders
+/assets/
+/files/
+/system/
+/templates/
+/vendor/
+
+# Symlinked resources
+/web/assets
+/web/bundles/
+/web/files/
+/web/share/
+/web/system/
+/web/vendor/
+
+# Robots.txt
+/web/robots.txt
+
+# Skip files
+/system/modules/*/.skip
+
+# Composer package manager
+/composer/

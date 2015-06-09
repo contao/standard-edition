@@ -1,0 +1,2 @@
+ContaoCoreBundle:
+    resource: "@ContaoCoreBundle/Resources/config/routing.yml"
