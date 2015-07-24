@@ -12,6 +12,7 @@
     "require": {
         "php": ">=5.4.0",
         "symfony/symfony": "~2.7",
+        "symfony/console": "^2.7.3",
         "symfony/monolog-bundle": "~2.7",
         "symfony/swiftmailer-bundle": "~2.3",
         "sensio/distribution-bundle": "~3.0,>=3.0.12",

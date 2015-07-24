@@ -617,10 +617,15 @@ $this->headers = clone $this->headers;
 }
 public function __toString()
 {
+try {
+$content = $this->getContent();
+} catch (\LogicException $e) {
+return trigger_error($e, E_USER_ERROR);
+}
 return
 sprintf('%s %s %s', $this->getMethod(), $this->getRequestUri(), $this->server->get('SERVER_PROTOCOL'))."\r\n".
 $this->headers."\r\n".
-$this->getContent();
+$content;
 }
 public function overrideGlobals()
 {
@@ -1026,8 +1031,8 @@ return in_array($this->getMethod(), array('GET','HEAD'));
 }
 public function getContent($asResource = false)
 {
-if (false === $this->content || (true === $asResource && null !== $this->content)) {
-throw new \LogicException('getContent() can only be called once when using the resource return type.');
+if (PHP_VERSION_ID < 50600 && (false === $this->content || (true === $asResource && null !== $this->content))) {
+throw new \LogicException('getContent() can only be called once when using the resource return type and PHP below 5.6.');
 }
 if (true === $asResource) {
 $this->content = false;
@@ -1732,7 +1737,7 @@ return false;
 $notModified = false;
 $lastModified = $this->headers->get('Last-Modified');
 $modifiedSince = $request->headers->get('If-Modified-Since');
-if ($etags = $request->getEtags()) {
+if ($etags = $request->getETags()) {
 $notModified = in_array($this->getEtag(), $etags) || in_array('*', $etags);
 }
 if ($modifiedSince && $lastModified) {
@@ -1791,14 +1796,8 @@ public static function closeOutputBuffers($targetLevel, $flush)
 {
 $status = ob_get_status(true);
 $level = count($status);
-while ($level-- > $targetLevel
-&& (!empty($status[$level]['del'])
-|| (isset($status[$level]['flags'])
-&& ($status[$level]['flags'] & PHP_OUTPUT_HANDLER_REMOVABLE)
-&& ($status[$level]['flags'] & ($flush ? PHP_OUTPUT_HANDLER_FLUSHABLE : PHP_OUTPUT_HANDLER_CLEANABLE))
-)
-)
-) {
+$flags = PHP_VERSION_ID >= 50400 ? PHP_OUTPUT_HANDLER_REMOVABLE | ($flush ? PHP_OUTPUT_HANDLER_FLUSHABLE : PHP_OUTPUT_HANDLER_CLEANABLE) : -1;
+while ($level-- > $targetLevel && ($s = $status[$level]) && (!isset($s['del']) ? !isset($s['flags']) || $flags === ($s['flags'] & $flags) : $s['del'])) {
 if ($flush) {
 ob_end_flush();
 } else {
@@ -2348,11 +2347,11 @@ protected $booted = false;
 protected $name;
 protected $startTime;
 protected $loadClassCache;
-const VERSION ='2.7.0';
-const VERSION_ID ='20700';
+const VERSION ='2.7.2';
+const VERSION_ID ='20702';
 const MAJOR_VERSION ='2';
 const MINOR_VERSION ='7';
-const RELEASE_VERSION ='0';
+const RELEASE_VERSION ='2';
 const EXTRA_VERSION ='';
 const END_OF_MAINTENANCE ='05/2018';
 const END_OF_LIFE ='05/2019';
@@ -2368,13 +2367,13 @@ $this->startTime = microtime(true);
 $defClass = new \ReflectionMethod($this,'init');
 $defClass = $defClass->getDeclaringClass()->name;
 if (__CLASS__ !== $defClass) {
-trigger_error(sprintf('Calling the %s::init() method is deprecated since version 2.3 and will be removed in 3.0. Move your logic to the constructor method instead.', $defClass), E_USER_DEPRECATED);
+@trigger_error(sprintf('Calling the %s::init() method is deprecated since version 2.3 and will be removed in 3.0. Move your logic to the constructor method instead.', $defClass), E_USER_DEPRECATED);
 $this->init();
 }
 }
 public function init()
 {
-trigger_error('The '.__METHOD__.' method is deprecated since version 2.3 and will be removed in 3.0. Move your logic to the constructor method instead.', E_USER_DEPRECATED);
+@trigger_error('The '.__METHOD__.' method is deprecated since version 2.3 and will be removed in 3.0. Move your logic to the constructor method instead.', E_USER_DEPRECATED);
 }
 public function __clone()
 {
@@ -2438,7 +2437,7 @@ return $this->bundles;
 }
 public function isClassInActiveBundle($class)
 {
-trigger_error('The '.__METHOD__.' method is deprecated since version 2.6 and will be removed in version 3.0.', E_USER_DEPRECATED);
+@trigger_error('The '.__METHOD__.' method is deprecated since version 2.6 and will be removed in version 3.0.', E_USER_DEPRECATED);
 foreach ($this->getBundles() as $bundle) {
 if (0 === strpos($class, $bundle->getNamespace())) {
 return true;
@@ -2970,7 +2969,7 @@ $this->debug = (bool) $debug;
 }
 public function __toString()
 {
-trigger_error('ConfigCache::__toString() is deprecated since version 2.7 and will be removed in 3.0. Use the getPath() method instead.', E_USER_DEPRECATED);
+@trigger_error('ConfigCache::__toString() is deprecated since version 2.7 and will be removed in 3.0. Use the getPath() method instead.', E_USER_DEPRECATED);
 return $this->file;
 }
 public function getPath()
@@ -3192,7 +3191,7 @@ public function __construct(EventDispatcherInterface $dispatcher, ContainerInter
 {
 parent::__construct($dispatcher, $controllerResolver, $requestStack);
 if ($triggerDeprecation) {
-trigger_error('The '.__CLASS__.' class is deprecated since version 2.7 and will be removed in 3.0. Use the Symfony\Component\HttpKernel\HttpKernel class instead.', E_USER_DEPRECATED);
+@trigger_error('The '.__CLASS__.' class is deprecated since version 2.7 and will be removed in 3.0. Use the Symfony\Component\HttpKernel\HttpKernel class instead.', E_USER_DEPRECATED);
 }
 $this->container = $container;
 if (!$container->hasScope('request')) {
