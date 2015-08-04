@@ -1046,16 +1046,16 @@
         },
         {
             "name": "contao/installation-bundle",
-            "version": "0.9.1",
+            "version": "0.9.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/installation-bundle.git",
-                "reference": "1f200b00404234f64dbdf15a8da89f98012c58bd"
+                "reference": "4fe6b5b74b35ebec87b5a5c6263fc8115f0248ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/installation-bundle/zipball/1f200b00404234f64dbdf15a8da89f98012c58bd",
-                "reference": "1f200b00404234f64dbdf15a8da89f98012c58bd",
+                "url": "https://api.github.com/repos/contao/installation-bundle/zipball/4fe6b5b74b35ebec87b5a5c6263fc8115f0248ed",
+                "reference": "4fe6b5b74b35ebec87b5a5c6263fc8115f0248ed",
                 "shasum": ""
             },
             "require": {
@@ -1090,7 +1090,7 @@
                 }
             ],
             "description": "Contao 4 installation bundle",
-            "time": "2015-08-04 09:29:32"
+            "time": "2015-08-04 13:39:27"
         },
         {
             "name": "contao/listing-bundle",
