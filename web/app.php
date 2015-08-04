@@ -18,7 +18,7 @@ $kernel = new AppKernel('prod', false);
 $kernel->loadClassCache();
 
 // Handle the request
-$request  = Request::createFromGlobals();
+$request = Request::createFromGlobals();
 $response = $kernel->handle($request);
 $response->send();
 $kernel->terminate($request, $response);

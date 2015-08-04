@@ -4,9 +4,9 @@
 parameters:
     database_host:     localhost
     database_port:     3306
-    database_name:     ~
     database_user:     ~
     database_password: ~
+    database_name:     ~
 
     mailer_transport:  mail
     mailer_host:       127.0.0.1

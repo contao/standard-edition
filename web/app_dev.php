@@ -49,7 +49,7 @@ require_once __DIR__ . '/../app/AppKernel.php';
 $kernel = new AppKernel('dev', true);
 
 // Handle the request
-$request  = Request::createFromGlobals();
+$request = Request::createFromGlobals();
 $response = $kernel->handle($request);
 $response->send();
 $kernel->terminate($request, $response);
