@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5a72faa19b6f9586f9a81bf0a9c7e379",
+    "hash": "2917da4334503e665d88748948719a25",
     "packages": [
         {
             "name": "contao-components/ace",
@@ -884,16 +884,16 @@
         },
         {
             "name": "contao/contao",
-            "version": "4.0.2",
+            "version": "4.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/contao.git",
-                "reference": "155b6470a72bbce161f4d5f371f36fb0371b9738"
+                "reference": "d09d0a055483ce0d14123f875317081fef527e43"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/contao/zipball/155b6470a72bbce161f4d5f371f36fb0371b9738",
-                "reference": "155b6470a72bbce161f4d5f371f36fb0371b9738",
+                "url": "https://api.github.com/repos/contao/contao/zipball/d09d0a055483ce0d14123f875317081fef527e43",
+                "reference": "d09d0a055483ce0d14123f875317081fef527e43",
                 "shasum": ""
             },
             "require": {
@@ -901,7 +901,7 @@
                 "contao/comments-bundle": "~4.0",
                 "contao/core-bundle": "^4.0.2",
                 "contao/faq-bundle": "~4.0",
-                "contao/installation-bundle": "^0.9.1",
+                "contao/installation-bundle": "^0.9.3",
                 "contao/listing-bundle": "~4.0",
                 "contao/news-bundle": "~4.0",
                 "contao/newsletter-bundle": "~4.0",
@@ -927,20 +927,20 @@
                 }
             ],
             "description": "Contao Open Source CMS",
-            "time": "2015-08-04 09:41:59"
+            "time": "2015-08-06 09:38:27"
         },
         {
             "name": "contao/core-bundle",
-            "version": "4.0.2",
+            "version": "dev-hotfix/4.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/core-bundle.git",
-                "reference": "a1b9832f6c4a5ee96c13979b6144346e0790c2da"
+                "reference": "df574e14217eb13c4ea96a72527bfdace4246aed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/core-bundle/zipball/a1b9832f6c4a5ee96c13979b6144346e0790c2da",
-                "reference": "a1b9832f6c4a5ee96c13979b6144346e0790c2da",
+                "url": "https://api.github.com/repos/contao/core-bundle/zipball/df574e14217eb13c4ea96a72527bfdace4246aed",
+                "reference": "df574e14217eb13c4ea96a72527bfdace4246aed",
                 "shasum": ""
             },
             "require": {
@@ -996,7 +996,7 @@
                 }
             ],
             "description": "Contao 4 core bundle",
-            "time": "2015-08-04 09:44:10"
+            "time": "2015-08-06 08:53:19"
         },
         {
             "name": "contao/faq-bundle",
@@ -1046,16 +1046,16 @@
         },
         {
             "name": "contao/installation-bundle",
-            "version": "0.9.2",
+            "version": "0.9.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/installation-bundle.git",
-                "reference": "4fe6b5b74b35ebec87b5a5c6263fc8115f0248ed"
+                "reference": "1e0b4534543451eba5a6f0881f79bd216d819ecc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/installation-bundle/zipball/4fe6b5b74b35ebec87b5a5c6263fc8115f0248ed",
-                "reference": "4fe6b5b74b35ebec87b5a5c6263fc8115f0248ed",
+                "url": "https://api.github.com/repos/contao/installation-bundle/zipball/1e0b4534543451eba5a6f0881f79bd216d819ecc",
+                "reference": "1e0b4534543451eba5a6f0881f79bd216d819ecc",
                 "shasum": ""
             },
             "require": {
@@ -1090,7 +1090,7 @@
                 }
             ],
             "description": "Contao 4 installation bundle",
-            "time": "2015-08-04 13:39:27"
+            "time": "2015-08-06 09:34:14"
         },
         {
             "name": "contao/listing-bundle",
@@ -3056,9 +3056,18 @@
         }
     ],
     "packages-dev": [],
-    "aliases": [],
+    "aliases": [
+        {
+            "alias": "4.0.3",
+            "alias_normalized": "4.0.3.0",
+            "version": "dev-hotfix/4.0.3",
+            "package": "contao/core-bundle"
+        }
+    ],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "contao/core-bundle": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
