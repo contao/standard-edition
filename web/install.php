@@ -22,14 +22,17 @@ require_once __DIR__ . '/../vendor/contao/core-bundle/src/Resources/contao/helpe
 
 $kernel = new AppKernel('prod', false);
 
+// Un-normalize the path (see #208)
+$rootDir = strtr($kernel->getRootDir(), '/', DIRECTORY_SEPARATOR);
+
 // Register the class loader
-$libraryLoader = new LibraryLoader($kernel->getRootDir());
+$libraryLoader = new LibraryLoader($rootDir);
 $libraryLoader->register();
 
 Config::preload();
 
 // Create the container
-$container = ContainerFactory::create($kernel->getRootDir());
+$container = ContainerFactory::create($rootDir);
 
 // Run the controller
 $controller = new InstallationController();
