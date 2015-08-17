@@ -8,10 +8,12 @@
  * @license LGPL-3.0+
  */
 
+use Contao\ClassLoader;
 use Contao\Config;
 use Contao\InstallationBundle\ClassLoader\LibraryLoader;
 use Contao\InstallationBundle\Controller\InstallationController;
 use Contao\InstallationBundle\DependencyInjection\ContainerFactory;
+use Contao\System;
 
 error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED & ~E_USER_DEPRECATED);
 
@@ -34,6 +36,9 @@ Config::preload();
 
 // Create the container
 $container = ContainerFactory::create($rootDir);
+System::setContainer($container);
+
+ClassLoader::scanAndRegister();
 
 // Run the controller
 $controller = new InstallationController();
