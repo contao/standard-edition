@@ -19,6 +19,7 @@
         "sensio/framework-extra-bundle": "^3.0.2",
         "doctrine/annotations": "~1.2",
         "contao/contao": "^4.0.3",
+        "contao/core-bundle": "dev-develop",
         "incenteev/composer-parameter-handler": "~2.0"
     },
     "config": {
