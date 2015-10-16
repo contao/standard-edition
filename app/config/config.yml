@@ -56,7 +56,7 @@ swiftmailer:
 # Lexik configuration
 lexik_maintenance:
     authorized:
-        path: /contao($|/)
+        path: ^/contao($|/)
     driver:
         class:   "Lexik\Bundle\MaintenanceBundle\Drivers\FileDriver"
         options: {file_path: %kernel.root_dir%/cache/lock}
