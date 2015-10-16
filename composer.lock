@@ -5,6 +5,7 @@
         "This file is @generated automatically"
     ],
     "hash": "37533d029a147118d39c1304e01ccfd1",
+    "content-hash": "12918f199af2c59a86fe574895cb0ca4",
     "packages": [
         {
             "name": "contao-components/ace",
@@ -220,16 +221,16 @@
         },
         {
             "name": "contao-components/contao",
-            "version": "4.1.5",
+            "version": "4.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/contao.git",
-                "reference": "d9d1de3a5e2e76076736a30452daca94773928b0"
+                "reference": "0d9db60aca9240ad18de16e5a9f2761c61c52e48"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/contao/zipball/d9d1de3a5e2e76076736a30452daca94773928b0",
-                "reference": "d9d1de3a5e2e76076736a30452daca94773928b0",
+                "url": "https://api.github.com/repos/contao-components/contao/zipball/0d9db60aca9240ad18de16e5a9f2761c61c52e48",
+                "reference": "0d9db60aca9240ad18de16e5a9f2761c61c52e48",
                 "shasum": ""
             },
             "require": {
@@ -247,7 +248,7 @@
                 }
             ],
             "description": "Contao Open Source CMS components",
-            "time": "2015-07-27 07:01:16"
+            "time": "2015-10-08 11:27:56"
         },
         {
             "name": "contao-components/datepicker",
@@ -792,16 +793,16 @@
         },
         {
             "name": "contao/calendar-bundle",
-            "version": "4.0.2",
+            "version": "4.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/calendar-bundle.git",
-                "reference": "489ad1daedf2d62cd2e421b47e01c6d8dcbb3866"
+                "reference": "b7beb5ce304b52dc4498e8ba7867d0873dd19370"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/calendar-bundle/zipball/489ad1daedf2d62cd2e421b47e01c6d8dcbb3866",
-                "reference": "489ad1daedf2d62cd2e421b47e01c6d8dcbb3866",
+                "url": "https://api.github.com/repos/contao/calendar-bundle/zipball/b7beb5ce304b52dc4498e8ba7867d0873dd19370",
+                "reference": "b7beb5ce304b52dc4498e8ba7867d0873dd19370",
                 "shasum": ""
             },
             "require": {
@@ -834,20 +835,20 @@
                 }
             ],
             "description": "Contao 4 calendar bundle",
-            "time": "2015-09-10 11:14:58"
+            "time": "2015-10-16 14:03:06"
         },
         {
             "name": "contao/comments-bundle",
-            "version": "4.0.2",
+            "version": "4.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/comments-bundle.git",
-                "reference": "f677f18b6260cec9651a0357035fe22643a47815"
+                "reference": "717fc997208dc0176f59429adc8d43b88ca863a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/comments-bundle/zipball/f677f18b6260cec9651a0357035fe22643a47815",
-                "reference": "f677f18b6260cec9651a0357035fe22643a47815",
+                "url": "https://api.github.com/repos/contao/comments-bundle/zipball/717fc997208dc0176f59429adc8d43b88ca863a7",
+                "reference": "717fc997208dc0176f59429adc8d43b88ca863a7",
                 "shasum": ""
             },
             "require": {
@@ -880,7 +881,7 @@
                 }
             ],
             "description": "Contao 4 comments bundle",
-            "time": "2015-09-10 11:12:16"
+            "time": "2015-10-16 13:00:47"
         },
         {
             "name": "contao/contao",
@@ -931,16 +932,16 @@
         },
         {
             "name": "contao/core-bundle",
-            "version": "4.0.3",
+            "version": "4.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/core-bundle.git",
-                "reference": "19886b39ca9b3c96239ead007f3761a35f21a6ea"
+                "reference": "11201f3d39be08d2790488153cc7e401598f75aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/core-bundle/zipball/19886b39ca9b3c96239ead007f3761a35f21a6ea",
-                "reference": "19886b39ca9b3c96239ead007f3761a35f21a6ea",
+                "url": "https://api.github.com/repos/contao/core-bundle/zipball/11201f3d39be08d2790488153cc7e401598f75aa",
+                "reference": "11201f3d39be08d2790488153cc7e401598f75aa",
                 "shasum": ""
             },
             "require": {
@@ -960,7 +961,7 @@
                 "symfony/framework-bundle": "~2.7",
                 "symfony/swiftmailer-bundle": "~2.3",
                 "symfony/yaml": "~2.7",
-                "tecnick.com/tcpdf": "~6.0",
+                "tecnickcom/tcpdf": "~6.0",
                 "true/punycode": "~1.0",
                 "twig/twig": "~1.20"
             },
@@ -995,20 +996,20 @@
                 }
             ],
             "description": "Contao 4 core bundle",
-            "time": "2015-09-10 11:35:20"
+            "time": "2015-10-16 13:37:03"
         },
         {
             "name": "contao/faq-bundle",
-            "version": "4.0.2",
+            "version": "4.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/faq-bundle.git",
-                "reference": "3ff0014eacc4c14a72ad94afaf9c9a08d1af7a9e"
+                "reference": "d987c67be465bca4fd20b990d3301c0e14dada6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/faq-bundle/zipball/3ff0014eacc4c14a72ad94afaf9c9a08d1af7a9e",
-                "reference": "3ff0014eacc4c14a72ad94afaf9c9a08d1af7a9e",
+                "url": "https://api.github.com/repos/contao/faq-bundle/zipball/d987c67be465bca4fd20b990d3301c0e14dada6a",
+                "reference": "d987c67be465bca4fd20b990d3301c0e14dada6a",
                 "shasum": ""
             },
             "require": {
@@ -1041,20 +1042,20 @@
                 }
             ],
             "description": "Contao 4 FAQ bundle",
-            "time": "2015-09-10 11:10:23"
+            "time": "2015-10-16 13:13:41"
         },
         {
             "name": "contao/installation-bundle",
-            "version": "0.9.8",
+            "version": "0.9.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/installation-bundle.git",
-                "reference": "c424de5a9f2c57ba6a8ffaa7d7ae17fed1f6ce90"
+                "reference": "4b95001e709fd8ef1736df0d16d7b8924d79d8b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/installation-bundle/zipball/c424de5a9f2c57ba6a8ffaa7d7ae17fed1f6ce90",
-                "reference": "c424de5a9f2c57ba6a8ffaa7d7ae17fed1f6ce90",
+                "url": "https://api.github.com/repos/contao/installation-bundle/zipball/4b95001e709fd8ef1736df0d16d7b8924d79d8b5",
+                "reference": "4b95001e709fd8ef1736df0d16d7b8924d79d8b5",
                 "shasum": ""
             },
             "require": {
@@ -1090,20 +1091,20 @@
                 }
             ],
             "description": "Contao 4 installation bundle",
-            "time": "2015-09-08 13:25:48"
+            "time": "2015-10-16 13:44:18"
         },
         {
             "name": "contao/listing-bundle",
-            "version": "4.0.1",
+            "version": "4.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/listing-bundle.git",
-                "reference": "9f5f916b86a3294aff743bc6ff9cd6f246c92011"
+                "reference": "01141ecf1c6feedf1c211e212f74e0853f481234"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/listing-bundle/zipball/9f5f916b86a3294aff743bc6ff9cd6f246c92011",
-                "reference": "9f5f916b86a3294aff743bc6ff9cd6f246c92011",
+                "url": "https://api.github.com/repos/contao/listing-bundle/zipball/01141ecf1c6feedf1c211e212f74e0853f481234",
+                "reference": "01141ecf1c6feedf1c211e212f74e0853f481234",
                 "shasum": ""
             },
             "require": {
@@ -1136,20 +1137,20 @@
                 }
             ],
             "description": "Contao 4 listing bundle",
-            "time": "2015-07-24 13:10:03"
+            "time": "2015-10-16 13:11:04"
         },
         {
             "name": "contao/news-bundle",
-            "version": "4.0.2",
+            "version": "4.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/news-bundle.git",
-                "reference": "9ebb9393171ad01bcfe73f4d46b8723c639b761c"
+                "reference": "b13f1178439f66570d14d93ff51aea88cb23e6bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/news-bundle/zipball/9ebb9393171ad01bcfe73f4d46b8723c639b761c",
-                "reference": "9ebb9393171ad01bcfe73f4d46b8723c639b761c",
+                "url": "https://api.github.com/repos/contao/news-bundle/zipball/b13f1178439f66570d14d93ff51aea88cb23e6bc",
+                "reference": "b13f1178439f66570d14d93ff51aea88cb23e6bc",
                 "shasum": ""
             },
             "require": {
@@ -1182,20 +1183,20 @@
                 }
             ],
             "description": "Contao 4 news bundle",
-            "time": "2015-09-10 11:04:25"
+            "time": "2015-10-16 13:08:10"
         },
         {
             "name": "contao/newsletter-bundle",
-            "version": "4.0.2",
+            "version": "4.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/newsletter-bundle.git",
-                "reference": "414319d7414afb8fa7799c3c6a50b496ce7183e8"
+                "reference": "8bf1b4d0a6adec7d1ccfbceff4f1c36403173fa1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/newsletter-bundle/zipball/414319d7414afb8fa7799c3c6a50b496ce7183e8",
-                "reference": "414319d7414afb8fa7799c3c6a50b496ce7183e8",
+                "url": "https://api.github.com/repos/contao/newsletter-bundle/zipball/8bf1b4d0a6adec7d1ccfbceff4f1c36403173fa1",
+                "reference": "8bf1b4d0a6adec7d1ccfbceff4f1c36403173fa1",
                 "shasum": ""
             },
             "require": {
@@ -1228,7 +1229,7 @@
                 }
             ],
             "description": "Contao 4 newsletter bundle",
-            "time": "2015-09-10 10:59:45"
+            "time": "2015-10-16 13:05:18"
         },
         {
             "name": "doctrine/annotations",
@@ -1509,16 +1510,16 @@
         },
         {
             "name": "doctrine/dbal",
-            "version": "v2.5.1",
+            "version": "v2.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "628c2256b646ae2417d44e063bce8aec5199d48d"
+                "reference": "01dbcbc5cd0a913d751418e635434a18a2f2a75c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/628c2256b646ae2417d44e063bce8aec5199d48d",
-                "reference": "628c2256b646ae2417d44e063bce8aec5199d48d",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/01dbcbc5cd0a913d751418e635434a18a2f2a75c",
+                "reference": "01dbcbc5cd0a913d751418e635434a18a2f2a75c",
                 "shasum": ""
             },
             "require": {
@@ -1576,20 +1577,20 @@
                 "persistence",
                 "queryobject"
             ],
-            "time": "2015-01-12 21:52:47"
+            "time": "2015-09-16 16:29:33"
         },
         {
             "name": "doctrine/doctrine-bundle",
-            "version": "v1.5.1",
+            "version": "v1.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineBundle.git",
-                "reference": "8c5cedb4f2f7ebb66a963ae46ad9daa1e31cee01"
+                "reference": "d63be7eb9a95d46720f7d6badac4e5bc2bcff2e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/8c5cedb4f2f7ebb66a963ae46ad9daa1e31cee01",
-                "reference": "8c5cedb4f2f7ebb66a963ae46ad9daa1e31cee01",
+                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/d63be7eb9a95d46720f7d6badac4e5bc2bcff2e3",
+                "reference": "d63be7eb9a95d46720f7d6badac4e5bc2bcff2e3",
                 "shasum": ""
             },
             "require": {
@@ -1616,7 +1617,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.5.x-dev"
+                    "dev-master": "1.6.x-dev"
                 }
             },
             "autoload": {
@@ -1654,7 +1655,7 @@
                 "orm",
                 "persistence"
             ],
-            "time": "2015-08-12 15:52:00"
+            "time": "2015-08-31 14:47:06"
         },
         {
             "name": "doctrine/doctrine-cache-bundle",
@@ -1964,16 +1965,16 @@
         },
         {
             "name": "leafo/scssphp",
-            "version": "v0.3.0",
+            "version": "v0.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/leafo/scssphp.git",
-                "reference": "4bcaed23664897db093a50e99b93e078f3a31a2d"
+                "reference": "033dd027dfc8e1905ce782a687160d66d3bd65ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/leafo/scssphp/zipball/4bcaed23664897db093a50e99b93e078f3a31a2d",
-                "reference": "4bcaed23664897db093a50e99b93e078f3a31a2d",
+                "url": "https://api.github.com/repos/leafo/scssphp/zipball/033dd027dfc8e1905ce782a687160d66d3bd65ee",
+                "reference": "033dd027dfc8e1905ce782a687160d66d3bd65ee",
                 "shasum": ""
             },
             "require": {
@@ -2016,7 +2017,7 @@
                 "scss",
                 "stylesheet"
             ],
-            "time": "2015-09-07 01:04:49"
+            "time": "2015-10-04 16:25:29"
         },
         {
             "name": "matthiasmullie/minify",
@@ -2178,16 +2179,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "1.17.1",
+            "version": "1.17.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "0524c87587ab85bc4c2d6f5b41253ccb930a5422"
+                "reference": "bee7f0dc9c3e0b69a6039697533dca1e845c8c24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/0524c87587ab85bc4c2d6f5b41253ccb930a5422",
-                "reference": "0524c87587ab85bc4c2d6f5b41253ccb930a5422",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/bee7f0dc9c3e0b69a6039697533dca1e845c8c24",
+                "reference": "bee7f0dc9c3e0b69a6039697533dca1e845c8c24",
                 "shasum": ""
             },
             "require": {
@@ -2201,10 +2202,11 @@
                 "aws/aws-sdk-php": "^2.4.9",
                 "doctrine/couchdb": "~1.0@dev",
                 "graylog2/gelf-php": "~1.0",
+                "jakub-onderka/php-parallel-lint": "0.9",
                 "php-console/php-console": "^3.1.3",
                 "phpunit/phpunit": "~4.5",
                 "phpunit/phpunit-mock-objects": "2.3.0",
-                "raven/raven": "~0.11",
+                "raven/raven": "^0.13",
                 "ruflin/elastica": ">=0.90 <3.0",
                 "swiftmailer/swiftmailer": "~5.3",
                 "videlalvaro/php-amqplib": "~2.4"
@@ -2250,20 +2252,20 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2015-08-31 09:17:37"
+            "time": "2015-10-14 12:51:02"
         },
         {
             "name": "oyejorge/less.php",
-            "version": "v1.7.0.5",
+            "version": "v1.7.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/oyejorge/less.php.git",
-                "reference": "4385036b1dbfaf37f5380bd26a1e6006fc43149f"
+                "reference": "fb64e2f6ef647a229c50e9fa0f2076240a3484c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/oyejorge/less.php/zipball/4385036b1dbfaf37f5380bd26a1e6006fc43149f",
-                "reference": "4385036b1dbfaf37f5380bd26a1e6006fc43149f",
+                "url": "https://api.github.com/repos/oyejorge/less.php/zipball/fb64e2f6ef647a229c50e9fa0f2076240a3484c6",
+                "reference": "fb64e2f6ef647a229c50e9fa0f2076240a3484c6",
                 "shasum": ""
             },
             "require": {
@@ -2309,7 +2311,7 @@
                 "php",
                 "stylesheet"
             ],
-            "time": "2015-07-13 20:34:18"
+            "time": "2015-09-28 01:11:47"
         },
         {
             "name": "phpspec/php-diff",
@@ -2651,34 +2653,34 @@
         },
         {
             "name": "symfony/monolog-bundle",
-            "version": "v2.7.1",
+            "version": "2.8.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/MonologBundle.git",
-                "reference": "9320b6863404c70ebe111e9040dab96f251de7ac"
+                "url": "https://github.com/symfony/monolog-bundle.git",
+                "reference": "7117b9a145722e3c5768db4585f6ad0643ed5c4a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/MonologBundle/zipball/9320b6863404c70ebe111e9040dab96f251de7ac",
-                "reference": "9320b6863404c70ebe111e9040dab96f251de7ac",
+                "url": "https://api.github.com/repos/symfony/monolog-bundle/zipball/7117b9a145722e3c5768db4585f6ad0643ed5c4a",
+                "reference": "7117b9a145722e3c5768db4585f6ad0643ed5c4a",
                 "shasum": ""
             },
             "require": {
                 "monolog/monolog": "~1.8",
                 "php": ">=5.3.2",
-                "symfony/config": "~2.3",
-                "symfony/dependency-injection": "~2.3",
-                "symfony/http-kernel": "~2.3",
-                "symfony/monolog-bridge": "~2.3"
+                "symfony/config": "~2.3|3.*",
+                "symfony/dependency-injection": "~2.3|3.*",
+                "symfony/http-kernel": "~2.3|3.*",
+                "symfony/monolog-bridge": "~2.3|3.*"
             },
             "require-dev": {
-                "symfony/console": "~2.3",
+                "symfony/console": "~2.3|3.*",
                 "symfony/yaml": "~2.3"
             },
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.7.x-dev"
+                    "dev-master": "2.8.x-dev"
                 }
             },
             "autoload": {
@@ -2706,19 +2708,19 @@
                 "log",
                 "logging"
             ],
-            "time": "2015-01-04 20:21:17"
+            "time": "2015-10-02 11:51:59"
         },
         {
             "name": "symfony/swiftmailer-bundle",
             "version": "v2.3.8",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/SwiftmailerBundle.git",
+                "url": "https://github.com/symfony/swiftmailer-bundle.git",
                 "reference": "970b13d01871207e81d17b17ddda025e7e21e797"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/SwiftmailerBundle/zipball/970b13d01871207e81d17b17ddda025e7e21e797",
+                "url": "https://api.github.com/repos/symfony/swiftmailer-bundle/zipball/970b13d01871207e81d17b17ddda025e7e21e797",
                 "reference": "970b13d01871207e81d17b17ddda025e7e21e797",
                 "shasum": ""
             },
@@ -2767,20 +2769,20 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v2.7.4",
+            "version": "v2.7.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "1fdf23fe28876844b887b0e1935c9adda43ee645"
+                "reference": "619528a274647cffc1792063c3ea04c4fa8266a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/1fdf23fe28876844b887b0e1935c9adda43ee645",
-                "reference": "1fdf23fe28876844b887b0e1935c9adda43ee645",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/619528a274647cffc1792063c3ea04c4fa8266a0",
+                "reference": "619528a274647cffc1792063c3ea04c4fa8266a0",
                 "shasum": ""
             },
             "require": {
-                "doctrine/common": "~2.3",
+                "doctrine/common": "~2.4",
                 "php": ">=5.3.9",
                 "psr/log": "~1.0",
                 "twig/twig": "~1.20|~2.0"
@@ -2833,9 +2835,9 @@
             },
             "require-dev": {
                 "doctrine/data-fixtures": "1.0.*",
-                "doctrine/dbal": "~2.2",
+                "doctrine/dbal": "~2.4",
                 "doctrine/doctrine-bundle": "~1.2",
-                "doctrine/orm": "~2.2,>=2.2.3",
+                "doctrine/orm": "~2.4,>=2.4.5",
                 "egulias/email-validator": "~1.2",
                 "ircmaxell/password-compat": "~1.0",
                 "monolog/monolog": "~1.11",
@@ -2885,20 +2887,20 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2015-09-08 14:26:39"
+            "time": "2015-09-25 11:16:52"
         },
         {
-            "name": "tecnick.com/tcpdf",
-            "version": "6.2.11",
+            "name": "tecnickcom/tcpdf",
+            "version": "6.2.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tecnickcom/TCPDF.git",
-                "reference": "354433a33946ae7497c3eab291eaaf814bccbfab"
+                "reference": "2f732eaa91b5665274689b1d40b285a7bacdc37f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/354433a33946ae7497c3eab291eaaf814bccbfab",
-                "reference": "354433a33946ae7497c3eab291eaaf814bccbfab",
+                "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/2f732eaa91b5665274689b1d40b285a7bacdc37f",
+                "reference": "2f732eaa91b5665274689b1d40b285a7bacdc37f",
                 "shasum": ""
             },
             "require": {
@@ -2948,7 +2950,7 @@
                 "pdf417",
                 "qrcode"
             ],
-            "time": "2015-08-02 12:30:27"
+            "time": "2015-09-12 10:08:34"
         },
         {
             "name": "true/punycode",
@@ -2999,16 +3001,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.21.2",
+            "version": "v1.22.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "ddce1136beb8db29b9cd7dffa8ab518b978c9db3"
+                "reference": "ebfc36b7e77b0c1175afe30459cf943010245540"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/ddce1136beb8db29b9cd7dffa8ab518b978c9db3",
-                "reference": "ddce1136beb8db29b9cd7dffa8ab518b978c9db3",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/ebfc36b7e77b0c1175afe30459cf943010245540",
+                "reference": "ebfc36b7e77b0c1175afe30459cf943010245540",
                 "shasum": ""
             },
             "require": {
@@ -3021,7 +3023,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.21-dev"
+                    "dev-master": "1.22-dev"
                 }
             },
             "autoload": {
@@ -3056,7 +3058,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2015-09-09 05:28:51"
+            "time": "2015-10-13 07:07:02"
         }
     ],
     "packages-dev": [],
