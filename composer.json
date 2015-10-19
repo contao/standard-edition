@@ -30,11 +30,17 @@
             "dev-develop": "4.1.x-dev"
         },
         "incenteev-parameters": {
-            "file": "app/config/parameters.yml"
+            "file": "app/config/parameters.yml",
+            "env-map": {
+                "secret": "CONTAO_RANDOM_SECRET"
+            }
         },
         "symfony-assets-install": "relative"
     },
     "scripts": {
+        "pre-install-cmd": [
+            "Contao\\CoreBundle\\Composer\\ScriptHandler::generateRandomSecret"
+        ],
         "post-install-cmd": [
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
