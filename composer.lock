@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0995911d17b35fb5f150f3d1d441ed48",
-    "content-hash": "529e1e97bf1431b3583a201c069b3ce9",
+    "hash": "178b941979e6ca122007c88bf7a0dae2",
+    "content-hash": "a1f86927be101f248fd705db3fc205aa",
     "packages": [
         {
             "name": "contao-components/ace",
@@ -936,12 +936,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/core-bundle.git",
-                "reference": "57a562def3b21ff307b66f1338bbfdef5c8d6f7d"
+                "reference": "2c2fea1dad449c9b5f59b92b90b45f30dcbee505"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/core-bundle/zipball/57a562def3b21ff307b66f1338bbfdef5c8d6f7d",
-                "reference": "57a562def3b21ff307b66f1338bbfdef5c8d6f7d",
+                "url": "https://api.github.com/repos/contao/core-bundle/zipball/2c2fea1dad449c9b5f59b92b90b45f30dcbee505",
+                "reference": "2c2fea1dad449c9b5f59b92b90b45f30dcbee505",
                 "shasum": ""
             },
             "require": {
@@ -953,6 +953,7 @@
                 "matthiasmullie/minify": "~1.3",
                 "michelf/php-markdown": "~1.4",
                 "oyejorge/less.php": "~1.7",
+                "paragonie/random_compat": "~1.0",
                 "patchwork/utf8": "~1.2",
                 "php": ">=5.4.0",
                 "phpspec/php-diff": "~1.0",
@@ -999,7 +1000,7 @@
                 }
             ],
             "description": "Contao 4 core bundle",
-            "time": "2015-10-16 13:42:00"
+            "time": "2015-10-19 08:58:44"
         },
         {
             "name": "contao/faq-bundle",
@@ -2497,6 +2498,51 @@
                 "stylesheet"
             ],
             "time": "2015-09-28 01:11:47"
+        },
+        {
+            "name": "paragonie/random_compat",
+            "version": "1.0.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/paragonie/random_compat.git",
+                "reference": "7fe2420f8ad46aa08d5b317c92a148611d366d88"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/7fe2420f8ad46aa08d5b317c92a148611d366d88",
+                "reference": "7fe2420f8ad46aa08d5b317c92a148611d366d88",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.0"
+            },
+            "suggest": {
+                "ext-libsodium": "Provides a modern crypto API that can be used to generate random bytes."
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "lib/random.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Paragon Initiative Enterprises",
+                    "email": "security@paragonie.com",
+                    "homepage": "https://paragonie.com"
+                }
+            ],
+            "description": "PHP 5.x polyfill for random_bytes() and random_int() from PHP 7",
+            "keywords": [
+                "csprng",
+                "pseudorandom",
+                "random"
+            ],
+            "time": "2015-10-18 21:39:26"
         },
         {
             "name": "patchwork/utf8",
