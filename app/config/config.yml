@@ -19,6 +19,7 @@ framework:
     session:
         handler_id: ~
     csrf_protection: ~
+    translator: { fallbacks: ["%locale%"] }
 
 # Contao configuration
 contao:
