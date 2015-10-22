@@ -67,6 +67,12 @@
             "Contao\\CoreBundle\\Composer\\ScriptHandler::generateSymlinks"
         ]
     },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://legacy-packages-via.contao-community-alliance.org/"
+        }
+    ],
     "minimum-stability": "dev",
     "prefer-stable": true
 }
