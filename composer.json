@@ -47,10 +47,8 @@
         "symfony-assets-install": "relative"
     },
     "scripts": {
-        "pre-install-cmd": [
-            "Contao\\CoreBundle\\Composer\\ScriptHandler::generateRandomSecret"
-        ],
         "post-install-cmd": [
+            "Contao\\CoreBundle\\Composer\\ScriptHandler::generateRandomSecret",
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
@@ -59,6 +57,7 @@
             "Contao\\CoreBundle\\Composer\\ScriptHandler::generateSymlinks"
         ],
         "post-update-cmd": [
+            "Contao\\CoreBundle\\Composer\\ScriptHandler::generateRandomSecret",
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
