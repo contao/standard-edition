@@ -2,6 +2,7 @@
 
 ### 4.1.0-RC1 (2015-XX-XX)
 
+ * Support bypassing the maintenance mode per route (see contao/core-bundle#402).
  * Add the Lexik maintenance bundle (see contao/core-bundle#283).
 
 ### 4.1.0-beta1 (2015-10-21)
