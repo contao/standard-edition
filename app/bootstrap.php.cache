@@ -1394,7 +1394,7 @@ $this->setContent($content);
 $this->setStatusCode($status);
 $this->setProtocolVersion('1.0');
 if (!$this->headers->has('Date')) {
-$this->setDate(new \DateTime(null, new \DateTimeZone('UTC')));
+$this->setDate(\DateTime::createFromFormat('U', time(), new \DateTimeZone('UTC')));
 }
 }
 public static function create($content ='', $status = 200, $headers = array())
@@ -2363,11 +2363,11 @@ protected $booted = false;
 protected $name;
 protected $startTime;
 protected $loadClassCache;
-const VERSION ='2.7.5';
-const VERSION_ID = 20705;
+const VERSION ='2.7.6';
+const VERSION_ID = 20706;
 const MAJOR_VERSION = 2;
 const MINOR_VERSION = 7;
-const RELEASE_VERSION = 5;
+const RELEASE_VERSION = 6;
 const EXTRA_VERSION ='';
 const END_OF_MAINTENANCE ='05/2018';
 const END_OF_LIFE ='05/2019';

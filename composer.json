@@ -18,6 +18,7 @@
         "sensio/distribution-bundle": "^3.0.12",
         "sensio/framework-extra-bundle": "^3.0.2",
         "doctrine/annotations": "~1.2",
+        "lexik/maintenance-bundle": "~2.0",
         "contao/contao": "~4.1",
         "contao/calendar-bundle": "dev-develop",
         "contao/comments-bundle": "dev-develop",
