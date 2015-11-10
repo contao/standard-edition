@@ -1,6 +1,6 @@
 # Contao standard edition change log
 
-### 4.1.0-RC1 (2015-XX-XX)
+### 4.1.0-RC1 (2015-11-10)
 
  * Support bypassing the maintenance mode per route (see contao/core-bundle#402).
  * Add the Lexik maintenance bundle (see contao/core-bundle#283).
