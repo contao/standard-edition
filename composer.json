@@ -23,6 +23,7 @@
         "lexik/maintenance-bundle": "~2.0",
         "monolog/monolog": "~1.12",
         "contao/contao": "~4.1",
+        "contao/core-bundle": "dev-hotfix/4.1.1 as 4.1",
         "contao-components/contao": "~4.2",
         "incenteev/composer-parameter-handler": "~2.0"
     },

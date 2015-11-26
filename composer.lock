@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "96eed9f29663bc38ce579eee5b53088d",
-    "content-hash": "8dc7a8dc08815cc3b829c7e35a805e38",
+    "hash": "d6f24b93ce4d5f2c63d56997d2fd7c08",
+    "content-hash": "1ae165e600fbe9dc43b9734f01ad73fb",
     "packages": [
         {
             "name": "contao-components/ace",
@@ -943,16 +943,16 @@
         },
         {
             "name": "contao/core-bundle",
-            "version": "4.1.0",
+            "version": "dev-hotfix/4.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/core-bundle.git",
-                "reference": "b59a083a05b01ff95b7246ce6a734bf62a67919e"
+                "reference": "28153b3d271b994d4556e783d871d4234aefd2c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/core-bundle/zipball/b59a083a05b01ff95b7246ce6a734bf62a67919e",
-                "reference": "b59a083a05b01ff95b7246ce6a734bf62a67919e",
+                "url": "https://api.github.com/repos/contao/core-bundle/zipball/28153b3d271b994d4556e783d871d4234aefd2c8",
+                "reference": "28153b3d271b994d4556e783d871d4234aefd2c8",
                 "shasum": ""
             },
             "require": {
@@ -1021,7 +1021,7 @@
                 }
             ],
             "description": "Contao 4 core bundle",
-            "time": "2015-11-26 10:58:38"
+            "time": "2015-11-26 13:51:58"
         },
         {
             "name": "contao/faq-bundle",
@@ -3432,9 +3432,18 @@
         }
     ],
     "packages-dev": [],
-    "aliases": [],
+    "aliases": [
+        {
+            "alias": "4.1",
+            "alias_normalized": "4.1.0.0",
+            "version": "dev-hotfix/4.1.1",
+            "package": "contao/core-bundle"
+        }
+    ],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "contao/core-bundle": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
