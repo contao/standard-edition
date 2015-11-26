@@ -11,14 +11,19 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "symfony/symfony": "~2.7",
+        "symfony/symfony": "^2.7.7",
         "symfony/console": "^2.7.3",
+        "symfony/http-foundation": "^2.7.7",
         "symfony/monolog-bundle": "~2.7",
+        "symfony/security": "^2.7.7",
         "symfony/swiftmailer-bundle": "~2.3",
         "sensio/distribution-bundle": "^3.0.12",
         "sensio/framework-extra-bundle": "^3.0.2",
-        "doctrine/annotations": "~1.2",
-        "contao/contao": "^4.0.3",
+        "doctrine/annotations": "^1.2.7",
+        "lexik/maintenance-bundle": "~2.0",
+        "monolog/monolog": "~1.12",
+        "contao/contao": "~4.1",
+        "contao-components/contao": "~4.2",
         "incenteev/composer-parameter-handler": "~2.0"
     },
     "config": {
@@ -27,15 +32,19 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-develop": "4.1.x-dev"
+            "dev-develop": "4.2.x-dev"
         },
         "incenteev-parameters": {
-            "file": "app/config/parameters.yml"
+            "file": "app/config/parameters.yml",
+            "env-map": {
+                "secret": "CONTAO_RANDOM_SECRET"
+            }
         },
         "symfony-assets-install": "relative"
     },
     "scripts": {
         "post-install-cmd": [
+            "Contao\\CoreBundle\\Composer\\ScriptHandler::generateRandomSecret",
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
@@ -44,6 +53,7 @@
             "Contao\\CoreBundle\\Composer\\ScriptHandler::generateSymlinks"
         ],
         "post-update-cmd": [
+            "Contao\\CoreBundle\\Composer\\ScriptHandler::generateRandomSecret",
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
@@ -51,5 +61,11 @@
             "Contao\\CoreBundle\\Composer\\ScriptHandler::addDirectories",
             "Contao\\CoreBundle\\Composer\\ScriptHandler::generateSymlinks"
         ]
-    }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://legacy-packages-via.contao-community-alliance.org/"
+        }
+    ]
 }

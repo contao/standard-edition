@@ -48,6 +48,8 @@ It also comes pre-configured with the following Contao bundles:
 
   * **ContaoFaqBundle** - The Contao FAQ bundle
 
+  * **ContaoInstallationBundle** - The Contao installation bundle
+
   * **ContaoListingBundle** - The Contao listing bundle
 
   * **ContaoNewsBundle** - The Contao news bundle

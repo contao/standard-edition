@@ -25,6 +25,7 @@ class AppKernel extends Kernel
             new Symfony\Bundle\MonologBundle\MonologBundle(),
             new Symfony\Bundle\SwiftmailerBundle\SwiftmailerBundle(),
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
+            new Lexik\Bundle\MaintenanceBundle\LexikMaintenanceBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new Contao\CoreBundle\ContaoCoreBundle(),
             new Contao\CalendarBundle\ContaoCalendarBundle(),
@@ -39,6 +40,7 @@ class AppKernel extends Kernel
             $bundles[] = new Symfony\Bundle\DebugBundle\DebugBundle();
             $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
             $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
+            $bundles[] = new Contao\InstallationBundle\ContaoInstallationBundle();
         }
 
         return $bundles;

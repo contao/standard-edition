@@ -8,40 +8,20 @@
  * @license LGPL-3.0+
  */
 
-use Contao\ClassLoader;
-use Contao\Config;
-use Contao\InstallationBundle\ClassLoader\LibraryLoader;
 use Contao\InstallationBundle\Controller\InstallationController;
-use Contao\InstallationBundle\DependencyInjection\ContainerFactory;
-use Contao\System;
+use Contao\InstallationBundle\HttpKernel\InstallationKernel;
 
 error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED & ~E_USER_DEPRECATED);
 
-$loader = require_once __DIR__ . '/../vendor/autoload.php';
+$loader = require_once __DIR__ . '/../app/autoload.php';
 
 require_once __DIR__ . '/../app/AppKernel.php';
-require_once __DIR__ . '/../vendor/contao/core-bundle/src/Resources/contao/config/constants.php';
-require_once __DIR__ . '/../vendor/contao/core-bundle/src/Resources/contao/helper/functions.php';
 
-$kernel = new AppKernel('prod', false);
-
-// Un-normalize the path (see #208)
-$rootDir = strtr($kernel->getRootDir(), '/', DIRECTORY_SEPARATOR);
-
-// Register the class loader
-$libraryLoader = new LibraryLoader($rootDir);
-$libraryLoader->register();
-
-Config::preload();
-
-// Create the container
-$container = ContainerFactory::create($rootDir);
-System::setContainer($container);
-
-ClassLoader::scanAndRegister();
+$kernel = new InstallationKernel('dev', false);
+$kernel->boot();
 
 // Run the controller
 $controller = new InstallationController();
-$controller->setContainer($container);
+$controller->setContainer($kernel->getContainer());
 $response = $controller->indexAction();
 $response->send();

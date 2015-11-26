@@ -19,6 +19,7 @@ framework:
     session:
         handler_id: ~
     csrf_protection: ~
+    translator: { fallbacks: ["%locale%"] }
 
 # Contao configuration
 contao:
@@ -52,3 +53,13 @@ swiftmailer:
     password:   "%mailer_password%"
     port:       "%mailer_port%"
     encryption: "%mailer_encryption%"
+
+# Lexik configuration
+lexik_maintenance:
+    authorized:
+        path: ^/contao($|/)
+        attributes:
+            _bypass_maintenance: true
+    driver:
+        class:   "Lexik\Bundle\MaintenanceBundle\Drivers\FileDriver"
+        options: {file_path: %kernel.root_dir%/cache/lock}
