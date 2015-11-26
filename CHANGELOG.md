@@ -1,5 +1,9 @@
 # Contao standard edition change log
 
+### 4.1.0 (2015-11-26)
+
+ * Adjust the build.xml file.
+
 ### 4.1.0-RC1 (2015-11-10)
 
  * Support bypassing the maintenance mode per route (see contao/core-bundle#402).

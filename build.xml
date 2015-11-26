@@ -4,7 +4,7 @@
     <arg value="contao:version" />
   </exec>
 
-  <target name="build" depends="clone, update, languages, purge, archive, cleanup">
+  <target name="build" depends="clone, update, purge, archive, cleanup">
     <echo message="Contao ${version} build complete" />
   </target>
 
@@ -34,16 +34,6 @@
     </exec>
   </target>
 
-  <target name="languages">
-    <exec executable="txget" dir="contao-${version}/vendor/contao/calendar-bundle" failonerror="true" />
-    <exec executable="txget" dir="contao-${version}/vendor/contao/comments-bundle" failonerror="true" />
-    <exec executable="txget" dir="contao-${version}/vendor/contao/core-bundle" failonerror="true" />
-    <exec executable="txget" dir="contao-${version}/vendor/contao/faq-bundle" failonerror="true" />
-    <exec executable="txget" dir="contao-${version}/vendor/contao/listing-bundle" failonerror="true" />
-    <exec executable="txget" dir="contao-${version}/vendor/contao/news-bundle" failonerror="true" />
-    <exec executable="txget" dir="contao-${version}/vendor/contao/newsletter-bundle" failonerror="true" />
-  </target>
-
   <target name="purge">
     <delete dir="contao-${version}/.tx" />
     <delete dir="contao-${version}/.git" />
@@ -67,12 +57,14 @@
   </target>
 
   <target name="archive">
+    <defaultexcludes remove="**/.gitignore" />
     <zip destfile="contao-${version}.zip">
       <zipfileset dir="contao-${version}" prefix="contao-${version}" />
     </zip>
     <tar destfile="contao-${version}.tar.gz" compression="gzip" longfile="gnu">
       <tarfileset dir="contao-${version}" prefix="contao-${version}" />
     </tar>
+    <defaultexcludes default="true" />
   </target>
 
   <target name="cleanup">

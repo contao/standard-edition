@@ -23,15 +23,7 @@
         "lexik/maintenance-bundle": "~2.0",
         "monolog/monolog": "~1.12",
         "contao/contao": "~4.1",
-        "contao/calendar-bundle": "dev-release/4.1.0 as 4.1.0",
-        "contao/comments-bundle": "dev-release/4.1.0 as 4.1.0",
-        "contao/core-bundle": "dev-release/4.1.0 as 4.1.0",
-        "contao/faq-bundle": "dev-release/4.1.0 as 4.1.0",
-        "contao/installation-bundle": "dev-release/1.0.0 as 1.0.0",
-        "contao/listing-bundle": "dev-release/4.1.0 as 4.1.0",
-        "contao/news-bundle": "dev-release/4.1.0 as 4.1.0",
-        "contao/newsletter-bundle": "dev-release/4.1.0 as 4.1.0",
-        "contao-components/contao": "dev-develop",
+        "contao-components/contao": "~4.2",
         "incenteev/composer-parameter-handler": "~2.0"
     },
     "config": {
@@ -75,7 +67,5 @@
             "type": "composer",
             "url": "https://legacy-packages-via.contao-community-alliance.org/"
         }
-    ],
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    ]
 }
