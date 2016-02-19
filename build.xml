@@ -37,7 +37,6 @@
   <target name="purge">
     <delete dir="contao-${version}/.tx" />
     <delete dir="contao-${version}/.git" />
-    <delete dir="contao-${version}/vendor/contao-components" />
     <delete dir="contao-${version}/vendor/psr/log/Psr/Log/Test" />
     <delete dir="contao-${version}/vendor/simplepie/simplepie/compatibility_test" />
     <delete dir="contao-${version}/vendor/simplepie/simplepie/demo" />
