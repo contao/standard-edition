@@ -1,10 +1,5 @@
 <?php
 
-namespace {
-    error_reporting(error_reporting() & ~E_USER_DEPRECATED);
-    $loader = require_once __DIR__.'/./autoload.php';
-}
-
  
 namespace Symfony\Component\HttpFoundation
 {
@@ -31,44 +26,9 @@ public function add(array $parameters = array())
 {
 $this->parameters = array_replace($this->parameters, $parameters);
 }
-public function get($path, $default = null, $deep = false)
+public function get($key, $default = null)
 {
-if (!$deep || false === $pos = strpos($path,'[')) {
-return array_key_exists($path, $this->parameters) ? $this->parameters[$path] : $default;
-}
-$root = substr($path, 0, $pos);
-if (!array_key_exists($root, $this->parameters)) {
-return $default;
-}
-$value = $this->parameters[$root];
-$currentKey = null;
-for ($i = $pos, $c = strlen($path); $i < $c; ++$i) {
-$char = $path[$i];
-if ('['=== $char) {
-if (null !== $currentKey) {
-throw new \InvalidArgumentException(sprintf('Malformed path. Unexpected "[" at position %d.', $i));
-}
-$currentKey ='';
-} elseif (']'=== $char) {
-if (null === $currentKey) {
-throw new \InvalidArgumentException(sprintf('Malformed path. Unexpected "]" at position %d.', $i));
-}
-if (!is_array($value) || !array_key_exists($currentKey, $value)) {
-return $default;
-}
-$value = $value[$currentKey];
-$currentKey = null;
-} else {
-if (null === $currentKey) {
-throw new \InvalidArgumentException(sprintf('Malformed path. Unexpected "%s" at position %d.', $char, $i));
-}
-$currentKey .= $char;
-}
-}
-if (null !== $currentKey) {
-throw new \InvalidArgumentException(sprintf('Malformed path. Path must end with "]".'));
-}
-return $value;
+return array_key_exists($key, $this->parameters) ? $this->parameters[$key] : $default;
 }
 public function set($key, $value)
 {
@@ -82,29 +42,29 @@ public function remove($key)
 {
 unset($this->parameters[$key]);
 }
-public function getAlpha($key, $default ='', $deep = false)
+public function getAlpha($key, $default ='')
 {
-return preg_replace('/[^[:alpha:]]/','', $this->get($key, $default, $deep));
+return preg_replace('/[^[:alpha:]]/','', $this->get($key, $default));
 }
-public function getAlnum($key, $default ='', $deep = false)
+public function getAlnum($key, $default ='')
 {
-return preg_replace('/[^[:alnum:]]/','', $this->get($key, $default, $deep));
+return preg_replace('/[^[:alnum:]]/','', $this->get($key, $default));
 }
-public function getDigits($key, $default ='', $deep = false)
+public function getDigits($key, $default ='')
 {
-return str_replace(array('-','+'),'', $this->filter($key, $default, $deep, FILTER_SANITIZE_NUMBER_INT));
+return str_replace(array('-','+'),'', $this->filter($key, $default, FILTER_SANITIZE_NUMBER_INT));
 }
-public function getInt($key, $default = 0, $deep = false)
+public function getInt($key, $default = 0)
 {
-return (int) $this->get($key, $default, $deep);
+return (int) $this->get($key, $default);
 }
-public function getBoolean($key, $default = false, $deep = false)
+public function getBoolean($key, $default = false)
 {
-return $this->filter($key, $default, $deep, FILTER_VALIDATE_BOOLEAN);
+return $this->filter($key, $default, FILTER_VALIDATE_BOOLEAN);
 }
-public function filter($key, $default = null, $deep = false, $filter = FILTER_DEFAULT, $options = array())
+public function filter($key, $default = null, $filter = FILTER_DEFAULT, $options = array())
 {
-$value = $this->get($key, $default, $deep);
+$value = $this->get($key, $default);
 if (!is_array($options) && $options) {
 $options = array('flags'=> $options);
 }
@@ -172,7 +132,7 @@ $this->set($key, $values);
 }
 public function get($key, $default = null, $first = true)
 {
-$key = strtr(strtolower($key),'_','-');
+$key = str_replace('_','-', strtolower($key));
 if (!array_key_exists($key, $this->headers)) {
 if (null === $default) {
 return $first ? null : array();
@@ -186,7 +146,7 @@ return $this->headers[$key];
 }
 public function set($key, $values, $replace = true)
 {
-$key = strtr(strtolower($key),'_','-');
+$key = str_replace('_','-', strtolower($key));
 $values = array_values((array) $values);
 if (true === $replace || !isset($this->headers[$key])) {
 $this->headers[$key] = $values;
@@ -199,7 +159,7 @@ $this->cacheControl = $this->parseCacheControl($values[0]);
 }
 public function has($key)
 {
-return array_key_exists(strtr(strtolower($key),'_','-'), $this->headers);
+return array_key_exists(str_replace('_','-', strtolower($key)), $this->headers);
 }
 public function contains($key, $value)
 {
@@ -207,7 +167,7 @@ return in_array($value, $this->get($key, null, false));
 }
 public function remove($key)
 {
-$key = strtr(strtolower($key),'_','-');
+$key = str_replace('_','-', strtolower($key));
 unset($this->headers[$key]);
 if ('cache-control'=== $key) {
 $this->cacheControl = array();
@@ -387,6 +347,9 @@ $headers['AUTHORIZATION'] = $authorizationHeader;
 }
 }
 }
+if (isset($headers['AUTHORIZATION'])) {
+return $headers;
+}
 if (isset($headers['PHP_AUTH_USER'])) {
 $headers['AUTHORIZATION'] ='Basic '.base64_encode($headers['PHP_AUTH_USER'].':'.$headers['PHP_AUTH_PW']);
 } elseif (isset($headers['PHP_AUTH_DIGEST'])) {
@@ -497,7 +460,7 @@ return $request;
 }
 public static function create($uri, $method ='GET', $parameters = array(), $cookies = array(), $files = array(), $server = array(), $content = null)
 {
-$server = array_replace(array('SERVER_NAME'=>'localhost','SERVER_PORT'=> 80,'HTTP_HOST'=>'localhost','HTTP_USER_AGENT'=>'Symfony/2.X','HTTP_ACCEPT'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','HTTP_ACCEPT_LANGUAGE'=>'en-us,en;q=0.5','HTTP_ACCEPT_CHARSET'=>'ISO-8859-1,utf-8;q=0.7,*;q=0.7','REMOTE_ADDR'=>'127.0.0.1','SCRIPT_NAME'=>'','SCRIPT_FILENAME'=>'','SERVER_PROTOCOL'=>'HTTP/1.1','REQUEST_TIME'=> time(),
+$server = array_replace(array('SERVER_NAME'=>'localhost','SERVER_PORT'=> 80,'HTTP_HOST'=>'localhost','HTTP_USER_AGENT'=>'Symfony/3.X','HTTP_ACCEPT'=>'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8','HTTP_ACCEPT_LANGUAGE'=>'en-us,en;q=0.5','HTTP_ACCEPT_CHARSET'=>'ISO-8859-1,utf-8;q=0.7,*;q=0.7','REMOTE_ADDR'=>'127.0.0.1','SCRIPT_NAME'=>'','SCRIPT_FILENAME'=>'','SERVER_PROTOCOL'=>'HTTP/1.1','REQUEST_TIME'=> time(),
 ), $server);
 $server['PATH_INFO'] ='';
 $server['REQUEST_METHOD'] = strtoupper($method);
@@ -711,15 +674,15 @@ public static function getHttpMethodParameterOverride()
 {
 return self::$httpMethodParameterOverride;
 }
-public function get($key, $default = null, $deep = false)
+public function get($key, $default = null)
 {
-if ($this !== $result = $this->query->get($key, $this, $deep)) {
+if ($this !== $result = $this->attributes->get($key, $this)) {
 return $result;
 }
-if ($this !== $result = $this->attributes->get($key, $this, $deep)) {
+if ($this !== $result = $this->query->get($key, $this)) {
 return $result;
 }
-if ($this !== $result = $this->request->get($key, $this, $deep)) {
+if ($this !== $result = $this->request->get($key, $this)) {
 return $result;
 }
 return $default;
@@ -754,16 +717,22 @@ $clientIps = $matches[3];
 } elseif (self::$trustedHeaders[self::HEADER_CLIENT_IP] && $this->headers->has(self::$trustedHeaders[self::HEADER_CLIENT_IP])) {
 $clientIps = array_map('trim', explode(',', $this->headers->get(self::$trustedHeaders[self::HEADER_CLIENT_IP])));
 }
-$clientIps[] = $ip; $ip = $clientIps[0];
+$clientIps[] = $ip; $firstTrustedIp = null;
 foreach ($clientIps as $key => $clientIp) {
 if (preg_match('{((?:\d+\.){3}\d+)\:\d+}', $clientIp, $match)) {
 $clientIps[$key] = $clientIp = $match[1];
 }
-if (IpUtils::checkIp($clientIp, self::$trustedProxies)) {
+if (!filter_var($clientIp, FILTER_VALIDATE_IP)) {
 unset($clientIps[$key]);
 }
+if (IpUtils::checkIp($clientIp, self::$trustedProxies)) {
+unset($clientIps[$key]);
+if (null === $firstTrustedIp) {
+$firstTrustedIp = $clientIp;
 }
-return $clientIps ? array_reverse($clientIps) : array($ip);
+}
+}
+return $clientIps ? array_reverse($clientIps) : array($firstTrustedIp);
 }
 public function getClientIp()
 {
@@ -990,7 +959,7 @@ static::$formats[$format] = is_array($mimeTypes) ? $mimeTypes : array($mimeTypes
 public function getRequestFormat($default ='html')
 {
 if (null === $this->format) {
-$this->format = $this->get('_format', $default);
+$this->format = $this->attributes->get('_format', $default);
 }
 return $this->format;
 }
@@ -1238,7 +1207,6 @@ $baseUrl = $this->getBaseUrl();
 if (null === ($requestUri = $this->getRequestUri())) {
 return'/';
 }
-$pathInfo ='/';
 if ($pos = strpos($requestUri,'?')) {
 $requestUri = substr($requestUri, 0, $pos);
 }
@@ -1331,7 +1299,8 @@ const HTTP_REQUEST_URI_TOO_LONG = 414;
 const HTTP_UNSUPPORTED_MEDIA_TYPE = 415;
 const HTTP_REQUESTED_RANGE_NOT_SATISFIABLE = 416;
 const HTTP_EXPECTATION_FAILED = 417;
-const HTTP_I_AM_A_TEAPOT = 418; const HTTP_UNPROCESSABLE_ENTITY = 422; const HTTP_LOCKED = 423; const HTTP_FAILED_DEPENDENCY = 424; const HTTP_RESERVED_FOR_WEBDAV_ADVANCED_COLLECTIONS_EXPIRED_PROPOSAL = 425; const HTTP_UPGRADE_REQUIRED = 426; const HTTP_PRECONDITION_REQUIRED = 428; const HTTP_TOO_MANY_REQUESTS = 429; const HTTP_REQUEST_HEADER_FIELDS_TOO_LARGE = 431; const HTTP_INTERNAL_SERVER_ERROR = 500;
+const HTTP_I_AM_A_TEAPOT = 418; const HTTP_UNPROCESSABLE_ENTITY = 422; const HTTP_LOCKED = 423; const HTTP_FAILED_DEPENDENCY = 424; const HTTP_RESERVED_FOR_WEBDAV_ADVANCED_COLLECTIONS_EXPIRED_PROPOSAL = 425; const HTTP_UPGRADE_REQUIRED = 426; const HTTP_PRECONDITION_REQUIRED = 428; const HTTP_TOO_MANY_REQUESTS = 429; const HTTP_REQUEST_HEADER_FIELDS_TOO_LARGE = 431; const HTTP_UNAVAILABLE_FOR_LEGAL_REASONS = 451;
+const HTTP_INTERNAL_SERVER_ERROR = 500;
 const HTTP_NOT_IMPLEMENTED = 501;
 const HTTP_BAD_GATEWAY = 502;
 const HTTP_SERVICE_UNAVAILABLE = 503;
@@ -1360,7 +1329,6 @@ public static $statusTexts = array(
 303 =>'See Other',
 304 =>'Not Modified',
 305 =>'Use Proxy',
-306 =>'Reserved',
 307 =>'Temporary Redirect',
 308 =>'Permanent Redirect', 400 =>'Bad Request',
 401 =>'Unauthorized',
@@ -1375,12 +1343,13 @@ public static $statusTexts = array(
 410 =>'Gone',
 411 =>'Length Required',
 412 =>'Precondition Failed',
-413 =>'Request Entity Too Large',
-414 =>'Request-URI Too Long',
+413 =>'Payload Too Large',
+414 =>'URI Too Long',
 415 =>'Unsupported Media Type',
-416 =>'Requested Range Not Satisfiable',
+416 =>'Range Not Satisfiable',
 417 =>'Expectation Failed',
-418 =>'I\'m a teapot', 422 =>'Unprocessable Entity', 423 =>'Locked', 424 =>'Failed Dependency', 425 =>'Reserved for WebDAV advanced collections expired proposal', 426 =>'Upgrade Required', 428 =>'Precondition Required', 429 =>'Too Many Requests', 431 =>'Request Header Fields Too Large', 500 =>'Internal Server Error',
+418 =>'I\'m a teapot', 422 =>'Unprocessable Entity', 423 =>'Locked', 424 =>'Failed Dependency', 425 =>'Reserved for WebDAV advanced collections expired proposal', 426 =>'Upgrade Required', 428 =>'Precondition Required', 429 =>'Too Many Requests', 431 =>'Request Header Fields Too Large', 451 =>'Unavailable For Legal Reasons',
+500 =>'Internal Server Error',
 501 =>'Not Implemented',
 502 =>'Bad Gateway',
 503 =>'Service Unavailable',
@@ -1393,9 +1362,6 @@ $this->headers = new ResponseHeaderBag($headers);
 $this->setContent($content);
 $this->setStatusCode($status);
 $this->setProtocolVersion('1.0');
-if (!$this->headers->has('Date')) {
-$this->setDate(\DateTime::createFromFormat('U', time(), new \DateTimeZone('UTC')));
-}
 }
 public static function create($content ='', $status = 200, $headers = array())
 {
@@ -1458,12 +1424,15 @@ public function sendHeaders()
 if (headers_sent()) {
 return $this;
 }
-header(sprintf('HTTP/%s %s %s', $this->version, $this->statusCode, $this->statusText), true, $this->statusCode);
+if (!$this->headers->has('Date')) {
+$this->setDate(\DateTime::createFromFormat('U', time()));
+}
 foreach ($this->headers->allPreserveCase() as $name => $values) {
 foreach ($values as $value) {
 header($name.': '.$value, false, $this->statusCode);
 }
 }
+header(sprintf('HTTP/%s %s %s', $this->version, $this->statusCode, $this->statusText), true, $this->statusCode);
 foreach ($this->headers->getCookies() as $cookie) {
 setcookie($cookie->getName(), $cookie->getValue(), $cookie->getExpiresTime(), $cookie->getPath(), $cookie->getDomain(), $cookie->isSecure(), $cookie->isHttpOnly());
 }
@@ -1572,7 +1541,10 @@ return $this->headers->hasCacheControlDirective('must-revalidate') || $this->hea
 }
 public function getDate()
 {
-return $this->headers->getDate('Date', new \DateTime());
+if (!$this->headers->has('Date')) {
+$this->setDate(\DateTime::createFromFormat('U', time()));
+}
+return $this->headers->getDate('Date');
 }
 public function setDate(\DateTime $date)
 {
@@ -1873,7 +1845,7 @@ $this->set('Cache-Control','');
 public function set($key, $values, $replace = true)
 {
 parent::set($key, $values, $replace);
-$uniqueKey = strtr(strtolower($key),'_','-');
+$uniqueKey = str_replace('_','-', strtolower($key));
 $this->headerNames[$uniqueKey] = $key;
 if (in_array($uniqueKey, array('cache-control','etag','last-modified','expires'))) {
 $computed = $this->computeCacheControlValue();
@@ -1885,7 +1857,7 @@ $this->computedCacheControl = $this->parseCacheControl($computed);
 public function remove($key)
 {
 parent::remove($key);
-$uniqueKey = strtr(strtolower($key),'_','-');
+$uniqueKey = str_replace('_','-', strtolower($key));
 unset($this->headerNames[$uniqueKey]);
 if ('cache-control'=== $uniqueKey) {
 $this->computedCacheControl = array();
@@ -1997,48 +1969,36 @@ interface ContainerInterface
 const EXCEPTION_ON_INVALID_REFERENCE = 1;
 const NULL_ON_INVALID_REFERENCE = 2;
 const IGNORE_ON_INVALID_REFERENCE = 3;
-const SCOPE_CONTAINER ='container';
-const SCOPE_PROTOTYPE ='prototype';
-public function set($id, $service, $scope = self::SCOPE_CONTAINER);
+public function set($id, $service);
 public function get($id, $invalidBehavior = self::EXCEPTION_ON_INVALID_REFERENCE);
 public function has($id);
+public function initialized($id);
 public function getParameter($name);
 public function hasParameter($name);
 public function setParameter($name, $value);
-public function enterScope($name);
-public function leaveScope($name);
-public function addScope(ScopeInterface $scope);
-public function hasScope($name);
-public function isScopeActive($name);
 }
 }
 namespace Symfony\Component\DependencyInjection
 {
-interface IntrospectableContainerInterface extends ContainerInterface
+interface ResettableContainerInterface extends ContainerInterface
 {
-public function initialized($id);
+public function reset();
 }
 }
 namespace Symfony\Component\DependencyInjection
 {
-use Symfony\Component\DependencyInjection\Exception\InactiveScopeException;
 use Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
-use Symfony\Component\DependencyInjection\Exception\RuntimeException;
 use Symfony\Component\DependencyInjection\Exception\ServiceNotFoundException;
 use Symfony\Component\DependencyInjection\Exception\ServiceCircularReferenceException;
 use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
 use Symfony\Component\DependencyInjection\ParameterBag\ParameterBag;
 use Symfony\Component\DependencyInjection\ParameterBag\FrozenParameterBag;
-class Container implements IntrospectableContainerInterface
+class Container implements ResettableContainerInterface
 {
 protected $parameterBag;
 protected $services = array();
 protected $methodMap = array();
 protected $aliases = array();
-protected $scopes = array();
-protected $scopeChildren = array();
-protected $scopedServices = array();
-protected $scopeStacks = array();
 protected $loading = array();
 private $underscoreMap = array('_'=>'','.'=>'_','\\'=>'_');
 public function __construct(ParameterBagInterface $parameterBag = null)
@@ -2070,29 +2030,14 @@ public function setParameter($name, $value)
 {
 $this->parameterBag->set($name, $value);
 }
-public function set($id, $service, $scope = self::SCOPE_CONTAINER)
+public function set($id, $service)
 {
-if (self::SCOPE_PROTOTYPE === $scope) {
-throw new InvalidArgumentException(sprintf('You cannot set service "%s" of scope "prototype".', $id));
-}
 $id = strtolower($id);
 if ('service_container'=== $id) {
-return;
-}
-if (self::SCOPE_CONTAINER !== $scope) {
-if (!isset($this->scopedServices[$scope])) {
-throw new RuntimeException(sprintf('You cannot set service "%s" of inactive scope.', $id));
-}
-$this->scopedServices[$scope][$id] = $service;
+throw new InvalidArgumentException('You cannot set service "service_container".');
 }
 $this->services[$id] = $service;
-if (method_exists($this, $method ='synchronize'.strtr($id, $this->underscoreMap).'Service')) {
-$this->$method();
-}
 if (null === $service) {
-if (self::SCOPE_CONTAINER !== $scope) {
-unset($this->scopedServices[$scope][$id]);
-}
 unset($this->services[$id]);
 }
 }
@@ -2154,16 +2099,11 @@ $this->loading[$id] = true;
 try {
 $service = $this->$method();
 } catch (\Exception $e) {
-unset($this->loading[$id]);
-if (array_key_exists($id, $this->services)) {
 unset($this->services[$id]);
-}
-if ($e instanceof InactiveScopeException && self::EXCEPTION_ON_INVALID_REFERENCE !== $invalidBehavior) {
-return;
-}
 throw $e;
-}
+} finally {
 unset($this->loading[$id]);
+}
 return $service;
 }
 }
@@ -2171,12 +2111,16 @@ public function initialized($id)
 {
 $id = strtolower($id);
 if ('service_container'=== $id) {
-return true;
+return false;
 }
 if (isset($this->aliases[$id])) {
 $id = $this->aliases[$id];
 }
 return isset($this->services[$id]) || array_key_exists($id, $this->services);
+}
+public function reset()
+{
+$this->services = array();
 }
 public function getServiceIds()
 {
@@ -2190,94 +2134,16 @@ $ids[] = self::underscore($match[1]);
 $ids[] ='service_container';
 return array_unique(array_merge($ids, array_keys($this->services)));
 }
-public function enterScope($name)
-{
-if (!isset($this->scopes[$name])) {
-throw new InvalidArgumentException(sprintf('The scope "%s" does not exist.', $name));
-}
-if (self::SCOPE_CONTAINER !== $this->scopes[$name] && !isset($this->scopedServices[$this->scopes[$name]])) {
-throw new RuntimeException(sprintf('The parent scope "%s" must be active when entering this scope.', $this->scopes[$name]));
-}
-if (isset($this->scopedServices[$name])) {
-$services = array($this->services, $name => $this->scopedServices[$name]);
-unset($this->scopedServices[$name]);
-foreach ($this->scopeChildren[$name] as $child) {
-if (isset($this->scopedServices[$child])) {
-$services[$child] = $this->scopedServices[$child];
-unset($this->scopedServices[$child]);
-}
-}
-$this->services = call_user_func_array('array_diff_key', $services);
-array_shift($services);
-if (!isset($this->scopeStacks[$name])) {
-$this->scopeStacks[$name] = new \SplStack();
-}
-$this->scopeStacks[$name]->push($services);
-}
-$this->scopedServices[$name] = array();
-}
-public function leaveScope($name)
-{
-if (!isset($this->scopedServices[$name])) {
-throw new InvalidArgumentException(sprintf('The scope "%s" is not active.', $name));
-}
-$services = array($this->services, $this->scopedServices[$name]);
-unset($this->scopedServices[$name]);
-foreach ($this->scopeChildren[$name] as $child) {
-if (isset($this->scopedServices[$child])) {
-$services[] = $this->scopedServices[$child];
-unset($this->scopedServices[$child]);
-}
-}
-$this->services = call_user_func_array('array_diff_key', $services);
-if (isset($this->scopeStacks[$name]) && count($this->scopeStacks[$name]) > 0) {
-$services = $this->scopeStacks[$name]->pop();
-$this->scopedServices += $services;
-if ($this->scopeStacks[$name]->isEmpty()) {
-unset($this->scopeStacks[$name]);
-}
-foreach ($services as $array) {
-foreach ($array as $id => $service) {
-$this->set($id, $service, $name);
-}
-}
-}
-}
-public function addScope(ScopeInterface $scope)
-{
-$name = $scope->getName();
-$parentScope = $scope->getParentName();
-if (self::SCOPE_CONTAINER === $name || self::SCOPE_PROTOTYPE === $name) {
-throw new InvalidArgumentException(sprintf('The scope "%s" is reserved.', $name));
-}
-if (isset($this->scopes[$name])) {
-throw new InvalidArgumentException(sprintf('A scope with name "%s" already exists.', $name));
-}
-if (self::SCOPE_CONTAINER !== $parentScope && !isset($this->scopes[$parentScope])) {
-throw new InvalidArgumentException(sprintf('The parent scope "%s" does not exist, or is invalid.', $parentScope));
-}
-$this->scopes[$name] = $parentScope;
-$this->scopeChildren[$name] = array();
-while ($parentScope !== self::SCOPE_CONTAINER) {
-$this->scopeChildren[$parentScope][] = $name;
-$parentScope = $this->scopes[$parentScope];
-}
-}
-public function hasScope($name)
-{
-return isset($this->scopes[$name]);
-}
-public function isScopeActive($name)
-{
-return isset($this->scopedServices[$name]);
-}
 public static function camelize($id)
 {
 return strtr(ucwords(strtr($id, array('_'=>' ','.'=>'_ ','\\'=>'_ '))), array(' '=>''));
 }
 public static function underscore($id)
 {
-return strtolower(preg_replace(array('/([A-Z]+)([A-Z][a-z])/','/([a-z\d])([A-Z])/'), array('\\1_\\2','\\1_\\2'), strtr($id,'_','.')));
+return strtolower(preg_replace(array('/([A-Z]+)([A-Z][a-z])/','/([a-z\d])([A-Z])/'), array('\\1_\\2','\\1_\\2'), str_replace('_','.', $id)));
+}
+private function __clone()
+{
 }
 }
 }
@@ -2304,7 +2170,6 @@ public function registerContainerConfiguration(LoaderInterface $loader);
 public function boot();
 public function shutdown();
 public function getBundles();
-public function isClassInActiveBundle($class);
 public function getBundle($name, $first = true);
 public function locateResource($name, $dir = null, $first = true);
 public function getName();
@@ -2339,6 +2204,7 @@ use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 use Symfony\Component\DependencyInjection\Loader\IniFileLoader;
 use Symfony\Component\DependencyInjection\Loader\PhpFileLoader;
+use Symfony\Component\DependencyInjection\Loader\DirectoryLoader;
 use Symfony\Component\DependencyInjection\Loader\ClosureLoader;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -2363,14 +2229,14 @@ protected $booted = false;
 protected $name;
 protected $startTime;
 protected $loadClassCache;
-const VERSION ='2.7.7';
-const VERSION_ID = 20707;
-const MAJOR_VERSION = 2;
-const MINOR_VERSION = 7;
-const RELEASE_VERSION = 7;
+const VERSION ='3.0.2';
+const VERSION_ID = 30002;
+const MAJOR_VERSION = 3;
+const MINOR_VERSION = 0;
+const RELEASE_VERSION = 2;
 const EXTRA_VERSION ='';
-const END_OF_MAINTENANCE ='05/2018';
-const END_OF_LIFE ='05/2019';
+const END_OF_MAINTENANCE ='07/2016';
+const END_OF_LIFE ='01/2017';
 public function __construct($environment, $debug)
 {
 $this->environment = $environment;
@@ -2380,16 +2246,6 @@ $this->name = $this->getName();
 if ($this->debug) {
 $this->startTime = microtime(true);
 }
-$defClass = new \ReflectionMethod($this,'init');
-$defClass = $defClass->getDeclaringClass()->name;
-if (__CLASS__ !== $defClass) {
-@trigger_error(sprintf('Calling the %s::init() method is deprecated since version 2.3 and will be removed in 3.0. Move your logic to the constructor method instead.', $defClass), E_USER_DEPRECATED);
-$this->init();
-}
-}
-public function init()
-{
-@trigger_error('The '.__METHOD__.' method is deprecated since version 2.3 and will be removed in 3.0. Move your logic to the constructor method instead.', E_USER_DEPRECATED);
 }
 public function __clone()
 {
@@ -2450,16 +2306,6 @@ return $this->container->get('http_kernel');
 public function getBundles()
 {
 return $this->bundles;
-}
-public function isClassInActiveBundle($class)
-{
-@trigger_error('The '.__METHOD__.' method is deprecated since version 2.6 and will be removed in version 3.0.', E_USER_DEPRECATED);
-foreach ($this->getBundles() as $bundle) {
-if (0 === strpos($class, $bundle->getNamespace())) {
-return true;
-}
-}
-return false;
 }
 public function getBundle($name, $first = true)
 {
@@ -2729,6 +2575,7 @@ new XmlFileLoader($container, $locator),
 new YamlFileLoader($container, $locator),
 new IniFileLoader($container, $locator),
 new PhpFileLoader($container, $locator),
+new DirectoryLoader($container, $locator),
 new ClosureLoader($container),
 ));
 return new DelegatingLoader($resolver);
@@ -2742,14 +2589,15 @@ $rawChunk ='';
 $output ='';
 $tokens = token_get_all($source);
 $ignoreSpace = false;
-for (reset($tokens); false !== $token = current($tokens); next($tokens)) {
-if (is_string($token)) {
+for ($i = 0; isset($tokens[$i]); ++$i) {
+$token = $tokens[$i];
+if (!isset($token[1]) ||'b"'=== $token) {
 $rawChunk .= $token;
 } elseif (T_START_HEREDOC === $token[0]) {
 $output .= $rawChunk.$token[1];
 do {
-$token = next($tokens);
-$output .= $token[1];
+$token = $tokens[++$i];
+$output .= isset($token[1]) &&'b"'!== $token ? $token[1] : $token;
 } while ($token[0] !== T_END_HEREDOC);
 $rawChunk ='';
 } elseif (T_WHITESPACE === $token[0]) {
@@ -2768,6 +2616,10 @@ $ignoreSpace = true;
 }
 }
 $output .= $rawChunk;
+if (PHP_VERSION_ID >= 70000) {
+unset($tokens, $rawChunk);
+gc_mem_caches();
+}
 return $output;
 }
 public function serialize()
@@ -2789,8 +2641,8 @@ private $prefix;
 protected $decorated;
 public function __construct($prefix, $decorated)
 {
-if (!extension_loaded('apc')) {
-throw new \RuntimeException('Unable to use ApcClassLoader as APC is not enabled.');
+if (!function_exists('apcu_fetch')) {
+throw new \RuntimeException('Unable to use ApcClassLoader as APC is not installed.');
 }
 if (!method_exists($decorated,'findFile')) {
 throw new \InvalidArgumentException('The class finder must implement a "findFile" method.');
@@ -2815,8 +2667,8 @@ return true;
 }
 public function findFile($class)
 {
-if (false === $file = apc_fetch($this->prefix.$class)) {
-apc_store($this->prefix.$class, $file = $this->decorated->findFile($class));
+if (false === $file = apcu_fetch($this->prefix.$class)) {
+apcu_store($this->prefix.$class, $file = $this->decorated->findFile($class));
 }
 return $file;
 }
@@ -2845,7 +2697,7 @@ public function getPath();
 }
 namespace Symfony\Component\DependencyInjection
 {
-abstract class ContainerAware implements ContainerAwareInterface
+trait ContainerAwareTrait
 {
 protected $container;
 public function setContainer(ContainerInterface $container = null)
@@ -2856,14 +2708,15 @@ $this->container = $container;
 }
 namespace Symfony\Component\HttpKernel\Bundle
 {
-use Symfony\Component\DependencyInjection\ContainerAware;
+use Symfony\Component\DependencyInjection\ContainerAwareTrait;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Container;
 use Symfony\Component\Console\Application;
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
-abstract class Bundle extends ContainerAware implements BundleInterface
+abstract class Bundle implements BundleInterface
 {
+use ContainerAwareTrait;
 protected $name;
 protected $extension;
 protected $path;
@@ -2879,11 +2732,10 @@ public function build(ContainerBuilder $container)
 public function getContainerExtension()
 {
 if (null === $this->extension) {
-$class = $this->getContainerExtensionClass();
-if (class_exists($class)) {
-$extension = new $class();
+$extension = $this->createContainerExtension();
+if (null !== $extension) {
 if (!$extension instanceof ExtensionInterface) {
-throw new \LogicException(sprintf('Extension %s must implement Symfony\Component\DependencyInjection\Extension\ExtensionInterface.', $class));
+throw new \LogicException(sprintf('Extension %s must implement Symfony\Component\DependencyInjection\Extension\ExtensionInterface.', get_class($extension)));
 }
 $basename = preg_replace('/Bundle$/','', $this->getName());
 $expectedAlias = Container::underscore($basename);
@@ -2931,13 +2783,16 @@ public function registerCommands(Application $application)
 if (!is_dir($dir = $this->getPath().'/Command')) {
 return;
 }
+if (!class_exists('Symfony\Component\Finder\Finder')) {
+throw new \RuntimeException('You need the symfony/finder component to register bundle commands.');
+}
 $finder = new Finder();
 $finder->files()->name('*Command.php')->in($dir);
 $prefix = $this->getNamespace().'\\Command';
 foreach ($finder as $file) {
 $ns = $prefix;
 if ($relativePath = $file->getRelativePath()) {
-$ns .='\\'.strtr($relativePath,'/','\\');
+$ns .='\\'.str_replace('/','\\', $relativePath);
 }
 $class = $ns.'\\'.$file->getBasename('.php');
 if ($this->container) {
@@ -2957,6 +2812,12 @@ protected function getContainerExtensionClass()
 $basename = preg_replace('/Bundle$/','', $this->getName());
 return $this->getNamespace().'\\DependencyInjection\\'.$basename.'Extension';
 }
+protected function createContainerExtension()
+{
+if (class_exists($class = $this->getContainerExtensionClass())) {
+return new $class();
+}
+}
 }
 }
 namespace Symfony\Component\Config
@@ -2974,19 +2835,14 @@ namespace Symfony\Component\Config
 use Symfony\Component\Config\Resource\ResourceInterface;
 use Symfony\Component\Filesystem\Exception\IOException;
 use Symfony\Component\Filesystem\Filesystem;
-class ConfigCache implements ConfigCacheInterface
+class ResourceCheckerConfigCache implements ConfigCacheInterface
 {
-private $debug;
 private $file;
-public function __construct($file, $debug)
+private $resourceCheckers;
+public function __construct($file, array $resourceCheckers = array())
 {
 $this->file = $file;
-$this->debug = (bool) $debug;
-}
-public function __toString()
-{
-@trigger_error('ConfigCache::__toString() is deprecated since version 2.7 and will be removed in 3.0. Use the getPath() method instead.', E_USER_DEPRECATED);
-return $this->file;
+$this->resourceCheckers = $resourceCheckers;
 }
 public function getPath()
 {
@@ -2997,19 +2853,21 @@ public function isFresh()
 if (!is_file($this->file)) {
 return false;
 }
-if (!$this->debug) {
-return true;
-}
+if (!$this->resourceCheckers) {
+return true; }
 $metadata = $this->getMetaFile();
 if (!is_file($metadata)) {
-return false;
+return true;
 }
 $time = filemtime($this->file);
 $meta = unserialize(file_get_contents($metadata));
 foreach ($meta as $resource) {
-if (!$resource->isFresh($time)) {
-return false;
-}
+foreach ($this->resourceCheckers as $checker) {
+if (!$checker->supports($resource)) {
+continue; }
+if ($checker->isFresh($resource, $time)) {
+break; }
+return false; }
 }
 return true;
 }
@@ -3023,7 +2881,7 @@ try {
 $filesystem->chmod($this->file, $mode, $umask);
 } catch (IOException $e) {
 }
-if (null !== $metadata && true === $this->debug) {
+if (null !== $metadata) {
 $filesystem->dumpFile($this->getMetaFile(), serialize($metadata), null);
 try {
 $filesystem->chmod($this->getMetaFile(), $mode, $umask);
@@ -3034,6 +2892,28 @@ $filesystem->chmod($this->getMetaFile(), $mode, $umask);
 private function getMetaFile()
 {
 return $this->file.'.meta';
+}
+}
+}
+namespace Symfony\Component\Config
+{
+use Symfony\Component\Config\Resource\SelfCheckingResourceChecker;
+class ConfigCache extends ResourceCheckerConfigCache
+{
+private $debug;
+public function __construct($file, $debug)
+{
+parent::__construct($file, array(
+new SelfCheckingResourceChecker(),
+));
+$this->debug = (bool) $debug;
+}
+public function isFresh()
+{
+if (!$this->debug && is_file($this->getPath())) {
+return true;
+}
+return parent::isFresh();
 }
 }
 }
@@ -3190,46 +3070,3 @@ return (string) $var;
 }
 }
 }
-namespace Symfony\Component\HttpKernel\DependencyInjection
-{
-use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\RequestStack;
-use Symfony\Component\HttpKernel\HttpKernelInterface;
-use Symfony\Component\HttpKernel\HttpKernel;
-use Symfony\Component\HttpKernel\Controller\ControllerResolverInterface;
-use Symfony\Component\EventDispatcher\EventDispatcherInterface;
-use Symfony\Component\DependencyInjection\ContainerInterface;
-use Symfony\Component\DependencyInjection\Scope;
-class ContainerAwareHttpKernel extends HttpKernel
-{
-protected $container;
-public function __construct(EventDispatcherInterface $dispatcher, ContainerInterface $container, ControllerResolverInterface $controllerResolver, RequestStack $requestStack = null, $triggerDeprecation = true)
-{
-parent::__construct($dispatcher, $controllerResolver, $requestStack);
-if ($triggerDeprecation) {
-@trigger_error('The '.__CLASS__.' class is deprecated since version 2.7 and will be removed in 3.0. Use the Symfony\Component\HttpKernel\HttpKernel class instead.', E_USER_DEPRECATED);
-}
-$this->container = $container;
-if (!$container->hasScope('request')) {
-$container->addScope(new Scope('request'));
-}
-}
-public function handle(Request $request, $type = HttpKernelInterface::MASTER_REQUEST, $catch = true)
-{
-$this->container->enterScope('request');
-$this->container->set('request', $request,'request');
-try {
-$response = parent::handle($request, $type, $catch);
-} catch (\Exception $e) {
-$this->container->set('request', null,'request');
-$this->container->leaveScope('request');
-throw $e;
-}
-$this->container->set('request', null,'request');
-$this->container->leaveScope('request');
-return $response;
-}
-}
-}
-
-namespace { return $loader; }
