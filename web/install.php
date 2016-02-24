@@ -13,9 +13,10 @@ use Contao\InstallationBundle\HttpKernel\InstallationKernel;
 
 error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED & ~E_USER_DEPRECATED);
 
-$loader = require_once __DIR__ . '/../app/autoload.php';
-
-require_once __DIR__ . '/../app/AppKernel.php';
+/**
+ * @var Composer\Autoload\ClassLoader
+ */
+$loader = require __DIR__ . '/../app/autoload.php';
 
 $kernel = new InstallationKernel('dev', false);
 $kernel->boot();

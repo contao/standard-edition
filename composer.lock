@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8b076c41a5cd649a1a2ab9b9340784d3",
-    "content-hash": "c25c5c615f55c76d766c8b808e276269",
+    "hash": "587b9e368c39bdbd872bfd0e22edaea0",
+    "content-hash": "7574423097abfacfd1a75c95ef637390",
     "packages": [
         {
             "name": "contao-components/ace",
@@ -900,12 +900,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/core-bundle.git",
-                "reference": "bd2bb2b03ca08261505c961fb8a446ac8a830ad7"
+                "reference": "94db00b88ec14871cc8ebd40ff7066bbabf8c0b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/core-bundle/zipball/bd2bb2b03ca08261505c961fb8a446ac8a830ad7",
-                "reference": "bd2bb2b03ca08261505c961fb8a446ac8a830ad7",
+                "url": "https://api.github.com/repos/contao/core-bundle/zipball/94db00b88ec14871cc8ebd40ff7066bbabf8c0b8",
+                "reference": "94db00b88ec14871cc8ebd40ff7066bbabf8c0b8",
                 "shasum": ""
             },
             "require": {
@@ -920,7 +920,7 @@
                 "michelf/php-markdown": "~1.4",
                 "oyejorge/less.php": "~1.7",
                 "patchwork/utf8": "~1.2",
-                "php": ">=5.4.0",
+                "php": ">=5.5.0",
                 "phpspec/php-diff": "~1.0",
                 "sensio/framework-extra-bundle": "^3.0.2",
                 "simplepie/simplepie": "~1.3",
@@ -973,7 +973,7 @@
                 }
             ],
             "description": "Contao 4 core bundle",
-            "time": "2016-02-23 20:29:58"
+            "time": "2016-02-23 23:02:21"
         },
         {
             "name": "contao/faq-bundle",
@@ -1027,12 +1027,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/installation-bundle.git",
-                "reference": "9e680ba5dbc2723d66b0f286f75e546caab5fd22"
+                "reference": "a1425d84c86165096fa432da282f62dc5e5146e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/installation-bundle/zipball/9e680ba5dbc2723d66b0f286f75e546caab5fd22",
-                "reference": "9e680ba5dbc2723d66b0f286f75e546caab5fd22",
+                "url": "https://api.github.com/repos/contao/installation-bundle/zipball/a1425d84c86165096fa432da282f62dc5e5146e4",
+                "reference": "a1425d84c86165096fa432da282f62dc5e5146e4",
                 "shasum": ""
             },
             "require": {
@@ -1068,7 +1068,7 @@
                 }
             ],
             "description": "Contao 4 installation bundle",
-            "time": "2016-02-23 20:54:10"
+            "time": "2016-02-23 21:43:56"
         },
         {
             "name": "contao/listing-bundle",
