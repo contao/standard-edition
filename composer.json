@@ -30,7 +30,7 @@
         "contao/listing-bundle": "dev-hotfix/4.1.1 as 4.1",
         "contao/news-bundle": "dev-hotfix/4.1.1 as 4.1",
         "contao/newsletter-bundle": "dev-hotfix/4.1.1 as 4.1",
-        "contao-components/contao": "~4.1",
+        "contao-components/contao": "dev-hotfix/4.2.1 as 4.2",
         "incenteev/composer-parameter-handler": "~2.0"
     },
     "config": {
