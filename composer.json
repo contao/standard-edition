@@ -26,7 +26,7 @@
         "contao/listing-bundle": "dev-develop as 4.1",
         "contao/news-bundle": "dev-develop as 4.1",
         "contao/newsletter-bundle": "dev-develop as 4.1",
-        "contao-components/contao": "~4.2",
+        "contao-components/contao": "^4.2.1",
         "incenteev/composer-parameter-handler": "~2.0"
     },
     "autoload": {
