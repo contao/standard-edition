@@ -1,5 +1,9 @@
 # Contao standard edition change log
 
+### 4.1.1 (2016-03-03)
+
+ * Omit the doctrine, event and php channel from the debug log (see #32).
+
 ### 4.1.0 (2015-11-26)
 
  * Adjust the build.xml file.

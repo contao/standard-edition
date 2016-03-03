@@ -18,42 +18,27 @@ The Contao standard edition is configured with the following defaults:
 It comes pre-configured with the following Symfony bundles:
 
   * **FrameworkBundle** - The core Symfony framework bundle
-
   * **SecurityBundle** - Integrates Symfony's security component
-
   * **TwigBundle** - Adds support for the Twig templating engine
-  
   * **MonologBundle** - Adds support for Monolog, a logging library
-
   * **SwiftmailerBundle** - Adds support for Swiftmailer
-
   * **DoctrineBundle** - Adds support for the Doctrine ORM
-
-  * **DebugBundle** (in dev/test env) - Adds the `dump()` function
-
+  * **LexikMaintenanceBundle** - Allows to toggle maintenance mode
   * **SensioFrameworkExtraBundle** - Adds various annotation capabilities
-
+  * **DebugBundle** (in dev/test env) - Adds the `dump()` function
   * **WebProfilerBundle** (in dev/test env) - Adds the web debug toolbar
-
   * **SensioDistributionBundle** (in dev/test env) - Adds functionality for
     configuring and working with Symfony distributions
 
 It also comes pre-configured with the following Contao bundles:
 
   * **ContaoCoreBundle** - The Contao core bundle
-
   * **ContaoCalendarBundle** - The Contao calendar bundle
-
   * **ContaoCommentsBundle** - The Contao comments bundle
-
   * **ContaoFaqBundle** - The Contao FAQ bundle
-
-  * **ContaoInstallationBundle** - The Contao installation bundle
-
   * **ContaoListingBundle** - The Contao listing bundle
-
   * **ContaoNewsBundle** - The Contao news bundle
-
   * **ContaoNewsletterBundle** - The Contao newsletter bundle
+  * **ContaoInstallationBundle** - The Contao installation bundle
 
 Enjoy!
