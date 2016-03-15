@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b54b584efd5c26c801093d243526745d",
-    "content-hash": "43159ba2724c4123e48d99aff1e907d2",
+    "hash": "749cc84539d9a8559fb690cb940ca4f8",
+    "content-hash": "4fe6d2bf45c74fda13721314a8feab48",
     "packages": [
         {
             "name": "contao-components/ace",
@@ -100,16 +100,16 @@
         },
         {
             "name": "contao-components/chosen",
-            "version": "1.0.5",
+            "version": "dev-feature/backend-icons",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/chosen.git",
-                "reference": "b54cd06a6ea8bf9b8d36be72472f0f4d378de246"
+                "reference": "55a934dc1860e8f0a2803de09a4fea038899d352"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/chosen/zipball/b54cd06a6ea8bf9b8d36be72472f0f4d378de246",
-                "reference": "b54cd06a6ea8bf9b8d36be72472f0f4d378de246",
+                "url": "https://api.github.com/repos/contao-components/chosen/zipball/55a934dc1860e8f0a2803de09a4fea038899d352",
+                "reference": "55a934dc1860e8f0a2803de09a4fea038899d352",
                 "shasum": ""
             },
             "require": {
@@ -127,7 +127,7 @@
                 }
             ],
             "description": "Chosen integration for Contao Open Source CMS",
-            "time": "2015-11-25 10:39:20"
+            "time": "2016-03-08 13:16:28"
         },
         {
             "name": "contao-components/colorbox",
@@ -221,16 +221,16 @@
         },
         {
             "name": "contao-components/contao",
-            "version": "4.2.1",
+            "version": "dev-feature/backend-icons",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/contao.git",
-                "reference": "27ec72b39c2e435ea3fd22d7de76e03ac27320b9"
+                "reference": "40a0daf0d28a5db2bb3cb7283d1692b2df38864e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/contao/zipball/27ec72b39c2e435ea3fd22d7de76e03ac27320b9",
-                "reference": "27ec72b39c2e435ea3fd22d7de76e03ac27320b9",
+                "url": "https://api.github.com/repos/contao-components/contao/zipball/40a0daf0d28a5db2bb3cb7283d1692b2df38864e",
+                "reference": "40a0daf0d28a5db2bb3cb7283d1692b2df38864e",
                 "shasum": ""
             },
             "require": {
@@ -253,7 +253,7 @@
                 }
             ],
             "description": "Contao Open Source CMS components",
-            "time": "2016-03-03 09:42:26"
+            "time": "2016-03-15 16:00:37"
         },
         {
             "name": "contao-components/datepicker",
@@ -612,16 +612,16 @@
         },
         {
             "name": "contao-components/simplemodal",
-            "version": "1.2.0.1",
+            "version": "dev-feature/backend-icons",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/simplemodal.git",
-                "reference": "c64870657b47b9457ce45bf5482e63408919de57"
+                "reference": "69b95a18171ab6fe3263d1e4856f5a867ad58d6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/simplemodal/zipball/c64870657b47b9457ce45bf5482e63408919de57",
-                "reference": "c64870657b47b9457ce45bf5482e63408919de57",
+                "url": "https://api.github.com/repos/contao-components/simplemodal/zipball/69b95a18171ab6fe3263d1e4856f5a867ad58d6e",
+                "reference": "69b95a18171ab6fe3263d1e4856f5a867ad58d6e",
                 "shasum": ""
             },
             "require": {
@@ -639,20 +639,20 @@
                 }
             ],
             "description": "SimpleModal integration for Contao Open Source CMS",
-            "time": "2014-11-06 09:03:58"
+            "time": "2016-03-15 16:01:56"
         },
         {
             "name": "contao-components/stylect",
-            "version": "3.4.5",
+            "version": "dev-feature/backend-icons",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/stylect.git",
-                "reference": "ea14d25eb031dcb8118f98700fd497f3812c4a7e"
+                "reference": "4387cb5a831cbc0bffbf451327d9b83f45300377"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/stylect/zipball/ea14d25eb031dcb8118f98700fd497f3812c4a7e",
-                "reference": "ea14d25eb031dcb8118f98700fd497f3812c4a7e",
+                "url": "https://api.github.com/repos/contao-components/stylect/zipball/4387cb5a831cbc0bffbf451327d9b83f45300377",
+                "reference": "4387cb5a831cbc0bffbf451327d9b83f45300377",
                 "shasum": ""
             },
             "require": {
@@ -670,7 +670,7 @@
                 }
             ],
             "description": "Contao Open Source CMS stylect",
-            "time": "2016-03-01 20:05:24"
+            "time": "2016-03-15 16:02:16"
         },
         {
             "name": "contao-components/swipe",
@@ -767,16 +767,16 @@
         },
         {
             "name": "contao-components/tinymce4",
-            "version": "4.3.4",
+            "version": "dev-feature/backend-icons",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/tinymce4.git",
-                "reference": "95f4b7071b6a6f22a20f4f2076c2f2920b17b71b"
+                "reference": "1031847f2b520424aab118138d08d75f7e63c138"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/tinymce4/zipball/95f4b7071b6a6f22a20f4f2076c2f2920b17b71b",
-                "reference": "95f4b7071b6a6f22a20f4f2076c2f2920b17b71b",
+                "url": "https://api.github.com/repos/contao-components/tinymce4/zipball/1031847f2b520424aab118138d08d75f7e63c138",
+                "reference": "1031847f2b520424aab118138d08d75f7e63c138",
                 "shasum": ""
             },
             "require": {
@@ -794,24 +794,24 @@
                 }
             ],
             "description": "TinyMCE 4 integration for Contao Open Source CMS",
-            "time": "2016-02-18 19:43:06"
+            "time": "2016-03-08 13:14:45"
         },
         {
             "name": "contao/calendar-bundle",
-            "version": "dev-develop",
+            "version": "dev-feature/backend-icons",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/calendar-bundle.git",
-                "reference": "b3bba19c613db1dad736959388b165e3ca3c79d6"
+                "reference": "430bc789eae24db09fddff3df733bb1227422165"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/calendar-bundle/zipball/b3bba19c613db1dad736959388b165e3ca3c79d6",
-                "reference": "b3bba19c613db1dad736959388b165e3ca3c79d6",
+                "url": "https://api.github.com/repos/contao/calendar-bundle/zipball/430bc789eae24db09fddff3df733bb1227422165",
+                "reference": "430bc789eae24db09fddff3df733bb1227422165",
                 "shasum": ""
             },
             "require": {
-                "contao/core-bundle": "dev-develop as 4.2",
+                "contao/core-bundle": "~4.2",
                 "php": ">=5.4.0",
                 "symfony/framework-bundle": "~2.8|~3.0"
             },
@@ -846,24 +846,24 @@
                 }
             ],
             "description": "Contao 4 calendar bundle",
-            "time": "2016-03-15 16:09:04"
+            "time": "2016-03-15 16:20:53"
         },
         {
             "name": "contao/comments-bundle",
-            "version": "dev-develop",
+            "version": "dev-feature/backend-icons",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/comments-bundle.git",
-                "reference": "aa2c12e1e27a4fe2f52064f7859764c71855efdb"
+                "reference": "aeef0b5bbc9752f95e27dc114d3ef1ffadf33996"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/comments-bundle/zipball/aa2c12e1e27a4fe2f52064f7859764c71855efdb",
-                "reference": "aa2c12e1e27a4fe2f52064f7859764c71855efdb",
+                "url": "https://api.github.com/repos/contao/comments-bundle/zipball/aeef0b5bbc9752f95e27dc114d3ef1ffadf33996",
+                "reference": "aeef0b5bbc9752f95e27dc114d3ef1ffadf33996",
                 "shasum": ""
             },
             "require": {
-                "contao/core-bundle": "dev-develop as 4.2",
+                "contao/core-bundle": "~4.2",
                 "php": ">=5.4.0",
                 "symfony/framework-bundle": "~2.8|~3.0"
             },
@@ -892,20 +892,20 @@
                 }
             ],
             "description": "Contao 4 comments bundle",
-            "time": "2016-03-03 11:37:29"
+            "time": "2016-03-15 16:22:10"
         },
         {
             "name": "contao/core-bundle",
-            "version": "dev-develop",
+            "version": "dev-feature/backend-icons",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/core-bundle.git",
-                "reference": "dddb55e61255c50b5d81fb67c8726f74956eef83"
+                "reference": "78f72db42a0268b3b1d0178770fea6dc8f9e8f4a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/core-bundle/zipball/dddb55e61255c50b5d81fb67c8726f74956eef83",
-                "reference": "dddb55e61255c50b5d81fb67c8726f74956eef83",
+                "url": "https://api.github.com/repos/contao/core-bundle/zipball/78f72db42a0268b3b1d0178770fea6dc8f9e8f4a",
+                "reference": "78f72db42a0268b3b1d0178770fea6dc8f9e8f4a",
                 "shasum": ""
             },
             "require": {
@@ -914,6 +914,7 @@
                 "doctrine/cache": "^1.3.2",
                 "doctrine/common": "^2.5.1",
                 "doctrine/doctrine-bundle": "^1.5.2",
+                "knplabs/knp-time-bundle": "^1.5.2",
                 "leafo/scssphp": "~0.1",
                 "league/uri": "~4.0",
                 "matthiasmullie/minify": "~1.3",
@@ -974,24 +975,24 @@
                 }
             ],
             "description": "Contao 4 core bundle",
-            "time": "2016-03-15 16:09:47"
+            "time": "2016-03-15 16:27:13"
         },
         {
             "name": "contao/faq-bundle",
-            "version": "dev-develop",
+            "version": "dev-feature/backend-icons",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/faq-bundle.git",
-                "reference": "31dfb0c8f2f5c066344e1bab1e0571cca5d0461f"
+                "reference": "18e5a5b47765305b590e65fde0792d7cedf2b209"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/faq-bundle/zipball/31dfb0c8f2f5c066344e1bab1e0571cca5d0461f",
-                "reference": "31dfb0c8f2f5c066344e1bab1e0571cca5d0461f",
+                "url": "https://api.github.com/repos/contao/faq-bundle/zipball/18e5a5b47765305b590e65fde0792d7cedf2b209",
+                "reference": "18e5a5b47765305b590e65fde0792d7cedf2b209",
                 "shasum": ""
             },
             "require": {
-                "contao/core-bundle": "dev-develop as 4.2",
+                "contao/core-bundle": "~4.2",
                 "php": ">=5.4.0",
                 "symfony/framework-bundle": "~2.8|~3.0"
             },
@@ -1020,7 +1021,7 @@
                 }
             ],
             "description": "Contao 4 FAQ bundle",
-            "time": "2016-03-03 12:16:45"
+            "time": "2016-03-15 16:23:15"
         },
         {
             "name": "contao/installation-bundle",
@@ -1028,16 +1029,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/installation-bundle.git",
-                "reference": "447bf3693474a35033b3387ecda163be5cac228b"
+                "reference": "5090643d42c997ddd7b9a37c10ad982d839c8677"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/installation-bundle/zipball/447bf3693474a35033b3387ecda163be5cac228b",
-                "reference": "447bf3693474a35033b3387ecda163be5cac228b",
+                "url": "https://api.github.com/repos/contao/installation-bundle/zipball/5090643d42c997ddd7b9a37c10ad982d839c8677",
+                "reference": "5090643d42c997ddd7b9a37c10ad982d839c8677",
                 "shasum": ""
             },
             "require": {
-                "contao/core-bundle": "dev-develop as 4.2",
+                "contao/core-bundle": "~4.2",
                 "php": ">=5.4.0",
                 "symfony/framework-bundle": "~2.8|~3.0"
             },
@@ -1069,7 +1070,7 @@
                 }
             ],
             "description": "Contao 4 installation bundle",
-            "time": "2016-03-03 12:32:44"
+            "time": "2016-03-15 16:23:57"
         },
         {
             "name": "contao/listing-bundle",
@@ -1077,16 +1078,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/listing-bundle.git",
-                "reference": "d46694663e1c19e1a993e6624890e09b0778a8f2"
+                "reference": "fc5b7302c6e42867baa93f6c04e3a5da64e3f673"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/listing-bundle/zipball/d46694663e1c19e1a993e6624890e09b0778a8f2",
-                "reference": "d46694663e1c19e1a993e6624890e09b0778a8f2",
+                "url": "https://api.github.com/repos/contao/listing-bundle/zipball/fc5b7302c6e42867baa93f6c04e3a5da64e3f673",
+                "reference": "fc5b7302c6e42867baa93f6c04e3a5da64e3f673",
                 "shasum": ""
             },
             "require": {
-                "contao/core-bundle": "dev-develop as 4.2",
+                "contao/core-bundle": "~4.2",
                 "php": ">=5.4.0",
                 "symfony/framework-bundle": "~2.8|~3.0"
             },
@@ -1115,24 +1116,24 @@
                 }
             ],
             "description": "Contao 4 listing bundle",
-            "time": "2016-03-03 12:19:06"
+            "time": "2016-03-15 16:24:29"
         },
         {
             "name": "contao/news-bundle",
-            "version": "dev-develop",
+            "version": "dev-feature/backend-icons",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/news-bundle.git",
-                "reference": "38f82803d5cd38bdc28c80e90140845d08d121e0"
+                "reference": "6fa9cbe4d0ed97e33ba7b1a8f2be71332e29f75a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/news-bundle/zipball/38f82803d5cd38bdc28c80e90140845d08d121e0",
-                "reference": "38f82803d5cd38bdc28c80e90140845d08d121e0",
+                "url": "https://api.github.com/repos/contao/news-bundle/zipball/6fa9cbe4d0ed97e33ba7b1a8f2be71332e29f75a",
+                "reference": "6fa9cbe4d0ed97e33ba7b1a8f2be71332e29f75a",
                 "shasum": ""
             },
             "require": {
-                "contao/core-bundle": "dev-develop as 4.2",
+                "contao/core-bundle": "~4.2",
                 "php": ">=5.4.0",
                 "symfony/framework-bundle": "~2.8|~3.0"
             },
@@ -1167,24 +1168,24 @@
                 }
             ],
             "description": "Contao 4 news bundle",
-            "time": "2016-03-15 16:10:22"
+            "time": "2016-03-15 16:25:08"
         },
         {
             "name": "contao/newsletter-bundle",
-            "version": "dev-develop",
+            "version": "dev-feature/backend-icons",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/newsletter-bundle.git",
-                "reference": "924139a75dbe4c4ea2869660e937ca9bc1f924b5"
+                "reference": "0668c329fc467b082b057165d504dc09d2306cfa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/newsletter-bundle/zipball/924139a75dbe4c4ea2869660e937ca9bc1f924b5",
-                "reference": "924139a75dbe4c4ea2869660e937ca9bc1f924b5",
+                "url": "https://api.github.com/repos/contao/newsletter-bundle/zipball/0668c329fc467b082b057165d504dc09d2306cfa",
+                "reference": "0668c329fc467b082b057165d504dc09d2306cfa",
                 "shasum": ""
             },
             "require": {
-                "contao/core-bundle": "dev-develop as 4.2",
+                "contao/core-bundle": "~4.2",
                 "php": ">=5.4.0",
                 "symfony/framework-bundle": "~2.8|~3.0"
             },
@@ -1213,7 +1214,7 @@
                 }
             ],
             "description": "Contao 4 newsletter bundle",
-            "time": "2016-03-03 12:21:36"
+            "time": "2016-03-15 16:26:09"
         },
         {
             "name": "doctrine/annotations",
@@ -2015,6 +2016,71 @@
             "time": "2015-03-30 12:49:45"
         },
         {
+            "name": "knplabs/knp-time-bundle",
+            "version": "1.5.3",
+            "target-dir": "Knp/Bundle/TimeBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/KnpLabs/KnpTimeBundle.git",
+                "reference": "cb9b76a477ac4b8b30ce67f6f1ba93f05cb30caa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/KnpLabs/KnpTimeBundle/zipball/cb9b76a477ac4b8b30ce67f6f1ba93f05cb30caa",
+                "reference": "cb9b76a477ac4b8b30ce67f6f1ba93f05cb30caa",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "symfony/config": "~2.3|~3.0",
+                "symfony/dependency-injection": "~2.3|~3.0",
+                "symfony/templating": "~2.3|~3.0",
+                "symfony/translation": "~2.3|~3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8"
+            },
+            "suggest": {
+                "symfony/twig-bundle": "to use the Twig time_diff function"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Knp\\Bundle\\TimeBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "KnpLabs Team",
+                    "homepage": "http://knplabs.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://github.com/KnpLabs/KnpTimeBundle/contributors"
+                }
+            ],
+            "description": "Knplabs time bundle makes your dates look sensible and descriptive",
+            "homepage": "http://github.com/KnpLabs/KnpTimeBundle",
+            "keywords": [
+                "bundle",
+                "date",
+                "descriptive time",
+                "knp",
+                "knplabs",
+                "time"
+            ],
+            "time": "2015-11-24 15:04:51"
+        },
+        {
             "name": "leafo/scssphp",
             "version": "v0.6.3",
             "source": {
@@ -2717,16 +2783,16 @@
         },
         {
             "name": "sensio/distribution-bundle",
-            "version": "v5.0.4",
+            "version": "v5.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioDistributionBundle.git",
-                "reference": "2c167426fc24f9de116345195bc1697a748ee847"
+                "reference": "3a160355bb1364da55ed9e415c1aa1fa8d457b6f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/2c167426fc24f9de116345195bc1697a748ee847",
-                "reference": "2c167426fc24f9de116345195bc1697a748ee847",
+                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/3a160355bb1364da55ed9e415c1aa1fa8d457b6f",
+                "reference": "3a160355bb1364da55ed9e415c1aa1fa8d457b6f",
                 "shasum": ""
             },
             "require": {
@@ -2765,7 +2831,7 @@
                 "configuration",
                 "distribution"
             ],
-            "time": "2016-02-12 16:21:30"
+            "time": "2016-03-15 16:21:41"
         },
         {
             "name": "sensio/framework-extra-bundle",
@@ -3685,27 +3751,27 @@
     "packages-dev": [],
     "aliases": [
         {
-            "alias": "4.1",
-            "alias_normalized": "4.1.0.0",
-            "version": "dev-develop",
+            "alias": "4.2",
+            "alias_normalized": "4.2.0.0",
+            "version": "dev-feature/backend-icons",
             "package": "contao/calendar-bundle"
         },
         {
-            "alias": "4.1",
-            "alias_normalized": "4.1.0.0",
-            "version": "dev-develop",
+            "alias": "4.2",
+            "alias_normalized": "4.2.0.0",
+            "version": "dev-feature/backend-icons",
             "package": "contao/comments-bundle"
         },
         {
-            "alias": "4.1",
-            "alias_normalized": "4.1.0.0",
-            "version": "dev-develop",
+            "alias": "4.2",
+            "alias_normalized": "4.2.0.0",
+            "version": "dev-feature/backend-icons",
             "package": "contao/core-bundle"
         },
         {
-            "alias": "4.1",
-            "alias_normalized": "4.1.0.0",
-            "version": "dev-develop",
+            "alias": "4.2",
+            "alias_normalized": "4.2.0.0",
+            "version": "dev-feature/backend-icons",
             "package": "contao/faq-bundle"
         },
         {
@@ -3721,16 +3787,46 @@
             "package": "contao/listing-bundle"
         },
         {
-            "alias": "4.1",
-            "alias_normalized": "4.1.0.0",
-            "version": "dev-develop",
+            "alias": "4.2",
+            "alias_normalized": "4.2.0.0",
+            "version": "dev-feature/backend-icons",
             "package": "contao/news-bundle"
         },
         {
-            "alias": "4.1",
-            "alias_normalized": "4.1.0.0",
-            "version": "dev-develop",
+            "alias": "4.2",
+            "alias_normalized": "4.2.0.0",
+            "version": "dev-feature/backend-icons",
             "package": "contao/newsletter-bundle"
+        },
+        {
+            "alias": "1.0.5",
+            "alias_normalized": "1.0.5.0",
+            "version": "dev-feature/backend-icons",
+            "package": "contao-components/chosen"
+        },
+        {
+            "alias": "4.2.1",
+            "alias_normalized": "4.2.1.0",
+            "version": "dev-feature/backend-icons",
+            "package": "contao-components/contao"
+        },
+        {
+            "alias": "1.2.0.1",
+            "alias_normalized": "1.2.0.1",
+            "version": "dev-feature/backend-icons",
+            "package": "contao-components/simplemodal"
+        },
+        {
+            "alias": "3.4.5",
+            "alias_normalized": "3.4.5.0",
+            "version": "dev-feature/backend-icons",
+            "package": "contao-components/stylect"
+        },
+        {
+            "alias": "4.3.4",
+            "alias_normalized": "4.3.4.0",
+            "version": "dev-feature/backend-icons",
+            "package": "contao-components/tinymce4"
         }
     ],
     "minimum-stability": "stable",
@@ -3742,7 +3838,12 @@
         "contao/installation-bundle": 20,
         "contao/listing-bundle": 20,
         "contao/news-bundle": 20,
-        "contao/newsletter-bundle": 20
+        "contao/newsletter-bundle": 20,
+        "contao-components/chosen": 20,
+        "contao-components/contao": 20,
+        "contao-components/simplemodal": 20,
+        "contao-components/stylect": 20,
+        "contao-components/tinymce4": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
