@@ -33,8 +33,12 @@
         "classmap": [ "app/AppKernel.php", "app/AppCache.php" ]
     },
     "config": {
-        "component-dir": "assets",
-        "preferred-install": "dist"
+        "preferred-install": {
+            "contao/*": "source",
+            "contao-components/*": "source",
+            "*": "dist"
+        },
+        "component-dir": "assets"
     },
     "extra": {
         "branch-alias": {
