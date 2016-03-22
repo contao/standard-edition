@@ -23,15 +23,6 @@
         "lexik/maintenance-bundle": "~2.0",
         "monolog/monolog": "~1.12",
         "contao/contao": "~4.1",
-        "contao/calendar-bundle": "dev-hotfix/4.1.2 as 4.1.1",
-        "contao/comments-bundle": "dev-hotfix/4.1.2 as 4.1.1",
-        "contao/core-bundle": "dev-hotfix/4.1.2 as 4.1.1",
-        "contao/faq-bundle": "dev-hotfix/4.1.2 as 4.1.1",
-        "contao/listing-bundle": "dev-hotfix/4.1.2 as 4.1.1",
-        "contao/news-bundle": "dev-hotfix/4.1.2 as 4.1.1",
-        "contao/newsletter-bundle": "dev-hotfix/4.1.2 as 4.1.1",
-        "contao-components/contao": "dev-hotfix/4.2.2 as 4.2.1",
-        "contao-components/simplemodal": "dev-hotfix/1.2.1 as 1.2.0.1",
         "incenteev/composer-parameter-handler": "~2.0"
     },
     "config": {
