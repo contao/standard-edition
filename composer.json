@@ -23,12 +23,15 @@
         "lexik/maintenance-bundle": "~2.0",
         "monolog/monolog": "~1.12",
         "contao/contao": "~4.1",
-        "contao-components/contao": "^4.2.1",
         "incenteev/composer-parameter-handler": "~2.0"
     },
     "config": {
-        "component-dir": "assets",
-        "preferred-install": "dist"
+        "preferred-install": {
+            "contao/*": "source",
+            "contao-components/*": "source",
+            "*": "dist"
+        },
+        "component-dir": "assets"
     },
     "extra": {
         "branch-alias": {
