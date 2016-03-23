@@ -27,8 +27,8 @@
         "contao/news-bundle": "dev-feature/backend-icons as 4.2",
         "contao/newsletter-bundle": "dev-feature/backend-icons as 4.2",
         "contao-components/chosen": "dev-feature/backend-icons as 1.0.5",
-        "contao-components/contao": "dev-feature/backend-icons as 4.2.1",
-        "contao-components/simplemodal": "dev-feature/backend-icons as 1.2.0.1",
+        "contao-components/contao": "dev-feature/backend-icons as 4.2.2",
+        "contao-components/simplemodal": "dev-feature/backend-icons as 1.2.1",
         "contao-components/stylect": "dev-feature/backend-icons as 3.4.5",
         "contao-components/tinymce4": "dev-feature/backend-icons as 4.3.4",
         "incenteev/composer-parameter-handler": "~2.0"

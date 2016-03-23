@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "749cc84539d9a8559fb690cb940ca4f8",
-    "content-hash": "4fe6d2bf45c74fda13721314a8feab48",
+    "hash": "b9e34d210ea25763560d5aac2d709540",
+    "content-hash": "0203df288d5eac256e3005caf14447fd",
     "packages": [
         {
             "name": "contao-components/ace",
@@ -40,16 +40,16 @@
         },
         {
             "name": "contao-components/all",
-            "version": "4.1.1",
+            "version": "4.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/all.git",
-                "reference": "555b7de38ea22fb77c31fc8ecf8eeb6ab8c4132f"
+                "reference": "ef60547ae449b61f1b4d1abf83836df9f0894a3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/all/zipball/555b7de38ea22fb77c31fc8ecf8eeb6ab8c4132f",
-                "reference": "555b7de38ea22fb77c31fc8ecf8eeb6ab8c4132f",
+                "url": "https://api.github.com/repos/contao-components/all/zipball/ef60547ae449b61f1b4d1abf83836df9f0894a3e",
+                "reference": "ef60547ae449b61f1b4d1abf83836df9f0894a3e",
                 "shasum": ""
             },
             "require": {
@@ -58,7 +58,7 @@
                 "contao-components/colorbox": "~1.6",
                 "contao-components/colorpicker": "^1.4.0.1",
                 "contao-components/compass": "~0.12",
-                "contao-components/contao": "^4.2.1",
+                "contao-components/contao": "^4.2.2",
                 "contao-components/datepicker": "^2.2.0.1",
                 "contao-components/dropzone": "~3.12",
                 "contao-components/highlight": "~8.9",
@@ -69,7 +69,7 @@
                 "contao-components/mediaelement": "~2.18",
                 "contao-components/mootools": "^1.5.2",
                 "contao-components/respimage": "~1.4",
-                "contao-components/simplemodal": "^1.2.0.1",
+                "contao-components/simplemodal": "^1.2.1",
                 "contao-components/stylect": "^3.4.4",
                 "contao-components/swipe": "^2.0.3",
                 "contao-components/tablesort": "^3.4.3",
@@ -96,7 +96,7 @@
                 }
             ],
             "description": "Contao Open Source CMS",
-            "time": "2016-03-03 10:14:07"
+            "time": "2016-03-22 14:48:12"
         },
         {
             "name": "contao-components/chosen",
@@ -225,12 +225,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/contao.git",
-                "reference": "40a0daf0d28a5db2bb3cb7283d1692b2df38864e"
+                "reference": "03aeaad26f5df90b72c25690f0d79977d6a3a296"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/contao/zipball/40a0daf0d28a5db2bb3cb7283d1692b2df38864e",
-                "reference": "40a0daf0d28a5db2bb3cb7283d1692b2df38864e",
+                "url": "https://api.github.com/repos/contao-components/contao/zipball/03aeaad26f5df90b72c25690f0d79977d6a3a296",
+                "reference": "03aeaad26f5df90b72c25690f0d79977d6a3a296",
                 "shasum": ""
             },
             "require": {
@@ -253,7 +253,7 @@
                 }
             ],
             "description": "Contao Open Source CMS components",
-            "time": "2016-03-15 16:00:37"
+            "time": "2016-03-22 14:45:43"
         },
         {
             "name": "contao-components/datepicker",
@@ -616,12 +616,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/simplemodal.git",
-                "reference": "69b95a18171ab6fe3263d1e4856f5a867ad58d6e"
+                "reference": "bd580ef53d8f04b0ecb28e55f11058fb7b1a09c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/simplemodal/zipball/69b95a18171ab6fe3263d1e4856f5a867ad58d6e",
-                "reference": "69b95a18171ab6fe3263d1e4856f5a867ad58d6e",
+                "url": "https://api.github.com/repos/contao-components/simplemodal/zipball/bd580ef53d8f04b0ecb28e55f11058fb7b1a09c7",
+                "reference": "bd580ef53d8f04b0ecb28e55f11058fb7b1a09c7",
                 "shasum": ""
             },
             "require": {
@@ -639,7 +639,7 @@
                 }
             ],
             "description": "SimpleModal integration for Contao Open Source CMS",
-            "time": "2016-03-15 16:01:56"
+            "time": "2016-03-22 14:43:45"
         },
         {
             "name": "contao-components/stylect",
@@ -802,12 +802,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/calendar-bundle.git",
-                "reference": "1a45f285a3172d0617c6ec5f6d634a861d55f8fd"
+                "reference": "a27574a0416943656f6c4b69bb9232ba6d4b259c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/calendar-bundle/zipball/1a45f285a3172d0617c6ec5f6d634a861d55f8fd",
-                "reference": "1a45f285a3172d0617c6ec5f6d634a861d55f8fd",
+                "url": "https://api.github.com/repos/contao/calendar-bundle/zipball/a27574a0416943656f6c4b69bb9232ba6d4b259c",
+                "reference": "a27574a0416943656f6c4b69bb9232ba6d4b259c",
                 "shasum": ""
             },
             "require": {
@@ -846,7 +846,7 @@
                 }
             ],
             "description": "Contao 4 calendar bundle",
-            "time": "2016-03-16 09:58:26"
+            "time": "2016-03-22 15:22:10"
         },
         {
             "name": "contao/comments-bundle",
@@ -900,16 +900,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/core-bundle.git",
-                "reference": "2ca43d71632d23e16d30530d42fd159e9ec4bb93"
+                "reference": "54444c01498ef18041c2c0010838bed20dd25c6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/core-bundle/zipball/2ca43d71632d23e16d30530d42fd159e9ec4bb93",
-                "reference": "2ca43d71632d23e16d30530d42fd159e9ec4bb93",
+                "url": "https://api.github.com/repos/contao/core-bundle/zipball/54444c01498ef18041c2c0010838bed20dd25c6a",
+                "reference": "54444c01498ef18041c2c0010838bed20dd25c6a",
                 "shasum": ""
             },
             "require": {
-                "contao-components/all": "^4.1.1",
+                "contao-components/all": "^4.1.2",
                 "doctrine/annotations": "^1.2.7",
                 "doctrine/cache": "^1.3.2",
                 "doctrine/common": "^2.5.1",
@@ -975,7 +975,7 @@
                 }
             ],
             "description": "Contao 4 core bundle",
-            "time": "2016-03-16 09:59:43"
+            "time": "2016-03-22 15:08:30"
         },
         {
             "name": "contao/faq-bundle",
@@ -2555,16 +2555,16 @@
         },
         {
             "name": "paragonie/random_compat",
-            "version": "v1.2.2",
+            "version": "v1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "b3313b618f4edd76523572531d5d7e22fe747430"
+                "reference": "c7e26a21ba357863de030f0b9e701c7d04593774"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/b3313b618f4edd76523572531d5d7e22fe747430",
-                "reference": "b3313b618f4edd76523572531d5d7e22fe747430",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/c7e26a21ba357863de030f0b9e701c7d04593774",
+                "reference": "c7e26a21ba357863de030f0b9e701c7d04593774",
                 "shasum": ""
             },
             "require": {
@@ -2599,7 +2599,7 @@
                 "pseudorandom",
                 "random"
             ],
-            "time": "2016-03-11 19:54:08"
+            "time": "2016-03-18 20:34:03"
         },
         {
             "name": "patchwork/utf8",
@@ -2835,16 +2835,16 @@
         },
         {
             "name": "sensio/framework-extra-bundle",
-            "version": "v3.0.14",
+            "version": "v3.0.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioFrameworkExtraBundle.git",
-                "reference": "cccf975c565ccd835bddc30a8fea5cdfe3357bf1"
+                "reference": "40431d338da7ab4ef5f9edc1ba4551ea1d4d0782"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/cccf975c565ccd835bddc30a8fea5cdfe3357bf1",
-                "reference": "cccf975c565ccd835bddc30a8fea5cdfe3357bf1",
+                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/40431d338da7ab4ef5f9edc1ba4551ea1d4d0782",
+                "reference": "40431d338da7ab4ef5f9edc1ba4551ea1d4d0782",
                 "shasum": ""
             },
             "require": {
@@ -2893,7 +2893,7 @@
                 "annotations",
                 "controllers"
             ],
-            "time": "2016-03-01 10:50:07"
+            "time": "2016-03-22 12:39:08"
         },
         {
             "name": "sensiolabs/security-checker",
@@ -3805,14 +3805,14 @@
             "package": "contao-components/chosen"
         },
         {
-            "alias": "4.2.1",
-            "alias_normalized": "4.2.1.0",
+            "alias": "4.2.2",
+            "alias_normalized": "4.2.2.0",
             "version": "dev-feature/backend-icons",
             "package": "contao-components/contao"
         },
         {
-            "alias": "1.2.0.1",
-            "alias_normalized": "1.2.0.1",
+            "alias": "1.2.1",
+            "alias_normalized": "1.2.1.0",
             "version": "dev-feature/backend-icons",
             "package": "contao-components/simplemodal"
         },
