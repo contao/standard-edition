@@ -29,7 +29,10 @@
         "incenteev/composer-parameter-handler": "~2.0"
     },
     "autoload": {
-        "classmap": [ "app/AppKernel.php", "app/AppCache.php" ]
+        "classmap": [
+            "app/AppCache.php",
+            "app/AppKernel.php"
+        ]
     },
     "config": {
         "preferred-install": {
