@@ -23,7 +23,7 @@
         "contao/core-bundle": "dev-feature/backend-icons as 4.2",
         "contao/faq-bundle": "dev-feature/backend-icons as 4.2",
         "contao/installation-bundle": "dev-develop as 1.0",
-        "contao/listing-bundle": "dev-develop as 4.1",
+        "contao/listing-bundle": "dev-feature/backend-icons as 4.2",
         "contao/news-bundle": "dev-feature/backend-icons as 4.2",
         "contao/newsletter-bundle": "dev-feature/backend-icons as 4.2",
         "contao-components/chosen": "dev-feature/backend-icons as 1.0.5",
