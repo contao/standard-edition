@@ -18,14 +18,14 @@
         "sensio/framework-extra-bundle": "^3.0.2",
         "doctrine/annotations": "^1.2.7",
         "lexik/maintenance-bundle": "~2.0",
-        "contao/calendar-bundle": "dev-develop as 4.1",
-        "contao/comments-bundle": "dev-develop as 4.1",
-        "contao/core-bundle": "dev-develop as 4.1",
-        "contao/faq-bundle": "dev-develop as 4.1",
+        "contao/calendar-bundle": "dev-develop as 4.2",
+        "contao/comments-bundle": "dev-develop as 4.2",
+        "contao/core-bundle": "dev-develop as 4.2",
+        "contao/faq-bundle": "dev-develop as 4.2",
         "contao/installation-bundle": "dev-develop as 1.0",
-        "contao/listing-bundle": "dev-develop as 4.1",
-        "contao/news-bundle": "dev-develop as 4.1",
-        "contao/newsletter-bundle": "dev-develop as 4.1",
+        "contao/listing-bundle": "dev-develop as 4.2",
+        "contao/news-bundle": "dev-develop as 4.2",
+        "contao/newsletter-bundle": "dev-develop as 4.2",
         "incenteev/composer-parameter-handler": "~2.0"
     },
     "autoload": {
@@ -75,5 +75,7 @@
             "Contao\\CoreBundle\\Composer\\ScriptHandler::addDirectories",
             "Contao\\CoreBundle\\Composer\\ScriptHandler::generateSymlinks"
         ]
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
