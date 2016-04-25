@@ -16,7 +16,7 @@ error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED & ~E_USER_DEPRECATED);
 /**
  * @var Composer\Autoload\ClassLoader
  */
-$loader = require __DIR__ . '/../app/autoload.php';
+$loader = require __DIR__.'/../app/autoload.php';
 
 $kernel = new InstallationKernel('dev', false);
 $kernel->boot();
