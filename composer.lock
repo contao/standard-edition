@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "43a02bf6f269b32c23999610c9e626fc",
-    "content-hash": "f6d8defcc097603968db6b40cce0eb56",
+    "hash": "0c1dea1a977c1e0f6fdcf42729ef1abb",
+    "content-hash": "f154bc93c7ffaaeee8ea060fbb65fd42",
     "packages": [
         {
             "name": "contao-components/ace",
@@ -912,12 +912,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/core-bundle.git",
-                "reference": "710aa58960d1e6284b917eb61f62e7dd2f534653"
+                "reference": "e1f5b5e488e35e0c78920a3ea9843c296f8bbc2b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/core-bundle/zipball/710aa58960d1e6284b917eb61f62e7dd2f534653",
-                "reference": "710aa58960d1e6284b917eb61f62e7dd2f534653",
+                "url": "https://api.github.com/repos/contao/core-bundle/zipball/e1f5b5e488e35e0c78920a3ea9843c296f8bbc2b",
+                "reference": "e1f5b5e488e35e0c78920a3ea9843c296f8bbc2b",
                 "shasum": ""
             },
             "require": {
@@ -1000,7 +1000,7 @@
                 }
             ],
             "description": "Contao 4 core bundle",
-            "time": "2016-04-25 14:13:52"
+            "time": "2016-04-28 12:01:46"
         },
         {
             "name": "contao/faq-bundle",
@@ -1058,12 +1058,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/installation-bundle.git",
-                "reference": "902027969a3e42161f32b0227adbbd80d59ffd01"
+                "reference": "76ca55efa67bc4a385fbdeb3e084eb511c8086f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/installation-bundle/zipball/902027969a3e42161f32b0227adbbd80d59ffd01",
-                "reference": "902027969a3e42161f32b0227adbbd80d59ffd01",
+                "url": "https://api.github.com/repos/contao/installation-bundle/zipball/76ca55efa67bc4a385fbdeb3e084eb511c8086f7",
+                "reference": "76ca55efa67bc4a385fbdeb3e084eb511c8086f7",
                 "shasum": ""
             },
             "require": {
@@ -1099,7 +1099,7 @@
                 }
             ],
             "description": "Contao 4 installation bundle",
-            "time": "2016-04-25 14:21:17"
+            "time": "2016-04-26 09:07:38"
         },
         {
             "name": "contao/listing-bundle",
@@ -1213,12 +1213,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/newsletter-bundle.git",
-                "reference": "d07b6d5c0549d0c9676e3cdba46c0d3a61c15d19"
+                "reference": "17ffc19d6f910efa1974901c670b397fac4064ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/newsletter-bundle/zipball/d07b6d5c0549d0c9676e3cdba46c0d3a61c15d19",
-                "reference": "d07b6d5c0549d0c9676e3cdba46c0d3a61c15d19",
+                "url": "https://api.github.com/repos/contao/newsletter-bundle/zipball/17ffc19d6f910efa1974901c670b397fac4064ba",
+                "reference": "17ffc19d6f910efa1974901c670b397fac4064ba",
                 "shasum": ""
             },
             "require": {
@@ -1256,7 +1256,7 @@
                 }
             ],
             "description": "Contao 4 newsletter bundle",
-            "time": "2016-04-25 14:24:38"
+            "time": "2016-04-27 14:39:04"
         },
         {
             "name": "doctrine/annotations",
@@ -2356,16 +2356,16 @@
         },
         {
             "name": "matthiasmullie/path-converter",
-            "version": "1.0.7",
+            "version": "1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/matthiasmullie/path-converter.git",
-                "reference": "83609c1bb251b2540eba912615571a501a0a06a6"
+                "reference": "7c36e5cafa95dd20008d19b153b506cffa8c2848"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/matthiasmullie/path-converter/zipball/83609c1bb251b2540eba912615571a501a0a06a6",
-                "reference": "83609c1bb251b2540eba912615571a501a0a06a6",
+                "url": "https://api.github.com/repos/matthiasmullie/path-converter/zipball/7c36e5cafa95dd20008d19b153b506cffa8c2848",
+                "reference": "7c36e5cafa95dd20008d19b153b506cffa8c2848",
                 "shasum": ""
             },
             "require": {
@@ -2373,8 +2373,7 @@
                 "php": ">=5.3.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.8",
-                "satooshi/php-coveralls": "~1.0"
+                "phpunit/phpunit": "~4.8"
             },
             "type": "library",
             "autoload": {
@@ -2402,7 +2401,7 @@
                 "paths",
                 "relative"
             ],
-            "time": "2016-01-07 00:41:13"
+            "time": "2016-04-27 10:38:05"
         },
         {
             "name": "michelf/php-markdown",
@@ -2829,16 +2828,16 @@
         },
         {
             "name": "sensio/distribution-bundle",
-            "version": "v5.0.5",
+            "version": "v5.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioDistributionBundle.git",
-                "reference": "3a160355bb1364da55ed9e415c1aa1fa8d457b6f"
+                "reference": "ffe306d09c1f2bad721237f63b2169d1b78253d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/3a160355bb1364da55ed9e415c1aa1fa8d457b6f",
-                "reference": "3a160355bb1364da55ed9e415c1aa1fa8d457b6f",
+                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/ffe306d09c1f2bad721237f63b2169d1b78253d0",
+                "reference": "ffe306d09c1f2bad721237f63b2169d1b78253d0",
                 "shasum": ""
             },
             "require": {
@@ -2877,7 +2876,7 @@
                 "configuration",
                 "distribution"
             ],
-            "time": "2016-03-15 16:21:41"
+            "time": "2016-04-25 20:50:31"
         },
         {
             "name": "sensio/framework-extra-bundle",
@@ -2987,20 +2986,20 @@
         },
         {
             "name": "simplepie/simplepie",
-            "version": "1.3.1",
+            "version": "1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/simplepie/simplepie.git",
-                "reference": "ce53709778bc1e2e4deda1651b66e5081398d5cc"
+                "reference": "76fe7bb32214526f7e5cff08a22aba21d45ca4d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/simplepie/simplepie/zipball/ce53709778bc1e2e4deda1651b66e5081398d5cc",
-                "reference": "ce53709778bc1e2e4deda1651b66e5081398d5cc",
+                "url": "https://api.github.com/repos/simplepie/simplepie/zipball/76fe7bb32214526f7e5cff08a22aba21d45ca4d1",
+                "reference": "76fe7bb32214526f7e5cff08a22aba21d45ca4d1",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.2.0"
+                "php": ">=5.3.0"
             },
             "type": "library",
             "autoload": {
@@ -3037,7 +3036,7 @@
                 "feeds",
                 "rss"
             ],
-            "time": "2012-10-30 17:54:03"
+            "time": "2016-04-25 23:46:13"
         },
         {
             "name": "swiftmailer/swiftmailer",
