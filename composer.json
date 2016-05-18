@@ -18,14 +18,7 @@
         "sensio/framework-extra-bundle": "^3.0.2",
         "doctrine/doctrine-bundle": "~1.6",
         "lexik/maintenance-bundle": "~2.0",
-        "contao/calendar-bundle": "dev-develop",
-        "contao/comments-bundle": "dev-develop",
-        "contao/core-bundle": "dev-develop",
-        "contao/faq-bundle": "dev-develop",
-        "contao/installation-bundle": "dev-develop",
-        "contao/listing-bundle": "dev-develop",
-        "contao/news-bundle": "dev-develop",
-        "contao/newsletter-bundle": "dev-develop",
+        "contao/contao": "~4.2",
         "incenteev/composer-parameter-handler": "~2.0"
     },
     "autoload": {
@@ -76,6 +69,6 @@
             "Contao\\CoreBundle\\Composer\\ScriptHandler::generateSymlinks"
         ]
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "RC",
     "prefer-stable": true
 }
