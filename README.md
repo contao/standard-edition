@@ -23,6 +23,7 @@ It comes pre-configured with the following Symfony bundles:
   * **MonologBundle** - Adds support for Monolog, a logging library
   * **SwiftmailerBundle** - Adds support for Swiftmailer
   * **DoctrineBundle** - Adds support for the Doctrine ORM
+  * **KnpTimeBundle** - Adds support for textual dates
   * **LexikMaintenanceBundle** - Allows to toggle maintenance mode
   * **SensioFrameworkExtraBundle** - Adds various annotation capabilities
   * **DebugBundle** (in dev/test env) - Adds the `dump()` function
