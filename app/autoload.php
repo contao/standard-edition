@@ -1,6 +1,6 @@
 <?php
 
-/**
+/*
  * This file is part of Contao.
  *
  * Copyright (c) 2005-2016 Leo Feyer
@@ -14,8 +14,8 @@ use Composer\Autoload\ClassLoader;
 /**
  * @var ClassLoader $loader
  */
-$loader = require __DIR__ . '/../vendor/autoload.php';
+$loader = require __DIR__.'/../vendor/autoload.php';
 
-AnnotationRegistry::registerLoader(array($loader, 'loadClass'));
+AnnotationRegistry::registerLoader([$loader, 'loadClass']);
 
 return $loader;

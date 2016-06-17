@@ -16,9 +16,6 @@
 /web/system/
 /web/vendor/
 
-# Robots.txt
-/web/robots.txt
-
 # Skip files
 /system/modules/*/.skip
 

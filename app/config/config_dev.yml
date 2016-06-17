@@ -8,10 +8,6 @@ framework:
         strict_requirements: true
     profiler: { only_exceptions: false }
 
-# Contao configuration
-contao:
-    pretty_error_screens: false
-
 # Web profiler configuration
 web_profiler:
     toolbar: true

@@ -1,6 +1,6 @@
 <?php
 
-/**
+/*
  * This file is part of Contao.
  *
  * Copyright (c) 2005-2016 Leo Feyer
@@ -25,12 +25,15 @@ class AppKernel extends Kernel
             new Symfony\Bundle\MonologBundle\MonologBundle(),
             new Symfony\Bundle\SwiftmailerBundle\SwiftmailerBundle(),
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
+            new Doctrine\Bundle\DoctrineCacheBundle\DoctrineCacheBundle(),
+            new Knp\Bundle\TimeBundle\KnpTimeBundle(),
             new Lexik\Bundle\MaintenanceBundle\LexikMaintenanceBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new Contao\CoreBundle\ContaoCoreBundle(),
             new Contao\CalendarBundle\ContaoCalendarBundle(),
             new Contao\CommentsBundle\ContaoCommentsBundle(),
             new Contao\FaqBundle\ContaoFaqBundle(),
+            new Contao\InstallationBundle\ContaoInstallationBundle(),
             new Contao\ListingBundle\ContaoListingBundle(),
             new Contao\NewsBundle\ContaoNewsBundle(),
             new Contao\NewsletterBundle\ContaoNewsletterBundle(),
@@ -40,7 +43,6 @@ class AppKernel extends Kernel
             $bundles[] = new Symfony\Bundle\DebugBundle\DebugBundle();
             $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
             $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
-            $bundles[] = new Contao\InstallationBundle\ContaoInstallationBundle();
         }
 
         return $bundles;
@@ -49,8 +51,32 @@ class AppKernel extends Kernel
     /**
      * {@inheritdoc}
      */
+    public function getRootDir()
+    {
+        return __DIR__;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getCacheDir()
+    {
+        return $this->getRootDir().'/cache/'.$this->getEnvironment();
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getLogDir()
+    {
+        return $this->getRootDir().'/logs';
+    }
+
+    /**
+     * {@inheritdoc}
+     */
     public function registerContainerConfiguration(LoaderInterface $loader)
     {
-        $loader->load(__DIR__ . '/config/config_' . $this->getEnvironment() . '.yml');
+        $loader->load($this->getRootDir().'/config/config_'.$this->getEnvironment().'.yml');
     }
 }
