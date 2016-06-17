@@ -19,13 +19,6 @@
         "doctrine/doctrine-bundle": "~1.6",
         "lexik/maintenance-bundle": "~2.0",
         "contao/contao": "~4.2",
-        "contao/calendar-bundle": "dev-release/4.2.0 as 4.2.0",
-        "contao/comments-bundle": "dev-release/4.2.0 as 4.2.0",
-        "contao/core-bundle": "dev-release/4.2.0 as 4.2.0",
-        "contao/faq-bundle": "dev-release/4.2.0 as 4.2.0",
-        "contao/installation-bundle": "dev-release/1.1.0 as 1.1.0",
-        "contao/news-bundle": "dev-release/4.2.0 as 4.2.0",
-        "contao/newsletter-bundle": "dev-release/4.2.0 as 4.2.0",
         "incenteev/composer-parameter-handler": "~2.0"
     },
     "autoload": {
@@ -75,7 +68,5 @@
             "Contao\\CoreBundle\\Composer\\ScriptHandler::addDirectories",
             "Contao\\CoreBundle\\Composer\\ScriptHandler::generateSymlinks"
         ]
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    }
 }
