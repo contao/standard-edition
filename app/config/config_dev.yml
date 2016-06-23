@@ -16,6 +16,9 @@ web_profiler:
 # Monolog configuration
 monolog:
     handlers:
+        contao:
+            type: service
+            id:   contao.monolog.handler
         main:
             type:      rotating_file
             max_files: 10
