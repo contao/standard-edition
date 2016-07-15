@@ -4,6 +4,9 @@ imports:
 # Monolog configuration
 monolog:
     handlers:
+        contao:
+            type: service
+            id:   contao.monolog.handler
         main:
             type:         fingers_crossed
             action_level: error
