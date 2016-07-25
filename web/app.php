@@ -21,6 +21,7 @@ $kernel->loadClassCache();
 
 // Enable the Symfony reverse proxy
 $kernel = new AppCache($kernel);
+Request::enableHttpMethodParameterOverride();
 
 // Handle the request
 $request = Request::createFromGlobals();
