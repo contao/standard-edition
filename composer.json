@@ -45,8 +45,11 @@
                 "secret": "CONTAO_RANDOM_SECRET"
             }
         },
-        "symfony-bin-dir": "app",
-        "symfony-var-dir": "app",
+        "symfony-app-dir": "app",
+        "symfony-bin-dir": "bin",
+        "symfony-tests-dir": "tests",
+        "symfony-var-dir": "var",
+        "symfony-web-dir": "web",
         "symfony-assets-install": "relative"
     },
     "scripts": {
