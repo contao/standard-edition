@@ -1,5 +1,9 @@
 # Contao standard edition change log
 
+### 4.2.2 (2016-07-28)
+
+ * Update the dependencies.
+
 ### 4.2.1 (2016-07-15)
 
  * Allow access from all domains for webfonts (see contao/core-bundle#528).
