@@ -41,9 +41,7 @@ if (isset($_SERVER['HTTP_CLIENT_IP'])
 
 unset($accessKey);
 
-/**
- * @var Composer\Autoload\ClassLoader
- */
+/** @var Composer\Autoload\ClassLoader */
 $loader = require __DIR__.'/../app/autoload.php';
 
 Debug::enable();

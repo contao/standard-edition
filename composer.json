@@ -18,7 +18,7 @@
         "sensio/framework-extra-bundle": "^3.0.2",
         "doctrine/doctrine-bundle": "~1.6",
         "lexik/maintenance-bundle": "~2.0",
-        "contao/contao": "^4.2.1",
+        "contao/contao": "^4.2.3",
         "incenteev/composer-parameter-handler": "~2.0"
     },
     "autoload": {
