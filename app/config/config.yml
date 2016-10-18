@@ -9,17 +9,19 @@ parameters:
 
 # Framework configuration
 framework:
+    esi: { enabled: true }
+    translator: { fallbacks: ["%locale%"] }
     secret: "%secret%"
     router:
         resource: "%kernel.root_dir%/config/routing.yml"
         strict_requirements: ~
+    csrf_protection: ~
     templating:
         engines: ['twig']
-    default_locale:  "%locale%"
+    default_locale: "%locale%"
     session:
         handler_id: ~
-    csrf_protection: ~
-    translator: { fallbacks: ["%locale%"] }
+    fragments: { path: /_fragment }
 
 # Contao configuration
 contao:
@@ -37,21 +39,21 @@ doctrine:
         default_connection: default
         connections:
             default:
-                driver:   pdo_mysql
-                host:     "%database_host%"
-                port:     "%database_port%"
-                user:     "%database_user%"
+                driver: pdo_mysql
+                host: "%database_host%"
+                port: "%database_port%"
+                user: "%database_user%"
                 password: "%database_password%"
-                dbname:   "%database_name%"
-                charset:  UTF8
+                dbname: "%database_name%"
+                charset: UTF8
 
 # SwiftMailer configuration
 swiftmailer:
-    transport:  "%mailer_transport%"
-    host:       "%mailer_host%"
-    username:   "%mailer_user%"
-    password:   "%mailer_password%"
-    port:       "%mailer_port%"
+    transport: "%mailer_transport%"
+    host: "%mailer_host%"
+    username: "%mailer_user%"
+    password: "%mailer_password%"
+    port: "%mailer_port%"
     encryption: "%mailer_encryption%"
 
 # Lexik configuration
@@ -61,5 +63,5 @@ lexik_maintenance:
         attributes:
             _bypass_maintenance: true
     driver:
-        class:   "Lexik\\Bundle\\MaintenanceBundle\\Drivers\\FileDriver"
+        class: "Lexik\\Bundle\\MaintenanceBundle\\Drivers\\FileDriver"
         options: { file_path: "%kernel.cache_dir%/lock" }
