@@ -1,5 +1,9 @@
 # Contao standard edition change log
 
+### 4.2.5 (2016-10-27)
+
+ * Update the dependencies.
+
 ### 4.2.4 (2016-09-21)
 
  * Update the dependencies.
