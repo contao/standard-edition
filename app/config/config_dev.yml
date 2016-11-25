@@ -18,22 +18,22 @@ monolog:
     handlers:
         contao:
             type: service
-            id:   contao.monolog.handler
+            id: contao.monolog.handler
         main:
-            type:      rotating_file
+            type: rotating_file
             max_files: 10
-            path:      "%kernel.logs_dir%/%kernel.environment%.log"
-            level:     debug
-            channels:  [!doctrine, !event, !php]
+            path: "%kernel.logs_dir%/%kernel.environment%.log"
+            level: debug
+            channels: [!doctrine, !event, !php]
         console:
-            type:   console
+            type: console
             bubble: false
             verbosity_levels:
                 VERBOSITY_VERBOSE: INFO
                 VERBOSITY_VERY_VERBOSE: DEBUG
             channels: [!doctrine]
         console_very_verbose:
-            type:   console
+            type: console
             bubble: false
             verbosity_levels:
                 VERBOSITY_VERBOSE: NOTICE

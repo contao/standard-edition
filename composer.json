@@ -18,7 +18,7 @@
         "sensio/framework-extra-bundle": "^3.0.2",
         "doctrine/doctrine-bundle": "~1.6",
         "lexik/maintenance-bundle": "~2.0",
-        "contao/contao": "^4.2.3",
+        "contao/contao": "~4.3",
         "incenteev/composer-parameter-handler": "~2.0"
     },
     "autoload": {
@@ -28,16 +28,12 @@
         ]
     },
     "config": {
-        "preferred-install": {
-            "contao/*": "source",
-            "contao-components/*": "source",
-            "*": "dist"
-        },
-        "component-dir": "assets"
+        "component-dir": "assets",
+        "preferred-install": "dist"
     },
     "extra": {
         "branch-alias": {
-            "dev-develop": "4.3.x-dev"
+            "dev-develop": "4.4.x-dev"
         },
         "incenteev-parameters": {
             "file": "app/config/parameters.yml",
@@ -45,8 +41,10 @@
                 "secret": "CONTAO_RANDOM_SECRET"
             }
         },
-        "symfony-bin-dir": "app",
-        "symfony-var-dir": "app",
+        "symfony-app-dir": "app",
+        "symfony-bin-dir": "bin",
+        "symfony-var-dir": "var",
+        "symfony-web-dir": "web",
         "symfony-assets-install": "relative"
     },
     "scripts": {

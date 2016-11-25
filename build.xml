@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <project name="Contao Open Source CMS" default="build" basedir=".">
-  <exec executable="app/console" outputProperty="version">
+  <exec executable="bin/console" outputProperty="version">
     <arg value="contao:version" />
   </exec>
 
