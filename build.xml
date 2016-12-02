@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
-<project name="Contao Open Source CMS" default="build" basedir=".">
+<project name="Contao" default="build" basedir=".">
   <exec executable="bin/console" outputProperty="version">
     <arg value="contao:version" />
   </exec>
 
-  <target name="build" depends="clone, update, purge, archive, cleanup">
+  <target name="build" depends="clone, update, purge, pack, cleanup">
     <echo message="Contao ${version} build complete" />
   </target>
 
@@ -14,7 +14,7 @@
       <arg value="." />
       <arg value="contao-${version}" />
     </exec>
-    <exec executable="git" dir="contao-${version}" failonerror="true">
+    <exec executable="git" dir="contao-${version}">
       <arg value="checkout" />
       <arg value="--quiet" />
       <arg value="${version}" />
@@ -26,11 +26,14 @@
   </target>
 
   <target name="update">
-    <exec executable="composer" dir="contao-${version}" failonerror="true">
+    <exec executable="composer" dir="contao-${version}" passthru="true">
       <arg value="install" />
       <arg value="--prefer-dist" />
       <arg value="--no-dev" />
       <arg value="--no-scripts" />
+    </exec>
+    <exec executable="vendor/sensio/distribution-bundle/Resources/bin/build_bootstrap.php" dir="contao-${version}">
+      <arg value="var" />
     </exec>
   </target>
 
@@ -55,15 +58,9 @@
     <delete dir="contao-${version}/vendor/matthiasmullie/minify/tests" />
   </target>
 
-  <target name="archive">
-    <defaultexcludes remove="**/.gitignore" />
-    <zip destfile="contao-${version}.zip">
-      <zipfileset dir="contao-${version}" prefix="contao-${version}" />
-    </zip>
-    <tar destfile="contao-${version}.tar.gz" compression="gzip" longfile="gnu">
-      <tarfileset dir="contao-${version}" prefix="contao-${version}" />
-    </tar>
-    <defaultexcludes default="true" />
+  <target name="pack">
+    <zip destfile="contao-${version}.zip" basedir="contao-${version}" prefix="contao-${version}/" />
+    <tar destfile="contao-${version}.tar.gz" basedir="contao-${version}" prefix="contao-${version}/" compression="gzip" longfile="gnu" />
   </target>
 
   <target name="cleanup">
