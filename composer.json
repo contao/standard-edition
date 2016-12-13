@@ -19,6 +19,9 @@
         "doctrine/doctrine-bundle": "~1.6",
         "lexik/maintenance-bundle": "~2.0",
         "contao/contao": "~4.3",
+        "contao/calendar-bundle": "dev-hotfix/4.3.1 as 4.3.1",
+        "contao/core-bundle": "dev-hotfix/4.3.1 as 4.3.1",
+        "contao/installation-bundle": "dev-hotfix/1.2.1 as 1.2.1",
         "incenteev/composer-parameter-handler": "~2.0"
     },
     "autoload": {
@@ -51,7 +54,6 @@
         "post-install-cmd": [
             "Contao\\CoreBundle\\Composer\\ScriptHandler::generateRandomSecret",
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
             "Contao\\CoreBundle\\Composer\\ScriptHandler::addDirectories",
@@ -60,7 +62,6 @@
         "post-update-cmd": [
             "Contao\\CoreBundle\\Composer\\ScriptHandler::generateRandomSecret",
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
             "Contao\\CoreBundle\\Composer\\ScriptHandler::addDirectories",
