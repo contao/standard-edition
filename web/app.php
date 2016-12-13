@@ -14,7 +14,6 @@ use Symfony\Component\HttpFoundation\Request;
 $loader = require __DIR__.'/../app/autoload.php';
 
 $kernel = new AppKernel('prod', false);
-$kernel->loadClassCache();
 
 // Enable the Symfony reverse proxy
 $kernel = new AppCache($kernel);

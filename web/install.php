@@ -19,7 +19,6 @@ error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED & ~E_USER_DEPRECATED);
 $loader = require __DIR__.'/../app/autoload.php';
 
 $kernel = new InstallationKernel('prod', false);
-$kernel->loadClassCache();
 
 // Handle the request
 $request = Request::createFromGlobals();
