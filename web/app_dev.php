@@ -47,7 +47,6 @@ $loader = require __DIR__.'/../app/autoload.php';
 Debug::enable();
 
 $kernel = new AppKernel('dev', true);
-$kernel->loadClassCache();
 
 // Handle the request
 $request = Request::createFromGlobals();

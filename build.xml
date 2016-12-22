@@ -32,9 +32,6 @@
       <arg value="--no-dev" />
       <arg value="--no-scripts" />
     </exec>
-    <exec executable="vendor/sensio/distribution-bundle/Resources/bin/build_bootstrap.php" dir="contao-${version}">
-      <arg value="var" />
-    </exec>
   </target>
 
   <target name="purge">
@@ -59,8 +56,16 @@
   </target>
 
   <target name="pack">
-    <zip destfile="contao-${version}.zip" basedir="contao-${version}" prefix="contao-${version}/" />
-    <tar destfile="contao-${version}.tar.gz" basedir="contao-${version}" prefix="contao-${version}/" compression="gzip" longfile="gnu" />
+    <exec executable="zip">
+      <arg value="-r" />
+      <arg value="contao-${version}.zip" />
+      <arg value="contao-${version}/" />
+    </exec>
+    <exec executable="tar">
+      <arg value="-czf" />
+      <arg value="contao-${version}.tar.gz" />
+      <arg value="contao-${version}/" />
+    </exec>
   </target>
 
   <target name="cleanup">
