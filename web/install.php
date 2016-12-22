@@ -13,9 +13,7 @@ use Symfony\Component\HttpFoundation\Request;
 
 error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED & ~E_USER_DEPRECATED);
 
-/**
- * @var Composer\Autoload\ClassLoader
- */
+/** @var Composer\Autoload\ClassLoader */
 $loader = require __DIR__.'/../app/autoload.php';
 
 $kernel = new InstallationKernel('prod', false);
