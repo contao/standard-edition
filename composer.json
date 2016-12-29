@@ -19,6 +19,7 @@
         "doctrine/doctrine-bundle": "~1.6",
         "lexik/maintenance-bundle": "~2.0",
         "contao/contao": "^4.3.1",
+        "swiftmailer/swiftmailer": "^5.4.5",
         "incenteev/composer-parameter-handler": "~2.0"
     },
     "autoload": {
