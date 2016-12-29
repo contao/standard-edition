@@ -1,7 +1,8 @@
 <?xml version="1.0"?>
 <project name="Contao" default="build" basedir=".">
-  <exec executable="bin/console" outputProperty="version">
-    <arg value="contao:version" />
+  <exec executable="git" outputProperty="version">
+    <arg value="describe" />
+    <arg value="--tags" />
   </exec>
 
   <target name="build" depends="clone, update, purge, pack, cleanup">
@@ -9,6 +10,7 @@
   </target>
 
   <target name="clone">
+    <echo message="Cloning into contao-${version}" />
     <exec executable="git">
       <arg value="clone" />
       <arg value="." />
@@ -35,32 +37,29 @@
   </target>
 
   <target name="purge">
-    <delete dir="contao-${version}/.tx" />
     <delete dir="contao-${version}/.git" />
     <delete dir="contao-${version}/vendor/psr/log/Psr/Log/Test" />
-    <delete dir="contao-${version}/vendor/simplepie/simplepie/compatibility_test" />
-    <delete dir="contao-${version}/vendor/simplepie/simplepie/demo" />
     <delete dir="contao-${version}/vendor/tecnickcom/tcpdf/examples" />
-    <delete includeemptydirs="true" verbose="true">
+    <delete includeemptydirs="true">
       <fileset dir="contao-${version}/vendor" includes="*/*/doc/**,*/*/docs/**,*/*/notes/**,*/*/site/**,*/*/test/**,*/*/tests/**,*/*/Test/**,*/*/Tests/**" />
     </delete>
-    <delete includeemptydirs="true" verbose="true">
+    <delete includeemptydirs="true">
       <fileset dir="contao-${version}/vendor/symfony" includes="*/*/*/*/Test/**,*/*/*/*/*/Test/**,*/*/*/*/Tests/**,*/*/*/*/*/Tests/**,*/*/*/*/*/*/Tests/**" />
     </delete>
-    <delete includeemptydirs="true" verbose="true">
+    <delete includeemptydirs="true">
       <fileset dir="contao-${version}/vendor/tecnickcom/tcpdf/fonts" excludes="courier.php,freeserif*.*,helvetica*.php" />
     </delete>
     <delete dir="contao-${version}/vendor/contao/core-bundle/tests" />
-    <delete dir="contao-${version}/vendor/doctrine/common/tests" />
-    <delete dir="contao-${version}/vendor/matthiasmullie/minify/tests" />
   </target>
 
   <target name="pack">
+    <echo message="Packing contao-${version}.zip" />
     <exec executable="zip">
       <arg value="-r" />
       <arg value="contao-${version}.zip" />
       <arg value="contao-${version}/" />
     </exec>
+    <echo message="Packing contao-${version}.tar.gz" />
     <exec executable="tar">
       <arg value="-czf" />
       <arg value="contao-${version}.tar.gz" />
