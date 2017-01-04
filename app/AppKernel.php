@@ -78,6 +78,12 @@ class AppKernel extends Kernel
      */
     public function registerContainerConfiguration(LoaderInterface $loader)
     {
-        $loader->load($this->getRootDir().'/config/config_'.$this->getEnvironment().'.yml');
+        $rootDir = $this->getRootDir();
+
+        if (file_exists($rootDir.'/config/parameters.yml')) {
+            $loader->load($rootDir.'/config/parameters.yml');
+        }
+
+        $loader->load($rootDir.'/config/config_'.$this->getEnvironment().'.yml');
     }
 }
