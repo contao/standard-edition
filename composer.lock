@@ -828,12 +828,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/core-bundle.git",
-                "reference": "ab24b7da0152faaed550e82d4e686867d4ee655f"
+                "reference": "1fa58ee757ef414456065deedff7e5446a4be421"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/core-bundle/zipball/ab24b7da0152faaed550e82d4e686867d4ee655f",
-                "reference": "ab24b7da0152faaed550e82d4e686867d4ee655f",
+                "url": "https://api.github.com/repos/contao/core-bundle/zipball/1fa58ee757ef414456065deedff7e5446a4be421",
+                "reference": "1fa58ee757ef414456065deedff7e5446a4be421",
                 "shasum": ""
             },
             "require": {
@@ -950,7 +950,7 @@
                 }
             ],
             "description": "Contao 4 core bundle",
-            "time": "2017-01-11 13:27:07"
+            "time": "2017-01-11 14:04:18"
         },
         {
             "name": "contao/faq-bundle",

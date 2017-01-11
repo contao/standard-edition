@@ -25,7 +25,6 @@ framework:
 # Contao configuration
 contao:
     prepend_locale: "%prepend_locale%"
-    encryption_key: "%kernel.secret%"
 
 # Twig configuration
 twig:
