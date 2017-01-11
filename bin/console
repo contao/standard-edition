@@ -15,9 +15,7 @@ use Symfony\Component\Debug\Debug;
 
 set_time_limit(0);
 
-/**
- * @var Composer\Autoload\ClassLoader $loader
- */
+/** @var Composer\Autoload\ClassLoader */
 $loader = require __DIR__.'/../app/autoload.php';
 
 $input = new ArgvInput();
