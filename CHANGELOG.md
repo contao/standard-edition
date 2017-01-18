@@ -1,5 +1,9 @@
 # Contao standard edition change log
 
+### 4.3.3 (2017-01-18)
+
+ * No changes.
+
 ### 4.3.2 (2016-12-29)
 
  * Update SwiftMailer to version 5.4.5 (fixes CVE-2016-10074).

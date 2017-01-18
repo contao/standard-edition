@@ -11,16 +11,23 @@
     ],
     "require": {
         "php": ">=5.5.0",
-        "symfony/symfony": "~2.8|~3.0",
-        "symfony/monolog-bundle": "~2.8",
-        "symfony/swiftmailer-bundle": "~2.3",
-        "sensio/distribution-bundle": "~5.0",
+        "symfony/symfony": "^2.8|^3.0",
+        "symfony/monolog-bundle": "^2.8",
+        "symfony/swiftmailer-bundle": "^2.3",
+        "sensio/distribution-bundle": "^5.0",
         "sensio/framework-extra-bundle": "^3.0.2",
-        "doctrine/doctrine-bundle": "~1.6",
-        "lexik/maintenance-bundle": "~2.0",
-        "contao/contao": "^4.3.1",
+        "doctrine/doctrine-bundle": "^1.6",
+        "lexik/maintenance-bundle": "^2.0",
+        "contao/calendar-bundle": "^4.3.2",
+        "contao/comments-bundle": "^4.3",
+        "contao/core-bundle": "^4.3.1",
+        "contao/faq-bundle": "^4.3",
+        "contao/installation-bundle": "^1.2.1",
+        "contao/listing-bundle": "^4.3",
+        "contao/news-bundle": "^4.3",
+        "contao/newsletter-bundle": "^4.3",
         "swiftmailer/swiftmailer": "^5.4.5",
-        "incenteev/composer-parameter-handler": "~2.0"
+        "incenteev/composer-parameter-handler": "^2.0"
     },
     "autoload": {
         "classmap": [
