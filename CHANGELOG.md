@@ -1,5 +1,9 @@
 # Contao standard edition change log
 
+### 4.3.4 (2017-01-23)
+
+ * No changes.
+
 ### 4.3.3 (2017-01-18)
 
  * No changes.

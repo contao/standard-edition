@@ -37,6 +37,7 @@
   </target>
 
   <target name="purge">
+    <delete file="contao-${version}/build.xml" />
     <delete dir="contao-${version}/.git" />
     <delete dir="contao-${version}/vendor/psr/log/Psr/Log/Test" />
     <delete dir="contao-${version}/vendor/tecnickcom/tcpdf/examples" />
