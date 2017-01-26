@@ -29,8 +29,7 @@ if (isset($_SERVER['HTTP_CLIENT_IP'])
         die(sprintf('You are not allowed to access this file. Check %s for more information.', basename(__FILE__)));
     }
 
-    if (!isset($_SERVER['PHP_AUTH_USER'])
-        || !isset($_SERVER['PHP_AUTH_PW'])
+    if (!isset($_SERVER['PHP_AUTH_USER'], $_SERVER['PHP_AUTH_PW'])
         || hash('sha512', $_SERVER['PHP_AUTH_USER'].':'.$_SERVER['PHP_AUTH_PW']) !== $accessKey
     ) {
         header('WWW-Authenticate: Basic realm="Contao debug"');
