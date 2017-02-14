@@ -22,12 +22,15 @@
         "contao/comments-bundle": "^4.3",
         "contao/core-bundle": "^4.3.1",
         "contao/faq-bundle": "^4.3",
-        "contao/installation-bundle": "^1.2.1",
+        "contao/installation-bundle": "^4.3.5",
         "contao/listing-bundle": "^4.3",
         "contao/news-bundle": "^4.3",
         "contao/newsletter-bundle": "^4.3",
         "swiftmailer/swiftmailer": "^5.4.5",
         "incenteev/composer-parameter-handler": "^2.0"
+    },
+    "require-dev": {
+        "contao/manager-bundle": "^4.3"
     },
     "autoload": {
         "classmap": [
