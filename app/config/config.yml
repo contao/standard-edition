@@ -65,3 +65,7 @@ lexik_maintenance:
     driver:
         class: "Lexik\\Bundle\\MaintenanceBundle\\Drivers\\FileDriver"
         options: { file_path: "%kernel.cache_dir%/lock" }
+
+# CORS configuration
+nelmio_cors:
+    paths: { '^/': [] } # the NelmioCorsExtension does not load if there are no paths
