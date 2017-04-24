@@ -17,7 +17,6 @@
         "sensio/distribution-bundle": "^5.0",
         "sensio/framework-extra-bundle": "^3.0.2",
         "doctrine/doctrine-bundle": "^1.6",
-        "swiftmailer/swiftmailer": "^5.4.5",
         "lexik/maintenance-bundle": "^2.0",
         "contao/calendar-bundle": "dev-develop as 4.3.6",
         "contao/comments-bundle": "dev-develop as 4.3.6",
@@ -31,6 +30,9 @@
     },
     "require-dev": {
         "contao/manager-bundle": "dev-develop as 4.3.6"
+    },
+    "conflict": {
+        "swiftmailer/swiftmailer": "<5.4.5"
     },
     "autoload": {
         "classmap": [
