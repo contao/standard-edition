@@ -761,7 +761,7 @@
         },
         {
             "name": "contao/calendar-bundle",
-            "version": "4.3.8",
+            "version": "4.3.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/calendar-bundle.git",
@@ -825,7 +825,7 @@
         },
         {
             "name": "contao/comments-bundle",
-            "version": "4.3.8",
+            "version": "4.3.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/comments-bundle.git",
@@ -886,16 +886,16 @@
         },
         {
             "name": "contao/core-bundle",
-            "version": "4.3.8",
+            "version": "4.3.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/core-bundle.git",
-                "reference": "55f86cd0924ce0fa94b417528509d3a2011d592d"
+                "reference": "1448b9d4a9faa9f3fcf6e5518d8bb159bf7f1821"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/core-bundle/zipball/55f86cd0924ce0fa94b417528509d3a2011d592d",
-                "reference": "55f86cd0924ce0fa94b417528509d3a2011d592d",
+                "url": "https://api.github.com/repos/contao/core-bundle/zipball/1448b9d4a9faa9f3fcf6e5518d8bb159bf7f1821",
+                "reference": "1448b9d4a9faa9f3fcf6e5518d8bb159bf7f1821",
                 "shasum": ""
             },
             "require": {
@@ -952,7 +952,7 @@
                 "symfony/swiftmailer-bundle": "^2.3",
                 "symfony/yaml": "^2.8|^3.0",
                 "tecnickcom/tcpdf": "^6.0",
-                "true/punycode": "^2.0",
+                "true/punycode": "^1.0",
                 "twig/twig": "^1.20"
             },
             "conflict": {
@@ -1015,11 +1015,11 @@
                 }
             ],
             "description": "Contao 4 core bundle",
-            "time": "2017-04-24T11:38:13+00:00"
+            "time": "2017-04-25T12:31:35+00:00"
         },
         {
             "name": "contao/faq-bundle",
-            "version": "4.3.8",
+            "version": "4.3.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/faq-bundle.git",
@@ -4156,30 +4156,31 @@
         },
         {
             "name": "true/punycode",
-            "version": "v2.1.1",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/true/php-punycode.git",
-                "reference": "a4d0c11a36dd7f4e7cd7096076cab6d3378a071e"
+                "reference": "21c0025130b4e2b2d0b7dbe5f86e9e1512507656"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/true/php-punycode/zipball/a4d0c11a36dd7f4e7cd7096076cab6d3378a071e",
-                "reference": "a4d0c11a36dd7f4e7cd7096076cab6d3378a071e",
+                "url": "https://api.github.com/repos/true/php-punycode/zipball/21c0025130b4e2b2d0b7dbe5f86e9e1512507656",
+                "reference": "21c0025130b4e2b2d0b7dbe5f86e9e1512507656",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0",
-                "symfony/polyfill-mbstring": "^1.3"
+                "ext-mbstring": "*",
+                "php": ">=5.3.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.7",
+                "phpunit/phpunit": "4.x",
+                "satooshi/php-coveralls": "dev-master",
                 "squizlabs/php_codesniffer": "~2.0"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "TrueBV\\": "src/"
+                    "True\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -4198,7 +4199,7 @@
                 "idna",
                 "punycode"
             ],
-            "time": "2016-11-16T10:37:54+00:00"
+            "time": "2015-03-12T16:49:35+00:00"
         },
         {
             "name": "twig/twig",
