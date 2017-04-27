@@ -18,6 +18,7 @@
         "sensio/framework-extra-bundle": "^3.0.2",
         "doctrine/doctrine-bundle": "^1.6",
         "lexik/maintenance-bundle": "^2.0",
+        "nelmio/security-bundle": "^2.2",
         "contao/calendar-bundle": "dev-develop as 4.3.6",
         "contao/comments-bundle": "dev-develop as 4.3.6",
         "contao/core-bundle": "dev-develop as 4.3.6",

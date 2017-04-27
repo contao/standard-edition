@@ -67,3 +67,18 @@ lexik_maintenance:
     driver:
         class: "Lexik\\Bundle\\MaintenanceBundle\\Drivers\\FileDriver"
         options: { file_path: "%kernel.cache_dir%/../maintenance_lock" }
+
+# Security configuration
+nelmio_security:
+    clickjacking:
+        paths:
+            '^/.*': SAMEORIGIN
+    content_type:
+        nosniff: true
+    referrer_policy:
+        enabled: true
+        policies:
+            - 'origin-when-cross-origin'
+    xss_protection:
+        enabled: true
+        mode_block: true
