@@ -19,14 +19,14 @@
         "doctrine/doctrine-bundle": "^1.6",
         "lexik/maintenance-bundle": "^2.0",
         "nelmio/security-bundle": "^2.2",
-        "contao/calendar-bundle": "^4.4@dev",
-        "contao/comments-bundle": "^4.4@dev",
-        "contao/core-bundle": "^4.4@dev",
-        "contao/faq-bundle": "^4.4@dev",
-        "contao/installation-bundle": "^4.4@dev",
-        "contao/listing-bundle": "^4.4@dev",
-        "contao/news-bundle": "^4.4@dev",
-        "contao/newsletter-bundle": "^4.4@dev",
+        "contao/calendar-bundle": "4.4.*@dev",
+        "contao/comments-bundle": "4.4.*@dev",
+        "contao/core-bundle": "4.4.*@dev",
+        "contao/faq-bundle": "4.4.*@dev",
+        "contao/installation-bundle": "4.4.*@dev",
+        "contao/listing-bundle": "4.4.*@dev",
+        "contao/news-bundle": "4.4.*@dev",
+        "contao/newsletter-bundle": "4.4.*@dev",
         "incenteev/composer-parameter-handler": "^2.0"
     },
     "conflict": {
@@ -45,7 +45,8 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-develop": "4.4.x-dev"
+            "dev-develop": "4.5.x-dev",
+            "dev-release/4.4.0": "4.4.x-dev"
         },
         "incenteev-parameters": {
             "file": "app/config/parameters.yml",

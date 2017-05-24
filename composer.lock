@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5db75069d7816120b7b77bd89ab80f63",
+    "content-hash": "49e1fcdb4da4e12f7ef93c50b7da22c7",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -761,16 +761,16 @@
         },
         {
             "name": "contao/calendar-bundle",
-            "version": "dev-develop",
+            "version": "dev-release/4.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/calendar-bundle.git",
-                "reference": "6f7ecb409ee8b0de32e9d0bc68fbb43d5e69179d"
+                "reference": "526c1b57de48489a23623863352e4c43e7af4e06"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/calendar-bundle/zipball/6f7ecb409ee8b0de32e9d0bc68fbb43d5e69179d",
-                "reference": "6f7ecb409ee8b0de32e9d0bc68fbb43d5e69179d",
+                "url": "https://api.github.com/repos/contao/calendar-bundle/zipball/526c1b57de48489a23623863352e4c43e7af4e06",
+                "reference": "526c1b57de48489a23623863352e4c43e7af4e06",
                 "shasum": ""
             },
             "require": {
@@ -792,7 +792,8 @@
             "type": "contao-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-develop": "4.4.x-dev"
+                    "dev-develop": "4.5.x-dev",
+                    "dev-release/4.4.0": "4.4.x-dev"
                 },
                 "contao-manager-plugin": "Contao\\CalendarBundle\\ContaoManager\\Plugin"
             },
@@ -821,20 +822,20 @@
                 }
             ],
             "description": "Adds calendar functionality to Contao 4",
-            "time": "2017-05-23 19:06:20"
+            "time": "2017-05-24 12:50:15"
         },
         {
             "name": "contao/comments-bundle",
-            "version": "dev-develop",
+            "version": "dev-release/4.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/comments-bundle.git",
-                "reference": "017f5984da4e2d10b5fb8d30e385008b1ccbd01a"
+                "reference": "9b3efa4d343e1e62cb1e92ee2d55de40f78fc4d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/comments-bundle/zipball/017f5984da4e2d10b5fb8d30e385008b1ccbd01a",
-                "reference": "017f5984da4e2d10b5fb8d30e385008b1ccbd01a",
+                "url": "https://api.github.com/repos/contao/comments-bundle/zipball/9b3efa4d343e1e62cb1e92ee2d55de40f78fc4d9",
+                "reference": "9b3efa4d343e1e62cb1e92ee2d55de40f78fc4d9",
                 "shasum": ""
             },
             "require": {
@@ -853,7 +854,8 @@
             "type": "contao-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-develop": "4.4.x-dev"
+                    "dev-develop": "4.5.x-dev",
+                    "dev-release/4.4.0": "4.4.x-dev"
                 },
                 "contao-manager-plugin": "Contao\\CommentsBundle\\ContaoManager\\Plugin"
             },
@@ -882,20 +884,20 @@
                 }
             ],
             "description": "Adds comments functionality to Contao 4",
-            "time": "2017-05-23 19:08:37"
+            "time": "2017-05-24 12:50:05"
         },
         {
             "name": "contao/core-bundle",
-            "version": "dev-develop",
+            "version": "dev-release/4.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/core-bundle.git",
-                "reference": "a4999a370895f64432d0a684b7babb22f2aba014"
+                "reference": "03502e052151d739cbbb9760ef6c9972d68bf49f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/core-bundle/zipball/a4999a370895f64432d0a684b7babb22f2aba014",
-                "reference": "a4999a370895f64432d0a684b7babb22f2aba014",
+                "url": "https://api.github.com/repos/contao/core-bundle/zipball/03502e052151d739cbbb9760ef6c9972d68bf49f",
+                "reference": "03502e052151d739cbbb9760ef6c9972d68bf49f",
                 "shasum": ""
             },
             "require": {
@@ -984,7 +986,8 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-develop": "4.4.x-dev"
+                    "dev-develop": "4.5.x-dev",
+                    "dev-release/4.4.0": "4.4.x-dev"
                 },
                 "contao-manager-plugin": "Contao\\CoreBundle\\ContaoManager\\Plugin"
             },
@@ -1018,20 +1021,20 @@
                 }
             ],
             "description": "Contao 4 core bundle",
-            "time": "2017-05-23 19:01:44"
+            "time": "2017-05-24 12:48:26"
         },
         {
             "name": "contao/faq-bundle",
-            "version": "dev-develop",
+            "version": "dev-release/4.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/faq-bundle.git",
-                "reference": "5158465c128773cc5ce299c1dd5591422157c582"
+                "reference": "31695e118d6eb2ac043a71ab24ac6e5135b9b1fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/faq-bundle/zipball/5158465c128773cc5ce299c1dd5591422157c582",
-                "reference": "5158465c128773cc5ce299c1dd5591422157c582",
+                "url": "https://api.github.com/repos/contao/faq-bundle/zipball/31695e118d6eb2ac043a71ab24ac6e5135b9b1fa",
+                "reference": "31695e118d6eb2ac043a71ab24ac6e5135b9b1fa",
                 "shasum": ""
             },
             "require": {
@@ -1053,7 +1056,8 @@
             "type": "contao-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-develop": "4.4.x-dev"
+                    "dev-develop": "4.5.x-dev",
+                    "dev-release/4.4.0": "4.4.x-dev"
                 },
                 "contao-manager-plugin": "Contao\\FaqBundle\\ContaoManager\\Plugin"
             },
@@ -1082,7 +1086,7 @@
                 }
             ],
             "description": "Adds FAQ functionality to Contao 4",
-            "time": "2017-05-23 19:09:43"
+            "time": "2017-05-24 12:49:52"
         },
         {
             "name": "contao/image",
@@ -1185,16 +1189,16 @@
         },
         {
             "name": "contao/installation-bundle",
-            "version": "dev-develop",
+            "version": "dev-release/4.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/installation-bundle.git",
-                "reference": "d99efbf911079d5d66aa90a3258a39a55ef1d819"
+                "reference": "79089f1a9cfe006cde2b212442bc89ce218fb9c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/installation-bundle/zipball/d99efbf911079d5d66aa90a3258a39a55ef1d819",
-                "reference": "d99efbf911079d5d66aa90a3258a39a55ef1d819",
+                "url": "https://api.github.com/repos/contao/installation-bundle/zipball/79089f1a9cfe006cde2b212442bc89ce218fb9c9",
+                "reference": "79089f1a9cfe006cde2b212442bc89ce218fb9c9",
                 "shasum": ""
             },
             "require": {
@@ -1219,7 +1223,8 @@
             "type": "contao-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-develop": "4.4.x-dev"
+                    "dev-develop": "4.5.x-dev",
+                    "dev-release/4.4.0": "4.4.x-dev"
                 },
                 "contao-manager-plugin": "Contao\\InstallationBundle\\ContaoManager\\Plugin"
             },
@@ -1239,20 +1244,20 @@
                 }
             ],
             "description": "Required to install and update Contao 4",
-            "time": "2017-05-23 19:12:01"
+            "time": "2017-05-24 12:49:39"
         },
         {
             "name": "contao/listing-bundle",
-            "version": "dev-develop",
+            "version": "dev-release/4.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/listing-bundle.git",
-                "reference": "0cdc4868ce3124186eed179b30ccb80ca465e4c2"
+                "reference": "4613cf8f86e33795e3ecc612ae62667e8b0e16e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/listing-bundle/zipball/0cdc4868ce3124186eed179b30ccb80ca465e4c2",
-                "reference": "0cdc4868ce3124186eed179b30ccb80ca465e4c2",
+                "url": "https://api.github.com/repos/contao/listing-bundle/zipball/4613cf8f86e33795e3ecc612ae62667e8b0e16e0",
+                "reference": "4613cf8f86e33795e3ecc612ae62667e8b0e16e0",
                 "shasum": ""
             },
             "require": {
@@ -1271,7 +1276,8 @@
             "type": "contao-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-develop": "4.4.x-dev"
+                    "dev-develop": "4.5.x-dev",
+                    "dev-release/4.4.0": "4.4.x-dev"
                 },
                 "contao-manager-plugin": "Contao\\ListingBundle\\ContaoManager\\Plugin"
             },
@@ -1300,20 +1306,20 @@
                 }
             ],
             "description": "Allows to list arbitrary data in the Contao 4 front end",
-            "time": "2017-05-23 19:13:18"
+            "time": "2017-05-24 12:49:29"
         },
         {
             "name": "contao/news-bundle",
-            "version": "dev-develop",
+            "version": "dev-release/4.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/news-bundle.git",
-                "reference": "8c69b385a1338818f0902f0eea246bb16d3b44de"
+                "reference": "5d37691a6799864fa0ba2162674aa8a348eb58ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/news-bundle/zipball/8c69b385a1338818f0902f0eea246bb16d3b44de",
-                "reference": "8c69b385a1338818f0902f0eea246bb16d3b44de",
+                "url": "https://api.github.com/repos/contao/news-bundle/zipball/5d37691a6799864fa0ba2162674aa8a348eb58ab",
+                "reference": "5d37691a6799864fa0ba2162674aa8a348eb58ab",
                 "shasum": ""
             },
             "require": {
@@ -1335,7 +1341,8 @@
             "type": "contao-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-develop": "4.4.x-dev"
+                    "dev-develop": "4.5.x-dev",
+                    "dev-release/4.4.0": "4.4.x-dev"
                 },
                 "contao-manager-plugin": "Contao\\NewsBundle\\ContaoManager\\Plugin"
             },
@@ -1364,20 +1371,20 @@
                 }
             ],
             "description": "Adds news functionality to Contao",
-            "time": "2017-05-23 19:19:54"
+            "time": "2017-05-24 12:49:13"
         },
         {
             "name": "contao/newsletter-bundle",
-            "version": "dev-develop",
+            "version": "dev-release/4.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/newsletter-bundle.git",
-                "reference": "66c7b7d2e931abee7e5bbd820aefbfbe514ebf86"
+                "reference": "6915b57ffe6044a774fd75e4c3d48a6021c57d6c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/newsletter-bundle/zipball/66c7b7d2e931abee7e5bbd820aefbfbe514ebf86",
-                "reference": "66c7b7d2e931abee7e5bbd820aefbfbe514ebf86",
+                "url": "https://api.github.com/repos/contao/newsletter-bundle/zipball/6915b57ffe6044a774fd75e4c3d48a6021c57d6c",
+                "reference": "6915b57ffe6044a774fd75e4c3d48a6021c57d6c",
                 "shasum": ""
             },
             "require": {
@@ -1396,7 +1403,8 @@
             "type": "contao-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-develop": "4.4.x-dev"
+                    "dev-develop": "4.5.x-dev",
+                    "dev-release/4.4.0": "4.4.x-dev"
                 },
                 "contao-manager-plugin": "Contao\\NewsletterBundle\\ContaoManager\\Plugin"
             },
@@ -1425,7 +1433,7 @@
                 }
             ],
             "description": "Adds newsletter functionality to Contao 4",
-            "time": "2017-05-23 19:21:47"
+            "time": "2017-05-24 12:47:59"
         },
         {
             "name": "doctrine/annotations",
