@@ -40,8 +40,8 @@ if (isset($_SERVER['HTTP_CLIENT_IP'])
 
 unset($accessKey);
 
-/** @var Composer\Autoload\ClassLoader */
-$loader = require __DIR__.'/../app/autoload.php';
+/** @var Composer\Autoload\ClassLoader $loader */
+$loader = require __DIR__.'/../vendor/autoload.php';
 
 Debug::enable();
 
