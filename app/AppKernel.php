@@ -32,6 +32,7 @@ class AppKernel extends Kernel
             new Nelmio\CorsBundle\NelmioCorsBundle(),
             new Nelmio\SecurityBundle\NelmioSecurityBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
+            new Terminal42\HeaderReplay\HeaderReplayBundle(),
             new Contao\CoreBundle\ContaoCoreBundle(),
             new Contao\CalendarBundle\ContaoCalendarBundle(),
             new Contao\CommentsBundle\ContaoCommentsBundle(),
