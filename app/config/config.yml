@@ -1,5 +1,4 @@
 imports:
-    - { resource: parameters.yml }
     - { resource: security.yml }
 
 # Put parameters here that don't need to change on each machine where the app is deployed
@@ -26,7 +25,6 @@ framework:
 # Contao configuration
 contao:
     prepend_locale: "%prepend_locale%"
-    encryption_key: "%kernel.secret%"
 
 # Twig configuration
 twig:
@@ -46,6 +44,10 @@ doctrine:
                 password: "%database_password%"
                 dbname: "%database_name%"
                 charset: UTF8
+        types:
+            binary_string:
+                class: "Contao\\CoreBundle\\Doctrine\\DBAL\\Types\\BinaryStringType"
+                commented: true
 
 # SwiftMailer configuration
 swiftmailer:
@@ -64,8 +66,19 @@ lexik_maintenance:
             _bypass_maintenance: true
     driver:
         class: "Lexik\\Bundle\\MaintenanceBundle\\Drivers\\FileDriver"
-        options: { file_path: "%kernel.cache_dir%/lock" }
+        options: { file_path: "%kernel.cache_dir%/../maintenance_lock" }
 
-# CORS configuration
-nelmio_cors:
-    paths: { '^/': [] } # the NelmioCorsExtension does not load if there are no paths
+# Security configuration
+nelmio_security:
+    clickjacking:
+        paths:
+            '^/.*': SAMEORIGIN
+    content_type:
+        nosniff: true
+    referrer_policy:
+        enabled: true
+        policies:
+            - 'origin-when-cross-origin'
+    xss_protection:
+        enabled: true
+        mode_block: true

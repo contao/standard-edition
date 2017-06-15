@@ -26,10 +26,13 @@ class AppKernel extends Kernel
             new Symfony\Bundle\SwiftmailerBundle\SwiftmailerBundle(),
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Doctrine\Bundle\DoctrineCacheBundle\DoctrineCacheBundle(),
+            new Knp\Bundle\MenuBundle\KnpMenuBundle(),
             new Knp\Bundle\TimeBundle\KnpTimeBundle(),
             new Lexik\Bundle\MaintenanceBundle\LexikMaintenanceBundle(),
             new Nelmio\CorsBundle\NelmioCorsBundle(),
+            new Nelmio\SecurityBundle\NelmioSecurityBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
+            new Terminal42\HeaderReplay\HeaderReplayBundle(),
             new Contao\CoreBundle\ContaoCoreBundle(),
             new Contao\CalendarBundle\ContaoCalendarBundle(),
             new Contao\CommentsBundle\ContaoCommentsBundle(),
@@ -78,6 +81,12 @@ class AppKernel extends Kernel
      */
     public function registerContainerConfiguration(LoaderInterface $loader)
     {
-        $loader->load($this->getRootDir().'/config/config_'.$this->getEnvironment().'.yml');
+        $rootDir = $this->getRootDir();
+
+        if (file_exists($rootDir.'/config/parameters.yml')) {
+            $loader->load($rootDir.'/config/parameters.yml');
+        }
+
+        $loader->load($rootDir.'/config/config_'.$this->getEnvironment().'.yml');
     }
 }

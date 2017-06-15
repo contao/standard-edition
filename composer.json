@@ -10,26 +10,28 @@
         }
     ],
     "require": {
-        "php": ">=5.5.0",
-        "symfony/symfony": "^2.8|^3.0",
-        "symfony/monolog-bundle": "^2.8",
-        "symfony/swiftmailer-bundle": "^2.3",
-        "sensio/distribution-bundle": "^5.0",
+        "php": ">=5.6.0",
+        "symfony/symfony": "3.3.*",
+        "symfony/monolog-bundle": "^3.1",
+        "symfony/swiftmailer-bundle": "^2.3.10",
+        "sensio/distribution-bundle": "^5.0.19",
         "sensio/framework-extra-bundle": "^3.0.2",
         "doctrine/doctrine-bundle": "^1.6",
         "lexik/maintenance-bundle": "^2.0",
-        "contao/calendar-bundle": "^4.3.2",
-        "contao/comments-bundle": "^4.3",
-        "contao/core-bundle": "^4.3.1",
-        "contao/faq-bundle": "^4.3",
-        "contao/installation-bundle": "^4.3.5",
-        "contao/listing-bundle": "^4.3",
-        "contao/news-bundle": "^4.3",
-        "contao/newsletter-bundle": "^4.3",
+        "nelmio/security-bundle": "^2.2",
+        "contao/calendar-bundle": "^4.4",
+        "contao/comments-bundle": "^4.4",
+        "contao/core-bundle": "^4.4",
+        "contao/faq-bundle": "^4.4",
+        "contao/installation-bundle": "^4.4",
+        "contao/listing-bundle": "^4.4",
+        "contao/news-bundle": "^4.4",
+        "contao/newsletter-bundle": "^4.4",
         "incenteev/composer-parameter-handler": "^2.0"
     },
     "conflict": {
-        "swiftmailer/swiftmailer": "<5.4.5"
+        "swiftmailer/swiftmailer": "<5.4.5",
+        "symfony/swiftmailer-bundle": "2.6.* <2.6.2"
     },
     "autoload": {
         "classmap": [
@@ -42,9 +44,6 @@
         "preferred-install": "dist"
     },
     "extra": {
-        "branch-alias": {
-            "dev-develop": "4.4.x-dev"
-        },
         "incenteev-parameters": {
             "file": "app/config/parameters.yml",
             "env-map": {
@@ -58,7 +57,7 @@
         "symfony-assets-install": "relative"
     },
     "scripts": {
-        "post-install-cmd": [
+        "setup-scripts": [
             "Contao\\CoreBundle\\Composer\\ScriptHandler::generateRandomSecret",
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
@@ -66,13 +65,7 @@
             "Contao\\CoreBundle\\Composer\\ScriptHandler::addDirectories",
             "Contao\\CoreBundle\\Composer\\ScriptHandler::generateSymlinks"
         ],
-        "post-update-cmd": [
-            "Contao\\CoreBundle\\Composer\\ScriptHandler::generateRandomSecret",
-            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
-            "Contao\\CoreBundle\\Composer\\ScriptHandler::addDirectories",
-            "Contao\\CoreBundle\\Composer\\ScriptHandler::generateSymlinks"
-        ]
+        "post-install-cmd": [ "@setup-scripts" ],
+        "post-update-cmd": [ "@setup-scripts" ]
     }
 }
