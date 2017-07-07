@@ -19,6 +19,7 @@
         "doctrine/doctrine-bundle": "^1.6",
         "lexik/maintenance-bundle": "^2.0",
         "nelmio/security-bundle": "^2.2",
+        "php-http/guzzle6-adapter": "^1.1",
         "contao/calendar-bundle": "^4.4",
         "contao/comments-bundle": "^4.4",
         "contao/core-bundle": "^4.4",
