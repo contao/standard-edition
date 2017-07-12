@@ -31,6 +31,7 @@
         "incenteev/composer-parameter-handler": "^2.0"
     },
     "conflict": {
+        "contao/core-bundle": "<4.4.1",
         "swiftmailer/swiftmailer": "<5.4.5",
         "symfony/swiftmailer-bundle": "2.6.* <2.6.2"
     },
