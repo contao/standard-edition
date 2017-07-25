@@ -1,5 +1,5 @@
-ContaoInstallationBundle:
+contao_installation:
     resource: "@ContaoInstallationBundle/Resources/config/routing.yml"
 
-ContaoCoreBundle:
+contao:
     resource: "@ContaoCoreBundle/Resources/config/routing.yml"
