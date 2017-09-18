@@ -60,16 +60,16 @@
         },
         {
             "name": "composer/ca-bundle",
-            "version": "1.0.7",
+            "version": "1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/ca-bundle.git",
-                "reference": "b17e6153cb7f33c7e44eb59578dc12eee5dc8e12"
+                "reference": "9dd73a03951357922d8aee6cc084500de93e2343"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/b17e6153cb7f33c7e44eb59578dc12eee5dc8e12",
-                "reference": "b17e6153cb7f33c7e44eb59578dc12eee5dc8e12",
+                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/9dd73a03951357922d8aee6cc084500de93e2343",
+                "reference": "9dd73a03951357922d8aee6cc084500de93e2343",
                 "shasum": ""
             },
             "require": {
@@ -115,7 +115,7 @@
                 "ssl",
                 "tls"
             ],
-            "time": "2017-03-06T11:59:08+00:00"
+            "time": "2017-09-11T07:24:36+00:00"
         },
         {
             "name": "contao-components/ace",
@@ -658,16 +658,16 @@
         },
         {
             "name": "contao-components/simplemodal",
-            "version": "2.0.5",
+            "version": "2.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao-components/simplemodal.git",
-                "reference": "92b777235a25b7a4b8ed400fb362c7988d794038"
+                "reference": "401746ffe3d6b8444a4ec8314c9057b69d0d48aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao-components/simplemodal/zipball/92b777235a25b7a4b8ed400fb362c7988d794038",
-                "reference": "92b777235a25b7a4b8ed400fb362c7988d794038",
+                "url": "https://api.github.com/repos/contao-components/simplemodal/zipball/401746ffe3d6b8444a4ec8314c9057b69d0d48aa",
+                "reference": "401746ffe3d6b8444a4ec8314c9057b69d0d48aa",
                 "shasum": ""
             },
             "require": {
@@ -685,7 +685,7 @@
                 }
             ],
             "description": "SimpleModal integration for Contao Open Source CMS",
-            "time": "2017-07-07T13:12:16+00:00"
+            "time": "2017-09-08T08:43:39+00:00"
         },
         {
             "name": "contao-components/swipe",
@@ -813,16 +813,16 @@
         },
         {
             "name": "contao/calendar-bundle",
-            "version": "4.4.4",
+            "version": "4.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/calendar-bundle.git",
-                "reference": "1b96b39a11ac24b3ea5feaa5ed02273e15164a15"
+                "reference": "c150e3fdb4dab5e7f95f8e520023c422a8d43dac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/calendar-bundle/zipball/1b96b39a11ac24b3ea5feaa5ed02273e15164a15",
-                "reference": "1b96b39a11ac24b3ea5feaa5ed02273e15164a15",
+                "url": "https://api.github.com/repos/contao/calendar-bundle/zipball/c150e3fdb4dab5e7f95f8e520023c422a8d43dac",
+                "reference": "c150e3fdb4dab5e7f95f8e520023c422a8d43dac",
                 "shasum": ""
             },
             "require": {
@@ -873,11 +873,11 @@
                 }
             ],
             "description": "Adds calendar functionality to Contao 4",
-            "time": "2017-09-05T14:21:03+00:00"
+            "time": "2017-09-18T07:18:59+00:00"
         },
         {
             "name": "contao/comments-bundle",
-            "version": "4.4.4",
+            "version": "4.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/comments-bundle.git",
@@ -935,16 +935,16 @@
         },
         {
             "name": "contao/core-bundle",
-            "version": "4.4.4",
+            "version": "4.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/core-bundle.git",
-                "reference": "60970bc1027a9b293279342ec0158df2b471da73"
+                "reference": "ab2693c202606678c4692f01f98dff090e0df5c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/core-bundle/zipball/60970bc1027a9b293279342ec0158df2b471da73",
-                "reference": "60970bc1027a9b293279342ec0158df2b471da73",
+                "url": "https://api.github.com/repos/contao/core-bundle/zipball/ab2693c202606678c4692f01f98dff090e0df5c8",
+                "reference": "ab2693c202606678c4692f01f98dff090e0df5c8",
                 "shasum": ""
             },
             "require": {
@@ -1067,20 +1067,20 @@
                 }
             ],
             "description": "Contao 4 core bundle",
-            "time": "2017-09-05T14:20:15+00:00"
+            "time": "2017-09-18T07:18:17+00:00"
         },
         {
             "name": "contao/faq-bundle",
-            "version": "4.4.4",
+            "version": "4.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/faq-bundle.git",
-                "reference": "0eb51bac665ab4441527decf5c3aa202a278cc57"
+                "reference": "0e14779b7e91de4068254633ecaa6dd83e9e0076"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/faq-bundle/zipball/0eb51bac665ab4441527decf5c3aa202a278cc57",
-                "reference": "0eb51bac665ab4441527decf5c3aa202a278cc57",
+                "url": "https://api.github.com/repos/contao/faq-bundle/zipball/0e14779b7e91de4068254633ecaa6dd83e9e0076",
+                "reference": "0e14779b7e91de4068254633ecaa6dd83e9e0076",
                 "shasum": ""
             },
             "require": {
@@ -1131,7 +1131,7 @@
                 }
             ],
             "description": "Adds FAQ functionality to Contao 4",
-            "time": "2017-09-05T14:21:43+00:00"
+            "time": "2017-09-18T07:19:34+00:00"
         },
         {
             "name": "contao/image",
@@ -1185,22 +1185,22 @@
         },
         {
             "name": "contao/imagine-svg",
-            "version": "0.1.4",
+            "version": "0.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/imagine-svg.git",
-                "reference": "aa9d4d1847364cb9c2f589833ec63096de914cf2"
+                "reference": "edd20d1fc09f32a6bdd87e154063363e72b9d3f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/imagine-svg/zipball/aa9d4d1847364cb9c2f589833ec63096de914cf2",
-                "reference": "aa9d4d1847364cb9c2f589833ec63096de914cf2",
+                "url": "https://api.github.com/repos/contao/imagine-svg/zipball/edd20d1fc09f32a6bdd87e154063363e72b9d3f5",
+                "reference": "edd20d1fc09f32a6bdd87e154063363e72b9d3f5",
                 "shasum": ""
             },
             "require": {
                 "ext-dom": "*",
                 "imagine/imagine": "^0.6|^0.7",
-                "php": ">=5.5.0"
+                "php": "^5.5|^7.0"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^2.0",
@@ -1230,20 +1230,20 @@
                 }
             ],
             "description": "Contao Imagine SVG library",
-            "time": "2017-05-20T13:06:46+00:00"
+            "time": "2017-09-14T16:47:37+00:00"
         },
         {
             "name": "contao/installation-bundle",
-            "version": "4.4.4",
+            "version": "4.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/installation-bundle.git",
-                "reference": "e0004091c6cd58c164bda251a6a4bc0cf09b792e"
+                "reference": "4cb877ea5beac9a56578b4063d40bffc3472637f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/installation-bundle/zipball/e0004091c6cd58c164bda251a6a4bc0cf09b792e",
-                "reference": "e0004091c6cd58c164bda251a6a4bc0cf09b792e",
+                "url": "https://api.github.com/repos/contao/installation-bundle/zipball/4cb877ea5beac9a56578b4063d40bffc3472637f",
+                "reference": "4cb877ea5beac9a56578b4063d40bffc3472637f",
                 "shasum": ""
             },
             "require": {
@@ -1287,11 +1287,11 @@
                 }
             ],
             "description": "Required to install and update Contao 4",
-            "time": "2017-09-05T14:22:00+00:00"
+            "time": "2017-09-18T07:19:49+00:00"
         },
         {
             "name": "contao/listing-bundle",
-            "version": "4.4.4",
+            "version": "4.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/listing-bundle.git",
@@ -1349,16 +1349,16 @@
         },
         {
             "name": "contao/news-bundle",
-            "version": "4.4.4",
+            "version": "4.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/news-bundle.git",
-                "reference": "4f89bc97342fc2799e0cc4af5519b583b23ac862"
+                "reference": "20f6b6188daff0c366e38963ec31d4679befabb1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/news-bundle/zipball/4f89bc97342fc2799e0cc4af5519b583b23ac862",
-                "reference": "4f89bc97342fc2799e0cc4af5519b583b23ac862",
+                "url": "https://api.github.com/repos/contao/news-bundle/zipball/20f6b6188daff0c366e38963ec31d4679befabb1",
+                "reference": "20f6b6188daff0c366e38963ec31d4679befabb1",
                 "shasum": ""
             },
             "require": {
@@ -1409,20 +1409,20 @@
                 }
             ],
             "description": "Adds news functionality to Contao 4",
-            "time": "2017-09-05T14:22:39+00:00"
+            "time": "2017-09-18T07:20:30+00:00"
         },
         {
             "name": "contao/newsletter-bundle",
-            "version": "4.4.4",
+            "version": "4.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contao/newsletter-bundle.git",
-                "reference": "0fc38d2ba62b2a6bf8a126b8d02a6af8e668fea4"
+                "reference": "c7e8fce0b7e398d02d54623065e39f7fbe3600ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contao/newsletter-bundle/zipball/0fc38d2ba62b2a6bf8a126b8d02a6af8e668fea4",
-                "reference": "0fc38d2ba62b2a6bf8a126b8d02a6af8e668fea4",
+                "url": "https://api.github.com/repos/contao/newsletter-bundle/zipball/c7e8fce0b7e398d02d54623065e39f7fbe3600ff",
+                "reference": "c7e8fce0b7e398d02d54623065e39f7fbe3600ff",
                 "shasum": ""
             },
             "require": {
@@ -1467,7 +1467,7 @@
                 }
             ],
             "description": "Adds newsletter functionality to Contao 4",
-            "time": "2017-09-05T14:23:09+00:00"
+            "time": "2017-09-18T07:20:56+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -3101,16 +3101,16 @@
         },
         {
             "name": "matthiasmullie/minify",
-            "version": "1.3.46",
+            "version": "1.3.52",
             "source": {
                 "type": "git",
                 "url": "https://github.com/matthiasmullie/minify.git",
-                "reference": "1443646268465b8930c9a7f2f8ff1a51453796d1"
+                "reference": "134b25a63d83a80ae128aedc9a99987e064b4382"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/matthiasmullie/minify/zipball/1443646268465b8930c9a7f2f8ff1a51453796d1",
-                "reference": "1443646268465b8930c9a7f2f8ff1a51453796d1",
+                "url": "https://api.github.com/repos/matthiasmullie/minify/zipball/134b25a63d83a80ae128aedc9a99987e064b4382",
+                "reference": "134b25a63d83a80ae128aedc9a99987e064b4382",
                 "shasum": ""
             },
             "require": {
@@ -3157,7 +3157,7 @@
                 "minifier",
                 "minify"
             ],
-            "time": "2017-07-06T12:26:44+00:00"
+            "time": "2017-09-15T13:02:11+00:00"
         },
         {
             "name": "matthiasmullie/path-converter",
@@ -4797,6 +4797,59 @@
             "time": "2017-03-26T11:55:59+00:00"
         },
         {
+            "name": "symfony/polyfill-apcu",
+            "version": "v1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-apcu.git",
+                "reference": "cec32398a973a9bfe9d2f94f4b5d5e186b40b698"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-apcu/zipball/cec32398a973a9bfe9d2f94f4b5d5e186b40b698",
+                "reference": "cec32398a973a9bfe9d2f94f4b5d5e186b40b698",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.5-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill backporting apcu_* functions to lower PHP versions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "apcu",
+                "compatibility",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "time": "2017-07-05T15:09:33+00:00"
+        },
+        {
             "name": "symfony/polyfill-intl-icu",
             "version": "v1.5.0",
             "source": {
@@ -5141,16 +5194,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v3.3.8",
+            "version": "v3.3.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "645d24a119bc7b8326bb01e7b5b696bc3be337ec"
+                "reference": "a9d2f68ae9946000e2bcc3403d218ec0124f992a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/645d24a119bc7b8326bb01e7b5b696bc3be337ec",
-                "reference": "645d24a119bc7b8326bb01e7b5b696bc3be337ec",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/a9d2f68ae9946000e2bcc3403d218ec0124f992a",
+                "reference": "a9d2f68ae9946000e2bcc3403d218ec0124f992a",
                 "shasum": ""
             },
             "require": {
@@ -5163,6 +5216,7 @@
                 "psr/link": "^1.0",
                 "psr/log": "~1.0",
                 "psr/simple-cache": "^1.0",
+                "symfony/polyfill-apcu": "~1.1",
                 "symfony/polyfill-intl-icu": "~1.0",
                 "symfony/polyfill-mbstring": "~1.0",
                 "symfony/polyfill-php56": "~1.0",
@@ -5246,7 +5300,6 @@
                 "predis/predis": "~1.0",
                 "sensio/framework-extra-bundle": "^3.0.2",
                 "symfony/phpunit-bridge": "~3.2",
-                "symfony/polyfill-apcu": "~1.1",
                 "symfony/security-acl": "~2.8|~3.0"
             },
             "type": "library",
@@ -5290,7 +5343,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2017-08-28T22:35:20+00:00"
+            "time": "2017-09-11T16:13:42+00:00"
         },
         {
             "name": "tecnickcom/tcpdf",
