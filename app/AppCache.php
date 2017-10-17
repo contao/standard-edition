@@ -20,8 +20,6 @@ class AppCache extends HttpCache implements CacheInvalidation
     use EventDispatchingHttpCache;
 
     /**
-     * Constructor.
-     *
      * @param HttpKernelInterface $kernel
      * @param null                $cacheDir
      */
@@ -29,7 +27,7 @@ class AppCache extends HttpCache implements CacheInvalidation
     {
         parent::__construct($kernel, $cacheDir);
 
-        $this->addSubscriber(new HeaderReplaySubscriber());
+        $this->addSubscriber(new HeaderReplaySubscriber(['ignore_cookies' => ['/^csrf_./']]));
     }
 
     /**

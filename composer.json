@@ -11,7 +11,7 @@
     ],
     "require": {
         "php": "^7.1",
-        "symfony/symfony": "3.3.*",
+        "symfony/symfony": "3.4.*",
         "symfony/monolog-bundle": "^3.1",
         "symfony/swiftmailer-bundle": "^2.3.10",
         "sensio/distribution-bundle": "^5.0.19",
@@ -20,14 +20,14 @@
         "lexik/maintenance-bundle": "^2.0",
         "nelmio/security-bundle": "^2.2",
         "php-http/guzzle6-adapter": "^1.1",
-        "contao/calendar-bundle": "^4.4",
-        "contao/comments-bundle": "^4.4",
-        "contao/core-bundle": "^4.4",
-        "contao/faq-bundle": "^4.4",
-        "contao/installation-bundle": "^4.4",
-        "contao/listing-bundle": "^4.4",
-        "contao/news-bundle": "^4.4",
-        "contao/newsletter-bundle": "^4.4",
+        "contao/calendar-bundle": "^4.5",
+        "contao/comments-bundle": "^4.5",
+        "contao/core-bundle": "^4.5",
+        "contao/faq-bundle": "^4.5",
+        "contao/installation-bundle": "^4.5",
+        "contao/listing-bundle": "^4.5",
+        "contao/news-bundle": "^4.5",
+        "contao/newsletter-bundle": "^4.5",
         "incenteev/composer-parameter-handler": "^2.0"
     },
     "conflict": {
@@ -42,8 +42,7 @@
         ]
     },
     "config": {
-        "component-dir": "assets",
-        "preferred-install": "dist"
+        "component-dir": "assets"
     },
     "extra": {
         "incenteev-parameters": {
@@ -69,5 +68,7 @@
         ],
         "post-install-cmd": [ "@setup-scripts" ],
         "post-update-cmd": [ "@setup-scripts" ]
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
